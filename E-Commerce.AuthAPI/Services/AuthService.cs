@@ -8,6 +8,7 @@ using E_Commerce.AuthAPI.Models.Dto.Response;
 using E_Commerce.AuthAPI.Models.Enum;
 using E_Commerce.AuthAPI.Services.IServices;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce.AuthAPI.Services
 {
@@ -17,6 +18,8 @@ namespace E_Commerce.AuthAPI.Services
         private readonly UserManager<AppUser> _userManager;
         private readonly AppDbContext _authAPIDatabase;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private ResponseDto _response;
+        private LoginResponseDto _loginResponse;
 
         public AuthService(IMapper mapper, UserManager<AppUser> userManager, AppDbContext authAPIDatabase, RoleManager<IdentityRole> roleManager)
         {
@@ -24,6 +27,8 @@ namespace E_Commerce.AuthAPI.Services
             _userManager = userManager;
             _authAPIDatabase = authAPIDatabase;
             _roleManager = roleManager;
+            _response = new ResponseDto();
+            _loginResponse = new LoginResponseDto();
         }
 
         /// <summary>
@@ -44,34 +49,24 @@ namespace E_Commerce.AuthAPI.Services
                     var createdUser = _authAPIDatabase.AppUsers.First(user => user.Email == registerRequestDto.Email);
                     var user = _mapper.Map<UserDto>(createdUser);
 
-                    ResponseDto response = new()
-                    {
-                        Result = user,
-                        Message = "Registeration completed successfully."
-                    };
+                    _response.Result = user;
+                    _response.Message = "Kullanıcı oluşturma başarılı.";
                     // onay emaili burada yollanacak.
-                    EmailSendHelper.SendEmailProducer(registerRequestDto.Email);
-                    return response;
-                    
+                    EmailSendHelper.SendEmailProducer(registerRequestDto.Email);                    
                 }
                 else
                 {
-                    ResponseDto response = new()
-                    {
-                        IsSuccess = false,
-                        Message = result.Errors.FirstOrDefault().Description
-                    };
-                    return response;
+                    _response.IsSuccess = false;
+                    _response.Message = result.Errors.FirstOrDefault().Description;
                 }
+                return _response;
+
             }
             catch (Exception ex)
             {
-                ResponseDto response = new()
-                {
-                    IsSuccess = false,
-                    Message = ex.Message
-                };
-                return response;
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+                return _response;
             }
         }
 
@@ -82,33 +77,41 @@ namespace E_Commerce.AuthAPI.Services
         /// <returns>Durum mesajı döner.</returns>
         public async Task<ResponseDto> UserActivate(string userEmail)
         {
-            ResponseDto response = new();
-            var user = _authAPIDatabase.AppUsers.First(user => user.Email == userEmail);
-
-            if (user == null)
+            try
             {
-                response.IsSuccess = false;
-                response.Message = "Kullanıcı zaten var.";
-            }
-            else if (user.Status == UserStatus.Aktif)
-            {
-                response.IsSuccess = false;
-                response.Message = "Kullanıcı zaten aktif.";
-            }
-            else
-            {
-                user.Status = UserStatus.Aktif;
-                user.EmailConfirmed = true;
-                _authAPIDatabase.AppUsers.Update(user);
-                _authAPIDatabase.SaveChanges();
+                var user = _authAPIDatabase.AppUsers.First(user => user.Email == userEmail);
 
-                // kullanıcıya rol ataması burada yapılacak.
-                var result = await AssignRole(userEmail, "customer");       // default olarak customer atanmıştır, ihtiyaca göre değiştirilecek.
+                if (user == null)
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "Kullanıcı zaten var.";
+                }
+                else if (user.Status == UserStatus.Aktif)
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "Kullanıcı zaten aktif.";
+                }
+                else
+                {
+                    user.Status = UserStatus.Aktif;
+                    user.EmailConfirmed = true;
+                    _authAPIDatabase.AppUsers.Update(user);
+                    _authAPIDatabase.SaveChanges();
 
-                response.IsSuccess = true;
-                response.Message = "Kullanıcı başarıyla aktifleştirildi.";
+                    // kullanıcıya rol ataması burada yapılacak.
+                    var result = await AssignRole(userEmail, "customer");       // default olarak customer atanmıştır, ihtiyaca göre değiştirilecek.
+
+                    _response.IsSuccess = true;
+                    _response.Message = "Kullanıcı başarıyla aktifleştirildi.";
+                }
+                return _response;
             }
-            return response;
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+                return _response;
+            }
         }
 
         /// <summary>
@@ -138,11 +141,53 @@ namespace E_Commerce.AuthAPI.Services
         /// </summary>
         /// <param name="loginRequestDto"></param>
         /// <returns>LoginResponseDto tipinde bir cevap döner.</returns>
-        public Task<LoginResponseDto> Login(LoginRequestDto loginRequestDto)
+        public async Task<LoginResponseDto> Login([FromBody] LoginRequestDto loginRequestDto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Kullanıcının olmadığı hata durumu handle edilecek. "500 INTERNAL SERVER ERROR"
+                var user = _authAPIDatabase.AppUsers.First(user => user.Email == loginRequestDto.UserName);
+                if (user == null)
+                {
+                    _loginResponse.User = null;
+                    _loginResponse.Token = "";
+                    _loginResponse.Message = "Kullanıcı bulunamadı.";
+                    _loginResponse.IsSuccess = false;
+                    return _loginResponse;
+                }
+                else if (user.Status == UserStatus.OnayBekleniyor || user.EmailConfirmed == false)
+                {
+                    _loginResponse.User = _mapper.Map<UserDto>(user);
+                    _loginResponse.Token = "";
+                    _loginResponse.Message = "Kullanıcının aktif edilmesi gerekiyor.";
+                    _loginResponse.IsSuccess = false;
+                    return _loginResponse;
+                }
+                else
+                {
+                    var result = await _userManager.CheckPasswordAsync(user, loginRequestDto.Password);
+                    if (!result)
+                    {
+                        _loginResponse.User = _mapper.Map<UserDto>(user);
+                        _loginResponse.Token = "----buraya jwt token gelecek.----";
+                        _loginResponse.Message = "Kullanıcı adı ya da parola hatalı.";
+                        _loginResponse.IsSuccess = false;
+                        return _loginResponse;
+                    }
+                    _loginResponse.User = _mapper.Map<UserDto>(user);
+                    // jwt token burada uretilecek.
+                    _loginResponse.Token = "----buraya jwt token gelecek.----";
+                    _loginResponse.Message = "Başarı ile giriş yapıldı.";
+                    _loginResponse.IsSuccess = true;
+                    return _loginResponse;
+                }
+            }
+            catch (Exception ex)
+            {
+                _loginResponse.IsSuccess = false;
+                _loginResponse.Message = ex.Message;
+                return _loginResponse;
+            }
         }
-
-
     }
 }

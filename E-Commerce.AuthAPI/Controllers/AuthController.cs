@@ -33,5 +33,15 @@ namespace E_Commerce.AuthAPI.Controllers
 
             return Ok(result);
         }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(LoginRequestDto loginRequestDto)
+        {
+            var result = await _authService.Login(loginRequestDto);
+            if (!result.IsSuccess)
+                return BadRequest(result);
+
+            return Ok(result);
+        }
     }
 }
