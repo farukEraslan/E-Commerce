@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using E_Commerce.AuthAPI.Data;
+using E_Commerce.AuthAPI.Helpers;
 using E_Commerce.AuthAPI.Models;
 using E_Commerce.AuthAPI.Models.Dto;
 using E_Commerce.AuthAPI.Models.Dto.Request;
@@ -48,6 +49,10 @@ namespace E_Commerce.AuthAPI.Services
                         Result = user,
                         Message = "Registeration completed successfully."
                     };
+                    // kullanıcıya rol burada atanacak.
+
+                    // onay emaili burada yollanacak.
+                    EmailSendHelper.SendEmailProducer(registerRequestDto.Email);
                     return response;
                     
                 }
@@ -70,6 +75,39 @@ namespace E_Commerce.AuthAPI.Services
                 };
                 return response;
             }
+        }
+
+        /// <summary>
+        /// Kullanıcıyı aktifleştirmek için kullanılır.
+        /// </summary>
+        /// <param name="userEmail"></param>
+        /// <returns>Durum mesajı döner.</returns>
+        public async Task<ResponseDto> UserActivate(string userEmail)
+        {
+            ResponseDto response = new();
+            var user = _authAPIDatabase.AppUsers.First(user => user.Email == userEmail);
+
+            if (user == null)
+            {
+                response.IsSuccess = false;
+                response.Message = "Kullanıcı zaten var.";
+            }
+            else if (user.Status == UserStatus.Aktif)
+            {
+                response.IsSuccess = false;
+                response.Message = "Kullanıcı zaten aktif.";
+            }
+            else
+            {
+                user.Status = UserStatus.Aktif;
+                user.EmailConfirmed = true;
+                _authAPIDatabase.AppUsers.Update(user);
+                _authAPIDatabase.SaveChanges();
+
+                response.IsSuccess = true;
+                response.Message = "Kullanıcı başarıyla aktifleştirildi.";
+            }            
+            return response;
         }
 
         /// <summary>

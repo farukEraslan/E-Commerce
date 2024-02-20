@@ -1,5 +1,4 @@
-﻿using E_Commerce.AuthAPI.Models.Dto;
-using E_Commerce.AuthAPI.Models.Dto.Request;
+﻿using E_Commerce.AuthAPI.Models.Dto.Request;
 using E_Commerce.AuthAPI.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,13 +15,23 @@ namespace E_Commerce.AuthAPI.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterRequestDto user)
+        public async Task<IActionResult> Register([FromBody] RegisterRequestDto newUser)
         {
-            var resultMessage = await _authService.Register(user);
-            if (!resultMessage.IsSuccess)
-                return BadRequest(resultMessage);
+            var result = await _authService.Register(newUser);
+            if (!result.IsSuccess)
+                return BadRequest(result);
 
-            return Ok(resultMessage);
+            return Ok(result);
+        }
+
+        [HttpPost("user-activate")]
+        public async Task<IActionResult> UserActivate(string userEmail)
+        {
+            var result = await _authService.UserActivate(userEmail);
+            if (!result.IsSuccess)
+                return BadRequest(result);
+
+            return Ok(result);
         }
     }
 }

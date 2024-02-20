@@ -13,6 +13,12 @@ namespace E_Commerce.AuthAPI.Services.IServices
         /// <returns>Durum mesajı döner.</returns>
         Task<ResponseDto> Register(RegisterRequestDto registerationRequestDto);
         /// <summary>
+        /// Kullanıcıyı aktifleştirmek için kullanılır.
+        /// </summary>
+        /// <param name="userEmail"></param>
+        /// <returns>Durum mesajı döner.</returns>
+        Task<ResponseDto> UserActivate(string userEmail);
+        /// <summary>
         /// Kullanıcıya rol atamak için kullanılır.
         /// </summary>
         /// <param name="email"></param>
