@@ -49,8 +49,6 @@ namespace E_Commerce.AuthAPI.Services
                         Result = user,
                         Message = "Registeration completed successfully."
                     };
-                    // kullanıcıya rol burada atanacak.
-
                     // onay emaili burada yollanacak.
                     EmailSendHelper.SendEmailProducer(registerRequestDto.Email);
                     return response;
@@ -104,9 +102,12 @@ namespace E_Commerce.AuthAPI.Services
                 _authAPIDatabase.AppUsers.Update(user);
                 _authAPIDatabase.SaveChanges();
 
+                // kullanıcıya rol ataması burada yapılacak.
+                var result = await AssignRole(userEmail, "customer");       // default olarak customer atanmıştır, ihtiyaca göre değiştirilecek.
+
                 response.IsSuccess = true;
                 response.Message = "Kullanıcı başarıyla aktifleştirildi.";
-            }            
+            }
             return response;
         }
 
