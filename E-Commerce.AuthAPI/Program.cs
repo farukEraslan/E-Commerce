@@ -14,7 +14,7 @@ namespace E_Commerce.AuthAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // Add services to the container. 
 
             // DATABASE CONNECTION
             builder.Services.AddDbContext<AppDbContext>(options =>

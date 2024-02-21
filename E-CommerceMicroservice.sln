@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.AuthAPI", "E-Commerce.AuthAPI\E-Commerce.AuthAPI.csproj", "{5AD64FA8-25E1-4B53-830A-D28D806168D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.EmailService", "E-Commerce.EmailService\E-Commerce.EmailService.csproj", "{906BFFA7-CD31-44CA-B3CC-E58EA6FB12C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.EmailService", "E-Commerce.EmailService\E-Commerce.EmailService.csproj", "{906BFFA7-CD31-44CA-B3CC-E58EA6FB12C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.Web", "E-Commerce.Web\E-Commerce.Web.csproj", "{AF10836D-5F25-406E-9F9F-2723D52538EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{906BFFA7-CD31-44CA-B3CC-E58EA6FB12C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{906BFFA7-CD31-44CA-B3CC-E58EA6FB12C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{906BFFA7-CD31-44CA-B3CC-E58EA6FB12C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF10836D-5F25-406E-9F9F-2723D52538EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF10836D-5F25-406E-9F9F-2723D52538EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF10836D-5F25-406E-9F9F-2723D52538EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF10836D-5F25-406E-9F9F-2723D52538EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
