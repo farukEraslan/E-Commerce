@@ -7,6 +7,7 @@ namespace E_Commerce.Web.Validation.FluentValidation
     {
         public LoginRequestDtoValidator()
         {
+            // Email Rules
             RuleFor(x => x.UserName).NotEmpty().WithMessage("Email kısmı boş olamaz.");
             RuleFor(x => x.UserName).NotNull().WithMessage("Email kısmı boş olamaz.");
             RuleFor(x => x.UserName).EmailAddress().WithMessage("Geçerli bir email adresi giriniz.");

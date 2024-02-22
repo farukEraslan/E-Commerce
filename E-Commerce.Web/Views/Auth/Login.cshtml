@@ -1,5 +1,33 @@
-﻿@{
+﻿@using E_Commerce.Web.Models.Dto.Request
+@{
     Layout = "_AuthLayout";
 }
+@model LoginRequestDto
+
 
 <h4>Giriş Sayfası</h4>
+
+<form asp-controller="Auth" asp-action="Login">
+    <div class="container" style="width: 540px;">
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="Email" aria-describedby="emailValidation">
+            <span id="emailValidation" class="form-text alert-danger" asp-validation-for="UserName"></span>
+        </div>
+        <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="Password">
+            <span id="passwordValidation" class="form-text alert-danger" asp-validation-for="Password"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+
+
+@section Scripts {
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+}

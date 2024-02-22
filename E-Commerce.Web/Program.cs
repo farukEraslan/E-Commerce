@@ -1,13 +1,23 @@
+using FluentValidation.AspNetCore;
+
 namespace E_Commerce.Web
 {
     public class Program
     {
+        [Obsolete]
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+
+            // ----- FLUENT VALIDATION -------
+            builder.Services.AddControllersWithViews().AddFluentValidation(options =>
+            {
+                options.RegisterValidatorsFromAssemblyContaining<Program>();
+            });
+
+            // -------------------------------
 
             var app = builder.Build();
 
