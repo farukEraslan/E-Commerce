@@ -3,9 +3,11 @@ using E_Commerce.Web.Models.Dto;
 using E_Commerce.Web.Models.Dto.Request;
 using E_Commerce.Web.Models.Dto.Response;
 using E_Commerce.Web.Services.IServices;
+using E_Commerce.Web.Utility;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -55,9 +57,22 @@ namespace E_Commerce.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(RegisterRequestDto registerRequestDto)
+        public async Task<IActionResult> Register(RegisterRequestDto registerRequestDto)
         {
-            return View();
+            // register işlemi yapılacak.
+            ResponseDto result = await _authService.RegisterAsync(registerRequestDto);
+
+            if (result != null & result.IsSuccess)
+            {
+                // toastr ile bildirim yollanacak.
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                // toastr ile hata bildirimi yollanacak.
+                TempData["error"] = result.Message;
+                return View(registerRequestDto);
+            }
         }
 
         public async Task<IActionResult> Logout()

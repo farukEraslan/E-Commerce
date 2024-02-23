@@ -54,7 +54,7 @@ namespace E_Commerce.AuthAPI.Services
                     _response.Result = user;
                     _response.Message = "Kullanıcı oluşturma başarılı.";
                     // onay emaili burada yollanacak.
-                    EmailSendHelper.SendEmailProducer(registerRequestDto.Email);                    
+                    EmailSendHelper.SendEmailProducer(registerRequestDto.Email);    // burada hangfire implement edilebilir.
                 }
                 else
                 {

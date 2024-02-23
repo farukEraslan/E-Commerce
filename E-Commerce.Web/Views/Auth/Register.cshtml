@@ -12,32 +12,32 @@
         <div class="mb-3">
             <label for="FirstName" class="form-label">First name</label>
             <input type="text" class="form-control" id="FirstName" asp-for="FirstName" aria-describedby="firstNameValidation">
-            <span id="firstNameValidation" class="form-text" asp-validation-for="FirstName"></span>
+            <span id="firstNameValidation" class="form-text alert-danger" asp-validation-for="FirstName"></span>
         </div>
         <div class="mb-3">
             <label for="LastName" class="form-label">Last name</label>
             <input type="text" class="form-control" id="LastName" asp-for="LastName" aria-describedby="LastNameValidation">
-            <span id="LastNameValidation" class="form-text" asp-validation-for="LastName"></span>
+            <span id="LastNameValidation" class="form-text alert-danger" asp-validation-for="LastName"></span>
         </div>
         <div class="mb-3">
             <label for="Email" class="form-label">Email address</label>
             <input type="email" class="form-control" id="Email" asp-for="Email" aria-describedby="emailValidation">
-            <span id="emailValidation" class="form-text" asp-validation-for="Email"></span>
+            <span id="emailValidation" class="form-text alert-danger" asp-validation-for="Email"></span>
         </div>
         <div class="mb-3">
             <label for="PhoneNumber" class="form-label">Phone number</label>
             <input type="tel" class="form-control" id="PhoneNumber" asp-for="PhoneNumber" aria-describedby="phoneNumberValidation">
-            <span id="phoneNumberValidation" class="form-text" asp-validation-for="PhoneNumber"></span>
+            <span id="phoneNumberValidation" class="form-text alert-danger" asp-validation-for="PhoneNumber"></span>
         </div>
         <div class="mb-3">
             <label for="BirthDate" class="form-label">Birth date</label>
             <input type="date" class="form-control" id="BirthDate" asp-for="BirthDate" aria-describedby="birthDateValidation">
-            <span id="birthDateValidation" class="form-text" asp-validation-for="BirthDate"></span>
+            <span id="birthDateValidation" class="form-text alert-danger" asp-validation-for="BirthDate"></span>
         </div>
         <div class="mb-3">
             <label for="Password" class="form-label">Password</label>
             <input type="password" class="form-control" id="Password" asp-for="Password">
-            <span id="passwordValidation" class="form-text" asp-validation-for="Password"></span>
+            <span id="passwordValidation" class="form-text alert-danger" asp-validation-for="Password"></span>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
