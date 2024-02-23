@@ -16,12 +16,13 @@ namespace E_Commerce.AuthAPI.Services
     {
         private readonly IMapper _mapper;
         private readonly UserManager<AppUser> _userManager;
-        private readonly AppDbContext _authAPIDatabase;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly AppDbContext _authAPIDatabase;
         private ResponseDto _response;
         private LoginResponseDto _loginResponse;
+        private readonly IJwtTokenGenerator _jwtTokenGenerator;
 
-        public AuthService(IMapper mapper, UserManager<AppUser> userManager, AppDbContext authAPIDatabase, RoleManager<IdentityRole> roleManager)
+        public AuthService(IMapper mapper, UserManager<AppUser> userManager, AppDbContext authAPIDatabase, RoleManager<IdentityRole> roleManager, IJwtTokenGenerator jwtTokenGenerator)
         {
             _mapper = mapper;
             _userManager = userManager;
@@ -29,6 +30,7 @@ namespace E_Commerce.AuthAPI.Services
             _roleManager = roleManager;
             _response = new ResponseDto();
             _loginResponse = new LoginResponseDto();
+            _jwtTokenGenerator = jwtTokenGenerator;
         }
 
         /// <summary>
@@ -145,14 +147,12 @@ namespace E_Commerce.AuthAPI.Services
         {
             try
             {
-                // Kullanıcının olmadığı hata durumu handle edilecek. "500 INTERNAL SERVER ERROR"
-                var user = _authAPIDatabase.AppUsers.First(user => user.Email == loginRequestDto.UserName);
+                var user = _authAPIDatabase.AppUsers.FirstOrDefault(user => user.UserName.ToLower() == loginRequestDto.UserName.ToLower());
                 if (user == null)
                 {
                     _loginResponse.User = null;
                     _loginResponse.Token = "";
                     _loginResponse.Message = "Kullanıcı bulunamadı.";
-                    _loginResponse.IsSuccess = false;
                     return _loginResponse;
                 }
                 else if (user.Status == UserStatus.OnayBekleniyor || user.EmailConfirmed == false)
@@ -160,7 +160,6 @@ namespace E_Commerce.AuthAPI.Services
                     _loginResponse.User = _mapper.Map<UserDto>(user);
                     _loginResponse.Token = "";
                     _loginResponse.Message = "Kullanıcının aktif edilmesi gerekiyor.";
-                    _loginResponse.IsSuccess = false;
                     return _loginResponse;
                 }
                 else
@@ -169,22 +168,25 @@ namespace E_Commerce.AuthAPI.Services
                     if (!result)
                     {
                         _loginResponse.User = _mapper.Map<UserDto>(user);
-                        _loginResponse.Token = "----buraya jwt token gelecek.----";
+                        _loginResponse.Token = "";
                         _loginResponse.Message = "Kullanıcı adı ya da parola hatalı.";
-                        _loginResponse.IsSuccess = false;
                         return _loginResponse;
                     }
+
+                    var roles = await _userManager.GetRolesAsync(user);
+                    // jwt token burada oluşturulacak.
+                    var userToken = _jwtTokenGenerator.GenerateToken(user, roles);
+
                     _loginResponse.User = _mapper.Map<UserDto>(user);
-                    // jwt token burada uretilecek.
-                    _loginResponse.Token = "----buraya jwt token gelecek.----";
+                    _loginResponse.Token = userToken;
                     _loginResponse.Message = "Başarı ile giriş yapıldı.";
-                    _loginResponse.IsSuccess = true;
                     return _loginResponse;
                 }
             }
             catch (Exception ex)
             {
-                _loginResponse.IsSuccess = false;
+                _loginResponse.User = null;
+                _loginResponse.Token = "";
                 _loginResponse.Message = ex.Message;
                 return _loginResponse;
             }

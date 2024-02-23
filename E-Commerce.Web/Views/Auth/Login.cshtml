@@ -11,12 +11,12 @@
     <div class="container" style="width: 540px;">
         <div class="mb-3">
             <label for="Email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="Email" aria-describedby="emailValidation">
+            <input type="email" class="form-control" id="Email" asp-for="UserName" aria-describedby="emailValidation">
             <span id="emailValidation" class="form-text alert-danger" asp-validation-for="UserName"></span>
         </div>
         <div class="mb-3">
             <label for="Password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="Password">
+            <input type="password" class="form-control" id="Password" asp-for="Password">
             <span id="passwordValidation" class="form-text alert-danger" asp-validation-for="Password"></span>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>

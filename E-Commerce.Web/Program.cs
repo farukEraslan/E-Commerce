@@ -1,4 +1,8 @@
+using E_Commerce.Web.Services;
+using E_Commerce.Web.Services.IServices;
+using E_Commerce.Web.Utility;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace E_Commerce.Web
 {
@@ -10,6 +14,34 @@ namespace E_Commerce.Web
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+
+
+
+            // COOKIE EKLEME ÝÞLEMLERÝ
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+            {
+                options.ExpireTimeSpan = TimeSpan.FromDays(1);
+                options.LoginPath = "/Auth/Login";
+                options.AccessDeniedPath = "/Auth/AccessDenied";
+            });
+
+
+            // SERVÝSLERÝ HTTP CLIENT'E EKLEME ÝÞLEMÝ
+
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddHttpClient();
+            builder.Services.AddHttpClient<IAuthService, AuthService>();
+            SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
+
+
+
+            // SERVÝSLERÝN DEPENDENCYLERÝNÝ EKELEME ÝÞLEMÝ
+
+            builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IBaseService, BaseService>();
+            builder.Services.AddScoped<ITokenProvider, TokenProvider>();
+
 
             // ----- FLUENT VALIDATION -------
             builder.Services.AddControllersWithViews().AddFluentValidation(options =>
@@ -34,6 +66,7 @@ namespace E_Commerce.Web
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

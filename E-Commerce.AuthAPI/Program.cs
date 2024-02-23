@@ -16,6 +16,9 @@ namespace E_Commerce.AuthAPI
 
             // Add services to the container. 
 
+            // JWT OPTIONS SETTING
+            builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("ApiSettings:JwtOptions"));
+
             // DATABASE CONNECTION
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
@@ -31,6 +34,7 @@ namespace E_Commerce.AuthAPI
 
             // DEPENDENCY INJECTIONS
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
