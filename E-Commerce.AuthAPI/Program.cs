@@ -40,9 +40,11 @@ namespace E_Commerce.AuthAPI
             builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
 
             // Serilog Logger
-            string logFilePath = "C:\\Users\\10132884\\OneDrive - NTT DATA Business Solutions AG\\Desktop\\GitHub\\E-CommerceMicroservice";
+            
+            // dosya isimlendirmesi için özel bir metot yazýlabilir.
+            string logFilePath = $"C:/Users/10132884/OneDrive - NTT DATA Business Solutions AG/Desktop/GitHub/E-CommerceMicroservice/LogFiles/E-Commerce.AuthAPI.Logs/{DateTime.Now.Year}-{DateTime.Now.Month}/.txt";
 
-            Log.Logger = new LoggerConfiguration().MinimumLevel.Information().WriteTo.File("LogFiles/E-Commerce.AuthAPI.Logs.txt",
+            Log.Logger = new LoggerConfiguration().MinimumLevel.Information().WriteTo.File(logFilePath,
                     outputTemplate: "E-Commerce.AuthAPI | {Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
                     rollingInterval: RollingInterval.Day,
                     retainedFileCountLimit: null)
