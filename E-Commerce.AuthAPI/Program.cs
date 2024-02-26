@@ -5,6 +5,9 @@ using E_Commerce.AuthAPI.Services;
 using E_Commerce.AuthAPI.Services.IServices;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using Serilog.Events;
+using Serilog.Sinks.MSSqlServer;
 
 namespace E_Commerce.AuthAPI
 {
@@ -35,6 +38,24 @@ namespace E_Commerce.AuthAPI
             // DEPENDENCY INJECTIONS
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+
+            // Serilog Logger
+            string logFilePath = "C:\\Users\\10132884\\OneDrive - NTT DATA Business Solutions AG\\Desktop\\GitHub\\E-CommerceMicroservice";
+
+            Log.Logger = new LoggerConfiguration().MinimumLevel.Information().WriteTo.File("LogFiles/E-Commerce.AuthAPI.Logs.txt",
+                    outputTemplate: "E-Commerce.AuthAPI | {Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
+                    rollingInterval: RollingInterval.Day,
+                    retainedFileCountLimit: null)
+                .WriteTo.MSSqlServer("Server = ISTN36002\\SQLEXPRESS; Database = E-Commerce.Logs; uid = sa; pwd = 123; Trusted_Connection = True; TrustServerCertificate = True;",
+                    sinkOptions: new MSSqlServerSinkOptions
+                    {
+                        TableName = "E-Commerce.AuthAPI.Logs",
+                        AutoCreateSqlTable = true
+                    },
+                    restrictedToMinimumLevel: LogEventLevel.Information).CreateLogger();
+
+            builder.Host.UseSerilog();
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

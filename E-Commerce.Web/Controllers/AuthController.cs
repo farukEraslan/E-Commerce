@@ -3,11 +3,9 @@ using E_Commerce.Web.Models.Dto;
 using E_Commerce.Web.Models.Dto.Request;
 using E_Commerce.Web.Models.Dto.Response;
 using E_Commerce.Web.Services.IServices;
-using E_Commerce.Web.Utility;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -40,7 +38,7 @@ namespace E_Commerce.Web.Controllers
                 LoginResponseDto loginResponseDto = JsonConvert.DeserializeObject<LoginResponseDto>(Convert.ToString(response.Result));
                 
                 await SignInUser(loginResponseDto);
-                // kullanıcı token'ı tarayıcıda cookieye atandı.
+                // kullanıcının token'ı tarayıcıda cookieye atandı.
                 _tokenProvider.SetToken(loginResponseDto.Token);
                 return RedirectToAction("Index", "Home");
             }
@@ -59,7 +57,6 @@ namespace E_Commerce.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterRequestDto registerRequestDto)
         {
-            // register işlemi yapılacak.
             ResponseDto result = await _authService.RegisterAsync(registerRequestDto);
 
             if (result != null & result.IsSuccess)
