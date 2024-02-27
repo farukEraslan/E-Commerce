@@ -1,4 +1,5 @@
 using E_Commerce.Web.Models;
+using E_Commerce.Web.Models.Dto;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -15,6 +16,7 @@ namespace E_Commerce.Web.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.connectionId = ConnectedUser.ConnectionId;
             return View();
         }
 

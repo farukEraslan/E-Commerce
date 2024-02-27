@@ -1,3 +1,4 @@
+using E_Commerce.Web.Hubs;
 using E_Commerce.Web.Services;
 using E_Commerce.Web.Services.IServices;
 using E_Commerce.Web.Utility;
@@ -15,7 +16,7 @@ namespace E_Commerce.Web
 
             // Add services to the container.
 
-
+            builder.Services.AddSignalR();
 
 
             // COOKIE EKLEME ÝÞLEMLERÝ
@@ -72,6 +73,8 @@ namespace E_Commerce.Web
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.MapHub<SesssionManagerHub>("/sessionManager");
 
             app.Run();
         }
