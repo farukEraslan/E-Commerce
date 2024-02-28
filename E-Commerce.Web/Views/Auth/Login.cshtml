@@ -19,11 +19,14 @@
             <input type="password" class="form-control" id="Password" asp-for="Password">
             <span id="passwordValidation" class="form-text alert-danger" asp-validation-for="Password"></span>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button id="LoginButton" type="submit" class="btn btn-primary">Submit</button>
     </div>
 </form>
 
 
+<script src="~/lib/microsoft-signalr/signalr.js"></script>
+<script src="~/lib/microsoft-signalr/signalr.min.js"></script>
+<script src="~/js/sessionmanager.js"></script>
 
 @section Scripts {
 

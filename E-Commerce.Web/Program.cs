@@ -43,7 +43,6 @@ namespace E_Commerce.Web
             builder.Services.AddScoped<IBaseService, BaseService>();
             builder.Services.AddScoped<ITokenProvider, TokenProvider>();
 
-
             // ----- FLUENT VALIDATION -------
             builder.Services.AddControllersWithViews().AddFluentValidation(options =>
             {
@@ -74,7 +73,7 @@ namespace E_Commerce.Web
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            app.MapHub<SesssionManagerHub>("/sessionManager");
+            app.MapHub<SessionManagerHub>("/sessionManager");
 
             app.Run();
         }

@@ -47,6 +47,21 @@ namespace E_Commerce.Web.Controllers
                 ModelState.AddModelError("CustomError", response.Message);
                 return View();
             }
+
+            //LoginResponseDto response = await _sessionManager.LoginAsync(loginRequestDto);
+
+            //if (response.Token != "")
+            //{
+            //    await SignInUser(response);
+            //    // kullanıcının token'ı tarayıcıda cookieye atandı.
+            //    _tokenProvider.SetToken(response.Token);
+            //    return RedirectToAction("Index", "Home");
+            //}
+            //else
+            //{
+            //    //ModelState.AddModelError("CustomError", response.Message);
+            //    return View();
+            //}
         }
 
         public IActionResult Register()

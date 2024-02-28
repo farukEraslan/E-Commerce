@@ -16,7 +16,6 @@ namespace E_Commerce.Web.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.connectionId = ConnectedUser.ConnectionId;
             return View();
         }
 
