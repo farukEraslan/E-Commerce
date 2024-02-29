@@ -2,46 +2,34 @@
 using E_Commerce.Web.Models.Dto.Request;
 using E_Commerce.Web.Models.Dto.Response;
 using E_Commerce.Web.Services.IServices;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.SignalR;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace E_Commerce.Web.Hubs
 {
     public class SessionManagerHub : Hub
     {
         private readonly IAuthService _authService;
+        private readonly IHttpContextAccessor _contextAccessor;
+        private readonly ITokenProvider _tokenProvider;
 
-        public SessionManagerHub(IAuthService authService)
+        public SessionManagerHub(IAuthService authService, IHttpContextAccessor contextAccessor, ITokenProvider tokenProvider)
         {
             _authService = authService;
+            _contextAccessor = contextAccessor;
+            _tokenProvider = tokenProvider;
         }
 
         /// <summary>
-        /// SignalR'a bir istemci bağlandığında client'in connectionId'sini static bir listeye ekler.
+        /// 
         /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="password"></param>
         /// <returns></returns>
-        public override Task OnConnectedAsync()
-        {
-            //ConnectedUser.ConnectionId.Add(Context.ConnectionId);
-            return base.OnConnectedAsync();
-        }
-
-        /// <summary>
-        /// SignalR'dan bir istemci bağlantısını kopardığında client'in connectionId'sini static bir listeden çıkarır.
-        /// </summary>
-        /// <returns></returns>
-        public override Task OnDisconnectedAsync(Exception? exception)
-        {
-            //ConnectedUser.ConnectionId.Remove(Context.ConnectionId);
-            return base.OnDisconnectedAsync(exception);
-        }
-
-        public async Task SendConnectionId(string connectionId)
-        {
-            await Clients.All.SendAsync("ReceiveConnectionId", connectionId);
-        }
-
         public async Task<LoginResponseDto> LoginAsync(string userName, string password)
         {
             LoginRequestDto loginRequestDto = new()
@@ -66,10 +54,12 @@ namespace E_Commerce.Web.Hubs
                 if (ConnectedUser.ConnectionId.ContainsValue(userId))
                 {
                     // burada açık olan bağlantı kapatılacak. sonra yeni girişe izin verilecek
-                    //await Clients.Caller.SendAsync();
+                    var existUserId = ConnectedUser.ConnectionId.First(connectionId => connectionId.Value == userId);
+                    bool hasExistSession = true;
+                    // *** connectionId'si bilinen client'e hasExistSession bilgisi yollanacak.
+                    await Clients.Client(existUserId.Key).SendAsync("SessionCheck", hasExistSession);
                 }
                 ConnectedUser.ConnectionId.Add(key: Context.ConnectionId, value: userId);
-                var test = ConnectedUser.ConnectionId;
                 return loginResponseDto;
             }
             else
