@@ -40,16 +40,21 @@ namespace E_Commerce.Web.Hubs
                 {
                     if (browser != item.Browser)
                     {
-                        var connections = ConnectedUser.UsersId.Where(connection => connection.Value == item).ToList();
-                        foreach (var connection in connections)
-                        {
-                            await Clients.Client(connection.Key).SendAsync("SignOut", true);
-                            var connectedUserInfo = connection.Value;
-                            ConnectedUser.UsersId.Remove(key: connection.Key, value: out connectedUserInfo);
-                        }
+                        CloseConnections(item);
                     }
                 }
                 var test = ConnectedUser.UsersId;
+            }
+        }
+
+        private async Task CloseConnections(ConnectedUserInfo item)
+        {
+            var connections = ConnectedUser.UsersId.Where(connection => connection.Value == item).ToList();
+            foreach (var connection in connections)
+            {
+                await Clients.Client(connection.Key).SendAsync("SignOut", true);
+                var connectedUserInfo = connection.Value;
+                ConnectedUser.UsersId.Remove(key: connection.Key, value: out connectedUserInfo);
             }
         }
 
