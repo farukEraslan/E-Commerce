@@ -27,6 +27,7 @@ connection.on("SignOut", (hasExistSession) => {
     if (hasExistSession) {
         console.log(hasExistSession);
         document.cookie = "JWTToken=; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=None; Secure";
+        window.location.href = "https://localhost:7284/auth/logout";
     }
 });
 
