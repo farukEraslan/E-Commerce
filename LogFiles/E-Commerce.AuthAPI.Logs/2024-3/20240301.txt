@@ -1,0 +1,1423 @@
+E-Commerce.AuthAPI | 2024-03-01 10:15:48.512 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 10:15:48.859 +03:00 [INF] Executed DbCommand (293ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 10:15:48.972 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 10:15:49.088 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 10:15:50.159 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 10:15:50.160 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 10:15:50.236 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 10:15:50.237 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 10:15:50.237 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 10:15:51.277 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:00:05.751 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:00:05.847 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:00:05.867 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:00:05.907 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:00:06.211 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:00:06.211 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:00:06.261 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:00:06.261 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:00:06.261 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:00:06.907 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:00:07.145 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 243.8333ms
+E-Commerce.AuthAPI | 2024-03-01 11:00:07.151 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:00:07.161 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:00:07.166 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 15.3188ms
+E-Commerce.AuthAPI | 2024-03-01 11:00:07.205 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.1834ms
+E-Commerce.AuthAPI | 2024-03-01 11:00:07.273 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:00:07.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.9023ms
+E-Commerce.AuthAPI | 2024-03-01 11:01:14.092 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:01:14.219 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:01:14.242 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:01:14.289 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:01:14.625 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:01:14.625 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:01:14.676 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:01:14.676 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:01:14.676 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:01:15.403 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:01:15.634 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 236.0463ms
+E-Commerce.AuthAPI | 2024-03-01 11:01:15.647 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:01:15.653 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.7233ms
+E-Commerce.AuthAPI | 2024-03-01 11:01:15.656 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:01:15.694 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.4436ms
+E-Commerce.AuthAPI | 2024-03-01 11:01:15.768 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:01:15.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.9399ms
+E-Commerce.AuthAPI | 2024-03-01 11:02:07.880 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 11:02:07.887 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 11:02:07.904 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 11:02:08.262 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 11:02:08.460 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 11:02:08.647 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 11:02:08.657 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 751.0037ms
+E-Commerce.AuthAPI | 2024-03-01 11:02:08.658 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 11:02:08.664 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 784.3937ms
+E-Commerce.AuthAPI | 2024-03-01 11:03:12.851 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:03:12.907 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:03:12.927 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:03:12.958 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:03:13.524 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:03:13.524 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:03:13.753 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:03:13.754 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:03:13.754 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:03:14.342 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:03:14.641 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 302.7051ms
+E-Commerce.AuthAPI | 2024-03-01 11:03:14.652 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:03:14.661 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:03:14.676 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 15.0676ms
+E-Commerce.AuthAPI | 2024-03-01 11:03:14.701 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.772ms
+E-Commerce.AuthAPI | 2024-03-01 11:03:14.792 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:03:14.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 123.5997ms
+E-Commerce.AuthAPI | 2024-03-01 11:04:43.932 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:04:44.021 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:04:44.047 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:04:44.083 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:04:44.402 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:04:44.402 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:04:44.473 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:04:44.473 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:04:44.473 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:04:45.315 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:04:45.542 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 234.7502ms
+E-Commerce.AuthAPI | 2024-03-01 11:04:45.570 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:04:45.574 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 4.8577ms
+E-Commerce.AuthAPI | 2024-03-01 11:04:45.576 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:04:45.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.5585ms
+E-Commerce.AuthAPI | 2024-03-01 11:04:45.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:04:45.745 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.0967ms
+E-Commerce.AuthAPI | 2024-03-01 11:05:32.773 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:05:32.833 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:05:32.856 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:05:32.892 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:05:33.606 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:05:33.606 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:05:33.692 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:05:33.693 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:05:33.693 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:05:34.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:05:34.850 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 318.0687ms
+E-Commerce.AuthAPI | 2024-03-01 11:05:34.872 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:05:34.877 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:05:34.877 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 4.8453ms
+E-Commerce.AuthAPI | 2024-03-01 11:05:34.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.197ms
+E-Commerce.AuthAPI | 2024-03-01 11:05:34.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:05:35.059 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.5345ms
+E-Commerce.AuthAPI | 2024-03-01 11:06:54.280 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:06:54.338 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:06:54.353 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:06:54.396 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:06:54.650 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:06:54.650 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:06:54.696 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:06:54.696 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:06:54.696 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:06:55.125 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:06:55.347 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 227.068ms
+E-Commerce.AuthAPI | 2024-03-01 11:06:55.361 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:06:55.366 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 5.1279ms
+E-Commerce.AuthAPI | 2024-03-01 11:06:55.368 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:06:55.407 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.0183ms
+E-Commerce.AuthAPI | 2024-03-01 11:06:55.460 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:06:55.525 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 65.1557ms
+E-Commerce.AuthAPI | 2024-03-01 11:07:18.710 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 11:07:18.716 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 11:07:18.734 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 11:07:19.085 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 11:07:19.270 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 11:07:19.444 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 11:07:19.457 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 719.6763ms
+E-Commerce.AuthAPI | 2024-03-01 11:07:19.457 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 11:07:19.466 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 756.4998ms
+E-Commerce.AuthAPI | 2024-03-01 11:11:58.522 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:11:58.637 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:11:58.667 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:11:58.818 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:11:59.418 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:11:59.418 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:11:59.496 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:11:59.497 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:11:59.497 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:12:00.384 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:12:00.659 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 281.4377ms
+E-Commerce.AuthAPI | 2024-03-01 11:12:00.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:12:00.678 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.2739ms
+E-Commerce.AuthAPI | 2024-03-01 11:12:00.680 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:12:00.717 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.9749ms
+E-Commerce.AuthAPI | 2024-03-01 11:12:00.789 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:12:00.863 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.7481ms
+E-Commerce.AuthAPI | 2024-03-01 11:14:38.010 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:14:38.079 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:14:38.102 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:14:38.141 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:14:38.606 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:14:38.606 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:14:38.851 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:14:38.852 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:14:38.852 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:14:39.855 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:14:40.650 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 800.7127ms
+E-Commerce.AuthAPI | 2024-03-01 11:14:40.752 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:14:40.835 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:14:40.874 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 123.9392ms
+E-Commerce.AuthAPI | 2024-03-01 11:14:41.152 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 317.6729ms
+E-Commerce.AuthAPI | 2024-03-01 11:14:41.457 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:14:41.559 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 102.2727ms
+E-Commerce.AuthAPI | 2024-03-01 11:15:13.856 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:15:13.957 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:15:13.982 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:15:14.040 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:15:14.393 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:15:14.393 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:15:14.505 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:15:14.506 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:15:14.506 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:15:14.921 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger - null null
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.175 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger - 301 0 null 259.1447ms
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.182 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 55.4634ms
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.240 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui.css - null null
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.241 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui-standalone-preset.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.241 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui-bundle.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.242 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.242 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.265 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 22.6196ms
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.294 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.294 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.297 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 56.1161ms
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.297 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui.css - 200 144929 text/css 56.2474ms
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.310 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.310 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 69.6109ms
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.324 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.3109ms
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.497 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.522 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/favicon-32x32.png - null null
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.523 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.523 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/favicon-32x32.png - 200 628 image/png 1.0994ms
+E-Commerce.AuthAPI | 2024-03-01 11:15:15.586 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.666ms
+E-Commerce.AuthAPI | 2024-03-01 11:16:18.214 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 11:16:18.219 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 11:16:18.236 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 11:16:18.597 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 11:16:18.800 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 11:16:18.959 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 11:16:18.970 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 730.7129ms
+E-Commerce.AuthAPI | 2024-03-01 11:16:18.970 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 11:16:18.976 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 763.0704ms
+E-Commerce.AuthAPI | 2024-03-01 11:17:43.365 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 11:17:43.366 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 11:17:43.367 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 11:17:43.418 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 11:17:43.489 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 11:17:43.490 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 11:17:43.490 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 123.4462ms
+E-Commerce.AuthAPI | 2024-03-01 11:17:43.491 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 11:17:43.491 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 125.6765ms
+E-Commerce.AuthAPI | 2024-03-01 11:18:24.923 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:18:24.950 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 26.4963ms
+E-Commerce.AuthAPI | 2024-03-01 11:18:24.952 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:18:24.953 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:18:24.954 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 1.6936ms
+E-Commerce.AuthAPI | 2024-03-01 11:18:24.972 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.5597ms
+E-Commerce.AuthAPI | 2024-03-01 11:18:25.063 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:18:25.068 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.6178ms
+E-Commerce.AuthAPI | 2024-03-01 11:18:49.741 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 11:18:49.742 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 11:18:49.745 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 11:18:49.758 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 11:18:49.829 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 11:18:49.829 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 11:18:49.831 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 85.5674ms
+E-Commerce.AuthAPI | 2024-03-01 11:18:49.831 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 11:18:49.832 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 90.6198ms
+E-Commerce.AuthAPI | 2024-03-01 11:22:36.440 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:22:36.497 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:22:36.515 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:22:36.547 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:22:36.976 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:22:36.977 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:22:37.053 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:22:37.055 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:22:37.056 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:22:37.651 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:22:37.884 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 237.5927ms
+E-Commerce.AuthAPI | 2024-03-01 11:22:37.894 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:22:37.903 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:22:37.905 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 10.7122ms
+E-Commerce.AuthAPI | 2024-03-01 11:22:37.946 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.1779ms
+E-Commerce.AuthAPI | 2024-03-01 11:22:37.983 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:22:38.068 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.2683ms
+E-Commerce.AuthAPI | 2024-03-01 11:23:50.812 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:23:50.879 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:23:50.922 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:23:51.003 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:23:51.400 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:23:51.400 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:23:51.488 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:23:51.489 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:23:51.489 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:23:51.983 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:23:52.266 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 289.5907ms
+E-Commerce.AuthAPI | 2024-03-01 11:23:52.289 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:23:52.289 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:23:52.297 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.9574ms
+E-Commerce.AuthAPI | 2024-03-01 11:23:52.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.914ms
+E-Commerce.AuthAPI | 2024-03-01 11:23:52.382 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:23:52.486 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 104.5572ms
+E-Commerce.AuthAPI | 2024-03-01 11:28:49.753 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:28:49.819 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:28:49.847 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:28:49.897 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:28:50.156 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:28:50.156 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:28:50.199 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:28:50.199 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:28:50.200 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:28:50.928 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:28:51.184 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 259.9245ms
+E-Commerce.AuthAPI | 2024-03-01 11:28:51.192 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:28:51.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:28:51.206 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 14.286ms
+E-Commerce.AuthAPI | 2024-03-01 11:28:51.245 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.4714ms
+E-Commerce.AuthAPI | 2024-03-01 11:28:51.282 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:28:51.362 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.6952ms
+E-Commerce.AuthAPI | 2024-03-01 11:30:18.473 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:30:18.572 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:30:18.590 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:30:18.629 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:30:19.008 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:30:19.008 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:30:19.056 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:30:19.057 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:30:19.057 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:30:19.706 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:30:20.006 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 304.3328ms
+E-Commerce.AuthAPI | 2024-03-01 11:30:20.022 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:30:20.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:30:20.032 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 9.9947ms
+E-Commerce.AuthAPI | 2024-03-01 11:30:20.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.0223ms
+E-Commerce.AuthAPI | 2024-03-01 11:30:20.118 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:30:20.210 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.4613ms
+E-Commerce.AuthAPI | 2024-03-01 11:34:12.067 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:34:12.168 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:34:12.196 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:34:12.244 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:34:12.611 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:34:12.612 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:34:12.666 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:34:12.667 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:34:12.667 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:34:13.186 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:34:13.425 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 242.7356ms
+E-Commerce.AuthAPI | 2024-03-01 11:34:13.442 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:34:13.444 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:34:13.450 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.6736ms
+E-Commerce.AuthAPI | 2024-03-01 11:34:13.484 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.1152ms
+E-Commerce.AuthAPI | 2024-03-01 11:34:13.528 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:34:13.608 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.6634ms
+E-Commerce.AuthAPI | 2024-03-01 11:34:42.693 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:34:42.816 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:34:42.845 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:34:42.883 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:34:43.258 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:34:43.258 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:34:43.322 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:34:43.322 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:34:43.323 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:34:44.178 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:34:44.453 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 279.7044ms
+E-Commerce.AuthAPI | 2024-03-01 11:34:44.467 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:34:44.472 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 5.1801ms
+E-Commerce.AuthAPI | 2024-03-01 11:34:44.475 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:34:44.521 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.3246ms
+E-Commerce.AuthAPI | 2024-03-01 11:34:44.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:34:44.685 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.3762ms
+E-Commerce.AuthAPI | 2024-03-01 11:36:37.757 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:36:37.817 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:36:37.856 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:36:37.900 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.218 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.218 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.296 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.297 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.297 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.686 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.934 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 256.4289ms
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.955 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.956 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.962 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 5.8189ms
+E-Commerce.AuthAPI | 2024-03-01 11:36:38.990 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.7383ms
+E-Commerce.AuthAPI | 2024-03-01 11:36:39.026 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:36:39.101 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.431ms
+E-Commerce.AuthAPI | 2024-03-01 11:43:54.844 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:43:54.906 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:43:54.926 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:43:54.950 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:43:55.181 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:43:55.181 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:43:55.225 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:43:55.226 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:43:55.226 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:43:55.702 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:43:55.957 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 261.1969ms
+E-Commerce.AuthAPI | 2024-03-01 11:43:55.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:43:55.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:43:55.991 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 11.2316ms
+E-Commerce.AuthAPI | 2024-03-01 11:43:56.026 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.4041ms
+E-Commerce.AuthAPI | 2024-03-01 11:43:56.067 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:43:56.144 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.4384ms
+E-Commerce.AuthAPI | 2024-03-01 11:45:13.475 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 11:45:13.555 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 11:45:13.576 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 11:45:13.621 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 11:45:13.888 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 11:45:13.889 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 11:45:13.929 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 11:45:13.929 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 11:45:13.929 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 11:45:14.561 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 11:45:14.803 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 248.1206ms
+E-Commerce.AuthAPI | 2024-03-01 11:45:14.814 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 11:45:14.816 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 11:45:14.828 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 14.2976ms
+E-Commerce.AuthAPI | 2024-03-01 11:45:14.868 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.8319ms
+E-Commerce.AuthAPI | 2024-03-01 11:45:14.904 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 11:45:14.971 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.9299ms
+E-Commerce.AuthAPI | 2024-03-01 12:05:59.913 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 12:05:59.990 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 12:06:00.008 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 12:06:00.046 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.015 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.015 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.054 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.055 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.055 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.384 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.598 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 217.15ms
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.616 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.616 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.629 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 13.7352ms
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.658 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.3831ms
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.687 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 12:06:09.752 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.7047ms
+E-Commerce.AuthAPI | 2024-03-01 12:06:44.244 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 12:06:44.321 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 12:06:44.347 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 12:06:44.422 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 12:06:45.199 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 12:06:45.200 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 12:06:45.291 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 12:06:45.293 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 12:06:45.293 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 12:06:45.848 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 12:06:46.110 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 269.1725ms
+E-Commerce.AuthAPI | 2024-03-01 12:06:46.126 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:06:46.131 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 5.1716ms
+E-Commerce.AuthAPI | 2024-03-01 12:06:46.134 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 12:06:46.185 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.5323ms
+E-Commerce.AuthAPI | 2024-03-01 12:06:46.264 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 12:06:46.365 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.3173ms
+E-Commerce.AuthAPI | 2024-03-01 12:07:29.643 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 12:07:29.701 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 12:07:29.718 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 12:07:29.748 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 12:07:30.404 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 12:07:30.405 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 12:07:30.476 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 12:07:30.476 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 12:07:30.476 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 12:07:31.248 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 12:07:31.519 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 278.1994ms
+E-Commerce.AuthAPI | 2024-03-01 12:07:31.535 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:07:31.539 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 3.7203ms
+E-Commerce.AuthAPI | 2024-03-01 12:07:31.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 12:07:31.580 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.9442ms
+E-Commerce.AuthAPI | 2024-03-01 12:07:31.638 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 12:07:31.706 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.4921ms
+E-Commerce.AuthAPI | 2024-03-01 12:24:42.465 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 12:24:42.564 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 12:24:42.595 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 12:24:42.640 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 12:24:42.947 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 12:24:42.948 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 12:24:42.999 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.000 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.001 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger - null null
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.801 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger - 301 0 null 201.1638ms
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.811 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.874 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 62.9345ms
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.877 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui.css - null null
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.884 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui-bundle.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui-standalone-preset.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.896 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.896 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui.css - 200 144929 text/css 18.9878ms
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.897 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.898 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 4.9667ms
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.901 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.901 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 16.9496ms
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.903 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.912 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.919 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.0032ms
+E-Commerce.AuthAPI | 2024-03-01 12:24:43.945 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.2288ms
+E-Commerce.AuthAPI | 2024-03-01 12:24:44.102 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 12:24:44.175 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.4288ms
+E-Commerce.AuthAPI | 2024-03-01 12:28:22.641 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 12:28:22.745 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 12:28:22.779 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 12:28:22.868 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 12:28:23.419 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 12:28:23.419 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 12:28:23.504 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 12:28:23.505 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 12:28:23.505 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 12:28:23.976 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 12:28:24.261 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 289.7178ms
+E-Commerce.AuthAPI | 2024-03-01 12:28:24.283 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:28:24.287 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 4.8128ms
+E-Commerce.AuthAPI | 2024-03-01 12:28:24.290 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 12:28:24.332 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.0849ms
+E-Commerce.AuthAPI | 2024-03-01 12:28:24.490 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 12:28:24.566 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.7315ms
+E-Commerce.AuthAPI | 2024-03-01 12:29:30.576 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 12:29:30.684 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 12:29:30.719 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 12:29:30.785 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 12:29:31.162 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 12:29:31.162 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 12:29:31.220 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 12:29:31.220 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 12:29:31.220 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 12:29:31.823 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 12:29:32.088 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 272.2718ms
+E-Commerce.AuthAPI | 2024-03-01 12:29:32.116 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:29:32.121 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 5.006ms
+E-Commerce.AuthAPI | 2024-03-01 12:29:32.122 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 12:29:32.161 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.8578ms
+E-Commerce.AuthAPI | 2024-03-01 12:29:32.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 12:29:32.294 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.6247ms
+E-Commerce.AuthAPI | 2024-03-01 12:30:51.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 12:30:51.241 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 26.7955ms
+E-Commerce.AuthAPI | 2024-03-01 12:30:51.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:30:51.269 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 1.1713ms
+E-Commerce.AuthAPI | 2024-03-01 12:30:51.274 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 12:30:51.294 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.6949ms
+E-Commerce.AuthAPI | 2024-03-01 12:30:51.347 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 12:30:51.351 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.9245ms
+E-Commerce.AuthAPI | 2024-03-01 12:31:51.732 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 12:31:51.906 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 12:31:51.938 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 12:31:51.995 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 12:31:52.402 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 12:31:52.403 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 12:31:52.479 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 12:31:52.480 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 12:31:52.480 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 12:31:52.823 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 12:31:53.113 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 295.071ms
+E-Commerce.AuthAPI | 2024-03-01 12:31:53.126 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:31:53.133 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 12:31:53.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 8.1844ms
+E-Commerce.AuthAPI | 2024-03-01 12:31:53.168 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.5543ms
+E-Commerce.AuthAPI | 2024-03-01 12:31:53.341 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 12:31:53.484 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 142.9844ms
+E-Commerce.AuthAPI | 2024-03-01 12:58:59.690 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 12:58:59.813 +03:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 12:58:59.833 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 12:58:59.886 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 12:59:00.997 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 12:59:00.998 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 12:59:01.163 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 12:59:01.164 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 12:59:01.165 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 12:59:08.181 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger - null null
+E-Commerce.AuthAPI | 2024-03-01 12:59:08.470 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger - 301 0 null 294.9993ms
+E-Commerce.AuthAPI | 2024-03-01 12:59:08.486 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 12:59:08.564 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 77.929ms
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.078 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui.css - null null
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.090 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui-bundle.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.104 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui-standalone-preset.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.115 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.129 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 14.5228ms
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.138 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.138 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.142 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui.css - 200 144929 text/css 63.8051ms
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.142 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 39.1285ms
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.150 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.151 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 59.9936ms
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.193 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.293 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.7366ms
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.513 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.544 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/favicon-32x32.png - null null
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.545 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.545 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/favicon-32x32.png - 200 628 image/png 0.7122ms
+E-Commerce.AuthAPI | 2024-03-01 12:59:09.633 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.747ms
+E-Commerce.AuthAPI | 2024-03-01 13:01:47.301 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:01:47.306 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:01:47.327 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:01:47.742 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:01:47.964 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:01:48.164 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:01:48.175 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 843.8165ms
+E-Commerce.AuthAPI | 2024-03-01 13:01:48.175 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:01:48.182 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 881.8143ms
+E-Commerce.AuthAPI | 2024-03-01 13:16:03.582 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:16:03.756 +03:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:16:03.794 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:16:03.839 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:16:04.311 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:16:04.311 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:16:04.400 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:16:04.401 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:16:04.401 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:16:05.863 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:16:06.268 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 415.0482ms
+E-Commerce.AuthAPI | 2024-03-01 13:16:06.299 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:16:06.309 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:16:06.326 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 26.42ms
+E-Commerce.AuthAPI | 2024-03-01 13:16:06.386 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.8284ms
+E-Commerce.AuthAPI | 2024-03-01 13:16:06.826 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:16:06.933 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.4832ms
+E-Commerce.AuthAPI | 2024-03-01 13:17:01.240 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:17:01.308 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:17:01.333 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:17:01.378 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:17:02.175 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:17:02.175 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:17:02.259 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:17:02.259 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:17:02.259 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:17:03.973 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:17:04.371 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 410.5892ms
+E-Commerce.AuthAPI | 2024-03-01 13:17:04.395 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:17:04.401 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.4699ms
+E-Commerce.AuthAPI | 2024-03-01 13:17:04.403 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:17:04.462 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.8062ms
+E-Commerce.AuthAPI | 2024-03-01 13:17:04.545 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:17:04.674 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.1433ms
+E-Commerce.AuthAPI | 2024-03-01 13:17:37.845 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:17:38.034 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:17:38.076 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:17:38.119 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:17:38.681 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:17:38.682 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:17:38.763 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:17:38.764 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:17:38.764 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:17:40.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:17:40.630 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 368.1382ms
+E-Commerce.AuthAPI | 2024-03-01 13:17:40.649 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:17:40.656 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.1048ms
+E-Commerce.AuthAPI | 2024-03-01 13:17:40.664 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:17:40.792 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 128.6543ms
+E-Commerce.AuthAPI | 2024-03-01 13:17:40.891 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:17:41.021 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.6428ms
+E-Commerce.AuthAPI | 2024-03-01 13:18:15.617 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:18:15.692 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:18:15.714 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:18:15.746 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:18:16.245 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:18:16.245 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:18:16.544 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:18:16.545 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:18:16.545 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:18:18.219 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:18:18.597 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 386.2645ms
+E-Commerce.AuthAPI | 2024-03-01 13:18:18.618 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:18:18.630 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:18:18.631 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 13.7963ms
+E-Commerce.AuthAPI | 2024-03-01 13:18:18.731 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.0694ms
+E-Commerce.AuthAPI | 2024-03-01 13:18:18.882 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:18:19.046 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 165.4283ms
+E-Commerce.AuthAPI | 2024-03-01 13:19:58.636 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:19:58.724 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:19:58.751 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:19:58.801 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:19:59.582 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:19:59.582 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:19:59.657 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:19:59.658 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:19:59.658 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:20:01.041 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:20:01.414 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 379.571ms
+E-Commerce.AuthAPI | 2024-03-01 13:20:01.438 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:20:01.447 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 9.5276ms
+E-Commerce.AuthAPI | 2024-03-01 13:20:01.455 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:20:01.555 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.596ms
+E-Commerce.AuthAPI | 2024-03-01 13:20:01.704 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:20:01.833 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.0177ms
+E-Commerce.AuthAPI | 2024-03-01 13:20:35.080 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:20:35.088 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:20:35.110 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:20:35.568 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:20:35.786 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:20:35.982 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:20:35.994 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 881.2302ms
+E-Commerce.AuthAPI | 2024-03-01 13:20:35.995 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:20:36.003 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 922.5519ms
+E-Commerce.AuthAPI | 2024-03-01 13:21:41.202 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:21:41.265 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:21:41.284 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:21:41.316 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:21:41.831 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:21:41.831 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:21:42.037 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:21:42.039 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:21:42.040 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:21:43.935 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:21:44.564 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 640.33ms
+E-Commerce.AuthAPI | 2024-03-01 13:21:44.593 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:21:44.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:21:44.607 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 13.7321ms
+E-Commerce.AuthAPI | 2024-03-01 13:21:44.721 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.5269ms
+E-Commerce.AuthAPI | 2024-03-01 13:21:44.882 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:21:45.013 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.3167ms
+E-Commerce.AuthAPI | 2024-03-01 13:22:04.809 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:22:04.817 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:22:04.838 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:22:05.281 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:22:05.523 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:22:05.727 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:22:05.739 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 897.7183ms
+E-Commerce.AuthAPI | 2024-03-01 13:22:05.740 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:22:05.748 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 939.0988ms
+E-Commerce.AuthAPI | 2024-03-01 13:23:17.675 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:23:17.676 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:23:17.677 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:23:17.758 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:23:17.863 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:23:17.866 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:23:17.867 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 189.8619ms
+E-Commerce.AuthAPI | 2024-03-01 13:23:17.867 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:23:17.868 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 193.3163ms
+E-Commerce.AuthAPI | 2024-03-01 13:27:03.151 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:27:03.220 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:27:03.239 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:27:03.270 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:27:03.588 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:27:03.588 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:27:03.660 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:27:03.660 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:27:03.660 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:27:04.491 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:27:04.810 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 325.1069ms
+E-Commerce.AuthAPI | 2024-03-01 13:27:04.830 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:27:04.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:27:04.847 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 17.0324ms
+E-Commerce.AuthAPI | 2024-03-01 13:27:04.893 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.6085ms
+E-Commerce.AuthAPI | 2024-03-01 13:27:04.974 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:27:05.106 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 132.2257ms
+E-Commerce.AuthAPI | 2024-03-01 13:27:23.255 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:27:23.263 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:27:23.282 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:27:23.677 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:27:23.880 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:27:24.052 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:27:24.063 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 777.8144ms
+E-Commerce.AuthAPI | 2024-03-01 13:27:24.063 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:27:24.071 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 816.2123ms
+E-Commerce.AuthAPI | 2024-03-01 13:27:52.363 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:27:52.365 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:27:52.365 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:27:52.424 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:27:52.507 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:27:52.510 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:27:52.510 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 145.2833ms
+E-Commerce.AuthAPI | 2024-03-01 13:27:52.510 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:27:52.511 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 147.6116ms
+E-Commerce.AuthAPI | 2024-03-01 13:28:32.363 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:28:32.448 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:28:32.473 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:28:32.513 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:28:32.882 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:28:32.882 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:28:32.936 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:28:32.937 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:28:32.937 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:28:34.101 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:28:34.358 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 264.5916ms
+E-Commerce.AuthAPI | 2024-03-01 13:28:34.374 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:28:34.380 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 5.1999ms
+E-Commerce.AuthAPI | 2024-03-01 13:28:34.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:28:34.437 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.0616ms
+E-Commerce.AuthAPI | 2024-03-01 13:28:34.503 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:28:34.582 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.2546ms
+E-Commerce.AuthAPI | 2024-03-01 13:28:56.999 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:28:57.009 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:28:57.033 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:28:57.728 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:28:58.126 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:28:58.448 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:28:58.467 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 1428.7804ms
+E-Commerce.AuthAPI | 2024-03-01 13:28:58.468 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:28:58.480 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 1481.3136ms
+E-Commerce.AuthAPI | 2024-03-01 13:29:13.377 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:29:13.378 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:29:13.378 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:29:13.429 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:29:13.507 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:29:13.507 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 128.9348ms
+E-Commerce.AuthAPI | 2024-03-01 13:29:13.507 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:29:13.507 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 400 null application/json; charset=utf-8 130.6647ms
+E-Commerce.AuthAPI | 2024-03-01 13:29:18.109 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:29:18.110 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:29:18.110 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:29:18.131 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:29:18.266 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:29:18.269 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:29:18.269 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 159.0567ms
+E-Commerce.AuthAPI | 2024-03-01 13:29:18.269 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:29:18.269 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 160.7515ms
+E-Commerce.AuthAPI | 2024-03-01 13:29:56.840 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:29:56.840 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:29:56.841 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:29:56.842 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:29:56.925 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:29:56.926 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:29:56.926 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 85.8405ms
+E-Commerce.AuthAPI | 2024-03-01 13:29:56.927 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:29:56.927 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 86.9809ms
+E-Commerce.AuthAPI | 2024-03-01 13:30:31.147 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:30:31.147 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:30:31.148 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:30:31.150 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:30:31.267 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:30:31.268 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:30:31.269 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 120.8452ms
+E-Commerce.AuthAPI | 2024-03-01 13:30:31.269 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:30:31.269 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 122.3447ms
+E-Commerce.AuthAPI | 2024-03-01 13:30:40.837 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:30:40.837 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:30:40.837 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:30:40.839 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:30:40.913 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:30:40.914 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:30:40.914 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 76.8873ms
+E-Commerce.AuthAPI | 2024-03-01 13:30:40.914 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:30:40.915 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 77.5987ms
+E-Commerce.AuthAPI | 2024-03-01 13:45:21.822 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:45:22.079 +03:00 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:45:22.105 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:45:22.201 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:45:22.685 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:45:22.685 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:45:22.772 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:45:22.773 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:45:22.773 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:45:23.635 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:45:23.940 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 313.0026ms
+E-Commerce.AuthAPI | 2024-03-01 13:45:23.956 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:45:23.963 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.9887ms
+E-Commerce.AuthAPI | 2024-03-01 13:45:23.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:45:24.023 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.6625ms
+E-Commerce.AuthAPI | 2024-03-01 13:45:24.104 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:45:24.207 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 102.8955ms
+E-Commerce.AuthAPI | 2024-03-01 13:45:40.553 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:45:40.560 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:45:40.581 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:45:41.024 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:45:41.266 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:45:41.475 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:45:41.486 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 901.8074ms
+E-Commerce.AuthAPI | 2024-03-01 13:45:41.487 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:45:41.496 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 943.234ms
+E-Commerce.AuthAPI | 2024-03-01 13:46:30.005 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 60
+E-Commerce.AuthAPI | 2024-03-01 13:46:30.011 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:46:30.011 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:46:30.096 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:46:30.215 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:46:30.215 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 203.5931ms
+E-Commerce.AuthAPI | 2024-03-01 13:46:30.215 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:46:30.215 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 400 null application/json; charset=utf-8 210.5765ms
+E-Commerce.AuthAPI | 2024-03-01 13:46:36.574 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:46:36.575 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:46:36.575 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:46:36.589 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:46:36.678 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:46:36.679 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:46:36.679 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 104.3583ms
+E-Commerce.AuthAPI | 2024-03-01 13:46:36.679 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:46:36.679 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 105.6615ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:17.995 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:18.016 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 20.8457ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:18.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:18.037 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 1.576ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:18.047 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:18.065 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.2474ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:18.133 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:18.147 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.6299ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:21.175 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:21.193 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 17.5225ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:21.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:21.222 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 1.1329ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:21.232 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:21.248 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.4941ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:21.329 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:21.332 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.2418ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:48.133 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:47:48.238 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:47:48.272 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:47:48.319 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:47:49.899 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:47:49.899 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:47:50.025 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:47:50.025 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:47:50.025 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:47:52.055 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:52.686 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 639.6645ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:52.741 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:52.747 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:52.764 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 16.5316ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:52.865 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 124.5664ms
+E-Commerce.AuthAPI | 2024-03-01 13:47:53.724 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:47:53.879 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 155.7274ms
+E-Commerce.AuthAPI | 2024-03-01 13:48:13.689 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:48:13.696 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:48:13.716 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:48:14.164 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:48:14.355 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:48:14.362 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 642.5322ms
+E-Commerce.AuthAPI | 2024-03-01 13:48:14.362 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:48:14.371 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 400 null application/json; charset=utf-8 682.6515ms
+E-Commerce.AuthAPI | 2024-03-01 13:48:17.931 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:48:17.932 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:48:17.932 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:48:17.988 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:48:18.122 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:48:18.314 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:48:18.322 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 389.8367ms
+E-Commerce.AuthAPI | 2024-03-01 13:48:18.323 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:48:18.324 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 392.9562ms
+E-Commerce.AuthAPI | 2024-03-01 13:48:29.192 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:48:29.192 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:48:29.193 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:48:29.209 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:48:29.298 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:48:29.299 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:48:29.300 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 106.9818ms
+E-Commerce.AuthAPI | 2024-03-01 13:48:29.300 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:48:29.300 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 108.5797ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:20.815 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:20.835 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 20.3783ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:20.865 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:20.866 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 1.6269ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:20.873 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:20.893 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.0026ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:20.976 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:20.981 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.3658ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:24.817 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:24.833 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 16.2373ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:24.867 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:24.879 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.7163ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:24.880 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:24.881 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 1.3666ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:24.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:24.983 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.9563ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:43.028 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:43.041 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 12.8462ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:43.078 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:43.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:43.095 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 3.5875ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:43.104 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.397ms
+E-Commerce.AuthAPI | 2024-03-01 13:49:43.244 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:49:43.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.9559ms
+E-Commerce.AuthAPI | 2024-03-01 13:50:11.947 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:50:11.951 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:50:11.954 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:50:11.957 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:50:12.035 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:50:12.036 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:50:12.038 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 83.7739ms
+E-Commerce.AuthAPI | 2024-03-01 13:50:12.038 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:50:12.038 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 91.435ms
+E-Commerce.AuthAPI | 2024-03-01 13:50:55.577 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 13:50:55.579 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:50:55.579 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 13:50:55.581 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 13:50:55.676 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 13:50:55.677 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 13:50:55.677 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 97.7163ms
+E-Commerce.AuthAPI | 2024-03-01 13:50:55.677 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 13:50:55.677 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 99.7311ms
+E-Commerce.AuthAPI | 2024-03-01 13:58:45.020 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 13:58:45.129 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 13:58:45.150 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 13:58:45.198 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.321 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.321 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.393 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.394 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.394 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.433 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.718 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 290.716ms
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.746 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.753 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.1295ms
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.755 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.798 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.2868ms
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.871 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 13:58:54.980 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.0886ms
+E-Commerce.AuthAPI | 2024-03-01 14:11:29.165 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 14:11:29.238 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 14:11:29.258 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 14:11:29.305 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 14:11:29.677 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 14:11:29.677 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 14:11:29.748 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 14:11:29.749 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 14:11:29.749 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 14:11:30.556 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 14:11:30.797 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 245.3902ms
+E-Commerce.AuthAPI | 2024-03-01 14:11:30.816 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 14:11:30.821 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 4.4672ms
+E-Commerce.AuthAPI | 2024-03-01 14:11:30.825 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 14:11:30.864 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.4049ms
+E-Commerce.AuthAPI | 2024-03-01 14:11:30.926 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 14:11:31.012 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 86.5946ms
+E-Commerce.AuthAPI | 2024-03-01 14:12:33.616 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 14:12:33.697 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 14:12:33.713 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 14:12:33.746 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 14:12:34.005 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 14:12:34.005 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 14:12:34.165 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 14:12:34.166 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 14:12:34.166 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 14:12:35.257 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 14:12:35.632 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 381.3542ms
+E-Commerce.AuthAPI | 2024-03-01 14:12:35.657 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 14:12:35.664 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.1426ms
+E-Commerce.AuthAPI | 2024-03-01 14:12:35.666 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 14:12:35.705 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.4909ms
+E-Commerce.AuthAPI | 2024-03-01 14:12:35.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 14:12:35.837 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.3775ms
+E-Commerce.AuthAPI | 2024-03-01 14:12:56.793 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-01 14:12:56.858 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-01 14:12:56.886 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-01 14:12:56.925 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-01 14:12:57.197 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-01 14:12:57.197 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-01 14:12:57.276 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-01 14:12:57.276 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-01 14:12:57.277 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-01 14:12:58.648 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-01 14:12:58.965 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 325.0181ms
+E-Commerce.AuthAPI | 2024-03-01 14:12:58.988 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-01 14:12:58.993 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 4.741ms
+E-Commerce.AuthAPI | 2024-03-01 14:12:59.002 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-01 14:12:59.033 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.5508ms
+E-Commerce.AuthAPI | 2024-03-01 14:12:59.086 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-01 14:12:59.165 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.9159ms
+E-Commerce.AuthAPI | 2024-03-01 14:13:13.074 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 14:13:13.081 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 14:13:13.097 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 14:13:13.442 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 14:13:13.631 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 14:13:13.803 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 14:13:13.813 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 713.1112ms
+E-Commerce.AuthAPI | 2024-03-01 14:13:13.814 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 14:13:13.820 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 746.3591ms
+E-Commerce.AuthAPI | 2024-03-01 14:14:28.966 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 14:14:28.967 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 14:14:28.967 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 14:14:29.020 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 14:14:29.091 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 14:14:29.093 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 14:14:29.094 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 125.9379ms
+E-Commerce.AuthAPI | 2024-03-01 14:14:29.094 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 14:14:29.094 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 128.4475ms
+E-Commerce.AuthAPI | 2024-03-01 14:15:51.229 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 61
+E-Commerce.AuthAPI | 2024-03-01 14:15:51.229 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 14:15:51.230 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-03-01 14:15:51.242 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-03-01 14:15:51.312 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-03-01 14:15:51.313 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-03-01 14:15:51.313 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 82.6386ms
+E-Commerce.AuthAPI | 2024-03-01 14:15:51.313 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-03-01 14:15:51.313 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 84.854ms

@@ -2,6 +2,6 @@
 {
     public class ConnectedUser
     {
-        public static Dictionary<string, string> ConnectionId { get; set; } = new Dictionary<string, string>();
+        public static Dictionary<string, string> UsersId { get; set; } = new Dictionary<string, string>();
     }
 }

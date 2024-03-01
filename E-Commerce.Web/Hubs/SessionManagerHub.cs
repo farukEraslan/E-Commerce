@@ -1,28 +1,50 @@
 ﻿using E_Commerce.Web.Models.Dto;
-using E_Commerce.Web.Models.Dto.Request;
-using E_Commerce.Web.Models.Dto.Response;
 using E_Commerce.Web.Services.IServices;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.SignalR;
-using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
 
 namespace E_Commerce.Web.Hubs
 {
     public class SessionManagerHub : Hub
     {
         private readonly IAuthService _authService;
-        private readonly IHttpContextAccessor _contextAccessor;
-        private readonly ITokenProvider _tokenProvider;
 
-        public SessionManagerHub(IAuthService authService, IHttpContextAccessor contextAccessor, ITokenProvider tokenProvider)
+        public SessionManagerHub(IAuthService authService)
         {
             _authService = authService;
-            _contextAccessor = contextAccessor;
-            _tokenProvider = tokenProvider;
         }
+
+        public async Task ConnectionCheck(string jwtToken)
+        {
+            // *** Bağlanan tarayıcı için unique bir Id belirlenmesi gerekli.
+
+            bool hasExistSession = false;
+            var handler = new JwtSecurityTokenHandler();
+
+            // token okuma işlemi
+            if (jwtToken != null)
+            {
+                var jwt = handler.ReadJwtToken(jwtToken);
+                var userId = jwt.Payload.Sub;
+
+                if (ConnectedUser.UsersId.ContainsValue(userId))
+                {
+                    var existUser = ConnectedUser.UsersId.First(connectionId => connectionId.Value == userId);
+                    // *** connectionId'si bilinen client'e hasExistSession bilgisi yollanacak.
+                    hasExistSession = true;
+                    // burada açık olan bağlantı kapatılacak.
+                    await Clients.Client(existUser.Key).SendAsync("SignOut", hasExistSession);
+                }
+                else
+                {
+                    ConnectedUser.UsersId.Add(key: Context.ConnectionId, value: userId);
+                    await Clients.Client(Context.ConnectionId).SendAsync("SignOut", hasExistSession);
+                }
+            }
+        }
+
+        #region LoginAsync
+        /*
 
         /// <summary>
         /// 
@@ -44,7 +66,7 @@ namespace E_Commerce.Web.Hubs
             if (response != null && response.IsSuccess)
             {
                 LoginResponseDto loginResponseDto = JsonConvert.DeserializeObject<LoginResponseDto>(Convert.ToString(response.Result));
-                
+
                 var handler = new JwtSecurityTokenHandler();
 
                 // token okuma işlemi
@@ -72,5 +94,9 @@ namespace E_Commerce.Web.Hubs
                 return loginResponseDto;
             }
         }
+        */
+        #endregion
+
+
     }
 }

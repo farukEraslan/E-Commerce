@@ -4,9 +4,45 @@ var connection = new signalR.HubConnectionBuilder().withUrl("/sessionManager").b
 
 // signalR hub baðlantýsýnýn baþlatýldýðý metot
 
-// burada kullanýcýnýn connectionId'si alýnýp bir listede tutulduktan sonra baþka tarayýcýdan giriþlerde
-// bu listede var/yok kontrolü yapýlýp var ise çýkýþ yaptýrýlabilir.
-connection.start().then(() => {
+// burada kullanýcýnýn jwtToken'i alýnýp bir listede tutulduktan sonra baþka tarayýcýdan giriþlerde
+// bu listede var/yok kontrolü yapýlýp var ise çýkýþ yaptýrýlacak.
+connection.start()
+    .then(() => {
+        var jwtToken = document.cookie.split("=")[1];
+
+        // hangi tarayýcýdan girildiðini veren property
+        console.log(navigator.userAgentData.brands[2])
+
+        connection.invoke("ConnectionCheck", jwtToken).catch((error) => {
+            return console.log(error.toString());
+        });
+    })
+    .catch((error) => {
+    return console.log(error.toString());
+});
+
+// signalR baðlantýsý oluþturulduðunda invoke olan metot
+connection.on("SignOut", (hasExistSession) => {
+    if (hasExistSession) {
+        console.log(hasExistSession);
+        document.cookie = "JWTToken=; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=None; Secure";
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LoginAsync
+/*
     document.getElementById("LoginButton").addEventListener("click", function (event) {
 
         var userName = document.getElementById("Email").value;
@@ -17,15 +53,4 @@ connection.start().then(() => {
                 return console.log(error.toString());
             });
     });
-}).catch((error) => {
-    return console.log(error.toString());
-});
-
-// signalR baðlantýsý oluþturulduðunda invoke olan metot
-connection.on("SessionCheck", function (hasExistSession) {
-    // *** signalR server'ýndan buraya istek gelmiyor.
-    if (hasExistSession) {
-        console.log("SessionCheck çalýþýyor.");
-        document.cookie = `name=JWTToken; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
-    }
-});
+*/
