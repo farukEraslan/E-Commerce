@@ -14,7 +14,48 @@ namespace E_Commerce.Web.Hubs
             _authService = authService;
         }
 
-        public async Task ConnectionCheck(string jwtToken)
+        /// <summary>
+        /// Bağlanan kullanıcının browser adını kontrol ederek, değiştiği zaman önceki browser'ını logouta zorlayan metot.
+        /// </summary>
+        /// <param name="jwtToken"></param>
+        /// <param name="browser"></param>
+        /// <returns></returns>
+        public async Task ConnectionCheck(string jwtToken, string browser)
+        {
+            if (jwtToken != null)
+            {
+                // token okuma işlemi
+                var handler = new JwtSecurityTokenHandler();
+                var jwt = handler.ReadJwtToken(jwtToken);
+
+                ConnectedUserInfo userInfo = new()
+                {
+                    Browser = browser,
+                    UserId = jwt.Payload.Sub
+                };
+
+                ConnectedUser.UsersId.Add(key: Context.ConnectionId, value: userInfo);
+
+                foreach (var item in ConnectedUser.UsersId.Values)
+                {
+                    if (browser != item.Browser)
+                    {
+                        var connections = ConnectedUser.UsersId.Where(connection => connection.Value == item).ToList();
+                        foreach (var connection in connections)
+                        {
+                            await Clients.Client(connection.Key).SendAsync("SignOut", true);
+                            var connectedUserInfo = connection.Value;
+                            ConnectedUser.UsersId.Remove(key: connection.Key, value: out connectedUserInfo);
+                        }
+                    }
+                }
+                var test = ConnectedUser.UsersId;
+            }
+        }
+
+        #region ConnectionCheck
+        /*
+        public async Task ConnectionCheck(string jwtToken, decimal browserId)
         {
             // *** Bağlanan tarayıcı için unique bir Id belirlenmesi gerekli.
 
@@ -27,13 +68,26 @@ namespace E_Commerce.Web.Hubs
                 var jwt = handler.ReadJwtToken(jwtToken);
                 var userId = jwt.Payload.Sub;
 
+                ConnectedUserInfo userInfo = new()
+                {
+                    BrowserId = browserId.ToString(),
+                    UserId = jwt.Payload.Sub
+                };
+
                 if (ConnectedUser.UsersId.ContainsValue(userId))
                 {
-                    var existUser = ConnectedUser.UsersId.First(connectionId => connectionId.Value == userId);
+                    ConnectedUser.UsersId.Add(key: Context.ConnectionId, value: userId);
+                    var clients = ConnectedUser.UsersId.ToList();
+
+                    var userConnections = ConnectedUser.UsersId.Where(connectionId => connectionId.Value == userId).ToList();
                     // *** connectionId'si bilinen client'e hasExistSession bilgisi yollanacak.
                     hasExistSession = true;
                     // burada açık olan bağlantı kapatılacak.
-                    await Clients.Client(existUser.Key).SendAsync("SignOut", hasExistSession);
+                    foreach (var connection in userConnections)
+                    {
+                        await Clients.Client(connection.Key).SendAsync("SignOut", hasExistSession);
+                    }
+                    //await _authService.LogoutAsync();
                 }
                 else
                 {
@@ -42,6 +96,8 @@ namespace E_Commerce.Web.Hubs
                 }
             }
         }
+        */
+        #endregion
 
         #region LoginAsync
         /*

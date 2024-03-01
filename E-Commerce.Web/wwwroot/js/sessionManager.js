@@ -2,24 +2,25 @@
 
 var connection = new signalR.HubConnectionBuilder().withUrl("/sessionManager").build();
 
+var jwtToken = document.cookie.split("=")[1];
+
 // signalR hub baðlantýsýnýn baþlatýldýðý metot
 
 // burada kullanýcýnýn jwtToken'i alýnýp bir listede tutulduktan sonra baþka tarayýcýdan giriþlerde
 // bu listede var/yok kontrolü yapýlýp var ise çýkýþ yaptýrýlacak.
 connection.start()
     .then(() => {
-        var jwtToken = document.cookie.split("=")[1];
 
         // hangi tarayýcýdan girildiðini veren property
-        console.log(navigator.userAgentData.brands[2])
+        var browser = navigator.userAgentData.brands[2].brand;
 
-        connection.invoke("ConnectionCheck", jwtToken).catch((error) => {
+        connection.invoke("ConnectionCheck", jwtToken, browser).catch((error) => {
             return console.log(error.toString());
         });
     })
     .catch((error) => {
-    return console.log(error.toString());
-});
+        return console.log(error.toString());
+    });
 
 // signalR baðlantýsý oluþturulduðunda invoke olan metot
 connection.on("SignOut", (hasExistSession) => {

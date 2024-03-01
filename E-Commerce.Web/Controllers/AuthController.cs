@@ -74,8 +74,7 @@ namespace E_Commerce.Web.Controllers
 
         public async Task<IActionResult> Logout()
         {
-            await HttpContext.SignOutAsync();
-            _tokenProvider.ClearToken();
+            await _authService.LogoutAsync();
             return RedirectToAction("Index", "Home");
         }
 

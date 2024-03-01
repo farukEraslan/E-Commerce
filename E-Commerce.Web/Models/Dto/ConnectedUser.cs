@@ -2,6 +2,12 @@
 {
     public class ConnectedUser
     {
-        public static Dictionary<string, string> UsersId { get; set; } = new Dictionary<string, string>();
+        public static Dictionary<string, ConnectedUserInfo> UsersId { get; set; } = new Dictionary<string, ConnectedUserInfo>();
+    }
+
+    public class ConnectedUserInfo
+    {
+        public string Browser { get; set; }
+        public string UserId { get; set; }
     }
 }
