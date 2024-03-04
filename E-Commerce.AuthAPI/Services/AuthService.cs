@@ -54,7 +54,9 @@ namespace E_Commerce.AuthAPI.Services
                     _response.Result = user;
                     _response.Message = "Kullanıcı oluşturma başarılı.";
                     // onay emaili burada yollanacak.
-                    EmailSendHelper.SendEmailProducer(registerRequestDto.Email);    // burada hangfire implement edilebilir.
+                    string title = "Email Onayı";
+                    string content = $"<p>Hesabınızı aktifleştirmek için <a href=\"https://localhost:7240/api/auth/user-activate?userEmail={registerRequestDto.Email}\">buraya</a> tıklayın.</p>";
+                    EmailSendHelper.SendEmailProducer(registerRequestDto.Email, title, content);    // burada hangfire implement edilebilir.
                 }
                 else
                 {

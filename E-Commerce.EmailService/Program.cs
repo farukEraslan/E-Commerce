@@ -32,10 +32,13 @@ namespace E_Commerce.EmailService
                 var body = ea.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
 
-                var newUserEmail = message;
-                Console.WriteLine($"Mesaj alındı => Email: {newUserEmail}");
+                // gelen json data atanacak.
+                string toEmail = message.Split("-")[0].Split("=")[1];
+                string title = message.Split("-")[1].Split("=")[1];
+                string content = message.Split("-")[2].Split("=")[1] + message.Split("-")[2].Split("=")[2];
+                Console.WriteLine($"Mesaj alındı => toEmail: {toEmail} / subject: {title} / body: {content}");
 
-                var result = SendEmail(newUserEmail);
+                var result = SendEmail(toEmail, title, content);
                 Console.WriteLine(result);
             };
 
@@ -45,14 +48,16 @@ namespace E_Commerce.EmailService
         /// <summary>
         /// Bu metot email oluşturur ve gönderir.
         /// </summary>
-        /// <param name="newUserEmail"></param>
-        /// <returns>Durum mesajı döner.</returns>
-        public static string SendEmail(string newUserEmail)
+        /// <param name="toEmail"></param>
+        /// <param name="title"></param>
+        /// <param name="content"></param>
+        /// <returns></returns>
+        public static string SendEmail(string toEmail, string title, string content)
         {
             string senderAddress = "booksellerproject@outlook.com";
-            string recipientAddress = newUserEmail;
-            string subject = "Email Onayı";
-            string body = $"<p>Hesabınızı aktifleştirmek için <a href=\"https://localhost:7240/api/auth/user-activate?userEmail={newUserEmail}\">buraya</a> tıklayın.</p>";
+            string recipientAddress = toEmail;
+            string subject = title;
+            string body = content;
 
             var message = new MimeMessage();
             message.From.Add(new MailboxAddress("Sender", senderAddress));

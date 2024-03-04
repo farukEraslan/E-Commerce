@@ -5,7 +5,7 @@ namespace E_Commerce.AuthAPI.Helpers
 {
     public static class EmailSendHelper
     {
-        public static string SendEmailProducer(string newUserEmail)
+        public static string SendEmailProducer(string newUserEmail, string title, string content)
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
             var connection = factory.CreateConnection();
@@ -14,7 +14,8 @@ namespace E_Commerce.AuthAPI.Helpers
             string queueName = "emailConfirmation";
             channel.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
 
-            string message = $"{newUserEmail}";
+            // json data yollanacak.
+            string message = $"toEmail={newUserEmail}-subject={title}-body={content}";
             var body = Encoding.UTF8.GetBytes(message);
             channel.BasicPublish(exchange: "", routingKey: queueName, basicProperties: null, body: body);
 
