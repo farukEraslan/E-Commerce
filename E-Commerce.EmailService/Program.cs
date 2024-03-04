@@ -1,5 +1,6 @@
 ﻿using MailKit.Net.Smtp;
 using MimeKit;
+using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
@@ -33,12 +34,10 @@ namespace E_Commerce.EmailService
                 var message = Encoding.UTF8.GetString(body);
 
                 // gelen json data atanacak.
-                string toEmail = message.Split("-")[0].Split("=")[1];
-                string title = message.Split("-")[1].Split("=")[1];
-                string content = message.Split("-")[2].Split("=")[1] + message.Split("-")[2].Split("=")[2];
-                Console.WriteLine($"Mesaj alındı => toEmail: {toEmail} / subject: {title} / body: {content}");
+                var emailDto = JsonConvert.DeserializeObject<EmailDto>(message);
+                Console.WriteLine($"Mesaj alındı => toEmail: {emailDto.ToEmail} / subject: {emailDto.Subject} / body: {emailDto.Body.ToString()}");
 
-                var result = SendEmail(toEmail, title, content);
+                var result = SendEmail(emailDto);
                 Console.WriteLine(result);
             };
 
@@ -52,12 +51,12 @@ namespace E_Commerce.EmailService
         /// <param name="title"></param>
         /// <param name="content"></param>
         /// <returns></returns>
-        public static string SendEmail(string toEmail, string title, string content)
+        public static string SendEmail(EmailDto emailDto)
         {
             string senderAddress = "booksellerproject@outlook.com";
-            string recipientAddress = toEmail;
-            string subject = title;
-            string body = content;
+            string recipientAddress = emailDto.ToEmail;
+            string subject = emailDto.Subject;
+            string body = emailDto.Body.ToString();
 
             var message = new MimeMessage();
             message.From.Add(new MailboxAddress("Sender", senderAddress));

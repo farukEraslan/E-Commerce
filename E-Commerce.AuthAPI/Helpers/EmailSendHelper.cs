@@ -1,4 +1,6 @@
-﻿using RabbitMQ.Client;
+﻿using E_Commerce.AuthAPI.Models.Dto;
+using Newtonsoft.Json;
+using RabbitMQ.Client;
 using System.Text;
 
 namespace E_Commerce.AuthAPI.Helpers
@@ -15,7 +17,13 @@ namespace E_Commerce.AuthAPI.Helpers
             channel.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
 
             // json data yollanacak.
-            string message = $"toEmail={newUserEmail}-subject={title}-body={content}";
+            EmailDto emailDto = new()
+            {
+                ToEmail = newUserEmail,
+                Subject = title,
+                Body = content,
+            };
+            var message =  JsonConvert.SerializeObject(emailDto);
             var body = Encoding.UTF8.GetBytes(message);
             channel.BasicPublish(exchange: "", routingKey: queueName, basicProperties: null, body: body);
 
