@@ -1,0 +1,189 @@
+E-Commerce.ProductAPI | 2024-03-05 10:26:02.234 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-05 10:26:02.392 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.034 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.228 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.241 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.242 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.243 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.258 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.268 +03:00 [INF] Applying migration '20240305072603_product_PublisherPropNameChange'.
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.335 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Products]') AND [c].[name] = N'Yayınevi');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Products] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Products] DROP COLUMN [Yayınevi];
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.348 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var1 sysname;
+SELECT @var1 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Products]') AND [c].[name] = N'ImageUrl');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Products] DROP CONSTRAINT [' + @var1 + '];');
+ALTER TABLE [Products] ALTER COLUMN [ImageUrl] nvarchar(max) NULL;
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.363 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var2 sysname;
+SELECT @var2 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Products]') AND [c].[name] = N'Author');
+IF @var2 IS NOT NULL EXEC(N'ALTER TABLE [Products] DROP CONSTRAINT [' + @var2 + '];');
+ALTER TABLE [Products] ALTER COLUMN [Author] nvarchar(max) NULL;
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.365 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Products] ADD [Publisher] nvarchar(max) NULL;
+E-Commerce.ProductAPI | 2024-03-05 10:26:18.367 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240305072603_product_PublisherPropNameChange', N'8.0.2');
+E-Commerce.ProductAPI | 2024-03-05 10:34:33.044 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-05 10:34:33.233 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-05 10:34:33.248 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-05 10:34:33.275 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-05 10:34:33.627 +03:00 [INF] Now listening on: https://localhost:7101
+E-Commerce.ProductAPI | 2024-03-05 10:34:33.628 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-05 10:34:33.762 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-05 10:34:33.762 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-05 10:34:33.763 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-05 10:34:36.854 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-05 10:34:37.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - 200 null text/html;charset=utf-8 405.5512ms
+E-Commerce.ProductAPI | 2024-03-05 10:34:37.277 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-05 10:34:37.293 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-05 10:34:37.298 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 20.7743ms
+E-Commerce.ProductAPI | 2024-03-05 10:34:37.384 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 90.3025ms
+E-Commerce.ProductAPI | 2024-03-05 10:34:37.446 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-05 10:34:37.531 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.2771ms
+E-Commerce.ProductAPI | 2024-03-05 10:34:50.523 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-05 10:34:50.694 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-05 10:34:50.708 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-05 10:34:50.726 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-05 10:34:50.986 +03:00 [INF] Now listening on: https://localhost:7101
+E-Commerce.ProductAPI | 2024-03-05 10:34:50.986 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-05 10:34:51.029 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-05 10:34:51.030 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-05 10:34:51.030 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-05 10:34:53.166 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-05 10:34:53.390 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - 200 null text/html;charset=utf-8 227.7308ms
+E-Commerce.ProductAPI | 2024-03-05 10:34:53.407 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-05 10:34:53.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.0076ms
+E-Commerce.ProductAPI | 2024-03-05 10:34:53.413 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-05 10:34:53.453 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.6108ms
+E-Commerce.ProductAPI | 2024-03-05 10:34:53.514 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-05 10:34:53.576 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.5903ms
+E-Commerce.ProductAPI | 2024-03-05 10:36:15.297 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7101/api/product/create - application/json 154
+E-Commerce.ProductAPI | 2024-03-05 10:36:15.308 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-05 10:36:15.324 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(E_Commerce.ProductAPI.Models.Dto.ProductCreateDto) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-05 10:36:15.452 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+E-Commerce.ProductAPI | 2024-03-05 10:36:15.466 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI) in 139.6486ms
+E-Commerce.ProductAPI | 2024-03-05 10:36:15.467 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-05 10:36:15.468 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7101/api/product/create - 400 null application/problem+json; charset=utf-8 170.733ms
+E-Commerce.ProductAPI | 2024-03-05 10:36:38.183 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7101/api/product/create - application/json 154
+E-Commerce.ProductAPI | 2024-03-05 10:36:38.188 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-05 10:36:38.189 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(E_Commerce.ProductAPI.Models.Dto.ProductCreateDto) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-05 10:36:38.193 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+E-Commerce.ProductAPI | 2024-03-05 10:36:38.194 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI) in 4.7384ms
+E-Commerce.ProductAPI | 2024-03-05 10:36:38.194 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-05 10:36:38.194 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7101/api/product/create - 400 null application/problem+json; charset=utf-8 11.2798ms
+E-Commerce.ProductAPI | 2024-03-05 10:36:46.516 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7101/api/product/create - application/json 153
+E-Commerce.ProductAPI | 2024-03-05 10:36:46.516 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-05 10:36:46.516 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(E_Commerce.ProductAPI.Models.Dto.ProductCreateDto) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-05 10:37:18.929 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[E_Commerce.ProductAPI.Models.Dto.ProductDto, E-Commerce.ProductAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Runtime.CompilerServices.IAsyncStateMachine, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+E-Commerce.ProductAPI | 2024-03-05 10:37:18.932 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI) in 32415.4085ms
+E-Commerce.ProductAPI | 2024-03-05 10:37:18.932 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-05 10:37:18.934 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[E_Commerce.ProductAPI.Models.Dto.ProductDto,System.Runtime.CompilerServices.IAsyncStateMachine]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+E-Commerce.ProductAPI | 2024-03-05 10:37:18.974 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7101/api/product/create - 500 null text/plain; charset=utf-8 32458.5661ms
+E-Commerce.ProductAPI | 2024-03-05 10:38:41.089 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-05 10:38:41.261 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-05 10:38:41.274 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-05 10:38:41.289 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-05 10:38:41.630 +03:00 [INF] Now listening on: https://localhost:7101
+E-Commerce.ProductAPI | 2024-03-05 10:38:41.630 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-05 10:38:41.667 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-05 10:38:41.667 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-05 10:38:41.667 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-05 10:38:44.009 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-05 10:38:44.291 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - 200 null text/html;charset=utf-8 287.2968ms
+E-Commerce.ProductAPI | 2024-03-05 10:38:44.306 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-05 10:38:44.313 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 6.7732ms
+E-Commerce.ProductAPI | 2024-03-05 10:38:44.317 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-05 10:38:44.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.2717ms
+E-Commerce.ProductAPI | 2024-03-05 10:38:44.416 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-05 10:38:44.489 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.3612ms
+E-Commerce.ProductAPI | 2024-03-05 10:39:16.434 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7101/api/product/create - application/json 153
+E-Commerce.ProductAPI | 2024-03-05 10:39:16.440 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-05 10:39:16.457 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(E_Commerce.ProductAPI.Models.Dto.ProductCreateDto) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-05 10:39:25.003 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI) in 8543.7577ms
+E-Commerce.ProductAPI | 2024-03-05 10:39:25.003 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-05 10:39:25.007 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The entity type 'ProductCreateDto' was not found. Ensure that the entity type has been added to the model.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetOrCreateEntry(Object entity)
+   at Microsoft.EntityFrameworkCore.DbContext.EntryWithoutDetectChanges[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.DbContext.AddAsync[TEntity](TEntity entity, CancellationToken cancellationToken)
+   at E_Commerce.ProductAPI.Services.ProductService.Create(ProductCreateDto productCreateDto) in C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI\Services\ProductService.cs:line 43
+   at E_Commerce.ProductAPI.Controllers.ProductController.Create(ProductCreateDto productCreateDto) in C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI\Controllers\ProductController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+E-Commerce.ProductAPI | 2024-03-05 10:39:25.035 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7101/api/product/create - 500 null text/plain; charset=utf-8 8600.7943ms
