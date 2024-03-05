@@ -1,8 +1,7 @@
-using AutoMapper;
 using E_Commerce.ProductAPI.AutoMapperProfiles;
 using E_Commerce.ProductAPI.Data;
 using E_Commerce.ProductAPI.Services;
-using E_Commerce.ProductAPI.Services.IService;
+using E_Commerce.ProductAPI.Services.IServices;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;

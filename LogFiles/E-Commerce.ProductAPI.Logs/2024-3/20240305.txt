@@ -187,3 +187,58 @@ System.InvalidOperationException: The entity type 'ProductCreateDto' was not fou
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
 E-Commerce.ProductAPI | 2024-03-05 10:39:25.035 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7101/api/product/create - 500 null text/plain; charset=utf-8 8600.7943ms
+E-Commerce.ProductAPI | 2024-03-05 16:02:34.984 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-05 16:02:35.506 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-05 16:02:35.550 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-05 16:02:35.632 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-05 16:02:36.419 +03:00 [INF] Now listening on: https://localhost:7101
+E-Commerce.ProductAPI | 2024-03-05 16:02:36.420 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-05 16:02:36.563 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-05 16:02:36.565 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-05 16:02:36.566 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-05 16:02:40.193 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger - null null
+E-Commerce.ProductAPI | 2024-03-05 16:02:40.732 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger - 301 0 null 551.9133ms
+E-Commerce.ProductAPI | 2024-03-05 16:02:40.776 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-05 16:02:40.962 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - 200 null text/html;charset=utf-8 184.8151ms
+E-Commerce.ProductAPI | 2024-03-05 16:02:40.997 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/swagger-ui.css - null null
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.024 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/swagger-ui-bundle.js - null null
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.057 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/swagger-ui-standalone-preset.js - null null
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.079 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.079 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.079 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 23.1223ms
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.080 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/swagger-ui.css - 200 143943 text/css 84.1301ms
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.084 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.090 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.090 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 66.6124ms
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 15.7503ms
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.111 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.231 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 120.2895ms
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.505 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-05 16:02:41.658 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 153.2171ms
+E-Commerce.ProductAPI | 2024-03-05 16:03:03.765 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-05 16:03:04.318 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-05 16:03:04.353 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-05 16:03:04.398 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-05 16:03:04.999 +03:00 [INF] Now listening on: https://localhost:7101
+E-Commerce.ProductAPI | 2024-03-05 16:03:05.000 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-05 16:03:05.147 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-05 16:03:05.148 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-05 16:03:05.148 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-05 16:03:07.838 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-05 16:03:08.216 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - 200 null text/html;charset=utf-8 386.7692ms
+E-Commerce.ProductAPI | 2024-03-05 16:03:08.277 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-05 16:03:08.285 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 7.9315ms
+E-Commerce.ProductAPI | 2024-03-05 16:03:08.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-05 16:03:08.375 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.5625ms
+E-Commerce.ProductAPI | 2024-03-05 16:03:08.888 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-05 16:03:09.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 143.1149ms
