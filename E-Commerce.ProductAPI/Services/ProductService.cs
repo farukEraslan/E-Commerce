@@ -20,14 +20,14 @@ namespace E_Commerce.ProductAPI.Services
             _response = new ResponseDto();
         }
 
-        public ResponseDto Create(ProductDto productDto)
+        public ResponseDto Create(ProductCreateDto productCreateDto)
         {
             try
             {
-                var result = _appDbContext.Products.Add(_mapper.Map<Product>(productDto));
+                var result = _appDbContext.Products.Add(_mapper.Map<Product>(productCreateDto));
                 _appDbContext.SaveChanges();
                 _response.Message = "Ürün başarı ile eklendi.";
-                _response.Result = productDto;
+                _response.Result = productCreateDto;
                 return _response;
             }
             catch (Exception ex)
@@ -57,7 +57,7 @@ namespace E_Commerce.ProductAPI.Services
             }
         }
 
-        public ResponseDto GetAll(ProductDto productDto)
+        public ResponseDto GetAll()
         {
             try
             {

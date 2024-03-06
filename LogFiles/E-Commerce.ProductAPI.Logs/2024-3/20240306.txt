@@ -1,0 +1,1006 @@
+E-Commerce.ProductAPI | 2024-03-06 11:01:33.621 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 11:01:33.944 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 11:01:33.961 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 11:01:33.984 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 11:01:34.321 +03:00 [INF] Now listening on: https://localhost:7101
+E-Commerce.ProductAPI | 2024-03-06 11:01:34.321 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 11:01:34.364 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 11:01:34.364 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 11:01:34.364 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 11:01:35.283 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 11:01:35.604 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - 200 null text/html;charset=utf-8 324.9048ms
+E-Commerce.ProductAPI | 2024-03-06 11:01:35.622 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 11:01:35.629 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 6.3579ms
+E-Commerce.ProductAPI | 2024-03-06 11:01:35.630 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 11:01:35.671 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.1996ms
+E-Commerce.ProductAPI | 2024-03-06 11:01:35.735 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 11:01:35.810 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.1356ms
+E-Commerce.ProductAPI | 2024-03-06 11:03:52.988 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 11:03:53.244 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 11:03:53.258 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 11:03:53.277 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 11:03:53.518 +03:00 [INF] Now listening on: https://localhost:7101
+E-Commerce.ProductAPI | 2024-03-06 11:03:53.518 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 11:03:53.567 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 11:03:53.567 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 11:03:53.568 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 11:03:54.422 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 11:03:54.671 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - 200 null text/html;charset=utf-8 253.9831ms
+E-Commerce.ProductAPI | 2024-03-06 11:03:54.690 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 11:03:54.696 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.7154ms
+E-Commerce.ProductAPI | 2024-03-06 11:03:54.698 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 11:03:54.745 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.0753ms
+E-Commerce.ProductAPI | 2024-03-06 11:03:54.805 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 11:03:54.885 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.9829ms
+E-Commerce.ProductAPI | 2024-03-06 11:05:50.722 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7101/api/product/create - application/json 224
+E-Commerce.ProductAPI | 2024-03-06 11:05:50.728 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 11:05:50.744 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(E_Commerce.ProductAPI.Models.Dto.ProductCreateDto) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 11:06:09.388 +03:00 [ERR] Failed executing DbCommand (43ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Guid), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [Author], [CategoryId], [ISBN], [ImageUrl], [ProductName], [Publisher], [StockAmount], [UnitPrice])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+E-Commerce.ProductAPI | 2024-03-06 11:06:09.438 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'E_Commerce.ProductAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Products_Categories_CategoryId". The conflict occurred in database "E-Commerce.Product", table "dbo.Categories", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:e3c5aaf2-d5c2-42ae-a354-3c7906f2fb0a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Products_Categories_CategoryId". The conflict occurred in database "E-Commerce.Product", table "dbo.Categories", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:e3c5aaf2-d5c2-42ae-a354-3c7906f2fb0a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+E-Commerce.ProductAPI | 2024-03-06 11:37:57.439 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 11:37:57.642 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 11:37:57.659 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 11:37:57.682 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 11:37:58.142 +03:00 [INF] Now listening on: https://localhost:7101
+E-Commerce.ProductAPI | 2024-03-06 11:37:58.142 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 11:37:58.196 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 11:37:58.196 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 11:37:58.197 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 11:37:59.357 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 11:37:59.675 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - 200 null text/html;charset=utf-8 322.5123ms
+E-Commerce.ProductAPI | 2024-03-06 11:37:59.699 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 11:37:59.717 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 11:37:59.717 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 18.7416ms
+E-Commerce.ProductAPI | 2024-03-06 11:37:59.761 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.8691ms
+E-Commerce.ProductAPI | 2024-03-06 11:37:59.825 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 11:37:59.907 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.4197ms
+E-Commerce.ProductAPI | 2024-03-06 11:39:24.609 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7101/api/product/create - application/json 279
+E-Commerce.ProductAPI | 2024-03-06 11:39:24.619 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 11:39:24.637 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(E_Commerce.ProductAPI.Models.Dto.ProductCreateDto) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 11:39:40.129 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Guid), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [Author], [CategoryId], [ISBN], [ImageUrl], [ProductName], [Publisher], [StockAmount], [UnitPrice])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+E-Commerce.ProductAPI | 2024-03-06 11:39:46.855 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 11:39:46.886 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI) in 22246.2641ms
+E-Commerce.ProductAPI | 2024-03-06 11:39:46.886 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.Create (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 11:39:46.895 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7101/api/product/create - 200 null application/json; charset=utf-8 22287.0642ms
+E-Commerce.ProductAPI | 2024-03-06 12:21:45.002 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:21:45.929 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:21:45.958 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:21:45.984 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:21:46.262 +03:00 [INF] Now listening on: https://localhost:7101
+E-Commerce.ProductAPI | 2024-03-06 12:21:46.262 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:21:46.302 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:21:46.303 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:21:46.303 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:21:47.199 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:21:47.447 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - 200 null text/html;charset=utf-8 253.7346ms
+E-Commerce.ProductAPI | 2024-03-06 12:21:47.465 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:21:47.470 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:21:47.470 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.6594ms
+E-Commerce.ProductAPI | 2024-03-06 12:21:47.513 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.8497ms
+E-Commerce.ProductAPI | 2024-03-06 12:21:47.566 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:21:47.634 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.3572ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:20.212 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:22:20.436 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:22:20.450 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:22:20.469 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:22:20.758 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.ProductAPI | 2024-03-06 12:22:20.758 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:22:20.799 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:22:20.799 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:22:20.799 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.347 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.512 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger - 301 0 null 171.3008ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.522 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.593 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 70.9194ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/swagger-ui.css - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.615 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/swagger-ui-bundle.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.626 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/swagger-ui-standalone-preset.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.633 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.634 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.638 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/swagger-ui.css - 200 143943 text/css 32.9827ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.641 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 8.8064ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.642 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.643 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.643 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 17.7325ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.658 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.660 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 45.0146ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.698 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.5645ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.884 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/favicon-32x32.png - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.884 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.884 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/favicon-32x32.png - 200 628 image/png 0.8749ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:21.927 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.8959ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:48.800 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:22:49.021 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:22:49.034 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:22:49.053 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:22:49.328 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:22:49.328 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:22:49.371 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:22:49.372 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:22:49.372 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:22:49.949 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.118 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger - 301 0 null 176.6061ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.129 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.191 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 61.5168ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.203 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/swagger-ui.css - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.212 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/swagger-ui-bundle.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/swagger-ui-standalone-preset.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.232 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.232 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.235 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/swagger-ui.css - 200 143943 text/css 31.9475ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.242 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 9.0628ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.243 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.247 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.248 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 26.5537ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.255 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.255 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 43.0503ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.9961ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.466 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.494 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/favicon-32x32.png - null null
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.495 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.495 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/favicon-32x32.png - 200 628 image/png 0.7868ms
+E-Commerce.ProductAPI | 2024-03-06 12:22:50.539 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.9128ms
+E-Commerce.ProductAPI | 2024-03-06 12:24:34.574 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:24:34.831 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:24:34.845 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:24:34.866 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.125 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.125 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.184 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.184 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.185 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.695 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.928 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 238.8173ms
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.946 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.951 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.5324ms
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.953 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:24:35.995 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.7137ms
+E-Commerce.ProductAPI | 2024-03-06 12:24:36.173 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:24:36.254 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.5694ms
+E-Commerce.ProductAPI | 2024-03-06 12:25:54.171 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:25:54.450 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:25:54.465 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:25:54.483 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:25:54.730 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:25:54.731 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:25:54.783 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:25:54.784 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:25:54.784 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:25:55.668 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:25:55.916 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 250.7995ms
+E-Commerce.ProductAPI | 2024-03-06 12:25:55.933 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:25:55.939 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:25:55.940 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 6.7808ms
+E-Commerce.ProductAPI | 2024-03-06 12:25:55.979 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.1719ms
+E-Commerce.ProductAPI | 2024-03-06 12:25:56.040 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:25:56.113 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.4291ms
+E-Commerce.ProductAPI | 2024-03-06 12:25:59.978 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:25:59.986 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:25:59.997 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:26:00.264 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:26:00.310 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:26:00.324 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 323.4548ms
+E-Commerce.ProductAPI | 2024-03-06 12:26:00.324 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:26:00.330 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 352.7902ms
+E-Commerce.ProductAPI | 2024-03-06 12:28:04.257 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:28:04.495 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:28:04.509 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:28:04.527 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:28:04.794 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:28:04.795 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:28:04.839 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:28:04.840 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:28:04.840 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:28:05.419 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:28:05.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 234.5907ms
+E-Commerce.ProductAPI | 2024-03-06 12:28:05.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:28:05.672 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.0757ms
+E-Commerce.ProductAPI | 2024-03-06 12:28:05.673 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:28:05.709 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.5014ms
+E-Commerce.ProductAPI | 2024-03-06 12:28:05.774 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:28:05.872 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 98.02ms
+E-Commerce.ProductAPI | 2024-03-06 12:29:24.205 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:29:24.677 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:29:24.696 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:29:24.724 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:29:25.017 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:29:25.017 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:29:25.063 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:29:25.064 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:29:25.064 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:29:26.126 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:29:26.652 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 532.5547ms
+E-Commerce.ProductAPI | 2024-03-06 12:29:26.701 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:29:26.710 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:29:26.733 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 27.7858ms
+E-Commerce.ProductAPI | 2024-03-06 12:29:26.795 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.2728ms
+E-Commerce.ProductAPI | 2024-03-06 12:29:26.896 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:29:27.002 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.9358ms
+E-Commerce.ProductAPI | 2024-03-06 12:30:09.128 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:30:09.379 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:30:09.397 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:30:09.416 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:30:09.697 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:30:09.697 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:30:09.747 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:30:09.748 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:30:09.748 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:30:10.739 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:30:11.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 297.6103ms
+E-Commerce.ProductAPI | 2024-03-06 12:30:11.053 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:30:11.059 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.887ms
+E-Commerce.ProductAPI | 2024-03-06 12:30:11.062 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:30:11.111 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.8162ms
+E-Commerce.ProductAPI | 2024-03-06 12:30:11.184 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:30:11.251 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.8069ms
+E-Commerce.ProductAPI | 2024-03-06 12:35:12.625 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:35:12.932 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:35:12.951 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:35:12.978 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:35:13.392 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:35:13.392 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:35:13.500 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:35:13.501 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:35:13.501 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:35:14.324 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:35:14.691 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 376.1131ms
+E-Commerce.ProductAPI | 2024-03-06 12:35:14.780 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:35:14.794 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 13.6179ms
+E-Commerce.ProductAPI | 2024-03-06 12:35:14.813 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:35:14.901 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.154ms
+E-Commerce.ProductAPI | 2024-03-06 12:35:15.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:35:15.190 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.7094ms
+E-Commerce.ProductAPI | 2024-03-06 12:36:39.801 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:36:40.085 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:36:40.100 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:36:40.119 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:36:40.405 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:36:40.405 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:36:40.463 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:36:40.464 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:36:40.464 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:36:41.537 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:36:41.817 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 286.3865ms
+E-Commerce.ProductAPI | 2024-03-06 12:36:41.838 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:36:41.845 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 6.7535ms
+E-Commerce.ProductAPI | 2024-03-06 12:36:41.846 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:36:41.886 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.3323ms
+E-Commerce.ProductAPI | 2024-03-06 12:36:41.954 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:36:42.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.4433ms
+E-Commerce.ProductAPI | 2024-03-06 12:37:06.624 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:37:06.630 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:37:06.642 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:37:06.892 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:37:06.938 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:37:06.962 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 317.2964ms
+E-Commerce.ProductAPI | 2024-03-06 12:37:06.962 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:37:06.970 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 345.9944ms
+E-Commerce.ProductAPI | 2024-03-06 12:40:16.891 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:40:17.136 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:40:17.151 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:40:17.169 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:40:17.475 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:40:17.476 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:40:17.531 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:40:17.532 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:40:17.532 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:40:18.444 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:40:18.732 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 296.136ms
+E-Commerce.ProductAPI | 2024-03-06 12:40:18.749 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:40:18.754 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.3616ms
+E-Commerce.ProductAPI | 2024-03-06 12:40:18.755 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:40:18.802 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.0328ms
+E-Commerce.ProductAPI | 2024-03-06 12:40:18.869 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:40:18.947 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.7702ms
+E-Commerce.ProductAPI | 2024-03-06 12:40:24.185 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:40:24.192 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:40:24.203 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:40:24.466 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:40:24.516 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:40:24.544 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 338.8976ms
+E-Commerce.ProductAPI | 2024-03-06 12:40:24.544 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:40:24.551 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 365.9851ms
+E-Commerce.ProductAPI | 2024-03-06 12:42:38.246 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:42:38.573 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:42:38.599 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:42:38.629 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:42:39.001 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:42:39.001 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:42:39.087 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:42:39.091 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:42:39.092 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:42:39.619 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:42:39.732 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:42:39.757 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:42:39.940 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.307 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 365.6852ms
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.330 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.338 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 7.6523ms
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.339 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.414 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.433 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.7363ms
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.519 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.524 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.569 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 807.0548ms
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.569 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.579 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 970.1179ms
+E-Commerce.ProductAPI | 2024-03-06 12:42:40.635 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 116.3696ms
+E-Commerce.ProductAPI | 2024-03-06 12:43:36.838 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:43:36.841 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:43:36.841 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:43:36.903 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:43:36.905 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:43:36.905 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 63.6976ms
+E-Commerce.ProductAPI | 2024-03-06 12:43:36.905 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:43:36.906 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 71.1295ms
+E-Commerce.ProductAPI | 2024-03-06 12:43:51.410 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:43:51.764 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:43:51.790 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:43:51.824 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:43:52.183 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:43:52.184 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:43:52.298 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:43:52.299 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:43:52.299 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:43:52.421 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:43:52.507 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:43:52.532 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.007 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.202 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.311 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.369 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 832.0267ms
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.370 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.383 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 971.2975ms
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.401 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 395.1147ms
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.424 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.436 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 12.5003ms
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.438 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 88.7414ms
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.621 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:43:53.749 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 127.87ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:05.084 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:44:05.096 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 11.9548ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:05.116 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:44:05.117 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 1.2832ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:05.125 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:44:05.147 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.5571ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:05.187 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:44:05.193 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.9783ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:06.040 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:44:06.041 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:44:06.044 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:44:06.124 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:44:06.125 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:44:06.127 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 83.1168ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:06.127 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:44:06.128 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 87.9267ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.043 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.059 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 15.3632ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.079 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.080 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.080 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 1.0892ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.090 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.5931ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.165 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.171 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.9878ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.506 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.507 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.508 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.517 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.518 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.521 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 12.7679ms
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.521 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:44:39.522 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 15.2947ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:07.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:07.575 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 11.067ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:07.587 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:07.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:07.592 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 4.0751ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:07.605 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.1859ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:07.692 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:07.697 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.2914ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:08.033 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:08.034 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:45:08.035 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:45:08.037 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:45:08.038 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:45:08.040 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 4.7256ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:08.040 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:45:08.040 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 7.8063ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.855 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.867 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 11.4741ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.901 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.901 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.907 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 4.0382ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.915 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.917 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.920 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.921 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.9583ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.924 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.924 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.928 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 7.3433ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.928 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:45:17.928 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 13.1201ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:18.148 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:18.154 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.8307ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.400 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 16.7208ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.424 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.424 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.426 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 1.5911ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.440 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.9517ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.468 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.469 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.470 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.473 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.473 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.477 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 6.7745ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.477 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.477 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 8.8175ms
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.555 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:45:53.574 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.7271ms
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.476 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.509 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 33.0444ms
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.552 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.557 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.558 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.559 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.562 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.8642ms
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.564 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.571 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.572 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.593 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 29.053ms
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.593 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.593 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 35.2051ms
+E-Commerce.ProductAPI | 2024-03-06 12:46:19.595 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.129ms
+E-Commerce.ProductAPI | 2024-03-06 12:46:20.152 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:46:20.157 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.2744ms
+E-Commerce.ProductAPI | 2024-03-06 12:47:48.842 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.185 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.207 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.234 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.649 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.650 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.739 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.740 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.740 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.771 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.854 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:47:49.873 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.454 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.552 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 328.5377ms
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.555 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.556 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.559 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 4.8718ms
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.566 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.607 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 728.9369ms
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.607 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.619 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 856.7612ms
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.7139ms
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.745 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:47:50.842 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.1363ms
+E-Commerce.ProductAPI | 2024-03-06 12:48:55.738 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.004 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.024 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.048 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.404 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.404 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.479 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.479 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.479 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.792 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.879 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:48:56.898 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.343 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.387 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.457 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.515 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 608.6337ms
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.515 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.534 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 750.0996ms
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 261.5899ms
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.689 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.695 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.3755ms
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.699 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.763 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.5126ms
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.829 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:48:57.949 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.3742ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:12.602 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:12.604 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:49:12.604 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:49:12.652 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:49:12.653 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:49:12.654 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 49.5549ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:12.654 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:49:12.654 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 52.3302ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:15.116 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:15.117 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:49:15.117 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:49:15.122 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:49:15.122 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:49:15.122 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 4.9144ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:15.122 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:49:15.122 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 6.1469ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.222 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.222 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.222 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.226 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.227 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.227 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 4.6262ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.227 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.227 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 5.7517ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.892 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.907 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 15.1723ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.933 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 2.8206ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.948 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.9341ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:31.998 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:32.002 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.9031ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:35.976 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:35.978 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:49:35.980 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:49:35.982 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:49:35.982 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:49:35.985 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 4.9442ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:35.986 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:49:35.986 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 9.5584ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:36.257 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:36.271 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 14.3749ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:36.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:36.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:36.287 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 2.0028ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:36.306 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.0157ms
+E-Commerce.ProductAPI | 2024-03-06 12:49:36.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:49:36.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.2132ms
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.348 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.349 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.350 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.360 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.364 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.368 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 17.9875ms
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.369 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.369 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 21.5054ms
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.376 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.387 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 11.3401ms
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.407 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.409 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.410 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 3.4613ms
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.426 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.0017ms
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.528 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:50:20.532 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.9563ms
+E-Commerce.ProductAPI | 2024-03-06 12:51:29.836 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.066 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.080 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.103 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.364 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.364 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.429 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.429 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.429 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.768 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.831 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:51:30.850 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.193 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.375 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.473 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.519 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 325.4051ms
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.519 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 663.8348ms
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.527 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.539 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 779.2433ms
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.551 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.565 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 13.6312ms
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.629 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.0884ms
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.724 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 12:51:31.813 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.8046ms
+E-Commerce.ProductAPI | 2024-03-06 12:51:49.735 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:51:49.737 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:51:49.737 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:51:49.782 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:51:49.783 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:51:49.783 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 45.6459ms
+E-Commerce.ProductAPI | 2024-03-06 12:51:49.783 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:51:49.783 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 48.205ms
+E-Commerce.ProductAPI | 2024-03-06 12:52:05.850 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 12:52:05.850 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:52:05.850 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 12:52:05.856 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 12:52:05.856 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 12:52:05.856 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 5.9512ms
+E-Commerce.ProductAPI | 2024-03-06 12:52:05.856 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 12:52:05.856 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 6.6685ms
+E-Commerce.ProductAPI | 2024-03-06 13:14:36.800 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.119 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.139 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.176 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.205 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.533 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.533 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.600 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.600 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.601 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.701 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.920 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 13:14:37.935 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.271 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.334 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.417 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.455 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 515.7946ms
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.455 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.466 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 768.8991ms
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.495 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 223.6884ms
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.517 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.521 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 4.4475ms
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.523 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.572 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.5402ms
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.630 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 13:14:38.723 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.2155ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:13.192 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 13:18:13.482 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 13:18:13.500 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 13:18:13.525 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 13:18:13.573 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-06 13:18:13.933 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 13:18:13.934 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.004 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.004 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.005 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.193 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.375 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.380 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.396 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 401 0 null 208.8982ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.672 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.953 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 281.7397ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.973 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.981 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 7.2944ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:14.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:15.039 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.4563ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:15.107 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:15.222 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 114.959ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:35.267 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:35.324 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:18:35.325 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+E-Commerce.ProductAPI | 2024-03-06 13:18:35.325 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 403 0 null 58.4116ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:37.148 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:37.150 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:18:37.151 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+E-Commerce.ProductAPI | 2024-03-06 13:18:37.151 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 403 0 null 2.3882ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:40.413 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:40.414 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:18:40.414 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+E-Commerce.ProductAPI | 2024-03-06 13:18:40.415 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 403 0 null 1.7461ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:41.037 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:41.038 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:18:41.038 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+E-Commerce.ProductAPI | 2024-03-06 13:18:41.038 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 403 0 null 1.0672ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:42.871 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:42.871 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:18:42.872 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+E-Commerce.ProductAPI | 2024-03-06 13:18:42.872 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 401 0 null 0.9305ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:50.623 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:50.624 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:18:50.624 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+E-Commerce.ProductAPI | 2024-03-06 13:18:50.624 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 403 0 null 0.9992ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:52.419 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:52.421 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:18:52.421 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+E-Commerce.ProductAPI | 2024-03-06 13:18:52.421 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 403 0 null 1.4238ms
+E-Commerce.ProductAPI | 2024-03-06 13:18:53.006 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:18:53.007 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:18:53.007 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+E-Commerce.ProductAPI | 2024-03-06 13:18:53.007 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 403 0 null 0.8292ms
+E-Commerce.ProductAPI | 2024-03-06 13:19:42.903 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 13:19:43.170 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 13:19:43.199 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 13:19:43.230 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 13:19:43.261 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-06 13:19:43.596 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 13:19:43.596 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 13:19:43.669 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 13:19:43.669 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 13:19:43.669 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 13:19:43.920 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.145 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.147 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.161 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 403 0 null 246.4169ms
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.338 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.652 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.652 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 314.6797ms
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.658 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.9482ms
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.659 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.723 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.8612ms
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.797 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 13:19:44.902 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.4616ms
+E-Commerce.ProductAPI | 2024-03-06 13:20:21.208 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:20:21.211 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:20:21.213 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+E-Commerce.ProductAPI | 2024-03-06 13:20:21.213 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 401 0 null 5.6013ms
+E-Commerce.ProductAPI | 2024-03-06 13:20:31.469 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:20:31.471 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (ADMIN)
+E-Commerce.ProductAPI | 2024-03-06 13:20:31.471 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+E-Commerce.ProductAPI | 2024-03-06 13:20:31.471 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 403 0 null 2.3562ms
+E-Commerce.ProductAPI | 2024-03-06 13:21:06.290 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-06 13:21:06.572 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-06 13:21:06.593 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-06 13:21:06.624 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-06 13:21:06.673 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-06 13:21:06.963 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-06 13:21:06.963 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.020 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.020 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.021 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.256 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.475 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.491 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.700 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.874 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.941 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 240.1936ms
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.944 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.952 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 7.622ms
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.956 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-06 13:21:07.961 +03:00 [INF] Executing OkObjectResult, writing value of type 'Mango.Services.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-06 13:21:08.008 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 511.0338ms
+E-Commerce.ProductAPI | 2024-03-06 13:21:08.008 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-06 13:21:08.021 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.0085ms
+E-Commerce.ProductAPI | 2024-03-06 13:21:08.024 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 200 null application/json; charset=utf-8 776.0067ms
+E-Commerce.ProductAPI | 2024-03-06 13:21:08.088 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-06 13:21:08.168 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.141ms
+E-Commerce.ProductAPI | 2024-03-06 13:21:26.135 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:21:26.138 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+E-Commerce.ProductAPI | 2024-03-06 13:21:26.141 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+E-Commerce.ProductAPI | 2024-03-06 13:21:26.141 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 401 0 null 6.1574ms
+E-Commerce.ProductAPI | 2024-03-06 13:21:34.906 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:21:34.908 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+E-Commerce.ProductAPI | 2024-03-06 13:21:34.909 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+E-Commerce.ProductAPI | 2024-03-06 13:21:34.910 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 403 0 null 3.7641ms
+E-Commerce.ProductAPI | 2024-03-06 13:21:39.125 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list - null null
+E-Commerce.ProductAPI | 2024-03-06 13:21:39.125 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+E-Commerce.ProductAPI | 2024-03-06 13:21:39.125 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+E-Commerce.ProductAPI | 2024-03-06 13:21:39.126 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list - 401 0 null 0.8276ms

@@ -5,10 +5,10 @@ namespace E_Commerce.ProductAPI.Services.IServices
 {
     public interface IProductService
     {
-        ResponseDto Create(ProductDto productDto);
+        ResponseDto Create(ProductCreateDto productCreateDto);
         ResponseDto Update(ProductDto productDto);
         ResponseDto Delete(Guid productId);
-        ResponseDto GetAll(ProductDto productDto);
+        ResponseDto GetAll();
         ResponseDto GetById(Guid productId);
     }
 }

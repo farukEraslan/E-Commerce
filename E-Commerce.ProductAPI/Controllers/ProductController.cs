@@ -1,5 +1,6 @@
 ﻿using E_Commerce.ProductAPI.Models.Dto;
 using E_Commerce.ProductAPI.Services.IServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce.ProductAPI.Controllers
@@ -16,12 +17,12 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpPost("create")]
-        public IActionResult Create(ProductDto productDto)
+        public IActionResult Create(ProductCreateDto productCreateDto)
         {
             // productCreateDto oluşturulacak.
             // kategori bilgisinin nasıl alınacağına karar verilecek.
 
-            var result = _productService.Create(productDto);
+            var result = _productService.Create(productCreateDto);
             if (!result.IsSuccess)
             {
                 return BadRequest(result);
@@ -55,9 +56,10 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpGet("list")]
-        public IActionResult GetAll(ProductDto productDto)
+        [Authorize(Roles = "admin")]
+        public IActionResult GetAll()
         {
-            var result = _productService.GetAll(productDto);
+            var result = _productService.GetAll();
             if (!result.IsSuccess)
             {
                 return BadRequest(result);

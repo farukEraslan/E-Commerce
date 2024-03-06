@@ -20,7 +20,6 @@ namespace E_Commerce.ProductAPI.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Product>().HasOne(product => product.Category).WithMany(category => category.Products).HasForeignKey(product => product.CategoryId);
             base.OnModelCreating(modelBuilder);
         }
     }

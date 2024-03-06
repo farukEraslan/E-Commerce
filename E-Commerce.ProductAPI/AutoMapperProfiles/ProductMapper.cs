@@ -8,9 +8,8 @@ namespace E_Commerce.ProductAPI.AutoMapperProfiles
     {
         public ProductMapper()
         {
-            CreateMap<ProductDto, Product>()
-                .ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.CategoryName))
-                .ReverseMap();
+            CreateMap<ProductDto, Product>().ReverseMap();
+            CreateMap<ProductCreateDto, Product>();
         }
     }
 }

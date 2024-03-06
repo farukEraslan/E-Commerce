@@ -1,8 +1,11 @@
 using E_Commerce.ProductAPI.AutoMapperProfiles;
 using E_Commerce.ProductAPI.Data;
+using E_Commerce.ProductAPI.Extensions;
 using E_Commerce.ProductAPI.Services;
 using E_Commerce.ProductAPI.Services.IServices;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.MSSqlServer;
@@ -55,7 +58,34 @@ namespace E_Commerce.ProductAPI
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(option =>
+            {
+                option.AddSecurityDefinition(name: JwtBearerDefaults.AuthenticationScheme, securityScheme: new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Description = "Enter the Bearer Authorization string as following: `Bearer Generated-JWT-Token`",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+                option.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference= new OpenApiReference
+                            {
+                                Type=ReferenceType.SecurityScheme,
+                                Id=JwtBearerDefaults.AuthenticationScheme
+                            }
+                        }, new string[]{}
+                    }
+                });
+            });
+            
+            builder.AddAppAuthetication();
+
+            builder.Services.AddAuthorization();
 
             var app = builder.Build();
 
@@ -67,10 +97,7 @@ namespace E_Commerce.ProductAPI
             }
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
 
             ApplyMigration();

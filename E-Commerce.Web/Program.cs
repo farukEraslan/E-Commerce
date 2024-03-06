@@ -34,6 +34,7 @@ namespace E_Commerce.Web
             builder.Services.AddHttpClient();
             builder.Services.AddHttpClient<IAuthService, AuthService>();
             SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
+            SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
 
 
 
@@ -42,6 +43,7 @@ namespace E_Commerce.Web
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IBaseService, BaseService>();
             builder.Services.AddScoped<ITokenProvider, TokenProvider>();
+            builder.Services.AddScoped<IProductService, ProductService>();
 
             // ----- FLUENT VALIDATION -------
             builder.Services.AddControllersWithViews().AddFluentValidation(options =>
