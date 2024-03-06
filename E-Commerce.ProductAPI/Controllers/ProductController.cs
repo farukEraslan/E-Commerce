@@ -17,6 +17,7 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpPost("create")]
+        [Authorize(Roles = "admin")]
         public IActionResult Create(ProductCreateDto productCreateDto)
         {
             // productCreateDto oluşturulacak.
@@ -31,6 +32,7 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpPut("update")]
+        [Authorize(Roles = "admin")]
         public IActionResult Update(ProductDto productDto)
         {
             // productUpdateDto oluşturulacak.
@@ -45,6 +47,7 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpDelete("delete")]
+        [Authorize(Roles = "admin")]
         public IActionResult Delete(Guid productId)
         {
             var result = _productService.Delete(productId);
@@ -56,7 +59,6 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpGet("list")]
-        [Authorize(Roles = "admin")]
         public IActionResult GetAll()
         {
             var result = _productService.GetAll();
