@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using E_Commerce.ProductAPI.Models;
-using E_Commerce.ProductAPI.Models.Dto;
+using E_Commerce.ProductAPI.Models.Dto.Product;
 
 namespace E_Commerce.ProductAPI.AutoMapperProfiles
 {
@@ -10,6 +10,7 @@ namespace E_Commerce.ProductAPI.AutoMapperProfiles
         {
             CreateMap<ProductDto, Product>().ReverseMap();
             CreateMap<ProductCreateDto, Product>();
+            CreateMap<ProductUpdateDto, Product>();
         }
     }
 }

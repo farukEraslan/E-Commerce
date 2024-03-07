@@ -30,10 +30,12 @@ namespace E_Commerce.ProductAPI
 
             // AUTOMAPPER
             builder.Services.AddAutoMapper(typeof(ProductMapper));
+            builder.Services.AddAutoMapper(typeof(CategoryMapper));
 
 
             // DEPENDENCY INJECTIONS
             builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 
             // Serilog Logger

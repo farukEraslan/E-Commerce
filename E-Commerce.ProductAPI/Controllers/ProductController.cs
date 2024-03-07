@@ -1,4 +1,4 @@
-﻿using E_Commerce.ProductAPI.Models.Dto;
+﻿using E_Commerce.ProductAPI.Models.Dto.Product;
 using E_Commerce.ProductAPI.Services.IServices;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -20,9 +20,6 @@ namespace E_Commerce.ProductAPI.Controllers
         [Authorize(Roles = "admin")]
         public IActionResult Create(ProductCreateDto productCreateDto)
         {
-            // productCreateDto oluşturulacak.
-            // kategori bilgisinin nasıl alınacağına karar verilecek.
-
             var result = _productService.Create(productCreateDto);
             if (!result.IsSuccess)
             {
@@ -33,12 +30,9 @@ namespace E_Commerce.ProductAPI.Controllers
 
         [HttpPut("update")]
         [Authorize(Roles = "admin")]
-        public IActionResult Update(ProductDto productDto)
+        public IActionResult Update(ProductUpdateDto productUpdateDto)
         {
-            // productUpdateDto oluşturulacak.
-            // kategori bilgisinin nasıl alınacağına karar verilecek.
-
-            var result = _productService.Update(productDto);
+            var result = _productService.Update(productUpdateDto);
             if (!result.IsSuccess)
             {
                 return BadRequest(result);
@@ -59,9 +53,9 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpGet("list")]
-        public IActionResult GetAll()
+        public IActionResult GetAll(int pageNumber, int pageSize)
         {
-            var result = _productService.GetAll();
+            var result = _productService.GetAll(pageNumber, pageSize);
             if (!result.IsSuccess)
             {
                 return BadRequest(result);

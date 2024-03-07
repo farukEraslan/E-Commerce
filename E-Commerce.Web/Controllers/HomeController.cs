@@ -1,5 +1,6 @@
 using E_Commerce.Web.Models;
 using E_Commerce.Web.Models.Dto;
+using E_Commerce.Web.Models.Dto.Product;
 using E_Commerce.Web.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;

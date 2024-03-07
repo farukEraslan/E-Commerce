@@ -40,15 +40,23 @@ namespace E_Commerce.AuthAPI.Services
         /// <returns>Durum mesajı döner.</returns>
         public async Task<ResponseDto> Register(RegisterRequestDto registerRequestDto)
         {
-            var newUser = _mapper.Map<AppUser>(registerRequestDto);
-            newUser.Status = UserStatus.OnayBekleniyor;
-
             try
             {
+                var hasUser = _authAPIDatabase.Users.FirstOrDefault(u=>u.NormalizedEmail == registerRequestDto.Email.Trim().ToUpper());
+                if (hasUser != null)
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "Kullanıcı zaten var";
+                    return _response;
+                }
+
+                var newUser = _mapper.Map<AppUser>(registerRequestDto);
+                newUser.Status = UserStatus.OnayBekleniyor;
+
                 var result = await _userManager.CreateAsync(newUser, registerRequestDto.Password);
                 if (result.Succeeded)
                 {
-                    var createdUser = _authAPIDatabase.AppUsers.First(user => user.Email == registerRequestDto.Email);
+                    var createdUser = _authAPIDatabase.AppUsers.First(user => user.NormalizedEmail == registerRequestDto.Email.Trim().ToUpper());
                     var user = _mapper.Map<UserDto>(createdUser);
 
                     _response.Result = user;

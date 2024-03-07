@@ -1,4 +1,4 @@
-﻿namespace E_Commerce.ProductAPI.Models.Dto
+﻿namespace E_Commerce.Web.Models.Dto.Product
 {
     public class ProductDto
     {

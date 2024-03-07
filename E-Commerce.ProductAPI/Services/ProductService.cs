@@ -2,8 +2,9 @@
 using E_Commerce.ProductAPI.Data;
 using E_Commerce.ProductAPI.Models;
 using E_Commerce.ProductAPI.Models.Dto;
+using E_Commerce.ProductAPI.Models.Dto.Product;
 using E_Commerce.ProductAPI.Services.IServices;
-using Mango.Services.ProductAPI.Models.Dto;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce.ProductAPI.Services
 {
@@ -24,6 +25,14 @@ namespace E_Commerce.ProductAPI.Services
         {
             try
             {
+                var hasProduct = _appDbContext.Products.FirstOrDefault(p => p.ISBN.Trim().ToUpper() == productCreateDto.ISBN.Trim().ToUpper());
+                if (hasProduct != null)
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "Ürün zaten var.";
+                    return _response;
+                }
+
                 var result = _appDbContext.Products.Add(_mapper.Map<Product>(productCreateDto));
                 _appDbContext.SaveChanges();
                 _response.Message = "Ürün başarı ile eklendi.";
@@ -57,13 +66,27 @@ namespace E_Commerce.ProductAPI.Services
             }
         }
 
-        public ResponseDto GetAll()
+        public ResponseDto GetAll(int pageNumber, int pageSize)
         {
             try
             {
-                var products = _appDbContext.Products.ToList();
+                var productsWithCategories = _appDbContext.Products.Skip((pageNumber - 1) * pageSize).Take(pageSize).Include(product => product.Category)
+                    .Select(product => new ProductDto
+                    {
+                        Id = product.Id,
+                        ProductName = product.ProductName,
+                        CategoryName = product.Category != null ? product.Category.CategoryName : null, // Kategori adını alırken null kontrolü yapılmalıdır.
+                        UnitPrice = product.UnitPrice,
+                        StockAmount = product.StockAmount,
+                        Author = product.Author,
+                        Publisher = product.Publisher,
+                        ISBN = product.ISBN,
+                        ImageUrl = product.ImageUrl
+                    })
+                    .ToList();
+
                 _response.Message = "Ürünler başarı ile listelendi.";
-                _response.Result = products;
+                _response.Result = productsWithCategories;
                 return _response;
             }
             catch (Exception ex)
@@ -78,9 +101,22 @@ namespace E_Commerce.ProductAPI.Services
         {
             try
             {
-                var product = _appDbContext.Products.SingleOrDefault(p => p.Id == productId);
+                var productWithCategory = _appDbContext.Products.Include(product => product.Category)
+                .Select(product => new ProductDto
+                {
+                    Id = product.Id,
+                    ProductName = product.ProductName,
+                    CategoryName = product.Category != null ? product.Category.CategoryName : null, // Kategori adını alırken null kontrolü yapılmalıdır.
+                    UnitPrice = product.UnitPrice,
+                    StockAmount = product.StockAmount,
+                    Author = product.Author,
+                    Publisher = product.Publisher,
+                    ISBN = product.ISBN,
+                    ImageUrl = product.ImageUrl
+                });
+
                 _response.Message = "Ürün başarı ile listelendi.";
-                _response.Result = product;
+                _response.Result = productWithCategory;
                 return _response;
             }
             catch (Exception ex)
@@ -91,15 +127,25 @@ namespace E_Commerce.ProductAPI.Services
             }
         }
 
-        public ResponseDto Update(ProductDto productDto)
+        public ResponseDto Update(ProductUpdateDto productUpdateDto)
         {
             try
             {
-                var product = _appDbContext.Products.SingleOrDefault(p => p.Id == productDto.Id);
-                var result = _appDbContext.Products.Update(_mapper.Map(productDto, product));
+                // zaten var olan bir ISBN numarası eklenemez ancak güncellenmek istenen ISBN numarası listede olduğu için filtre yapılamıyor.
+
+                var product = _appDbContext.Products.SingleOrDefault(p => p.Id == productUpdateDto.Id);
+                //var hasProduct = _appDbContext.Products.Where(p => p.ISBN == productUpdateDto.ISBN);
+                //if (hasProduct != null)
+                //{
+                //    _response.IsSuccess = false;
+                //    _response.Message = "Aynı ISBN numaralı iki ürün olamaz.";
+                //    return _response;
+                //}
+
+                var result = _appDbContext.Products.Update(_mapper.Map(productUpdateDto, product));
                 _appDbContext.SaveChanges();
                 _response.Message = "Ürün başarı ile güncellendi.";
-                _response.Result = productDto;
+                _response.Result = productUpdateDto;
                 return _response;
             }
             catch (Exception ex)

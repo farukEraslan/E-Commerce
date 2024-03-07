@@ -1,5 +1,6 @@
 ﻿using E_Commerce.Web.Models;
 using E_Commerce.Web.Models.Dto;
+using E_Commerce.Web.Models.Dto.Product;
 using E_Commerce.Web.Services.IServices;
 using E_Commerce.Web.Utility;
 
@@ -14,7 +15,7 @@ namespace E_Commerce.Web.Services
             _baseService = baseService;
         }
 
-        public Task<ResponseDto> CreateAsync(ProductDto productDto)
+        public Task<ResponseDto> CreateAsync(ProductCreateDto productDto)
         {
             throw new NotImplementedException();
         }
@@ -39,7 +40,7 @@ namespace E_Commerce.Web.Services
             throw new NotImplementedException();
         }
 
-        public Task<ResponseDto> UpdateAsync(ProductDto productDto)
+        public Task<ResponseDto> UpdateAsync(ProductUpdateDto productDto)
         {
             throw new NotImplementedException();
         }
