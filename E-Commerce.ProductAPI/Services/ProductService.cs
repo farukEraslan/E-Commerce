@@ -21,51 +21,6 @@ namespace E_Commerce.ProductAPI.Services
             _response = new ResponseDto();
         }
 
-        public ResponseDto Create(ProductCreateDto productCreateDto)
-        {
-            try
-            {
-                var hasProduct = _appDbContext.Products.FirstOrDefault(p => p.ISBN.Trim().ToUpper() == productCreateDto.ISBN.Trim().ToUpper());
-                if (hasProduct != null)
-                {
-                    _response.IsSuccess = false;
-                    _response.Message = "Ürün zaten var.";
-                    return _response;
-                }
-
-                var result = _appDbContext.Products.Add(_mapper.Map<Product>(productCreateDto));
-                _appDbContext.SaveChanges();
-                _response.Message = "Ürün başarı ile eklendi.";
-                _response.Result = productCreateDto;
-                return _response;
-            }
-            catch (Exception ex)
-            {
-                _response.IsSuccess = false;
-                _response.Message = ex.Message;
-                return _response;
-            }
-        }
-
-        public ResponseDto Delete(Guid productId)
-        {
-            try
-            {
-                var product = _appDbContext.Products.SingleOrDefault(p => p.Id == productId);
-                var result = _appDbContext.Products.Remove(product);
-                _appDbContext.SaveChanges();
-                _response.Message = "Ürün başarı ile silindi.";
-                _response.Result = product;
-                return _response;
-            }
-            catch (Exception ex)
-            {
-                _response.IsSuccess = false;
-                _response.Message = ex.Message;
-                return _response;
-            }
-        }
-
         public ResponseDto GetAll(int pageNumber, int pageSize)
         {
             try
@@ -96,24 +51,25 @@ namespace E_Commerce.ProductAPI.Services
                 return _response;
             }
         }
-
         public ResponseDto GetById(Guid productId)
         {
             try
             {
-                var productWithCategory = _appDbContext.Products.Include(product => product.Category)
-                .Select(product => new ProductDto
-                {
-                    Id = product.Id,
-                    ProductName = product.ProductName,
-                    CategoryName = product.Category != null ? product.Category.CategoryName : null, // Kategori adını alırken null kontrolü yapılmalıdır.
-                    UnitPrice = product.UnitPrice,
-                    StockAmount = product.StockAmount,
-                    Author = product.Author,
-                    Publisher = product.Publisher,
-                    ISBN = product.ISBN,
-                    ImageUrl = product.ImageUrl
-                });
+                var productWithCategory = _appDbContext.Products.Where(product => product.Id == productId)
+                    .Include(product => product.Category)
+                    .Select(product => new ProductDto
+                    {
+                        Id = product.Id,
+                        ProductName = product.ProductName,
+                        CategoryId = product.CategoryId,
+                        CategoryName = product.Category.CategoryName,
+                        UnitPrice = product.UnitPrice,
+                        StockAmount = product.StockAmount,
+                        Author = product.Author,
+                        Publisher = product.Publisher,
+                        ISBN = product.ISBN,
+                        ImageUrl = product.ImageUrl
+                    }).FirstOrDefault();
 
                 _response.Message = "Ürün başarı ile listelendi.";
                 _response.Result = productWithCategory;
@@ -126,26 +82,66 @@ namespace E_Commerce.ProductAPI.Services
                 return _response;
             }
         }
+        public ResponseDto Create(ProductCreateDto productCreateDto)
+        {
+            try
+            {
+                var hasProduct = _appDbContext.Products.FirstOrDefault(p => p.ISBN.Trim().ToUpper() == productCreateDto.ISBN.Trim().ToUpper());
+                if (hasProduct != null)
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "Ürün zaten var.";
+                    return _response;
+                }
 
+                var result = _appDbContext.Products.Add(_mapper.Map<Product>(productCreateDto));
+                _appDbContext.SaveChanges();
+                _response.Message = "Ürün başarı ile eklendi.";
+                _response.Result = productCreateDto;
+                return _response;
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+                return _response;
+            }
+        }
         public ResponseDto Update(ProductUpdateDto productUpdateDto)
         {
             try
             {
-                // zaten var olan bir ISBN numarası eklenemez ancak güncellenmek istenen ISBN numarası listede olduğu için filtre yapılamıyor.
-
                 var product = _appDbContext.Products.SingleOrDefault(p => p.Id == productUpdateDto.Id);
-                //var hasProduct = _appDbContext.Products.Where(p => p.ISBN == productUpdateDto.ISBN);
-                //if (hasProduct != null)
-                //{
-                //    _response.IsSuccess = false;
-                //    _response.Message = "Aynı ISBN numaralı iki ürün olamaz.";
-                //    return _response;
-                //}
+                var hasProduct = _appDbContext.Products.Where(p => p.Id != product.Id && p.ISBN == productUpdateDto.ISBN).FirstOrDefault();
+                if (hasProduct != null)
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "Aynı ISBN numaralı iki ürün olamaz.";
+                    return _response;
+                }
 
                 var result = _appDbContext.Products.Update(_mapper.Map(productUpdateDto, product));
                 _appDbContext.SaveChanges();
                 _response.Message = "Ürün başarı ile güncellendi.";
                 _response.Result = productUpdateDto;
+                return _response;
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+                return _response;
+            }
+        }
+        public ResponseDto Delete(Guid productId)
+        {
+            try
+            {
+                var product = _appDbContext.Products.SingleOrDefault(p => p.Id == productId);
+                var result = _appDbContext.Products.Remove(product);
+                _appDbContext.SaveChanges();
+                _response.Message = "Ürün başarı ile silindi.";
+                _response.Result = product;
                 return _response;
             }
             catch (Exception ex)

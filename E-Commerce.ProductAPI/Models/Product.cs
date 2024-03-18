@@ -14,6 +14,6 @@
         public string? Author { get; set; } = "Anonim";
         public string? Publisher { get; set; } = "Anonim";
         public string ISBN { get; set; }
-        public string? ImageUrl { get; set; } = string.Empty;
+        public string? ImageUrl { get; set; } = "https://placehold.co/150x200";
     }
 }

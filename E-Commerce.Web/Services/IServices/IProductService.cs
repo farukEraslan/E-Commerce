@@ -7,8 +7,8 @@ namespace E_Commerce.Web.Services.IServices
     {
         Task<ResponseDto> CreateAsync(ProductCreateDto productDto);
         Task<ResponseDto> UpdateAsync(ProductUpdateDto productDto);
-        Task<ResponseDto> DeleteAsync(ProductDto productDto);
-        Task<ResponseDto> GetAllAsync();
-        Task<ResponseDto> GetByIdAsync(ProductDto productDto);
+        Task<ResponseDto> DeleteAsync(Guid productId);
+        Task<ResponseDto> GetAllAsync(int page, int size);
+        Task<ResponseDto> GetByIdAsync(Guid productId);
     }
 }

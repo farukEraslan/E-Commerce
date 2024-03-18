@@ -23,7 +23,7 @@ namespace E_Commerce.Web.Controllers
         {
             List<ProductDto>? productList = new();
 
-            ResponseDto? response = await _productService.GetAllAsync();
+            ResponseDto? response = await _productService.GetAllAsync(1, 10);
 
             if (response != null && response.IsSuccess)
             {

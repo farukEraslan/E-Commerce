@@ -15,34 +15,51 @@ namespace E_Commerce.Web.Services
             _baseService = baseService;
         }
 
-        public Task<ResponseDto> CreateAsync(ProductCreateDto productDto)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<ResponseDto> DeleteAsync(ProductDto productDto)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<ResponseDto> GetAllAsync()
-        
+        public async Task<ResponseDto> GetAllAsync(int page, int size)
         {
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = Utility.SD.ApiType.GET,
-                Url = SD.ProductAPIBase + "/api/product/list"
+                Url = SD.ProductAPIBase + $"/api/product/list/page={page}&size={size}"
             });
         }
 
-        public Task<ResponseDto> GetByIdAsync(ProductDto productDto)
+        public async Task<ResponseDto> GetByIdAsync(Guid productId)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.GET,
+                Url = SD.ProductAPIBase + "/api/product/getById/" + productId
+            });
         }
 
-        public Task<ResponseDto> UpdateAsync(ProductUpdateDto productDto)
+        public async Task<ResponseDto> CreateAsync(ProductCreateDto productCreateDto)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.POST,
+                Data = productCreateDto,
+                Url = SD.ProductAPIBase + "/api/product/create"
+            });
+        }
+
+        public async Task<ResponseDto> DeleteAsync(Guid productId)
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.DELETE,
+                Url = SD.ProductAPIBase + $"/api/product/delete/" + productId
+            });
+        }
+
+        public async Task<ResponseDto> UpdateAsync(ProductUpdateDto productUpdateDto)
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.PUT,
+                Data = productUpdateDto,
+                Url = SD.ProductAPIBase + "/api/product/update"
+            });
         }
     }
 }

@@ -16,9 +16,31 @@ namespace E_Commerce.ProductAPI.Controllers
             _productService = productService;
         }
 
+        [HttpGet("list/page={page:int}&size={size:int}")]
+        public IActionResult GetAll([FromRoute] int page, int size)
+        {
+            var result = _productService.GetAll(page, size);
+            if (!result.IsSuccess)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+
+        [HttpGet("getById/{productId:guid}")]
+        public IActionResult GetById([FromRoute] Guid productId)
+        {
+            var result = _productService.GetById(productId);
+            if (!result.IsSuccess)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+
         [HttpPost("create")]
         [Authorize(Roles = "admin")]
-        public IActionResult Create(ProductCreateDto productCreateDto)
+        public IActionResult Create([FromBody] ProductCreateDto productCreateDto)
         {
             var result = _productService.Create(productCreateDto);
             if (!result.IsSuccess)
@@ -30,7 +52,7 @@ namespace E_Commerce.ProductAPI.Controllers
 
         [HttpPut("update")]
         [Authorize(Roles = "admin")]
-        public IActionResult Update(ProductUpdateDto productUpdateDto)
+        public IActionResult Update([FromBody] ProductUpdateDto productUpdateDto)
         {
             var result = _productService.Update(productUpdateDto);
             if (!result.IsSuccess)
@@ -40,33 +62,11 @@ namespace E_Commerce.ProductAPI.Controllers
             return Ok(result);
         }
 
-        [HttpDelete("delete")]
+        [HttpDelete("delete/{productId:guid}")]
         [Authorize(Roles = "admin")]
         public IActionResult Delete(Guid productId)
         {
             var result = _productService.Delete(productId);
-            if (!result.IsSuccess)
-            {
-                return BadRequest(result);
-            }
-            return Ok(result);
-        }
-
-        [HttpGet("list")]
-        public IActionResult GetAll(int pageNumber, int pageSize)
-        {
-            var result = _productService.GetAll(pageNumber, pageSize);
-            if (!result.IsSuccess)
-            {
-                return BadRequest(result);
-            }
-            return Ok(result);
-        }
-
-        [HttpGet("getById")]
-        public IActionResult GetById(Guid productId)
-        {
-            var result = _productService.GetById(productId);
             if (!result.IsSuccess)
             {
                 return BadRequest(result);
