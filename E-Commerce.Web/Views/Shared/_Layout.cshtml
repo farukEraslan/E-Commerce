@@ -31,7 +31,7 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Register">Kayıt Yap</a>
                             </li>
                         }
-                        else
+                        else if (User.IsInRole("admin"))
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Kitap Yönetimi</a>
@@ -39,7 +39,16 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Logout">Çıkış Yap</a>
                             </li>
-                        }                                                
+                        }
+                        else if (User.IsInRole("customer"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="Cart">Sepetim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Logout">Çıkış Yap</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
@@ -51,9 +60,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted fixed">
         <div class="container">
-            &copy; 2024 - E_Commerce.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - E_Commerce.Web
         </div>
     </footer>
 

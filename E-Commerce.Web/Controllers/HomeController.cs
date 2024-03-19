@@ -19,11 +19,11 @@ namespace E_Commerce.Web.Controllers
             _productService = productService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1, int size = 8)
         {
             List<ProductDto>? productList = new();
 
-            ResponseDto? response = await _productService.GetAllAsync(1, 10);
+            ResponseDto? response = await _productService.GetAllAsync(page, size);
 
             if (response != null && response.IsSuccess)
             {

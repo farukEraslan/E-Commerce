@@ -10,5 +10,6 @@ namespace E_Commerce.Web.Services.IServices
         Task<ResponseDto> DeleteAsync(Guid productId);
         Task<ResponseDto> GetAllAsync(int page, int size);
         Task<ResponseDto> GetByIdAsync(Guid productId);
+        Task<ResponseDto> TotalProductSize();
     }
 }

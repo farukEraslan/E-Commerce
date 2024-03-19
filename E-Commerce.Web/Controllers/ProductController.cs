@@ -19,10 +19,10 @@ namespace E_Commerce.Web.Controllers
             _categoryService = categoryService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1, int size = 8)
         {
             List<ProductDto>? productList = new();
-            ResponseDto? productResponse = await _productService.GetAllAsync(1, 10);
+            ResponseDto? productResponse = await _productService.GetAllAsync(page, size);
 
             if (productResponse != null && productResponse.IsSuccess)
                 productList = JsonConvert.DeserializeObject<List<ProductDto>>(Convert.ToString(productResponse.Result));
@@ -31,7 +31,6 @@ namespace E_Commerce.Web.Controllers
 
             return View(productList);
         }
-
         public async Task<IActionResult> Create()
         {
             ProductCreateVM productCreateVM = new();
@@ -44,7 +43,6 @@ namespace E_Commerce.Web.Controllers
 
             return View(productCreateVM);
         }
-
         [HttpPost]
         public async Task<IActionResult> Create(ProductCreateVM productCreateVM)
         {
@@ -64,7 +62,6 @@ namespace E_Commerce.Web.Controllers
             }
             return View(productCreateVM);
         }
-
         public async Task<IActionResult> Update(ProductDto productDto)
         {
             ProductUpdateVM productUpdateVM = new();
@@ -81,7 +78,6 @@ namespace E_Commerce.Web.Controllers
 
             return View(productUpdateVM);
         }
-
         [HttpPost]
         public async Task<IActionResult> Update(ProductUpdateDto productUpdateDto)
         {
@@ -101,7 +97,6 @@ namespace E_Commerce.Web.Controllers
             }
             return RedirectToAction("Index", "Product");
         }
-
         public async Task<IActionResult> Delete(ProductDto productDto)
         {
             ResponseDto? response = await _productService.DeleteAsync(productDto.Id);

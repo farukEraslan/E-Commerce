@@ -10,6 +10,10 @@
         <div class="row">
             <div class="col-8 mb-2 mt-4">
                 <div class="mb-3">
+                    <label asp-for="@Model.ProductUpdateDto.ISBN" class="form-label"><strong>ISBN Numarası</strong></label>
+                    <input type="text" class="form-control" id="isbn" aria-describedby="isbn" asp-for="@Model.ProductUpdateDto.ISBN">
+                </div>
+                <div class="mb-3">
                     <label asp-for="@Model.ProductUpdateDto.ProductName" class="form-label"><strong>Kitap Adı</strong></label>
                     <input type="text" class="form-control" id="productName" aria-describedby="productName" asp-for="@Model.ProductUpdateDto.ProductName">
                 </div>
@@ -28,10 +32,6 @@
                 <div class="mb-3">
                     <label asp-for="@Model.ProductUpdateDto.Publisher" class="form-label"><strong>Yayınevi</strong></label>
                     <input type="text" class="form-control" id="publisher" aria-describedby="publisher" asp-for="@Model.ProductUpdateDto.Publisher">
-                </div>
-                <div class="mb-3">
-                    <label asp-for="@Model.ProductUpdateDto.ISBN" class="form-label"><strong>ISBN Numarası</strong></label>
-                    <input type="text" class="form-control" id="isbn" aria-describedby="isbn" asp-for="@Model.ProductUpdateDto.ISBN">
                 </div>
             </div>
             <div class="col-4 mb-3">
@@ -65,25 +65,4 @@
     </form>
 </div>
 
-<script>
-    function previewFile() {
-        const preview = document.getElementById("productImage");
-        const imageUrl = document.getElementById("imageUrl");
-        const file = document.getElementById("imageInput").files[0];
-        const reader = new FileReader();
-
-        reader.addEventListener("load", () => {
-            // convert image file to base64 string
-            if (file.type === "image/png" || file.type === "image/jpg" || file.type === "image/jpeg") {
-                preview.src = reader.result;
-                imageUrl.value = reader.result;
-                console.log(imageUrl.value);
-            }
-        }, false,
-        );
-
-        if (file) {
-            reader.readAsDataURL(file);
-        }
-    }
-</script>
+<script src="~/js/imageURL.js"></script>

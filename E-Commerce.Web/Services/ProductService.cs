@@ -3,6 +3,8 @@ using E_Commerce.Web.Models.Dto;
 using E_Commerce.Web.Models.Dto.Product;
 using E_Commerce.Web.Services.IServices;
 using E_Commerce.Web.Utility;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Drawing;
 
 namespace E_Commerce.Web.Services
 {
@@ -13,6 +15,16 @@ namespace E_Commerce.Web.Services
         public ProductService(IBaseService baseService)
         {
             _baseService = baseService;
+        }
+
+        // ilerde kullanılabilir diye yazıldı.
+        public async Task<ResponseDto> TotalProductSize()
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.GET,
+                Url = SD.ProductAPIBase + $"/api/product/total-product"
+            });
         }
 
         public async Task<ResponseDto> GetAllAsync(int page, int size)

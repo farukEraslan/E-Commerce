@@ -7,7 +7,7 @@
 
 <h1>Anasayfa</h1>
 <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
         @foreach (var product in Model)
         {
             <div class="card m-2" style="width: 18rem;">
@@ -17,14 +17,23 @@
                     <small class="text-secondary">@product.CategoryName</small>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">@product.Author</li>
-                    <li class="list-group-item">@product.Publisher</li>
+                    <li class="list-group-item"> Yazar : @product.Author</li>
+                    <li class="list-group-item">Yayınevi : @product.Publisher</li>
                 </ul>
                 <div class="card-body d-flex justify-content-between">
-                    <span class="align-middle mt-2">@product.StockAmount Adet</span>
+                    <span class="align-middle mt-2">Stok : @product.StockAmount Adet</span>
                     <a href="#" class="btn btn-primary">Sepete Ekle</a>
                 </div>
             </div>
         }
-    </div>    
+    </div>
+    <nav id="paginationNavbar" class="mt-4">
+        <ul class="pagination justify-content-center">
+            @*<li class="page-item"><a class="page-link" href="#">Previous</a></li>*@
+            <li class="page-item"><a class="page-link" asp-controller="Home" asp-action="Index" asp-route-page="1" asp-route-size="8">1</a></li>
+            <li class="page-item"><a class="page-link" asp-controller="Home" asp-action="Index" asp-route-page="2" asp-route-size="8">2</a></li>
+            <li class="page-item"><a class="page-link" asp-controller="Home" asp-action="Index" asp-route-page="3" asp-route-size="8">3</a></li>
+            @*<li class="page-item"><a class="page-link" href="#k">Next</a></li>*@
+        </ul>
+    </nav>
 </div>

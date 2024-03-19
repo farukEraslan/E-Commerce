@@ -27,7 +27,6 @@ namespace E_Commerce.Web.Controllers
         {
             return View();
         }
-
         [HttpPost]
         public async Task<IActionResult> Login(LoginRequestDto loginRequestDto)
         {
@@ -48,12 +47,10 @@ namespace E_Commerce.Web.Controllers
                 return View();
             }
         }
-
         public IActionResult Register()
         {
             return View();
         }
-
         [HttpPost]
         public async Task<IActionResult> Register(RegisterRequestDto registerRequestDto)
         {
@@ -71,13 +68,11 @@ namespace E_Commerce.Web.Controllers
                 return View(registerRequestDto);
             }
         }
-
         public async Task<IActionResult> Logout()
         {
             await _authService.LogoutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Auth");
         }
-
         /// <summary>
         /// Bu metot, bir kullanıcının giriş yapmasını yöneten bir asenkron fonksiyondur. Metot, gelen Jwt token'ını okuyarak kullanıcının kimlik bilgilerini çözümler ve bu bilgileri kullanarak bir kimlik nesnesi oluşturur. Ardından, bu kimlik bilgilerini temel alan bir kimlik doğrulama şeması oluşturulur ve kullanıcıyı temsil eden bir özneye sahip bir asenkron kimlik doğrulama işlemi başlatılır. Bu işlem, ASP.NET Core uygulamalarındaki çerez tabanlı kimlik doğrulama şemasını kullanır. Sonuç olarak, kullanıcı başarıyla kimlik doğrulandığında, HttpContext.SignInAsync metoduyla kullanıcı oturumunu başlatır.
         /// </summary>

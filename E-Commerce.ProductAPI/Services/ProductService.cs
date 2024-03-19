@@ -21,6 +21,10 @@ namespace E_Commerce.ProductAPI.Services
             _response = new ResponseDto();
         }
 
+        public int TotalProductNumber()
+        {
+            return _appDbContext.Products.Count();
+        }
         public ResponseDto GetAll(int pageNumber, int pageSize)
         {
             try

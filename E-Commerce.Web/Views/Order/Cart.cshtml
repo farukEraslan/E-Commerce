@@ -1,0 +1,77 @@
+﻿@* @model CartListViewModel;*@
+
+<h1>Sepetim</h1>
+
+<div class="navbar">
+    <h2>Cart List</h2>
+    <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Ürünlere Git</a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Unit</th>
+            <th>Price</th>
+            <th>Transactions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ProductId</td>
+            <td>ProductName</td>
+            <td>Quantity</td>
+            <td>CartLinePrice</td>
+            <td>
+                <span class="btn btn-warning">
+
+                    <!-- burası düzenlenecek -->
+                    <a class="btn fa fa-plus disabled"></a>
+                    <a class="btn fa fa-plus" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="ProductId"></a>
+
+                   @*  
+                    @if (product.Quantity >= 10)
+                    {
+                        <a class="btn fa fa-plus disabled"></a>
+                    }
+                    else
+                    {
+                        <a class="btn fa fa-plus" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@product.Product.ProductId"></a>
+                    } 
+                    *@
+                    <span class="btn disabled" style="width:35px; height:35px; padding:4px;">Quantity</span>
+                    <a class="btn fa fa-minus" asp-controller="Cart" asp-action="RemoveFromCart" asp-route-productId="ProductId"></a>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+    @*
+    @foreach (var product in Model.Cart.CartLines)
+    {
+        <tr>
+            <td>@product.Product.ProductId</td>
+            <td>@product.Product.ProductName</td>
+            <td>@product.Quantity</td>
+            <td>@product.CartLinePrice</td>
+            <td>
+                <span class="btn btn-warning">
+                    @if (product.Quantity >= 10)
+                    {
+                        <a class="btn fa fa-plus disabled"></a>
+                    }
+                    else
+                    {
+                        <a class="btn fa fa-plus" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@product.Product.ProductId"></a>
+                    }
+                    <span class="btn disabled" style="width:35px; height:35px; padding:4px;">@product.Quantity</span>
+                    <a class="btn fa fa-minus" asp-controller="Cart" asp-action="RemoveFromCart" asp-route-productId="@product.Product.ProductId"></a>
+                </span>
+            </td>
+        </tr>
+    }
+    *@
+</table>
+<div class="container d-flex justify-content-end align-items-center">
+    <span class="border-bottom border-warning border-3" style="margin-right: 60px; padding: 5px;">Sipariş Toplamı : CartTotalPrice TL</span>
+    <a class="btn btn-warning" href="#">Sipariş Ver</a>
+</div>

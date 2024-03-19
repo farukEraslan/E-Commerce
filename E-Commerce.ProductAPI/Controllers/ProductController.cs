@@ -16,6 +16,12 @@ namespace E_Commerce.ProductAPI.Controllers
             _productService = productService;
         }
 
+        [HttpGet("total-product")]
+        public IActionResult TotalProductNumber()
+        {
+            return Ok(_productService.TotalProductNumber());
+        }
+
         [HttpGet("list/page={page:int}&size={size:int}")]
         public IActionResult GetAll([FromRoute] int page, int size)
         {
@@ -64,7 +70,7 @@ namespace E_Commerce.ProductAPI.Controllers
 
         [HttpDelete("delete/{productId:guid}")]
         [Authorize(Roles = "admin")]
-        public IActionResult Delete(Guid productId)
+        public IActionResult Delete([FromRoute] Guid productId)
         {
             var result = _productService.Delete(productId);
             if (!result.IsSuccess)

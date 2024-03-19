@@ -10,5 +10,6 @@ namespace E_Commerce.ProductAPI.Services.IServices
         ResponseDto Delete(Guid productId);
         ResponseDto GetAll(int pageNumber, int pageSize);
         ResponseDto GetById(Guid productId);
+        int TotalProductNumber();
     }
 }

@@ -29,7 +29,7 @@
                 {
                     <tr>
                         <td class="align-middle">
-                            <img style="width:75px; height:100px;" src="@product.ImageUrl" alt="@product.ImageUrl" />
+                            <img style="width:75px; height:100px;" src="@product.ImageUrl" alt="@product.ProductName" />
                         </td>
                         <td class="align-middle">@product.ISBN</td>
                         <td class="align-middle">@product.ProductName</td>
@@ -48,8 +48,53 @@
                 }
             </tbody>
         </table>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination" id="pagination">
+                @*<li class="page-item"><a class="page-link" href="#">Previous</a></li>*@
+                <li class="page-item"><a class="page-link" asp-controller="Product" asp-action="Index" asp-route-page="1" asp-route-size="8">1</a></li>
+                <li class="page-item"><a class="page-link" asp-controller="Product" asp-action="Index" asp-route-page="2" asp-route-size="8">2</a></li>
+                <li class="page-item"><a class="page-link" asp-controller="Product" asp-action="Index" asp-route-page="3" asp-route-size="8">3</a></li>
+                @*<li class="page-item"><a class="page-link" href="#k">Next</a></li>*@
+            </ul>
+        </nav>
     </div>
 </div>
+
+@*
+<script>
+    window.addEventListener("load", (event) => {
+        fetch("https://localhost:7000/api/product/total-product")
+            .then((response) => {
+                return response.json();
+            }).then((data) => {
+                console.log(data);
+
+                let pagination = document.getElementById("pagination");
+                console.log(pagination);
+
+                for (var i = 0; Math.ceil(data/9); i++) {
+
+                    let pageItem = document.createElement("li");
+                    pageItem.className = "page-item";
+                    let pageLink = document.createElement("a");
+                    pageLink.className = "page-link";
+                    pageLink.setAttribute('asp-controller', "Product");
+                    pageLink.setAttribute('asp-action', "Index");
+                    pageLink.setAttribute('asp-route-page', i);
+                    pageLink.setAttribute('asp-route-size', "9");
+
+                    pageItem.appendChild(pageLink);
+                    pagination.appendChild(pageLink);
+                }
+
+                console.log(pagination);
+
+            }).catch((err) => {
+                console.log(err.toString());
+            });
+    });
+</script>
+*@
 
 
 
