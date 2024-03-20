@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.EmailService", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Web", "E-Commerce.Web\E-Commerce.Web.csproj", "{AF10836D-5F25-406E-9F9F-2723D52538EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.ProductAPI", "E-Commerce.ProductAPI\E-Commerce.ProductAPI.csproj", "{B74F293F-FDB6-4767-8800-9A40E57D4CDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.ProductAPI", "E-Commerce.ProductAPI\E-Commerce.ProductAPI.csproj", "{B74F293F-FDB6-4767-8800-9A40E57D4CDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

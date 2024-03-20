@@ -9,16 +9,14 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Product Id</th>
-            <th>Product Name</th>
-            <th>Unit</th>
-            <th>Price</th>
-            <th>Transactions</th>
+            <th>Kitap Adı</th>
+            <th>Sipariş Adedi</th>
+            <th>Birim Fiyat</th>
+            <th>İşlemler</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>ProductId</td>
             <td>ProductName</td>
             <td>Quantity</td>
             <td>CartLinePrice</td>
@@ -26,9 +24,7 @@
                 <span class="btn btn-warning">
 
                     <!-- burası düzenlenecek -->
-                    <a class="btn fa fa-plus disabled"></a>
-                    <a class="btn fa fa-plus" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="ProductId"></a>
-
+                    <a class="btn fa fa-plus"></a>
                    @*  
                     @if (product.Quantity >= 10)
                     {
