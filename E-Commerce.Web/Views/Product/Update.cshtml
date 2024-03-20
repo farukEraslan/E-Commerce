@@ -6,24 +6,28 @@
 
 <div class="container">
     <form asp-area="" asp-controller="Product" asp-action="Update" method="post">
-        <input type="hidden" asp-for="@Model.ProductUpdateDto.Id"/>
+        <input type="hidden" asp-for="@Model.ProductUpdateDto.Id" />
         <div class="row">
             <div class="col-8 mb-2 mt-4">
                 <div class="mb-3">
                     <label asp-for="@Model.ProductUpdateDto.ISBN" class="form-label"><strong>ISBN Numarası</strong></label>
                     <input type="text" class="form-control" id="isbn" aria-describedby="isbn" asp-for="@Model.ProductUpdateDto.ISBN">
+                    <span id="ISBNValidation" class="form-text alert-danger" asp-validation-for="@Model.ProductUpdateDto.ISBN"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="@Model.ProductUpdateDto.ProductName" class="form-label"><strong>Kitap Adı</strong></label>
                     <input type="text" class="form-control" id="productName" aria-describedby="productName" asp-for="@Model.ProductUpdateDto.ProductName">
+                    <span id="productNameValidation" class="form-text alert-danger" asp-validation-for="@Model.ProductUpdateDto.ProductName"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="@Model.ProductUpdateDto.UnitPrice" class="form-label"><strong>Birim Fiyat</strong></label>
                     <input type="number" min="1.00" max="1000.00" step="0.01" class="form-control" id="unitPrice" aria-describedby="unitPrice" asp-for="@Model.ProductUpdateDto.UnitPrice">
+                    <span id="UnitPriceValidation" class="form-text alert-danger" asp-validation-for="@Model.ProductUpdateDto.UnitPrice"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="@Model.ProductUpdateDto.StockAmount" class="form-label"><strong>Stok Adedi</strong></label>
                     <input type="number" min="1.00" max="1000.00" step="1" class="form-control" id="stockAmount" aria-describedby="stockAmount" asp-for="@Model.ProductUpdateDto.StockAmount">
+                    <span id="unitPriceValidation" class="form-text alert-danger" asp-validation-for="@Model.ProductUpdateDto.UnitPrice"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="@Model.ProductUpdateDto.Author" class="form-label"><strong>Yazar Adı</strong></label>
@@ -55,6 +59,7 @@
                                 <option value="@category.Id">@category.CategoryName</option>
                             }
                         </select>
+                        <span id="categoryIdValidation" class="form-text alert-danger" asp-validation-for="@Model.ProductUpdateDto.CategoryId"></span>
                     </div>
                 </div>
             </div>
@@ -66,3 +71,10 @@
 </div>
 
 <script src="~/js/imageURL.js"></script>
+
+@section Scripts {
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+}
