@@ -1516,3 +1516,11 @@ E-Commerce.AuthAPI | 2024-03-20 15:58:53.587 +03:00 [INF] Request starting HTTP/
 E-Commerce.AuthAPI | 2024-03-20 15:58:53.652 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.1256ms
 E-Commerce.AuthAPI | 2024-03-20 15:58:53.721 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
 E-Commerce.AuthAPI | 2024-03-20 15:58:53.808 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.2968ms
+E-Commerce.AuthAPI | 2024-03-20 17:35:15.895 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-20 17:35:15.931 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-20 17:35:15.938 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];

@@ -4896,3 +4896,83 @@ E-Commerce.ProductAPI | 2024-03-20 15:58:58.739 +03:00 [INF] Executing OkObjectR
 E-Commerce.ProductAPI | 2024-03-20 15:58:58.740 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.CategoryController.GetAll (E-Commerce.ProductAPI) in 87.7103ms
 E-Commerce.ProductAPI | 2024-03-20 15:58:58.741 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.CategoryController.GetAll (E-Commerce.ProductAPI)'
 E-Commerce.ProductAPI | 2024-03-20 15:58:58.741 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/category/list - 200 null application/json; charset=utf-8 91.362ms
+E-Commerce.ProductAPI | 2024-03-20 17:36:08.777 +03:00 [INF] Executed DbCommand (2,873ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [E-Commerce.ShoppingCart];
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.242 +03:00 [INF] Executed DbCommand (439ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [E-Commerce.ShoppingCart] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.250 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.308 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.309 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.319 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.322 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.332 +03:00 [INF] Applying migration '20240320143546_addShoppingCartTables'.
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.361 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CartHeaders] (
+    [Id] uniqueidentifier NOT NULL,
+    [UserId] nvarchar(max) NULL,
+    CONSTRAINT [PK_CartHeaders] PRIMARY KEY ([Id])
+);
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.364 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CartDetails] (
+    [Id] uniqueidentifier NOT NULL,
+    [CartHeaderId] uniqueidentifier NOT NULL,
+    [ProductId] uniqueidentifier NOT NULL,
+    [Quantity] int NOT NULL,
+    CONSTRAINT [PK_CartDetails] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_CartDetails_CartHeaders_CartHeaderId] FOREIGN KEY ([CartHeaderId]) REFERENCES [CartHeaders] ([Id]) ON DELETE CASCADE
+);
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.368 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_CartDetails_CartHeaderId] ON [CartDetails] ([CartHeaderId]);
+E-Commerce.ProductAPI | 2024-03-20 17:36:09.369 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240320143546_addShoppingCartTables', N'8.0.2');
+E-Commerce.ProductAPI | 2024-03-20 19:07:30.896 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-20 19:07:30.942 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-20 19:07:30.970 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-20 19:07:31.013 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-20 19:07:31.370 +03:00 [INF] Now listening on: https://localhost:7012
+E-Commerce.ProductAPI | 2024-03-20 19:07:31.370 +03:00 [INF] Now listening on: http://localhost:5053
+E-Commerce.ProductAPI | 2024-03-20 19:07:31.425 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-20 19:07:31.425 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-20 19:07:31.425 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ShoppingCartAPI
+E-Commerce.ProductAPI | 2024-03-20 19:07:31.858 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7012/swagger - null null
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.221 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7012/swagger - 301 0 null 368.038ms
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.233 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7012/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.284 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7012/swagger/index.html - 200 null text/html;charset=utf-8 51.3514ms
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.294 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7012/swagger/swagger-ui.css - null null
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7012/swagger/swagger-ui-bundle.js - null null
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.308 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7012/swagger/swagger-ui-standalone-preset.js - null null
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.316 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.316 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7012/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.317 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7012/swagger/swagger-ui.css - 200 143943 text/css 23.4012ms
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.319 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.320 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7012/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 11.7165ms
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.322 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7012/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 5.5791ms
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.324 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.324 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7012/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 24.3739ms
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.325 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7012/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.364 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7012/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.5546ms
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.504 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7012/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.527 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7012/swagger/favicon-32x32.png - null null
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.527 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7012/swagger/favicon-32x32.png - 200 628 image/png 0.6482ms
+E-Commerce.ProductAPI | 2024-03-20 19:07:32.567 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7012/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.709ms
