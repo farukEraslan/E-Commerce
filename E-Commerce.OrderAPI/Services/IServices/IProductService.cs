@@ -6,7 +6,7 @@ namespace E_Commerce.OrderAPI.Services.IServices
     {
         Task<List<ProductDto>> GetProducts();
         Task<ProductDto> GetById(Guid productId);
-        Task IncreaseProductStock(Guid productId);
-        Task DecreaseProductStock(Guid productId);
+        Task<ProductDto> IncreaseProductStock(Guid productId);
+        Task<ProductDto> DecreaseProductStock(Guid productId);
     }
 }

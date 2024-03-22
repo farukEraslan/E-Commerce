@@ -36,6 +36,7 @@ namespace E_Commerce.Web
             SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
             SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
             SD.CategoryAPIBase = builder.Configuration["ServiceUrls:CategoryAPI"];
+            SD.OrderAPIBase = builder.Configuration["ServiceUrls:OrderAPI"];
 
 
 
@@ -46,6 +47,7 @@ namespace E_Commerce.Web
             builder.Services.AddScoped<ITokenProvider, TokenProvider>();
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
 
             // ----- FLUENT VALIDATION -------
             builder.Services.AddControllersWithViews().AddFluentValidation(options =>

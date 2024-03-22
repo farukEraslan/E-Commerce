@@ -155,5 +155,59 @@ namespace E_Commerce.ProductAPI.Services
                 return _response;
             }
         }
+        public ResponseDto IncreaseProductStock(Guid productId)
+        {
+            try
+            {
+                var product = _appDbContext.Products.SingleOrDefault(p => p.Id == productId);
+                if (product == null)
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "Ürün bulunamadı.";
+                    return _response;
+                }
+
+                product.StockAmount++;
+
+                var result = _appDbContext.Products.Update(product);
+                _appDbContext.SaveChanges();
+                _response.Message = "Ürün başarı ile güncellendi.";
+                _response.Result = _mapper.Map<ProductDto>(product);
+                return _response;
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+                return _response;
+            }
+        }
+        public ResponseDto DecreaseProductStock(Guid productId)
+        {
+            try
+            {
+                var product = _appDbContext.Products.SingleOrDefault(p => p.Id == productId);
+                if (product == null)
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "Ürün bulunamadı.";
+                    return _response;
+                }
+
+                product.StockAmount--;
+
+                var result = _appDbContext.Products.Update(product);
+                _appDbContext.SaveChanges();
+                _response.Message = "Ürün başarı ile güncellendi.";
+                _response.Result = _mapper.Map<ProductDto>(product);
+                return _response;
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+                return _response;
+            }
+        }
     }
 }

@@ -11,5 +11,7 @@ namespace E_Commerce.ProductAPI.Services.IServices
         ResponseDto GetAll(int pageNumber, int pageSize);
         ResponseDto GetById(Guid productId);
         int TotalProductNumber();
+        ResponseDto IncreaseProductStock(Guid productId);
+        ResponseDto DecreaseProductStock(Guid productId);
     }
 }

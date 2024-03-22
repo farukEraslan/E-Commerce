@@ -1,4 +1,6 @@
-﻿using E_Commerce.OrderAPI.Services.IServices;
+﻿using E_Commerce.OrderAPI.Models.Dto.Cart;
+using E_Commerce.OrderAPI.Services.IServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,6 +8,7 @@ namespace E_Commerce.OrderAPI.Controllers
 {
     [Route("api/order")]
     [ApiController]
+    //[Authorize(Roles = "customer")]
     public class OrderController : ControllerBase
     {
         private readonly ICartService _cartService;
@@ -16,9 +19,9 @@ namespace E_Commerce.OrderAPI.Controllers
         }
 
         [HttpPost("add-to-cart")]
-        public async Task<IActionResult> AddToCart(Guid productId, Guid userId)
+        public async Task<IActionResult> AddToCart([FromBody] CreateCartDto createCartDto)
         {
-            var result = await _cartService.AddtoCart(productId, userId);
+            var result = await _cartService.AddtoCart(createCartDto.ProductId,createCartDto.UserId);
             if (result.IsSuccess)
             {
                 return Ok(result);
@@ -30,9 +33,9 @@ namespace E_Commerce.OrderAPI.Controllers
         }
 
         [HttpPost("remove-from-cart")]
-        public async Task<IActionResult> RemoveFromCart(Guid productId, Guid userId)
+        public async Task<IActionResult> RemoveFromCart([FromBody] RemoveCartDto removeCartDto)
         {
-            var result = await _cartService.RemoveFromCart(productId, userId);
+            var result = await _cartService.RemoveFromCart(removeCartDto.ProductId, removeCartDto.UserId);
             if (result.IsSuccess)
             {
                 return Ok(result);
@@ -43,8 +46,8 @@ namespace E_Commerce.OrderAPI.Controllers
             }
         }
 
-        [HttpGet("get-cart")]
-        public IActionResult GetCart(Guid userId)
+        [HttpGet("get-cart/{userId:guid}")]
+        public IActionResult GetCart([FromRoute] Guid userId)
         {
             var result = _cartService.GetCart(userId);
             if (result.IsSuccess)

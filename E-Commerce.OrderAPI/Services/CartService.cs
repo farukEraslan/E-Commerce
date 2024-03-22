@@ -33,6 +33,7 @@ namespace E_Commerce.OrderAPI.Services
                 {
                     Id = Guid.NewGuid(),
                     UserId = userId,
+                    CartTotalPrice = 0,
                 };
                 _appDbContext.Carts.Add(cart);
                 await _appDbContext.SaveChangesAsync();
@@ -53,7 +54,13 @@ namespace E_Commerce.OrderAPI.Services
                 };
 
                 // sepete eklenen ürünün stok miktarı 1 azaltılacak.
+                await _productService.DecreaseProductStock(productId);
+
                 _appDbContext.CartLines.Add(newCartLine);
+                await _appDbContext.SaveChangesAsync();
+
+                cart.CartTotalPrice += product.UnitPrice;
+                _appDbContext.Carts.Update(cart);
                 await _appDbContext.SaveChangesAsync();
 
                 _response.Message = "Ürün başarı ile sepete eklendi";
@@ -77,6 +84,13 @@ namespace E_Commerce.OrderAPI.Services
                 _appDbContext.Update(cartLine);
                 await _appDbContext.SaveChangesAsync();
 
+                // sepete eklenen ürünün stok miktarı 1 azaltılacak.
+                await _productService.DecreaseProductStock(productId);
+
+                cart.CartTotalPrice += product.UnitPrice;
+                _appDbContext.Carts.Update(cart);
+                await _appDbContext.SaveChangesAsync();
+
                 _response.Message = "Ürün başarı ile sepete eklendi";
                 return _response;
             }
@@ -84,7 +98,7 @@ namespace E_Commerce.OrderAPI.Services
 
         public async Task<ResponseDto> RemoveFromCart(Guid productId, Guid userId)
         {
-            var cart = _appDbContext.Carts.Where(cart => cart.UserId == userId && cart.IsCompleted == false).Include(x=>x.CartLines).FirstOrDefault();
+            var cart = _appDbContext.Carts.Where(cart => cart.UserId == userId && cart.IsCompleted == false).Include(x => x.CartLines).FirstOrDefault();
 
             var product = await _productService.GetById(productId);
 
@@ -96,6 +110,13 @@ namespace E_Commerce.OrderAPI.Services
                 _appDbContext.Update(cartLine);
                 await _appDbContext.SaveChangesAsync();
 
+                // sepete eklenen ürün miktarı 1 arttırılacak.
+                await _productService.IncreaseProductStock(productId);
+
+                cart.CartTotalPrice -= product.UnitPrice;
+                _appDbContext.Carts.Update(cart);
+                await _appDbContext.SaveChangesAsync();
+
                 _response.Message = "ürün adedi başarı ile azaltıldı.";
                 return _response;
             }
@@ -104,12 +125,21 @@ namespace E_Commerce.OrderAPI.Services
                 if (cart.CartLines.Count > 1)
                 {
                     _appDbContext.CartLines.Remove(cartLine);
+
+                    // sepete eklenen ürün miktarı 1 arttırılacak.
+                    await _productService.IncreaseProductStock(productId);
+
+                    cart.CartTotalPrice -= product.UnitPrice;
+                    _appDbContext.Carts.Update(cart);
                     await _appDbContext.SaveChangesAsync();
                 }
                 else
                 {
                     _appDbContext.CartLines.Remove(cartLine);
                     await _appDbContext.SaveChangesAsync();
+
+                    // sepete eklenen ürün miktarı 1 arttırılacak.
+                    await _productService.IncreaseProductStock(productId);
 
                     _appDbContext.Carts.Remove(cart);
                     await _appDbContext.SaveChangesAsync();
@@ -122,19 +152,28 @@ namespace E_Commerce.OrderAPI.Services
 
         public ResponseDto GetCart(Guid userId)
         {
-            var cart = _appDbContext.Carts.Where(x=>x.UserId == userId && x.IsCompleted == false).Include(x=>x.CartLines).FirstOrDefault();
+            // sorguya productta eklenecek.
+            var cart = _appDbContext.Carts.Where(x => x.UserId == userId && x.IsCompleted == false).Include(x => x.CartLines).FirstOrDefault();
 
-            List<CartLineDto> cartLineDtos = new();
-            foreach (var cartLine in cart.CartLines)
+            if (cart == null)
             {
-                cartLineDtos.Add(_mapper.Map<CartLineDto>(cartLine));
+                _response.IsSuccess = false;
+                return _response;
             }
-            CartDto cartDto = _mapper.Map<CartDto>(cart);
-            cartDto.CartLines = cartLineDtos;
+            else
+            {
+                List<CartLineDto> cartLineDtos = new();
+                foreach (var cartLine in cart.CartLines)
+                {
+                    cartLineDtos.Add(_mapper.Map<CartLineDto>(cartLine));
+                }
+                CartDto cartDto = _mapper.Map<CartDto>(cart);
+                cartDto.CartLines = cartLineDtos;
 
-            _response.Result = cartDto;
-            _response.Message = "Sepet başarı ile listelendi.";
-            return _response;
+                _response.Result = cartDto;
+                _response.Message = "Sepet başarı ile listelendi.";
+                return _response;
+            }
         }
     }
 }

@@ -79,5 +79,29 @@ namespace E_Commerce.ProductAPI.Controllers
             }
             return Ok(result);
         }
+
+        [HttpGet("increase-stock/{productId:guid}")]
+        //[Authorize]
+        public IActionResult IncreaseProductStock([FromRoute] Guid productId)
+        {
+            var result = _productService.IncreaseProductStock(productId);
+            if (!result.IsSuccess)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+
+        [HttpGet("decrease-stock/{productId:guid}")]
+        //[Authorize]
+        public IActionResult DecreaseProductStock([FromRoute] Guid productId)
+        {
+            var result = _productService.DecreaseProductStock(productId);
+            if (!result.IsSuccess)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
     }
 }
