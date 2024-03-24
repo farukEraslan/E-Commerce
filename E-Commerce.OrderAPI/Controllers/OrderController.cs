@@ -47,9 +47,9 @@ namespace E_Commerce.OrderAPI.Controllers
         }
 
         [HttpGet("get-cart/{userId:guid}")]
-        public IActionResult GetCart([FromRoute] Guid userId)
+        public async Task<IActionResult> GetCart([FromRoute] Guid userId)
         {
-            var result = _cartService.GetCart(userId);
+            var result = await _cartService.GetCart(userId);
             if (result.IsSuccess)
             {
                 return Ok(result);

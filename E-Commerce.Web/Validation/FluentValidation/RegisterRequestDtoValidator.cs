@@ -1,5 +1,6 @@
 ﻿using E_Commerce.Web.Dto.Request;
 using FluentValidation;
+using Microsoft.AspNetCore.Identity;
 using System.Text.RegularExpressions;
 
 namespace E_Commerce.Web.Validation.FluentValidation
@@ -24,11 +25,12 @@ namespace E_Commerce.Web.Validation.FluentValidation
             RuleFor(x => x.Email).EmailAddress().WithMessage("Email kısmı boş olamaz.");
 
             // Password Rules
-            RuleFor(x => x.Password).NotNull().WithMessage("Parola kısmı boş olamaz.");
-            RuleFor(x => x.Password).NotEmpty().WithMessage("Parola kısmı boş olamaz.");
-            RuleFor(x => x.Password).MinimumLength(8).WithMessage("En az 8 karakterli bir parola giriniz.");
-            RuleFor(x => x.Password).MaximumLength(16).WithMessage("En fazla 16 karakterli bir parola giriniz.");
-            RuleFor(x => x.Password).Must(PasswordCheck).WithMessage("Geçerli bir parola giriniz.");
+            RuleFor(x => x.Password).NotEmpty().WithMessage("Şifre boş olamaz.");
+            RuleFor(x => x.Password).Length(8, 16).WithMessage("Şifre en az 8 en fazla 16 karakter uzunluğunda olmalıdır.");
+            RuleFor(x => x.Password).Matches("[A-Z]").WithMessage("Şifrede en az bir büyük harf olmalıdır.");
+            RuleFor(x => x.Password).Matches("[a-z]").WithMessage("Şifrede en az bir küçük harf olmalıdır.");
+            RuleFor(x => x.Password).Matches("[0-9]").WithMessage("Şifrede en az bir sayı olmalıdır.");
+            RuleFor(x => x.Password).Matches("[!@#$%^&*()-+=]").WithMessage("Şifrede en az bir özel karakter olmalıdır.");
 
             // PhoneNumber Rules
             RuleFor(x => x.PhoneNumber).NotNull().WithMessage("Telefon numarası kısmı boş olamaz.");
@@ -38,13 +40,7 @@ namespace E_Commerce.Web.Validation.FluentValidation
             // BirthDate Rules
             RuleFor(x => x.BirthDate).NotNull().WithMessage("Doğum günü kısmı boş olamaz.");
             RuleFor(x => x.BirthDate).NotEmpty().WithMessage("Doğum günü kısmı boş olamaz.");
-            RuleFor(x => x.BirthDate).Must(BirthDateCheck).WithMessage("Üye olabilmek için 18 yaşından büyük olmalısınız."); 
-        }
-
-        private bool PasswordCheck(string password)
-        {
-            // Password validasyonu yazılacak.
-            return false;
+            RuleFor(x => x.BirthDate).Must(BirthDateCheck).WithMessage("Üye olabilmek için 18 yaşından büyük olmalısınız.");
         }
 
         private bool PhoneNumberCheck(string phoneNumber)

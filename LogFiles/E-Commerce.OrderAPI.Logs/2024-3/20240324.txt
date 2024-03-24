@@ -1,0 +1,32 @@
+E-Commerce.OrderAPI | 2024-03-24 02:47:26.819 +03:00 [WRN] No store type was specified for the decimal property 'CartTotalPrice' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 02:47:26.890 +03:00 [WRN] No store type was specified for the decimal property 'CartLinePrice' on entity type 'CartLine'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 02:47:27.443 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.OrderAPI | 2024-03-24 02:47:27.482 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.OrderAPI | 2024-03-24 02:47:27.531 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.OrderAPI | 2024-03-24 02:47:27.590 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.OrderAPI | 2024-03-24 02:47:28.522 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.OrderAPI | 2024-03-24 02:47:28.523 +03:00 [INF] Now listening on: http://localhost:5073
+E-Commerce.OrderAPI | 2024-03-24 02:47:28.680 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.OrderAPI | 2024-03-24 02:47:28.680 +03:00 [INF] Hosting environment: Development
+E-Commerce.OrderAPI | 2024-03-24 02:47:28.681 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.OrderAPI
+E-Commerce.OrderAPI | 2024-03-24 02:47:30.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-03-24 02:47:31.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 1704.2403ms
+E-Commerce.OrderAPI | 2024-03-24 02:47:31.924 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-03-24 02:47:31.937 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 13.5407ms
+E-Commerce.OrderAPI | 2024-03-24 02:47:31.944 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-03-24 02:47:32.184 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 240.7678ms
+E-Commerce.OrderAPI | 2024-03-24 02:47:32.391 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-03-24 02:47:32.603 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 212.3476ms
+E-Commerce.OrderAPI | 2024-03-24 02:50:56.032 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-03-24 02:50:56.059 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 27.0195ms
+E-Commerce.OrderAPI | 2024-03-24 02:50:56.095 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-03-24 02:50:56.097 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 1.8375ms
+E-Commerce.OrderAPI | 2024-03-24 02:50:56.110 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-03-24 02:50:56.151 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.3565ms
+E-Commerce.OrderAPI | 2024-03-24 02:50:56.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-03-24 02:50:56.293 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.3038ms

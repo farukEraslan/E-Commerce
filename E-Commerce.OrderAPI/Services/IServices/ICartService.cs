@@ -7,6 +7,6 @@ namespace E_Commerce.OrderAPI.Services.IServices
     {
         Task<ResponseDto> AddtoCart(Guid productId, Guid userId);
         Task<ResponseDto> RemoveFromCart(Guid productId, Guid userId);
-        ResponseDto GetCart(Guid userId);
+        Task<ResponseDto> GetCart(Guid userId);
     }
 }

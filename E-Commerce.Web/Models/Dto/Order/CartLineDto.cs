@@ -1,4 +1,6 @@
-﻿namespace E_Commerce.Web.Models.Dto.Cart
+﻿using E_Commerce.Web.Models.Dto.Product;
+
+namespace E_Commerce.Web.Models.Dto.Cart
 {
     public class CartLineDto
     {
@@ -6,6 +8,7 @@
         public Guid Id { get; set; }
         // Product FK
         public Guid ProductId { get; set; }
+        public ProductDto Product { get; set; }
         // Cart FK
         public Guid CartId { get; set; }
         public int Quantity { get; set; }

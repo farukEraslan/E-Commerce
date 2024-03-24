@@ -150,7 +150,7 @@ namespace E_Commerce.OrderAPI.Services
             }
         }
 
-        public ResponseDto GetCart(Guid userId)
+        public async Task<ResponseDto> GetCart(Guid userId)
         {
             // sorguya productta eklenecek.
             var cart = _appDbContext.Carts.Where(x => x.UserId == userId && x.IsCompleted == false).Include(x => x.CartLines).FirstOrDefault();
@@ -165,7 +165,10 @@ namespace E_Commerce.OrderAPI.Services
                 List<CartLineDto> cartLineDtos = new();
                 foreach (var cartLine in cart.CartLines)
                 {
-                    cartLineDtos.Add(_mapper.Map<CartLineDto>(cartLine));
+                    var cartLineDto = _mapper.Map<CartLineDto>(cartLine);
+                    var cartLineProduct = await _productService.GetById(cartLine.ProductId);
+                    cartLineDto.Product = cartLineProduct;
+                    cartLineDtos.Add(cartLineDto);
                 }
                 CartDto cartDto = _mapper.Map<CartDto>(cart);
                 cartDto.CartLines = cartLineDtos;
