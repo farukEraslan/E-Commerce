@@ -39,11 +39,13 @@ namespace E_Commerce.Web.Controllers
                 await SignInUser(loginResponseDto);
                 // kullanıcının token'ı tarayıcıda cookieye atandı.
                 _tokenProvider.SetToken(loginResponseDto.Token);
+
+                TempData["success"] = response?.Message;
                 return RedirectToAction("Index", "Home");
             }
             else
             {
-                ModelState.AddModelError("CustomError", response.Message);
+                TempData["error"] = response?.Message;
                 return View();
             }
         }
@@ -59,12 +61,13 @@ namespace E_Commerce.Web.Controllers
             if (result != null & result.IsSuccess)
             {
                 // toastr ile bildirim yollanacak.
+                TempData["success"] = result?.Message;
                 return RedirectToAction("Index", "Home");
             }
             else
             {
                 // toastr ile hata bildirimi yollanacak.
-                TempData["error"] = result.Message;
+                TempData["error"] = result?.Message;
                 return View(registerRequestDto);
             }
         }

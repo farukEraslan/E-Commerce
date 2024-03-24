@@ -45,6 +45,7 @@ namespace E_Commerce.Web.Controllers
             if (cartResponse != null && cartResponse.IsSuccess)
             {
                 cartDto = JsonConvert.DeserializeObject<CartDto>(Convert.ToString(cartResponse.Result));
+                TempData["success"] = cartResponse?.Message;
                 return View(cartDto);
             }
             else

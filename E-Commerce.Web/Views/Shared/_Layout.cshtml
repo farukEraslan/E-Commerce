@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/E_Commerce.Web.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css" />
+
 </head>
 <body>
     <header>
@@ -21,33 +22,33 @@
                 <div class="navbar d-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Anasayfa</a>
+                            <a class="nav-link text-dark btn btn-outline-primary m-1" asp-area="" asp-controller="Home" asp-action="Index">Anasayfa</a>
                         </li>
                         @if (!User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Login">Giriş Yap</a>
+                                <a class="nav-link text-dark btn btn-outline-success m-1" asp-area="" asp-controller="Auth" asp-action="Login">Giriş Yap</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Register">Kayıt Yap</a>
+                                <a class="nav-link text-dark btn btn-outline-warning m-1" asp-area="" asp-controller="Auth" asp-action="Register">Kayıt Yap</a>
                             </li>
                         }
                         else if (User.IsInRole("admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Kitap Yönetimi</a>
+                                <a class="nav-link text-dark btn btn-outline-warning m-1" asp-area="" asp-controller="Product" asp-action="Index">Kitap Yönetimi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Logout">Çıkış Yap</a>
+                                <a class="nav-link text-dark btn btn-outline-danger m-1" asp-area="" asp-controller="Auth" asp-action="Logout">Çıkış Yap</a>
                             </li>
                         }
                         else if (User.IsInRole("customer"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="Cart" asp-route-userId="ac1790c7-b694-4c05-a60d-5b1e58ea13f4">Sepetim</a>
+                                <a class="nav-link text-dark btn btn-outline-warning m-1" asp-area="" asp-controller="Order" asp-action="Cart" asp-route-userId="ac1790c7-b694-4c05-a60d-5b1e58ea13f4">Sepetim</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Logout">Çıkış Yap</a>
+                                <a class="nav-link text-dark btn btn-outline-danger m-1" asp-area="" asp-controller="Auth" asp-action="Logout">Çıkış Yap</a>
                             </li>
                         }
                     </ul>
@@ -58,6 +59,7 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            <partial name="_Notifications" />
         </main>
     </div>
 

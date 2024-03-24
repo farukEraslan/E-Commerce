@@ -25,9 +25,9 @@
                 <td class="align-middle">
                     <img style="width:75px; height:100px;" src="@product.Product.ImageUrl" alt="@product.Product.ProductName" />
                 </td>
-                <td class ="align-middle">@product.Product.ProductName</td>
-                <td class="align-middle">@product.Quantity</td>
-                <td class="align-middle">@product.Product.UnitPrice</td>
+                <td class="align-middle">@product.Product.ProductName</td>
+                <td class="align-middle">@product.Quantity Adet</td>
+                <td class="align-middle">@product.Product.UnitPrice TL</td>
                 <td class="align-middle">
                     <span class="btn btn-warning">
                         @if (product.Quantity >= 10)
@@ -48,7 +48,20 @@
     </tbody>
 
 </table>
-<div class="container d-flex justify-content-end align-items-center">
-    <span class="border-bottom border-warning border-3" style="margin-right: 60px; padding: 5px;">Sipariş Toplamı : @Model.CartTotalPrice TL</span>
-    <a class="btn btn-warning" href="#">Sipariş Ver</a>
+
+<div class="container d-flex align-items-around">
+    <div class="container">
+        <h5>Adres Bilgisi</h5>
+        <span id="addressValidation" class="form-text alert-danger" asp-validation-for="@Model.Address"></span>
+        <textarea id="address" class="form-control" placeholder="Adresinizi giriniz..." rows="4" style="resize:none;" asp-for="@Model.Address"></textarea>
+
+    </div>
+    <div class="container d-flex justify-content-end mt-5 mb-5">
+        <span class="border-bottom border-warning border-3" style="margin-right: 60px; padding: 5px;">Sipariş Toplamı : @Model.CartTotalPrice TL</span>
+        <a class="btn btn-warning" href="#">Sipariş Ver</a>
+    </div>
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
