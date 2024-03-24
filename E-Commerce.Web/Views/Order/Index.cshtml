@@ -24,8 +24,8 @@
                 <td class="align-middle">@order.IsApproved</td>
                 <td class="align-middle">
                     <div class="d-grid gap-2 d-md-block">
-                        <a class="btn btn-warning" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="Detail" asp-route-id="@order.Id">Düzenle</a>
-                        <a class="btn btn-danger" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-id="@order.Id">Sil</a>
+                        <a class="btn btn-warning" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="Detail" asp-route-cartId="@order.Id">Düzenle</a>
+                        <a class="btn btn-danger" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Sil</a>
                     </div>
                 </td>
             </tr>

@@ -68,7 +68,7 @@ namespace E_Commerce.Web.Services
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = Utility.SD.ApiType.PUT,
-                Url = SD.OrderAPIBase + "/api/order/approve-order"
+                Url = SD.OrderAPIBase + "/api/order/approve-order/" + cartId
             });
         }
     }

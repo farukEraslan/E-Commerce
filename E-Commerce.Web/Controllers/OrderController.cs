@@ -88,5 +88,20 @@ namespace E_Commerce.Web.Controllers
             }
             return RedirectToAction("Cart", "Order");
         }
+
+        public async Task<IActionResult> ApproveOrder(Guid cartId)
+        {
+            ResponseDto result = await _orderService.ApproveOrder(cartId);
+            if (result != null && result.IsSuccess)
+            {
+                TempData["success"] = result.Message;
+                return RedirectToAction("Index", "Order");
+            }
+            else
+            {
+                TempData["error"] = result.Message;
+                return RedirectToAction("Index", "Order");
+            }
+        }
     }
 }

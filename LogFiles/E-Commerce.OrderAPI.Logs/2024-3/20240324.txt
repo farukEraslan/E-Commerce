@@ -6082,3 +6082,305 @@ E-Commerce.OrderAPI | 2024-03-24 17:23:48.595 +03:00 [INF] Executing OkObjectRes
 E-Commerce.OrderAPI | 2024-03-24 17:23:48.597 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 268.434ms
 E-Commerce.OrderAPI | 2024-03-24 17:23:48.597 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
 E-Commerce.OrderAPI | 2024-03-24 17:23:48.598 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 283.1525ms
+E-Commerce.OrderAPI | 2024-03-24 19:15:41.203 +03:00 [WRN] No store type was specified for the decimal property 'CartTotalPrice' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:15:41.334 +03:00 [WRN] No store type was specified for the decimal property 'CartLinePrice' on entity type 'CartLine'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:15:44.254 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.OrderAPI | 2024-03-24 19:15:44.412 +03:00 [INF] Executed DbCommand (96ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.OrderAPI | 2024-03-24 19:15:44.539 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.OrderAPI | 2024-03-24 19:15:44.648 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.OrderAPI | 2024-03-24 19:15:46.154 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.OrderAPI | 2024-03-24 19:15:46.154 +03:00 [INF] Now listening on: http://localhost:5073
+E-Commerce.OrderAPI | 2024-03-24 19:15:46.986 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.OrderAPI | 2024-03-24 19:15:46.987 +03:00 [INF] Hosting environment: Development
+E-Commerce.OrderAPI | 2024-03-24 19:15:46.987 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.OrderAPI
+E-Commerce.OrderAPI | 2024-03-24 19:15:49.135 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-03-24 19:15:52.261 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-03-24 19:15:52.475 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-03-24 19:15:52.509 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 3386.0626ms
+E-Commerce.OrderAPI | 2024-03-24 19:15:52.510 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 249.4681ms
+E-Commerce.OrderAPI | 2024-03-24 19:15:52.788 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 313.3141ms
+E-Commerce.OrderAPI | 2024-03-24 19:15:52.937 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-03-24 19:15:53.396 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 459.4653ms
+E-Commerce.OrderAPI | 2024-03-24 19:16:13.522 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-03-24 19:16:13.717 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:16:13.753 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:16:15.201 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+E-Commerce.OrderAPI | 2024-03-24 19:16:15.579 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-03-24 19:16:15.678 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 1913.8865ms
+E-Commerce.OrderAPI | 2024-03-24 19:16:15.678 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:16:15.695 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 2174.1723ms
+E-Commerce.OrderAPI | 2024-03-24 19:19:45.784 +03:00 [WRN] No store type was specified for the decimal property 'CartTotalPrice' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:19:46.403 +03:00 [WRN] No store type was specified for the decimal property 'CartLinePrice' on entity type 'CartLine'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:19:48.383 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.OrderAPI | 2024-03-24 19:19:48.428 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.OrderAPI | 2024-03-24 19:19:48.512 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.OrderAPI | 2024-03-24 19:19:48.574 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.OrderAPI | 2024-03-24 19:19:49.395 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.OrderAPI | 2024-03-24 19:19:49.395 +03:00 [INF] Now listening on: http://localhost:5073
+E-Commerce.OrderAPI | 2024-03-24 19:19:49.535 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.OrderAPI | 2024-03-24 19:19:49.536 +03:00 [INF] Hosting environment: Development
+E-Commerce.OrderAPI | 2024-03-24 19:19:49.537 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.OrderAPI
+E-Commerce.OrderAPI | 2024-03-24 19:19:51.223 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-03-24 19:19:52.658 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 1442.3108ms
+E-Commerce.OrderAPI | 2024-03-24 19:19:52.750 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-03-24 19:19:52.753 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-03-24 19:19:52.787 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 36.6767ms
+E-Commerce.OrderAPI | 2024-03-24 19:19:52.984 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 231.6443ms
+E-Commerce.OrderAPI | 2024-03-24 19:19:53.530 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-03-24 19:19:53.742 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 212.5236ms
+E-Commerce.OrderAPI | 2024-03-24 19:20:10.139 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-03-24 19:20:10.328 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:20:10.408 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:20:11.141 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+E-Commerce.OrderAPI | 2024-03-24 19:20:11.294 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-03-24 19:20:11.371 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 953.1771ms
+E-Commerce.OrderAPI | 2024-03-24 19:20:11.371 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:20:11.384 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 1246.2528ms
+E-Commerce.OrderAPI | 2024-03-24 19:47:11.749 +03:00 [WRN] No store type was specified for the decimal property 'CartTotalPrice' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:47:11.819 +03:00 [WRN] No store type was specified for the decimal property 'CartLinePrice' on entity type 'CartLine'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:47:12.288 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.OrderAPI | 2024-03-24 19:47:12.319 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.OrderAPI | 2024-03-24 19:47:12.368 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.OrderAPI | 2024-03-24 19:47:12.422 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.OrderAPI | 2024-03-24 19:47:13.596 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.OrderAPI | 2024-03-24 19:47:13.596 +03:00 [INF] Now listening on: http://localhost:5073
+E-Commerce.OrderAPI | 2024-03-24 19:47:14.021 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.OrderAPI | 2024-03-24 19:47:14.022 +03:00 [INF] Hosting environment: Development
+E-Commerce.OrderAPI | 2024-03-24 19:47:14.023 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.OrderAPI
+E-Commerce.OrderAPI | 2024-03-24 19:47:16.158 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-03-24 19:47:17.548 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 1399.8603ms
+E-Commerce.OrderAPI | 2024-03-24 19:47:18.266 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-03-24 19:47:18.290 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 24.0482ms
+E-Commerce.OrderAPI | 2024-03-24 19:47:18.397 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-03-24 19:47:18.493 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.8213ms
+E-Commerce.OrderAPI | 2024-03-24 19:47:19.065 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-03-24 19:47:19.261 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 195.7768ms
+E-Commerce.OrderAPI | 2024-03-24 19:47:45.588 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-03-24 19:47:45.761 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:47:45.808 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:47:46.975 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+E-Commerce.OrderAPI | 2024-03-24 19:47:47.251 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-03-24 19:47:47.414 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 1590.0201ms
+E-Commerce.OrderAPI | 2024-03-24 19:47:47.415 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:47:47.452 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 1864.0146ms
+E-Commerce.OrderAPI | 2024-03-24 19:48:18.724 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/order/approve-order00000000-0000-0000-0000-000000000000 - null 0
+E-Commerce.OrderAPI | 2024-03-24 19:48:18.734 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/order/approve-order00000000-0000-0000-0000-000000000000 - 404 0 null 10.1649ms
+E-Commerce.OrderAPI | 2024-03-24 19:48:18.736 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: PUT https://localhost:7001/api/order/approve-order00000000-0000-0000-0000-000000000000, Response status code: 404
+E-Commerce.OrderAPI | 2024-03-24 19:49:11.557 +03:00 [WRN] No store type was specified for the decimal property 'CartTotalPrice' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:49:11.626 +03:00 [WRN] No store type was specified for the decimal property 'CartLinePrice' on entity type 'CartLine'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:49:12.192 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.OrderAPI | 2024-03-24 19:49:12.231 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.OrderAPI | 2024-03-24 19:49:12.290 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.OrderAPI | 2024-03-24 19:49:12.341 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.OrderAPI | 2024-03-24 19:49:12.955 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.OrderAPI | 2024-03-24 19:49:12.955 +03:00 [INF] Now listening on: http://localhost:5073
+E-Commerce.OrderAPI | 2024-03-24 19:49:13.094 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.OrderAPI | 2024-03-24 19:49:13.095 +03:00 [INF] Hosting environment: Development
+E-Commerce.OrderAPI | 2024-03-24 19:49:13.095 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.OrderAPI
+E-Commerce.OrderAPI | 2024-03-24 19:49:14.472 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-03-24 19:49:15.753 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 1291.2196ms
+E-Commerce.OrderAPI | 2024-03-24 19:49:15.780 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-03-24 19:49:15.796 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 16.8288ms
+E-Commerce.OrderAPI | 2024-03-24 19:49:15.846 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-03-24 19:49:15.957 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.6703ms
+E-Commerce.OrderAPI | 2024-03-24 19:49:16.131 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-03-24 19:49:16.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 222.5298ms
+E-Commerce.OrderAPI | 2024-03-24 19:49:29.998 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-03-24 19:49:30.259 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:49:30.315 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:49:31.077 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+E-Commerce.OrderAPI | 2024-03-24 19:49:31.237 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-03-24 19:49:31.359 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 1031.0895ms
+E-Commerce.OrderAPI | 2024-03-24 19:49:31.359 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:49:31.383 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 1386.5401ms
+E-Commerce.OrderAPI | 2024-03-24 19:52:27.095 +03:00 [WRN] No store type was specified for the decimal property 'CartTotalPrice' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:52:27.167 +03:00 [WRN] No store type was specified for the decimal property 'CartLinePrice' on entity type 'CartLine'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:52:27.693 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.OrderAPI | 2024-03-24 19:52:27.727 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.OrderAPI | 2024-03-24 19:52:27.774 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.OrderAPI | 2024-03-24 19:52:27.827 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.OrderAPI | 2024-03-24 19:52:28.475 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.OrderAPI | 2024-03-24 19:52:28.475 +03:00 [INF] Now listening on: http://localhost:5073
+E-Commerce.OrderAPI | 2024-03-24 19:52:28.604 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.OrderAPI | 2024-03-24 19:52:28.606 +03:00 [INF] Hosting environment: Development
+E-Commerce.OrderAPI | 2024-03-24 19:52:28.606 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.OrderAPI
+E-Commerce.OrderAPI | 2024-03-24 19:52:30.439 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-03-24 19:52:31.265 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 833.7047ms
+E-Commerce.OrderAPI | 2024-03-24 19:52:31.333 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-03-24 19:52:31.378 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 44.8873ms
+E-Commerce.OrderAPI | 2024-03-24 19:52:31.428 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-03-24 19:52:31.579 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 150.2111ms
+E-Commerce.OrderAPI | 2024-03-24 19:52:31.921 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-03-24 19:52:32.092 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 171.5037ms
+E-Commerce.OrderAPI | 2024-03-24 19:52:44.432 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-03-24 19:52:44.722 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:52:44.792 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:52:45.888 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+E-Commerce.OrderAPI | 2024-03-24 19:52:46.021 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-03-24 19:52:46.120 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 1316.1274ms
+E-Commerce.OrderAPI | 2024-03-24 19:52:46.120 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:52:46.139 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 1707.7058ms
+E-Commerce.OrderAPI | 2024-03-24 19:53:27.370 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/order/approve-order/d489a291-cff0-407d-b8b8-416193ca67e6 - null 0
+E-Commerce.OrderAPI | 2024-03-24 19:53:27.383 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:53:27.412 +03:00 [INF] Route matched with {action = "ApproveOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveOrder(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:53:27.853 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__cartId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[Id] = @__cartId_0
+E-Commerce.OrderAPI | 2024-03-24 19:53:28.164 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-03-24 19:53:28.198 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+E-Commerce.OrderAPI | 2024-03-24 19:53:28.200 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI) in 787.5529ms
+E-Commerce.OrderAPI | 2024-03-24 19:53:28.200 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:53:28.201 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/order/approve-order/d489a291-cff0-407d-b8b8-416193ca67e6 - 200 null application/json; charset=utf-8 831.4829ms
+E-Commerce.OrderAPI | 2024-03-24 19:54:59.511 +03:00 [WRN] No store type was specified for the decimal property 'CartTotalPrice' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:54:59.586 +03:00 [WRN] No store type was specified for the decimal property 'CartLinePrice' on entity type 'CartLine'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:55:00.138 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.OrderAPI | 2024-03-24 19:55:00.173 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.OrderAPI | 2024-03-24 19:55:00.232 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.OrderAPI | 2024-03-24 19:55:00.288 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.OrderAPI | 2024-03-24 19:55:01.007 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.OrderAPI | 2024-03-24 19:55:01.007 +03:00 [INF] Now listening on: http://localhost:5073
+E-Commerce.OrderAPI | 2024-03-24 19:55:01.141 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.OrderAPI | 2024-03-24 19:55:01.143 +03:00 [INF] Hosting environment: Development
+E-Commerce.OrderAPI | 2024-03-24 19:55:01.144 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.OrderAPI
+E-Commerce.OrderAPI | 2024-03-24 19:55:02.869 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-03-24 19:55:03.812 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 952.6409ms
+E-Commerce.OrderAPI | 2024-03-24 19:55:03.899 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-03-24 19:55:03.935 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 35.4895ms
+E-Commerce.OrderAPI | 2024-03-24 19:55:03.992 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-03-24 19:55:04.064 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.4874ms
+E-Commerce.OrderAPI | 2024-03-24 19:55:04.282 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-03-24 19:55:04.472 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 190.8453ms
+E-Commerce.OrderAPI | 2024-03-24 19:55:15.910 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-03-24 19:55:16.200 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:55:16.254 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:55:17.066 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+E-Commerce.OrderAPI | 2024-03-24 19:55:17.234 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-03-24 19:55:17.323 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 1059.7881ms
+E-Commerce.OrderAPI | 2024-03-24 19:55:17.323 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:55:17.342 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 1433.6061ms
+E-Commerce.OrderAPI | 2024-03-24 19:55:26.439 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/order/approve-order/da655cc8-99c4-407a-a740-a636c08d7d60 - null 0
+E-Commerce.OrderAPI | 2024-03-24 19:55:26.451 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:55:26.492 +03:00 [INF] Route matched with {action = "ApproveOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveOrder(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:55:27.054 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__cartId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[Id] = @__cartId_0
+E-Commerce.OrderAPI | 2024-03-24 19:55:27.290 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-03-24 19:55:27.303 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+E-Commerce.OrderAPI | 2024-03-24 19:55:27.304 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI) in 811.6519ms
+E-Commerce.OrderAPI | 2024-03-24 19:55:27.304 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:55:27.305 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/order/approve-order/da655cc8-99c4-407a-a740-a636c08d7d60 - 200 null application/json; charset=utf-8 866.1474ms
+E-Commerce.OrderAPI | 2024-03-24 19:56:26.170 +03:00 [WRN] No store type was specified for the decimal property 'CartTotalPrice' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:56:26.251 +03:00 [WRN] No store type was specified for the decimal property 'CartLinePrice' on entity type 'CartLine'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-03-24 19:56:26.748 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.OrderAPI | 2024-03-24 19:56:26.781 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.OrderAPI | 2024-03-24 19:56:26.836 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.OrderAPI | 2024-03-24 19:56:26.887 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.OrderAPI | 2024-03-24 19:56:27.553 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.OrderAPI | 2024-03-24 19:56:27.553 +03:00 [INF] Now listening on: http://localhost:5073
+E-Commerce.OrderAPI | 2024-03-24 19:56:27.671 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.OrderAPI | 2024-03-24 19:56:27.672 +03:00 [INF] Hosting environment: Development
+E-Commerce.OrderAPI | 2024-03-24 19:56:27.672 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.OrderAPI
+E-Commerce.OrderAPI | 2024-03-24 19:56:29.280 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-03-24 19:56:30.256 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 985.3394ms
+E-Commerce.OrderAPI | 2024-03-24 19:56:30.402 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-03-24 19:56:30.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 11.9181ms
+E-Commerce.OrderAPI | 2024-03-24 19:56:30.423 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-03-24 19:56:30.534 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.8797ms
+E-Commerce.OrderAPI | 2024-03-24 19:56:30.734 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-03-24 19:56:30.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 180.2244ms
+E-Commerce.OrderAPI | 2024-03-24 19:56:49.941 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-03-24 19:56:50.203 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:56:50.261 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:56:50.971 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+E-Commerce.OrderAPI | 2024-03-24 19:56:51.121 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-03-24 19:56:51.205 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 937.0682ms
+E-Commerce.OrderAPI | 2024-03-24 19:56:51.205 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:56:51.217 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 1277.7149ms
+E-Commerce.OrderAPI | 2024-03-24 19:56:54.103 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/order/approve-order/da655cc8-99c4-407a-a740-a636c08d7d60 - null 0
+E-Commerce.OrderAPI | 2024-03-24 19:56:54.114 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:56:54.141 +03:00 [INF] Route matched with {action = "ApproveOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveOrder(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:56:54.665 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__cartId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[Id] = @__cartId_0
+E-Commerce.OrderAPI | 2024-03-24 19:56:54.939 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-03-24 19:56:54.963 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+E-Commerce.OrderAPI | 2024-03-24 19:56:54.965 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI) in 823.3266ms
+E-Commerce.OrderAPI | 2024-03-24 19:56:54.965 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:56:54.966 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/order/approve-order/da655cc8-99c4-407a-a740-a636c08d7d60 - 200 null application/json; charset=utf-8 863.463ms
+E-Commerce.OrderAPI | 2024-03-24 19:56:55.305 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-03-24 19:56:55.307 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:56:55.307 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-03-24 19:56:55.323 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+E-Commerce.OrderAPI | 2024-03-24 19:56:55.324 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-03-24 19:56:55.325 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 17.1099ms
+E-Commerce.OrderAPI | 2024-03-24 19:56:55.325 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-03-24 19:56:55.325 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 20.7087ms
