@@ -9,5 +9,8 @@ namespace E_Commerce.Web.Services.IServices
         Task<ResponseDto> AddToCart(CreateCartDto createCartDto);
         Task<ResponseDto> RemoveFromCart(RemoveCartDto removeCartDto);
         Task<ResponseDto> GetCart(Guid userId);
+        Task<ResponseDto> GiveOrder(CartDto cartDto);
+        Task<ResponseDto> GetOrders();
+        Task<ResponseDto> ApproveOrder(Guid cartId);
     }
 }

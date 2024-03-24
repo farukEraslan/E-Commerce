@@ -25,7 +25,10 @@ namespace E_Commerce.Web.Controllers
             ResponseDto? productResponse = await _productService.GetAllAsync(page, size);
 
             if (productResponse != null && productResponse.IsSuccess)
+            {
                 productList = JsonConvert.DeserializeObject<List<ProductDto>>(Convert.ToString(productResponse.Result));
+                TempData["success"] = productResponse?.Message;
+            }
             else
                 TempData["error"] = productResponse?.Message;
 
@@ -72,6 +75,7 @@ namespace E_Commerce.Web.Controllers
             {
                 productUpdateVM.CategoryDto = JsonConvert.DeserializeObject<List<CategoryDto>>(Convert.ToString(categoryResponse.Result));
                 productUpdateVM.ProductUpdateDto = JsonConvert.DeserializeObject<ProductUpdateDto>(Convert.ToString(productResponse.Result));
+                TempData["success"] = categoryResponse?.Message;
             }
             else
                 TempData["error"] = categoryResponse?.Message;

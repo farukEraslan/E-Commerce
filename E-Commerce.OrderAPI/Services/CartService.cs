@@ -66,7 +66,7 @@ namespace E_Commerce.OrderAPI.Services
                 _response.Message = "Ürün başarı ile sepete eklendi";
                 return _response;
             }
-            else if (cartLine.Quantity >= product.StockAmount)
+            else if (cartLine.Quantity > product.StockAmount)
             {
                 _response.IsSuccess = false;
                 _response.Message = "Stok miktarı yeterli değil";
@@ -175,6 +175,57 @@ namespace E_Commerce.OrderAPI.Services
 
                 _response.Result = cartDto;
                 _response.Message = "Sepet başarı ile listelendi.";
+                return _response;
+            }
+        }
+
+        public async Task<ResponseDto> GiveOrder(CartDto cartDto)
+        {
+            var existCart = _appDbContext.Carts.FirstOrDefault(cart => cart.Id == cartDto.Id);
+            
+            if (existCart != null)
+            {
+                _appDbContext.Carts.Update(_mapper.Map(cartDto, existCart));
+                _appDbContext.SaveChanges();
+
+                _response.Message = "Sipariş başarı şekilde verildi..";
+                _response.Result = existCart;
+                return _response;
+            }
+            else
+            {
+                _response.Message = "Sepet bulunamadı.";
+                _response.IsSuccess = false;
+                return _response;
+            }
+        }
+
+        public async Task<ResponseDto> GetOrders()
+        {
+            _response.Result = _appDbContext.Carts.ToList();
+            _response.Message = "Siparişler başarı ile listelendi.";
+            return _response;
+        }
+        
+        public async Task<ResponseDto> ApproveOrder(Guid cartId)
+        {
+            var cart = _appDbContext.Carts.FirstOrDefault(c => c.Id == cartId);
+            if (cart != null)
+            {
+                cart.IsApproved = true;
+                _appDbContext.Carts.Update(cart);
+                _appDbContext.SaveChanges();
+
+                _response.IsSuccess = true;
+                _response.Message = "Sipariş onaylandı.";
+                
+                // burada müşteriye sipariş onay maili gidecek.
+
+                return _response;
+            }
+            else
+            {
+                _response.Message = "Sipariş onaylanırken bir hata oluştu.";
                 return _response;
             }
         }

@@ -38,7 +38,7 @@ namespace E_Commerce.Web.Hubs
 
                 foreach (var item in ConnectedUser.UsersId.Values)
                 {
-                    if (browser != item.Browser)
+                    if (browser != item.Browser && userInfo.UserId == item.UserId)
                     {
                         CloseConnections(item);
                     }

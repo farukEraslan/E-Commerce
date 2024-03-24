@@ -15,6 +15,22 @@ namespace E_Commerce.Web.Controllers
             _orderService = orderService;
         }
 
+        public async Task<IActionResult> Index()
+        {
+            List<CartDto>? cartList = new();
+            ResponseDto? orders = await _orderService.GetOrders();
+
+            if (orders != null && orders.IsSuccess)
+            {
+                cartList = JsonConvert.DeserializeObject<List<CartDto>>(Convert.ToString(orders.Result));
+                TempData["success"] = orders?.Message;
+            }
+            else
+                TempData["error"] = orders?.Message;
+
+            return View(cartList);
+        }
+
         public async Task<IActionResult> AddToCart(Guid productId, Guid userId)
         {
             CreateCartDto createCartDto = new CreateCartDto();
@@ -45,8 +61,12 @@ namespace E_Commerce.Web.Controllers
             if (cartResponse != null && cartResponse.IsSuccess)
             {
                 cartDto = JsonConvert.DeserializeObject<CartDto>(Convert.ToString(cartResponse.Result));
-                TempData["success"] = cartResponse?.Message;
-                return View(cartDto);
+                if (!cartDto.IsCompleted)
+                {
+                    TempData["success"] = cartResponse?.Message;
+                    return View(cartDto);
+                }
+                return View(new CartDto());
             }
             else
             {
@@ -54,6 +74,19 @@ namespace E_Commerce.Web.Controllers
                 return View(cartDto);
             }
 
+        }
+
+        public async Task<IActionResult> GiveOrder(CartDto cartDto)
+        {
+            ResponseDto response = await _orderService.GetCart(cartDto.UserId);
+            var cart = JsonConvert.DeserializeObject<CartDto>(response.Result.ToString());
+            if (cart != null)
+            {
+                cart.Address = cartDto.Address;
+                cart.IsCompleted = true;
+                _orderService.GiveOrder(cart);
+            }
+            return RedirectToAction("Cart", "Order");
         }
     }
 }
