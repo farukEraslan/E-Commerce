@@ -51,8 +51,8 @@ namespace E_Commerce.AuthAPI.Controllers
         /// </summary>
         /// <param name="userEmail"></param>
         /// <returns></returns>
-        [HttpPost("user-activate")]
-        public async Task<IActionResult> UserActivate(string userEmail)
+        [HttpGet("user-activate")]
+        public async Task<IActionResult> UserActivate([FromQuery] string userEmail)
         {
             var result = await _authService.UserActivate(userEmail);
             if (!result.IsSuccess)
