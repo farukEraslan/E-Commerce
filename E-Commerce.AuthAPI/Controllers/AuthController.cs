@@ -1,5 +1,4 @@
-﻿using E_Commerce.AuthAPI.Models.Dto;
-using E_Commerce.AuthAPI.Models.Dto.Request;
+﻿using E_Commerce.AuthAPI.Models.Dto.Request;
 using E_Commerce.AuthAPI.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,13 +9,17 @@ namespace E_Commerce.AuthAPI.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
-        private ResponseDto _response;
+
         public AuthController(IAuthService authService)
         {
             _authService = authService;
-            _response = new ResponseDto();
         }
 
+        /// <summary>
+        /// Kullanıcı kaydı yapan metot.
+        /// </summary>
+        /// <param name="newUser"></param>
+        /// <returns></returns>
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto newUser)
         {
@@ -27,6 +30,27 @@ namespace E_Commerce.AuthAPI.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Kullanıcı girişi yapan metot.
+        /// </summary>
+        /// <param name="loginRequestDto"></param>
+        /// <returns></returns>
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto loginRequestDto)
+        {
+            var result = await _authService.Login(loginRequestDto);
+            if (!result.IsSuccess)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// Kullanıcı aktif eden metot.
+        /// </summary>
+        /// <param name="userEmail"></param>
+        /// <returns></returns>
         [HttpPost("user-activate")]
         public async Task<IActionResult> UserActivate(string userEmail)
         {
@@ -37,23 +61,11 @@ namespace E_Commerce.AuthAPI.Controllers
             return Ok(result);
         }
 
-        [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginRequestDto loginRequestDto)
-        {
-            var result = await _authService.Login(loginRequestDto);
-            if (result.Token == "")
-            {
-                _response.IsSuccess = false;
-                _response.Message = result.Message;
-                return BadRequest(_response);
-            }
-
-            _response.IsSuccess = true;
-            _response.Message = result.Message;
-            _response.Result = result;
-            return Ok(_response);
-        }
-
+        /// <summary>
+        /// Id'si verilen kullanıcıyı getiren metot.
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         [HttpGet("getById/{userId:guid}")]
         public async Task<IActionResult> GetById([FromRoute] Guid userId)
         {

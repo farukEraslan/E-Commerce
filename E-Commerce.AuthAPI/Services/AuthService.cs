@@ -4,7 +4,6 @@ using E_Commerce.AuthAPI.Helpers;
 using E_Commerce.AuthAPI.Models;
 using E_Commerce.AuthAPI.Models.Dto;
 using E_Commerce.AuthAPI.Models.Dto.Request;
-using E_Commerce.AuthAPI.Models.Dto.Response;
 using E_Commerce.AuthAPI.Models.Enum;
 using E_Commerce.AuthAPI.Services.IServices;
 using Microsoft.AspNetCore.Identity;
@@ -14,13 +13,12 @@ namespace E_Commerce.AuthAPI.Services
 {
     public class AuthService : IAuthService
     {
-        private readonly IMapper _mapper;
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly AppDbContext _authAPIDatabase;
-        private ResponseDto _response;
-        private LoginResponseDto _loginResponse;
         private readonly IJwtTokenGenerator _jwtTokenGenerator;
+        private readonly IMapper _mapper;
+        private ResponseDto _response;
 
         public AuthService(IMapper mapper, UserManager<AppUser> userManager, AppDbContext authAPIDatabase, RoleManager<IdentityRole> roleManager, IJwtTokenGenerator jwtTokenGenerator)
         {
@@ -29,7 +27,6 @@ namespace E_Commerce.AuthAPI.Services
             _authAPIDatabase = authAPIDatabase;
             _roleManager = roleManager;
             _response = new ResponseDto();
-            _loginResponse = new LoginResponseDto();
             _jwtTokenGenerator = jwtTokenGenerator;
         }
 
@@ -42,7 +39,7 @@ namespace E_Commerce.AuthAPI.Services
         {
             try
             {
-                var hasUser = _authAPIDatabase.Users.FirstOrDefault(u=>u.NormalizedEmail == registerRequestDto.Email.Trim().ToUpper());
+                var hasUser = _authAPIDatabase.Users.FirstOrDefault(u => u.NormalizedEmail == registerRequestDto.Email.Trim().ToUpper());
                 if (hasUser != null)
                 {
                     _response.IsSuccess = false;
@@ -77,6 +74,75 @@ namespace E_Commerce.AuthAPI.Services
             catch (Exception ex)
             {
                 _response.IsSuccess = false;
+                _response.Message = ex.Message;
+                return _response;
+            }
+        }
+
+        /// <summary>
+        /// Kullanıcı girişi yapar.
+        /// </summary>
+        /// <param name="loginRequestDto"></param>
+        /// <returns>ResponseDto tipinde bir cevap döner.</returns>
+        public async Task<ResponseDto> Login(LoginRequestDto loginRequestDto)
+        {
+            LoginDto loginDto = new LoginDto();
+
+            try
+            {
+                var user = _authAPIDatabase.AppUsers.FirstOrDefault(user => user.UserName.ToLower() == loginRequestDto.UserName.ToLower());
+                if (user == null)
+                {
+                    loginDto.User = null;
+                    loginDto.Token = " ";
+
+                    _response.Result = loginDto;
+                    _response.Message = "Kullanıcı bulunamadı.";
+                    _response.IsSuccess = false;
+                    return _response;
+                }
+                else if (user.Status == UserStatus.OnayBekleniyor || user.EmailConfirmed == false)
+                {
+                    loginDto.User = _mapper.Map<UserDto>(user);
+                    loginDto.Token = " ";
+
+                    _response.Result = loginDto;
+                    _response.Message = "Kullanıcının aktif edilmesi gerekiyor.";
+                    _response.IsSuccess = false;
+                    return _response;
+                }
+                else
+                {
+                    var result = await _userManager.CheckPasswordAsync(user, loginRequestDto.Password);
+                    if (!result)
+                    {
+                        loginDto.User = _mapper.Map<UserDto>(user);
+                        loginDto.Token = " ";
+
+                        _response.Result = loginDto;
+                        _response.Message = "Kullanıcı adı ya da parola hatalı.";
+                        _response.IsSuccess = false;
+                        return _response;
+                    }
+
+                    var roles = await _userManager.GetRolesAsync(user);
+                    // jwt token burada oluşturulacak.
+                    var userToken = _jwtTokenGenerator.GenerateToken(user, roles);
+
+                    loginDto.User = _mapper.Map<UserDto>(user);
+                    loginDto.Token = userToken;
+
+                    _response.Result = loginDto;
+                    _response.Message = "Başarı ile giriş yapıldı.";
+                    return _response;
+                }
+            }
+            catch (Exception ex)
+            {
+                loginDto.User = null;
+                loginDto.Token = " ";
+
+                _response.Result = loginDto;
                 _response.Message = ex.Message;
                 return _response;
             }
@@ -149,59 +215,10 @@ namespace E_Commerce.AuthAPI.Services
         }
 
         /// <summary>
-        /// Kullanıcı girişi yapar.
+        /// Id'si verilen kullanıcıyı döndürür.
         /// </summary>
-        /// <param name="loginRequestDto"></param>
-        /// <returns>LoginResponseDto tipinde bir cevap döner.</returns>
-        public async Task<LoginResponseDto> Login([FromBody] LoginRequestDto loginRequestDto)
-        {
-            try
-            {
-                var user = _authAPIDatabase.AppUsers.FirstOrDefault(user => user.UserName.ToLower() == loginRequestDto.UserName.ToLower());
-                if (user == null)
-                {
-                    _loginResponse.User = null;
-                    _loginResponse.Token = "";
-                    _loginResponse.Message = "Kullanıcı bulunamadı.";
-                    return _loginResponse;
-                }
-                else if (user.Status == UserStatus.OnayBekleniyor || user.EmailConfirmed == false)
-                {
-                    _loginResponse.User = _mapper.Map<UserDto>(user);
-                    _loginResponse.Token = "";
-                    _loginResponse.Message = "Kullanıcının aktif edilmesi gerekiyor.";
-                    return _loginResponse;
-                }
-                else
-                {
-                    var result = await _userManager.CheckPasswordAsync(user, loginRequestDto.Password);
-                    if (!result)
-                    {
-                        _loginResponse.User = _mapper.Map<UserDto>(user);
-                        _loginResponse.Token = "";
-                        _loginResponse.Message = "Kullanıcı adı ya da parola hatalı.";
-                        return _loginResponse;
-                    }
-
-                    var roles = await _userManager.GetRolesAsync(user);
-                    // jwt token burada oluşturulacak.
-                    var userToken = _jwtTokenGenerator.GenerateToken(user, roles);
-
-                    _loginResponse.User = _mapper.Map<UserDto>(user);
-                    _loginResponse.Token = userToken;
-                    _loginResponse.Message = "Başarı ile giriş yapıldı.";
-                    return _loginResponse;
-                }
-            }
-            catch (Exception ex)
-            {
-                _loginResponse.User = null;
-                _loginResponse.Token = "";
-                _loginResponse.Message = ex.Message;
-                return _loginResponse;
-            }
-        }
-
+        /// <param name="userId"></param>
+        /// <returns>ResponseDto tipinde bir cevap döner.</returns>
         public async Task<ResponseDto> GetById(Guid userId)
         {
             var user = _authAPIDatabase.AppUsers.FirstOrDefault(u => u.Id == userId.ToString());

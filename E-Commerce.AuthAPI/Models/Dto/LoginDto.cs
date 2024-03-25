@@ -1,6 +1,6 @@
-﻿namespace E_Commerce.Web.Models.Dto.Response
+﻿namespace E_Commerce.AuthAPI.Models.Dto
 {
-    public class LoginResponseDto
+    public class LoginDto
     {
         public UserDto User { get; set; }
         public string Token { get; set; }

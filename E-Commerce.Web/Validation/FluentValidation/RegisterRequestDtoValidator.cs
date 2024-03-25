@@ -1,6 +1,5 @@
 ﻿using E_Commerce.Web.Dto.Request;
 using FluentValidation;
-using Microsoft.AspNetCore.Identity;
 using System.Text.RegularExpressions;
 
 namespace E_Commerce.Web.Validation.FluentValidation
@@ -27,10 +26,10 @@ namespace E_Commerce.Web.Validation.FluentValidation
             // Password Rules
             RuleFor(x => x.Password).NotEmpty().WithMessage("Şifre boş olamaz.");
             RuleFor(x => x.Password).Length(8, 16).WithMessage("Şifre en az 8 en fazla 16 karakter uzunluğunda olmalıdır.");
-            RuleFor(x => x.Password).Matches("[A-Z]").WithMessage("Şifrede en az bir büyük harf olmalıdır.");
-            RuleFor(x => x.Password).Matches("[a-z]").WithMessage("Şifrede en az bir küçük harf olmalıdır.");
-            RuleFor(x => x.Password).Matches("[0-9]").WithMessage("Şifrede en az bir sayı olmalıdır.");
-            RuleFor(x => x.Password).Matches("[!@#$%^&*()-+=]").WithMessage("Şifrede en az bir özel karakter olmalıdır.");
+            //RuleFor(x => x.Password).Matches("[A-Z]").WithMessage("Şifrede en az bir büyük harf olmalıdır.");
+            //RuleFor(x => x.Password).Matches("[a-z]").WithMessage("Şifrede en az bir küçük harf olmalıdır.");
+            //RuleFor(x => x.Password).Matches("[0-9]").WithMessage("Şifrede en az bir sayı olmalıdır.");
+            //RuleFor(x => x.Password).Matches("[!@#$%^&*()-+=]").WithMessage("Şifrede en az bir özel karakter olmalıdır.");
 
             // PhoneNumber Rules
             RuleFor(x => x.PhoneNumber).NotNull().WithMessage("Telefon numarası kısmı boş olamaz.");
@@ -38,9 +37,9 @@ namespace E_Commerce.Web.Validation.FluentValidation
             RuleFor(x => x.PhoneNumber).Must(PhoneNumberCheck).WithMessage("Geçerli bir telefon numarası giriniz.");
 
             // BirthDate Rules
+            RuleFor(x => x.BirthDate).Must(BirthDateCheck).WithMessage("Üye olabilmek için 18 yaşından büyük olmalısınız.");
             RuleFor(x => x.BirthDate).NotNull().WithMessage("Doğum günü kısmı boş olamaz.");
             RuleFor(x => x.BirthDate).NotEmpty().WithMessage("Doğum günü kısmı boş olamaz.");
-            RuleFor(x => x.BirthDate).Must(BirthDateCheck).WithMessage("Üye olabilmek için 18 yaşından büyük olmalısınız.");
         }
 
         private bool PhoneNumberCheck(string phoneNumber)
@@ -50,7 +49,7 @@ namespace E_Commerce.Web.Validation.FluentValidation
 
         private bool BirthDateCheck(DateTime birthDate)
         {
-            return birthDate < DateTime.Now.AddYears(-18) ? true : false;
+            return birthDate <= DateTime.Now.AddYears(-18) ? true : false;
         }
     }
 }

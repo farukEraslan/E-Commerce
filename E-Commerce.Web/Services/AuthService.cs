@@ -20,16 +20,11 @@ namespace E_Commerce.Web.Services
             _tokenProvider = tokenProvider;
         }
 
-        public async Task<ResponseDto> LoginAsync(LoginRequestDto loginRequestDto)
-        {
-            return await _baseService.SendAsync(new Models.RequestDto()
-            {
-                ApiType = Utility.SD.ApiType.POST,
-                Data = loginRequestDto,
-                Url = SD.AuthAPIBase + "/api/auth/login"
-            });
-        }
-
+        /// <summary>
+        /// Kullanıcı kaydı yapan metot.
+        /// </summary>
+        /// <param name="registerRequestDto"></param>
+        /// <returns></returns>
         public async Task<ResponseDto> RegisterAsync(RegisterRequestDto registerRequestDto)
         {
             return await _baseService.SendAsync(new Models.RequestDto()
@@ -40,6 +35,25 @@ namespace E_Commerce.Web.Services
             });
         }
 
+        /// <summary>
+        /// Kullanıcı girişi yapan metot.
+        /// </summary>
+        /// <param name="loginRequestDto"></param>
+        /// <returns></returns>
+        public async Task<ResponseDto> LoginAsync(LoginRequestDto loginRequestDto)
+        {
+            return await _baseService.SendAsync(new Models.RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.POST,
+                Data = loginRequestDto,
+                Url = SD.AuthAPIBase + "/api/auth/login"
+            });
+        }
+
+        /// <summary>
+        /// Kullanıcı çıkışı yapan metot.
+        /// </summary>
+        /// <returns></returns>
         public async Task LogoutAsync()
         {
             await _contextAccessor.HttpContext.SignOutAsync();

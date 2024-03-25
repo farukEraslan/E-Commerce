@@ -23,36 +23,17 @@ namespace E_Commerce.Web.Controllers
             _tokenProvider = tokenProvider;
         }
 
-        public IActionResult Login()
-        {
-            return View();
-        }
-        [HttpPost]
-        public async Task<IActionResult> Login(LoginRequestDto loginRequestDto)
-        {
-            ResponseDto response = await _authService.LoginAsync(loginRequestDto);
-
-            if (response != null && response.IsSuccess)
-            {
-                LoginResponseDto loginResponseDto = JsonConvert.DeserializeObject<LoginResponseDto>(Convert.ToString(response.Result));
-                
-                await SignInUser(loginResponseDto);
-                // kullanıcının token'ı tarayıcıda cookieye atandı.
-                _tokenProvider.SetToken(loginResponseDto.Token);
-
-                TempData["success"] = response?.Message;
-                return RedirectToAction("Index", "Home");
-            }
-            else
-            {
-                TempData["error"] = response?.Message;
-                return View();
-            }
-        }
+        // Register sayfası
         public IActionResult Register()
         {
             return View();
         }
+
+        /// <summary>
+        /// Kullanıcı kaydı yapan metot.
+        /// </summary>
+        /// <param name="registerRequestDto"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Register(RegisterRequestDto registerRequestDto)
         {
@@ -71,22 +52,62 @@ namespace E_Commerce.Web.Controllers
                 return View(registerRequestDto);
             }
         }
+
+        // Login Sayfası
+        public IActionResult Login()
+        {
+            return View();
+        }
+        
+        /// <summary>
+        /// Kullanıcı girişi yapan metot.
+        /// </summary>
+        /// <param name="loginRequestDto"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginRequestDto loginRequestDto)
+        {
+            ResponseDto response = await _authService.LoginAsync(loginRequestDto);
+
+            if (response != null && response.IsSuccess)
+            {
+                LoginDto loginDto = JsonConvert.DeserializeObject<LoginDto>(Convert.ToString(response.Result));
+                
+                await SignInUser(loginDto);
+                // kullanıcının token'ı tarayıcıda cookieye atandı.
+                _tokenProvider.SetToken(loginDto.Token);
+
+                TempData["success"] = response?.Message;
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                TempData["error"] = response?.Message;
+                return View();
+            }
+        }
+        
+        /// <summary>
+        /// Kullanıcı çıkışı yapan metot.
+        /// </summary>
+        /// <returns></returns>
         public async Task<IActionResult> Logout()
         {
             await _authService.LogoutAsync();
             return RedirectToAction("Login", "Auth");
         }
+
         /// <summary>
         /// Bu metot, bir kullanıcının giriş yapmasını yöneten bir asenkron fonksiyondur. Metot, gelen Jwt token'ını okuyarak kullanıcının kimlik bilgilerini çözümler ve bu bilgileri kullanarak bir kimlik nesnesi oluşturur. Ardından, bu kimlik bilgilerini temel alan bir kimlik doğrulama şeması oluşturulur ve kullanıcıyı temsil eden bir özneye sahip bir asenkron kimlik doğrulama işlemi başlatılır. Bu işlem, ASP.NET Core uygulamalarındaki çerez tabanlı kimlik doğrulama şemasını kullanır. Sonuç olarak, kullanıcı başarıyla kimlik doğrulandığında, HttpContext.SignInAsync metoduyla kullanıcı oturumunu başlatır.
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        private async Task SignInUser(LoginResponseDto loginResponseDto)
+        private async Task SignInUser(LoginDto loginDto)
         {
             var handler = new JwtSecurityTokenHandler();
 
             // token okuma işlemi
-            var jwt = handler.ReadJwtToken(loginResponseDto.Token);
+            var jwt = handler.ReadJwtToken(loginDto.Token);
 
             var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
             identity.AddClaim(new Claim(JwtRegisteredClaimNames.Email, jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Email).Value));

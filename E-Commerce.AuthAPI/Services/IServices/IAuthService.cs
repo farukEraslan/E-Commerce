@@ -1,6 +1,5 @@
 ﻿using E_Commerce.AuthAPI.Models.Dto;
 using E_Commerce.AuthAPI.Models.Dto.Request;
-using E_Commerce.AuthAPI.Models.Dto.Response;
 
 namespace E_Commerce.AuthAPI.Services.IServices
 {
@@ -12,6 +11,12 @@ namespace E_Commerce.AuthAPI.Services.IServices
         /// <param name="registerationRequestDto"></param>
         /// <returns>Durum mesajı döner.</returns>
         Task<ResponseDto> Register(RegisterRequestDto registerationRequestDto);
+        /// <summary>
+        /// Kullanıcı girişi yapar.
+        /// </summary>
+        /// <param name="loginRequestDto"></param>
+        /// <returns>LoginResponseDto tipinde bir cevap döner.</returns>
+        Task<ResponseDto> Login(LoginRequestDto loginRequestDto);
         /// <summary>
         /// Kullanıcıyı aktifleştirmek için kullanılır.
         /// </summary>
@@ -25,12 +30,6 @@ namespace E_Commerce.AuthAPI.Services.IServices
         /// <param name="roleName"></param>
         /// <returns>İşlem başarılıysa True, işlem başarısızsa False döner.</returns>
         Task<bool> AssignRole(string email, string roleName);
-        /// <summary>
-        /// Kullanıcı girişi yapar.
-        /// </summary>
-        /// <param name="loginRequestDto"></param>
-        /// <returns>LoginResponseDto tipinde bir cevap döner.</returns>
-        Task<LoginResponseDto> Login(LoginRequestDto loginRequestDto);
         Task<ResponseDto> GetById(Guid userId);
     }
 }
