@@ -31,5 +31,6 @@ namespace E_Commerce.AuthAPI.Services.IServices
         /// <param name="loginRequestDto"></param>
         /// <returns>LoginResponseDto tipinde bir cevap döner.</returns>
         Task<LoginResponseDto> Login(LoginRequestDto loginRequestDto);
+        Task<ResponseDto> GetById(Guid userId);
     }
 }

@@ -103,5 +103,20 @@ namespace E_Commerce.Web.Controllers
                 return RedirectToAction("Index", "Order");
             }
         }
+
+        public async Task<IActionResult> DeleteOrder(Guid cartId)
+        {
+            ResponseDto result = await _orderService.DeleteOrder(cartId);
+            if (result != null && result.IsSuccess)
+            {
+                TempData["success"] = result.Message;
+                return RedirectToAction("Index", "Order");
+            }
+            else
+            {
+                TempData["error"] = result.Message;
+                return RedirectToAction("Index", "Order");
+            }
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace E_Commerce.EmailService
         static void Main(string[] args)
         {
             EmailConfirmConsumer();
+            OrderConfirmConsumer();
             Console.ReadLine();
         }
 
@@ -25,6 +26,32 @@ namespace E_Commerce.EmailService
             var channel = connection.CreateModel();
 
             string queueName = "emailConfirmation";
+            channel.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
+
+            var consumer = new EventingBasicConsumer(channel);
+            consumer.Received += (model, ea) =>
+            {
+                var body = ea.Body.ToArray();
+                var message = Encoding.UTF8.GetString(body);
+
+                // gelen json data atanacak.
+                var emailDto = JsonConvert.DeserializeObject<EmailDto>(message);
+                Console.WriteLine($"Mesaj alındı => toEmail: {emailDto.ToEmail} / subject: {emailDto.Subject} / body: {emailDto.Body.ToString()}");
+
+                var result = SendEmail(emailDto);
+                Console.WriteLine(result);
+            };
+
+            channel.BasicConsume(queue: queueName, autoAck: true, consumer: consumer);
+        }
+
+        public static void OrderConfirmConsumer()
+        {
+            var factory = new ConnectionFactory() { HostName = "localhost" };
+            var connection = factory.CreateConnection();
+            var channel = connection.CreateModel();
+
+            string queueName = "orderConfirmation";
             channel.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
 
             var consumer = new EventingBasicConsumer(channel);

@@ -71,5 +71,14 @@ namespace E_Commerce.Web.Services
                 Url = SD.OrderAPIBase + "/api/order/approve-order/" + cartId
             });
         }
+
+        public async Task<ResponseDto> DeleteOrder(Guid cartId)
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.DELETE,
+                Url = SD.OrderAPIBase + "/api/order/delete-order/" + cartId
+            });
+        }
     }
 }

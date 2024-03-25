@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using E_Commerce.OrderAPI.Data;
+using E_Commerce.OrderAPI.Helpers;
 using E_Commerce.OrderAPI.Models;
 using E_Commerce.OrderAPI.Models.Dto;
 using E_Commerce.OrderAPI.Models.Dto.Cart;
@@ -11,16 +12,18 @@ namespace E_Commerce.OrderAPI.Services
     public class CartService : ICartService
     {
         private readonly IProductService _productService;
+        private readonly IUserService _userService;
         private readonly AppDbContext _appDbContext;
         private readonly ResponseDto _response;
         private readonly IMapper _mapper;
 
-        public CartService(IProductService productService, AppDbContext appDbContext, IMapper mapper)
+        public CartService(IProductService productService, AppDbContext appDbContext, IMapper mapper, IUserService userService)
         {
             _productService = productService;
             _appDbContext = appDbContext;
             _response = new ResponseDto();
             _mapper = mapper;
+            _userService = userService;
         }
 
         public async Task<ResponseDto> AddtoCart(Guid productId, Guid userId)
@@ -210,6 +213,7 @@ namespace E_Commerce.OrderAPI.Services
         public async Task<ResponseDto> ApproveOrder(Guid cartId)
         {
             var cart = _appDbContext.Carts.FirstOrDefault(c => c.Id == cartId);
+            var user = await _userService.GetById(cart.UserId);
             if (cart != null)
             {
                 cart.IsApproved = true;
@@ -218,9 +222,36 @@ namespace E_Commerce.OrderAPI.Services
 
                 _response.IsSuccess = true;
                 _response.Message = "Sipariş onaylandı.";
-                
-                // burada müşteriye sipariş onay maili gidecek.
 
+                // burada müşteriye sipariş onay maili gidecek.
+                string title = "Sipariş Onayı";
+                string content = $"{cartId} numaralı siparişiniz onaylanmıştır.";
+                EmailSendHelper.SendEmailProducer(user.Email, title, content);    // burada hangfire implement edilebilir.
+                return _response;
+            }
+            else
+            {
+                _response.Message = "Sipariş onaylanırken bir hata oluştu.";
+                return _response;
+            }
+        }
+
+        public async Task<ResponseDto> DeleteOrder(Guid cartId)
+        {
+            var cart = _appDbContext.Carts.FirstOrDefault(c => c.Id == cartId);
+            var user = await _userService.GetById(cart.UserId);
+            if (cart != null)
+            {
+                _appDbContext.Carts.Remove(cart);
+                _appDbContext.SaveChanges();
+
+                _response.IsSuccess = true;
+                _response.Message = "Sipariş onaylanmadı.";
+
+                // burada müşteriye sipariş onay maili gidecek.
+                string title = "Sipariş Onayı";
+                string content = $"{cartId} numaralı siparişiniz <strong> onaylanmamıştır </ strong>";
+                EmailSendHelper.SendEmailProducer(user.Email, title, content);    // burada hangfire implement edilebilir.
                 return _response;
             }
             else

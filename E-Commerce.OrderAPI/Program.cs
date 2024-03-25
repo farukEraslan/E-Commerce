@@ -10,7 +10,7 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.MSSqlServer;
 
-namespace E_Commerce.ProductAPI
+namespace E_Commerce.OrderAPI
 {
     public class Program
     {
@@ -36,9 +36,12 @@ namespace E_Commerce.ProductAPI
             // DEPENDENCY INJECTIONS
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<ICartService, CartService>();
+            builder.Services.AddScoped<IUserService, UserService>();
             
 
             builder.Services.AddHttpClient("Product", p => p.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"]));
+            builder.Services.AddHttpClient("Order", p => p.BaseAddress = new Uri(builder.Configuration["ServiceUrls:OrderAPI"]));
+            builder.Services.AddHttpClient("User", p => p.BaseAddress = new Uri(builder.Configuration["ServiceUrls:AuthAPI"]));
 
 
 

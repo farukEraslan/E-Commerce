@@ -1,9 +1,9 @@
-﻿using E_Commerce.AuthAPI.Models.Dto;
+﻿using E_Commerce.OrderAPI.Models.Dto;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace E_Commerce.AuthAPI.Helpers
+namespace E_Commerce.OrderAPI.Helpers
 {
     public static class EmailSendHelper
     {
@@ -13,7 +13,7 @@ namespace E_Commerce.AuthAPI.Helpers
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
 
-            string queueName = "emailConfirmation";
+            string queueName = "orderConfirmation";
             channel.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
 
             // json data yollanacak.

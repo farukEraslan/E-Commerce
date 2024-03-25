@@ -12,5 +12,6 @@ namespace E_Commerce.Web.Services.IServices
         Task<ResponseDto> GiveOrder(CartDto cartDto);
         Task<ResponseDto> GetOrders();
         Task<ResponseDto> ApproveOrder(Guid cartId);
+        Task<ResponseDto> DeleteOrder(Guid cartId);
     }
 }

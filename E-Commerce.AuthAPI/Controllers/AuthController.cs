@@ -53,5 +53,19 @@ namespace E_Commerce.AuthAPI.Controllers
             _response.Result = result;
             return Ok(_response);
         }
+
+        [HttpGet("getById/{userId:guid}")]
+        public async Task<IActionResult> GetById([FromRoute] Guid userId)
+        {
+            var result = await _authService.GetById(userId);
+            if (result.IsSuccess)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(result);
+            }
+        }
     }
 }

@@ -101,5 +101,19 @@ namespace E_Commerce.OrderAPI.Controllers
                 return BadRequest(result.Message);
             }
         }
+
+        [HttpDelete("delete-order/{cartId:guid}")]
+        public async Task<IActionResult> DeleteOrder([FromRoute] Guid cartId)
+        {
+            var result = await _cartService.DeleteOrder(cartId);
+            if (result.IsSuccess)
+            {
+                return Ok(result.Message);
+            }
+            else
+            {
+                return BadRequest(result.Message);
+            }
+        }
     }
 }

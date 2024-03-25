@@ -201,5 +201,21 @@ namespace E_Commerce.AuthAPI.Services
                 return _loginResponse;
             }
         }
+
+        public async Task<ResponseDto> GetById(Guid userId)
+        {
+            var user = _authAPIDatabase.AppUsers.FirstOrDefault(u => u.Id == userId.ToString());
+            if (user != null)
+            {
+                _response.Result = _mapper.Map<UserDto>(user);
+                _response.Message = "Kullanıcı başarı ile listelendi.";
+                return _response;
+            }
+            else
+            {
+                _response.IsSuccess = false;
+                return _response;
+            }
+        }
     }
 }
