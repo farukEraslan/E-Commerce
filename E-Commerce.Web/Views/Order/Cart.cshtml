@@ -1,66 +1,83 @@
 ﻿@using E_Commerce.Web.Models.Dto.Order
 @using E_Commerce.Web.Models.Dto.Order.ViewModels
+@{
+    ViewData["Title"] = "Sepetim";
+}
 @model CartDto
 
-<h1>Sepetim</h1>
+<div class="container">
+    <h1>Sepetim</h1>
+    <hr />
+    @if(Model.CartLines.Count == 0)
+    {
+        <div class="d-flex justify-content-center">
+            <strong class="align-middle">Sepetiniz şu an boş.</strong>
+        </div>
+    }
+    else
+    {
+        <div class="row justify-content-end">
+            <a class="btn btn-primary" type="button" style="width:auto; asp-controller="Home" asp-action="Index">Ürünlere Git</a>
+        </div>
+        <div class="row">
+            <form asp-controller="Order" asp-action="GiveOrder">
+                <input type="hidden" asp-for="@Model.UserId" />
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Kitap Adı</th>
+                            <th>Sipariş Adedi</th>
+                            <th>Birim Fiyat</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var product in Model.CartLines)
+                        {
+                            <tr>
+                                <td class="align-middle">
+                                    <img style="width:75px; height:100px;" src="@product.Product.ImageUrl" alt="@product.Product.ProductName" />
+                                </td>
+                                <td class="align-middle">@product.Product.ProductName</td>
+                                <td class="align-middle">@product.Quantity Adet</td>
+                                <td class="align-middle">@product.Product.UnitPrice TL</td>
+                                <td class="align-middle">
+                                    <span class="btn btn-warning">
+                                        @if (product.Quantity >= 10)
+                                        {
+                                            <a class="btn fa fa-plus disabled"></a>
+                                        }
+                                        else
+                                        {
+                                            <a class="btn fa fa-plus align-middle" asp-controller="Order" asp-action="AddToCart" asp-route-productId="@product.ProductId" asp-route-userId="ac1790c7-b694-4c05-a60d-5b1e58ea13f4"></a>
+                                        }
+                                        <span class="btn disabled align-middle" style="width:35px; height:35px; padding:4px;">@product.Quantity</span>
+                                        <a class="btn fa fa-minus align-middle" asp-controller="Order" asp-action="RemoveFromCart" asp-route-productId="@product.ProductId" asp-route-userId="ac1790c7-b694-4c05-a60d-5b1e58ea13f4"></a>
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
 
-<div class="navbar">
-    <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Ürünlere Git</a>
+                <div class="container d-flex align-items-around">
+                    <div class="container">
+                        <h5>Adres Bilgisi</h5>
+                        <span id="addressValidation" class="form-text alert-danger mb-2" asp-validation-for="@Model.Address"></span>
+                        <textarea id="address" class="form-control" placeholder="Adresinizi giriniz..." rows="4" style="resize:none;" asp-for="@Model.Address"></textarea>
+                    </div>
+                    <div class="container d-flex justify-content-end mt-5 mb-5">
+                        <span class="border-bottom border-warning border-3" style="margin-right: 60px; padding: 5px;">Sipariş Toplamı : @Model.CartTotalPrice TL</span>
+                        <button class="btn btn-warning" type="submit" asp-controller="Order" asp-action="GiveOrder">Sipariş Ver</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    }
+
 </div>
 
-<form asp-controller="Order" asp-action="GiveOrder">
-    <input type="hidden" asp-for="@Model.UserId" />
-    <table class="table">
-        <thead>
-            <tr>
-                <th></th>
-                <th>Kitap Adı</th>
-                <th>Sipariş Adedi</th>
-                <th>Birim Fiyat</th>
-                <th>İşlemler</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var product in Model.CartLines)
-            {
-                <tr>
-                    <td class="align-middle">
-                        <img style="width:75px; height:100px;" src="@product.Product.ImageUrl" alt="@product.Product.ProductName" />
-                    </td>
-                    <td class="align-middle">@product.Product.ProductName</td>
-                    <td class="align-middle">@product.Quantity Adet</td>
-                    <td class="align-middle">@product.Product.UnitPrice TL</td>
-                    <td class="align-middle">
-                        <span class="btn btn-warning">
-                            @if (product.Quantity >= 10)
-                            {
-                                <a class="btn fa fa-plus disabled"></a>
-                            }
-                            else
-                            {
-                                <a class="btn fa fa-plus align-middle" asp-controller="Order" asp-action="AddToCart" asp-route-productId="@product.ProductId" asp-route-userId="ac1790c7-b694-4c05-a60d-5b1e58ea13f4"></a>
-                            }
-                            <span class="btn disabled align-middle" style="width:35px; height:35px; padding:4px;">@product.Quantity</span>
-                            <a class="btn fa fa-minus align-middle" asp-controller="Order" asp-action="RemoveFromCart" asp-route-productId="@product.ProductId" asp-route-userId="ac1790c7-b694-4c05-a60d-5b1e58ea13f4"></a>
-                        </span>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <div class="container d-flex align-items-around">
-        <div class="container">
-            <h5>Adres Bilgisi</h5>
-            <span id="addressValidation" class="form-text alert-danger mb-2" asp-validation-for="@Model.Address"></span>
-            <textarea id="address" class="form-control" placeholder="Adresinizi giriniz..." rows="4" style="resize:none;" asp-for="@Model.Address"></textarea>
-        </div>
-        <div class="container d-flex justify-content-end mt-5 mb-5">
-            <span class="border-bottom border-warning border-3" style="margin-right: 60px; padding: 5px;">Sipariş Toplamı : @Model.CartTotalPrice TL</span>
-            <button class="btn btn-warning" type="submit" asp-controller="Order" asp-action="GiveOrder">Sipariş Ver</button>
-        </div>
-    </div>
-</form>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

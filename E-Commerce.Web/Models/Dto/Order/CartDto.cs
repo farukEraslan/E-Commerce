@@ -13,6 +13,7 @@ namespace E_Commerce.Web.Models.Dto.Order
 
         // CustomerId FK
         public Guid UserId { get; set; }
+        public UserDto User { get; set; }
 
         public string? Address { get; set; }
         public decimal CartTotalPrice { get; set; }

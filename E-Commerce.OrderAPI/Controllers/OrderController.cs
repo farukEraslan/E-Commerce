@@ -1,14 +1,12 @@
-﻿using E_Commerce.OrderAPI.Models.Dto;
-using E_Commerce.OrderAPI.Models.Dto.Cart;
+﻿using E_Commerce.OrderAPI.Models.Dto.Cart;
 using E_Commerce.OrderAPI.Services.IServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 
 namespace E_Commerce.OrderAPI.Controllers
 {
     [Route("api/order")]
     [ApiController]
-    //[Authorize(Roles = "customer")]
     public class OrderController : ControllerBase
     {
         private readonly ICartService _cartService;
@@ -18,7 +16,9 @@ namespace E_Commerce.OrderAPI.Controllers
             _cartService = cartService;
         }
 
+
         [HttpPost("add-to-cart")]
+        [Authorize(Roles = "customer")]
         public async Task<IActionResult> AddToCart([FromBody] CreateCartDto createCartDto)
         {
             var result = await _cartService.AddtoCart(createCartDto.ProductId,createCartDto.UserId);
@@ -33,6 +33,7 @@ namespace E_Commerce.OrderAPI.Controllers
         }
 
         [HttpPost("remove-from-cart")]
+        [Authorize(Roles = "customer")]
         public async Task<IActionResult> RemoveFromCart([FromBody] RemoveCartDto removeCartDto)
         {
             var result = await _cartService.RemoveFromCart(removeCartDto.ProductId, removeCartDto.UserId);
@@ -47,6 +48,7 @@ namespace E_Commerce.OrderAPI.Controllers
         }
 
         [HttpGet("get-cart/{userId:guid}")]
+        [Authorize(Roles = "customer")]
         public async Task<IActionResult> GetCart([FromRoute] Guid userId)
         {
             var result = await _cartService.GetCart(userId);
@@ -61,6 +63,7 @@ namespace E_Commerce.OrderAPI.Controllers
         }
 
         [HttpPut("give-order")]
+        [Authorize(Roles = "customer")]
         public async Task<IActionResult> GiveOrder([FromBody] CartDto cartDto)
         {
             var result = await _cartService.GiveOrder(cartDto);
@@ -75,6 +78,7 @@ namespace E_Commerce.OrderAPI.Controllers
         }
 
         [HttpGet("get-orders")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> GetOrders()
         {
             var result = await _cartService.GetOrders();
@@ -89,6 +93,7 @@ namespace E_Commerce.OrderAPI.Controllers
         }
 
         [HttpPut("approve-order/{cartId:guid}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> ApproveOrder([FromRoute] Guid cartId)
         {
             var result = await _cartService.ApproveOrder(cartId);
@@ -103,6 +108,7 @@ namespace E_Commerce.OrderAPI.Controllers
         }
 
         [HttpDelete("delete-order/{cartId:guid}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteOrder([FromRoute] Guid cartId)
         {
             var result = await _cartService.DeleteOrder(cartId);

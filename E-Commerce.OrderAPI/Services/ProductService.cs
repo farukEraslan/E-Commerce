@@ -2,7 +2,6 @@
 using E_Commerce.OrderAPI.Models.Dto.Product;
 using E_Commerce.OrderAPI.Services.IServices;
 using Newtonsoft.Json;
-using System.Text;
 
 namespace E_Commerce.OrderAPI.Services
 {

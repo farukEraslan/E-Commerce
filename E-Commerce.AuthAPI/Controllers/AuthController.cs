@@ -24,9 +24,6 @@ namespace E_Commerce.AuthAPI.Controllers
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto newUser)
         {
             var result = await _authService.Register(newUser);
-            if (!result.IsSuccess)
-                return BadRequest(result);
-
             return Ok(result);
         }
 
@@ -39,10 +36,6 @@ namespace E_Commerce.AuthAPI.Controllers
         public async Task<IActionResult> Login([FromBody] LoginRequestDto loginRequestDto)
         {
             var result = await _authService.Login(loginRequestDto);
-            if (!result.IsSuccess)
-            {
-                return BadRequest(result);
-            }
             return Ok(result);
         }
 
@@ -55,9 +48,6 @@ namespace E_Commerce.AuthAPI.Controllers
         public async Task<IActionResult> UserActivate([FromQuery] string userEmail)
         {
             var result = await _authService.UserActivate(userEmail);
-            if (!result.IsSuccess)
-                return BadRequest(result);
-
             return Ok(result);
         }
 
@@ -70,14 +60,7 @@ namespace E_Commerce.AuthAPI.Controllers
         public async Task<IActionResult> GetById([FromRoute] Guid userId)
         {
             var result = await _authService.GetById(userId);
-            if (result.IsSuccess)
-            {
-                return Ok(result);
-            }
-            else
-            {
-                return BadRequest(result);
-            }
+            return Ok(result);
         }
     }
 }

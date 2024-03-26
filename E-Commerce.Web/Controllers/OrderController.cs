@@ -1,6 +1,7 @@
 ﻿using E_Commerce.Web.Models.Dto;
 using E_Commerce.Web.Models.Dto.Order;
 using E_Commerce.Web.Services.IServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -15,6 +16,7 @@ namespace E_Commerce.Web.Controllers
             _orderService = orderService;
         }
 
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Index()
         {
             List<CartDto>? cartList = new();
@@ -31,6 +33,7 @@ namespace E_Commerce.Web.Controllers
             return View(cartList);
         }
 
+        [Authorize(Roles = "customer")]
         public async Task<IActionResult> AddToCart(Guid productId, Guid userId)
         {
             CreateCartDto createCartDto = new CreateCartDto();
@@ -42,6 +45,7 @@ namespace E_Commerce.Web.Controllers
             //return RedirectToAction("Cart", "Order", $"{userId}");
         }
 
+        [Authorize(Roles = "customer")]
         public async Task<IActionResult> RemoveFromCart(Guid productId, Guid userId)
         {
             RemoveCartDto removeCartDto = new RemoveCartDto();
@@ -53,6 +57,7 @@ namespace E_Commerce.Web.Controllers
             //return RedirectToAction("Cart", "Order", $"{userId}");
         }
 
+        [Authorize(Roles = "customer")]
         public async Task<IActionResult> Cart(Guid userId)
         {
             CartDto cartDto = new();
@@ -76,6 +81,7 @@ namespace E_Commerce.Web.Controllers
 
         }
 
+        [Authorize(Roles = "customer")]
         public async Task<IActionResult> GiveOrder(CartDto cartDto)
         {
             ResponseDto response = await _orderService.GetCart(cartDto.UserId);
@@ -89,6 +95,7 @@ namespace E_Commerce.Web.Controllers
             return RedirectToAction("Cart", "Order");
         }
 
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> ApproveOrder(Guid cartId)
         {
             ResponseDto result = await _orderService.ApproveOrder(cartId);
@@ -104,6 +111,7 @@ namespace E_Commerce.Web.Controllers
             }
         }
 
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteOrder(Guid cartId)
         {
             ResponseDto result = await _orderService.DeleteOrder(cartId);

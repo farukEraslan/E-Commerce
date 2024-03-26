@@ -29,72 +29,81 @@ namespace E_Commerce.OrderAPI.Services
         public async Task<ResponseDto> AddtoCart(Guid productId, Guid userId)
         {
             var cart = _appDbContext.Carts.FirstOrDefault(cart => cart.UserId == userId && cart.IsCompleted == false);
-
-            if (cart == null)
-            {
-                cart = new Cart
-                {
-                    Id = Guid.NewGuid(),
-                    UserId = userId,
-                    CartTotalPrice = 0,
-                };
-                _appDbContext.Carts.Add(cart);
-                await _appDbContext.SaveChangesAsync();
-            }
-
             var product = await _productService.GetById(productId);
 
-            var cartLine = _appDbContext.CartLines.FirstOrDefault(x => x.ProductId == productId && x.CartId == cart.Id);
-
-            if (cartLine == null)
+            if (product.StockAmount > 0)
             {
-                var newCartLine = new CartLine
+                if (cart == null)
                 {
-                    CartId = cart.Id,
-                    ProductId = productId,
-                    Quantity = 1,
-                    CartLinePrice = product.UnitPrice
-                };
+                    cart = new Cart
+                    {
+                        Id = Guid.NewGuid(),
+                        UserId = userId,
+                        CartTotalPrice = 0,
+                    };
+                    _appDbContext.Carts.Add(cart);
+                    await _appDbContext.SaveChangesAsync();
+                }
 
-                // sepete eklenen ürünün stok miktarı 1 azaltılacak.
-                await _productService.DecreaseProductStock(productId);
 
-                _appDbContext.CartLines.Add(newCartLine);
-                await _appDbContext.SaveChangesAsync();
+                var cartLine = _appDbContext.CartLines.FirstOrDefault(x => x.ProductId == productId && x.CartId == cart.Id);
 
-                cart.CartTotalPrice += product.UnitPrice;
-                _appDbContext.Carts.Update(cart);
-                await _appDbContext.SaveChangesAsync();
+                if (cartLine == null)
+                {
+                    var newCartLine = new CartLine
+                    {
+                        CartId = cart.Id,
+                        ProductId = productId,
+                        Quantity = 1,
+                        CartLinePrice = product.UnitPrice
+                    };
 
-                _response.Message = "Ürün başarı ile sepete eklendi";
-                return _response;
-            }
-            else if (cartLine.Quantity > product.StockAmount)
-            {
-                _response.IsSuccess = false;
-                _response.Message = "Stok miktarı yeterli değil";
-                return _response;
-            }
-            else if (cartLine.Quantity >= 10)
-            {
-                _response.IsSuccess = false;
-                _response.Message = "En fazla 10 adet sipariş verebilirsiniz.";
-                return _response;
+                    // sepete eklenen ürünün stok miktarı 1 azaltılacak.
+                    await _productService.DecreaseProductStock(productId);
+
+                    _appDbContext.CartLines.Add(newCartLine);
+                    await _appDbContext.SaveChangesAsync();
+
+                    cart.CartTotalPrice += product.UnitPrice;
+                    _appDbContext.Carts.Update(cart);
+                    await _appDbContext.SaveChangesAsync();
+
+                    _response.Message = "Ürün başarı ile sepete eklendi";
+                    return _response;
+                }
+                else if (cartLine.Quantity > product.StockAmount)
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "Stok miktarı yeterli değil";
+                    return _response;
+                }
+                else if (cartLine.Quantity >= 10)
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "En fazla 10 adet sipariş verebilirsiniz.";
+                    return _response;
+                }
+                else
+                {
+                    cartLine.Quantity++;
+                    _appDbContext.Update(cartLine);
+                    await _appDbContext.SaveChangesAsync();
+
+                    // sepete eklenen ürünün stok miktarı 1 azaltılacak.
+                    await _productService.DecreaseProductStock(productId);
+
+                    cart.CartTotalPrice += product.UnitPrice;
+                    _appDbContext.Carts.Update(cart);
+                    await _appDbContext.SaveChangesAsync();
+
+                    _response.Message = "Ürün başarı ile sepete eklendi";
+                    return _response;
+                }
             }
             else
             {
-                cartLine.Quantity++;
-                _appDbContext.Update(cartLine);
-                await _appDbContext.SaveChangesAsync();
-
-                // sepete eklenen ürünün stok miktarı 1 azaltılacak.
-                await _productService.DecreaseProductStock(productId);
-
-                cart.CartTotalPrice += product.UnitPrice;
-                _appDbContext.Carts.Update(cart);
-                await _appDbContext.SaveChangesAsync();
-
-                _response.Message = "Ürün başarı ile sepete eklendi";
+                _response.Message = "Yeterli stok miktarı yok.";
+                _response.IsSuccess = false;
                 return _response;
             }
         }
@@ -161,6 +170,7 @@ namespace E_Commerce.OrderAPI.Services
             if (cart == null)
             {
                 _response.IsSuccess = false;
+                _response.Message = "Sepetinizde ürün bulunmamaktadır.";
                 return _response;
             }
             else
@@ -185,7 +195,7 @@ namespace E_Commerce.OrderAPI.Services
         public async Task<ResponseDto> GiveOrder(CartDto cartDto)
         {
             var existCart = _appDbContext.Carts.FirstOrDefault(cart => cart.Id == cartDto.Id);
-            
+
             if (existCart != null)
             {
                 _appDbContext.Carts.Update(_mapper.Map(cartDto, existCart));
@@ -205,11 +215,17 @@ namespace E_Commerce.OrderAPI.Services
 
         public async Task<ResponseDto> GetOrders()
         {
-            _response.Result = _appDbContext.Carts.ToList();
+            var orders = _mapper.Map<List<CartDto>>(_appDbContext.Carts.ToList());
+            foreach (var order in orders)
+            {
+                var user = await _userService.GetById(order.UserId);
+                order.User = user;
+            }
+            _response.Result = orders;
             _response.Message = "Siparişler başarı ile listelendi.";
             return _response;
         }
-        
+
         public async Task<ResponseDto> ApproveOrder(Guid cartId)
         {
             var cart = _appDbContext.Carts.FirstOrDefault(c => c.Id == cartId);

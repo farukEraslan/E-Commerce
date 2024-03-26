@@ -81,7 +81,6 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpGet("increase-stock/{productId:guid}")]
-        //[Authorize]
         public IActionResult IncreaseProductStock([FromRoute] Guid productId)
         {
             var result = _productService.IncreaseProductStock(productId);
@@ -93,7 +92,6 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpGet("decrease-stock/{productId:guid}")]
-        //[Authorize]
         public IActionResult DecreaseProductStock([FromRoute] Guid productId)
         {
             var result = _productService.DecreaseProductStock(productId);

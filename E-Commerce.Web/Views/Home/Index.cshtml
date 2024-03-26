@@ -22,7 +22,14 @@
                 </ul>
                 <div class="card-body d-flex justify-content-between">
                     <span class="align-middle mt-2">Stok : @product.StockAmount Adet</span>
-                    <a class="btn btn-primary" id="AddtoCart" asp-Controller="Order" asp-action="AddToCart" asp-route-productId="@product.Id" asp-route-userId="ac1790c7-b694-4c05-a60d-5b1e58ea13f4">Sepete Ekle</a>
+                    @if (product.StockAmount > 0)
+                    {
+                        <a class="btn btn-primary" id="AddtoCart" asp-Controller="Order" asp-action="AddToCart" asp-route-productId="@product.Id" asp-route-userId="ac1790c7-b694-4c05-a60d-5b1e58ea13f4">Sepete Ekle</a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-primary disabled" id="AddtoCart" asp-Controller="Order" asp-action="AddToCart" asp-route-productId="@product.Id" asp-route-userId="ac1790c7-b694-4c05-a60d-5b1e58ea13f4">Sepete Ekle</a>
+                    }
                 </div>
             </div>
         }

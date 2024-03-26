@@ -23,11 +23,6 @@ namespace E_Commerce.Web.Controllers
             _tokenProvider = tokenProvider;
         }
 
-        public IActionResult Test()
-        {
-            return View();
-        }
-
         // Register sayfası
         public IActionResult Register()
         {
