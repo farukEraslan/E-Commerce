@@ -1,0 +1,791 @@
+E-Commerce.ProductAPI | 2024-03-27 23:26:23.318 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-27 23:26:24.706 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-27 23:26:24.743 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-27 23:26:24.792 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-27 23:26:24.935 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-27 23:26:25.614 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-27 23:26:25.614 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-27 23:26:25.706 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-27 23:26:25.707 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-27 23:26:25.707 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-27 23:26:25.734 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:26:26.011 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:26:26.040 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:26:26.689 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:26:26.691 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:26:27.132 +03:00 [INF] Executed DbCommand (103ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:26:27.176 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:26:27.249 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 1202.8825ms
+E-Commerce.ProductAPI | 2024-03-27 23:26:27.250 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:26:27.263 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 1537.3987ms
+E-Commerce.ProductAPI | 2024-03-27 23:26:27.523 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:26:28.133 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 611.091ms
+E-Commerce.ProductAPI | 2024-03-27 23:26:28.168 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:26:28.186 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:26:28.211 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 42.2843ms
+E-Commerce.ProductAPI | 2024-03-27 23:26:28.411 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 226.1864ms
+E-Commerce.ProductAPI | 2024-03-27 23:26:28.731 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:26:28.899 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 168.5009ms
+E-Commerce.ProductAPI | 2024-03-27 23:28:44.601 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-27 23:28:44.928 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-27 23:28:44.946 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-27 23:28:44.969 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-27 23:28:45.001 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-27 23:28:45.418 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-27 23:28:45.418 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-27 23:28:45.505 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-27 23:28:45.506 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-27 23:28:45.506 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-27 23:28:45.782 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:28:46.087 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:28:46.133 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:28:46.397 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:28:46.813 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:28:46.815 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:28:46.853 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 455.3334ms
+E-Commerce.ProductAPI | 2024-03-27 23:28:46.873 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:28:46.884 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 11.0556ms
+E-Commerce.ProductAPI | 2024-03-27 23:28:46.887 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:28:46.987 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.3914ms
+E-Commerce.ProductAPI | 2024-03-27 23:28:47.091 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:28:47.208 +03:00 [INF] Executed DbCommand (85ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:28:47.271 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 179.8457ms
+E-Commerce.ProductAPI | 2024-03-27 23:28:47.300 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:28:47.351 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 1206.5186ms
+E-Commerce.ProductAPI | 2024-03-27 23:28:47.352 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:28:47.366 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 1592.0287ms
+E-Commerce.ProductAPI | 2024-03-27 23:29:56.152 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:29:56.154 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:29:56.155 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:29:56.208 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:29:56.215 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:29:56.220 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 65.5214ms
+E-Commerce.ProductAPI | 2024-03-27 23:29:56.220 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:29:56.221 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 68.6225ms
+E-Commerce.ProductAPI | 2024-03-27 23:31:33.039 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-27 23:31:33.449 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-27 23:31:33.468 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-27 23:31:33.494 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-27 23:31:33.530 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-27 23:31:33.884 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-27 23:31:33.884 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-27 23:31:33.959 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-27 23:31:33.960 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-27 23:31:33.961 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-27 23:31:34.253 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:31:34.525 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:31:34.565 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:31:34.972 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.304 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.306 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.420 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 462.3845ms
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.449 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.465 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.473 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 8.2317ms
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.520 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.9111ms
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.613 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.623 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.638 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.686 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 1115.1138ms
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.687 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.699 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 1455.4013ms
+E-Commerce.ProductAPI | 2024-03-27 23:31:35.775 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.2953ms
+E-Commerce.ProductAPI | 2024-03-27 23:31:53.750 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:31:53.752 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:31:53.753 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:31:53.812 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:31:53.907 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:31:53.913 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 160.3374ms
+E-Commerce.ProductAPI | 2024-03-27 23:31:53.913 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:31:53.914 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 164.3013ms
+E-Commerce.ProductAPI | 2024-03-27 23:36:46.816 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-27 23:36:47.209 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-27 23:36:47.231 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-27 23:36:47.261 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-27 23:36:47.302 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-27 23:36:47.636 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-27 23:36:47.637 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-27 23:36:47.683 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-27 23:36:47.684 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-27 23:36:47.684 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-27 23:36:47.991 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:36:48.227 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:36:48.278 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:36:48.494 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:36:48.967 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:36:48.970 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:36:48.976 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 481.605ms
+E-Commerce.ProductAPI | 2024-03-27 23:36:48.995 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:36:49.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.7385ms
+E-Commerce.ProductAPI | 2024-03-27 23:36:49.007 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:36:49.065 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.7366ms
+E-Commerce.ProductAPI | 2024-03-27 23:36:49.162 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:36:49.333 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 171.4706ms
+E-Commerce.ProductAPI | 2024-03-27 23:36:49.389 +03:00 [INF] Executed DbCommand (103ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:36:49.465 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:36:49.514 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 1229.3105ms
+E-Commerce.ProductAPI | 2024-03-27 23:36:49.515 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:36:49.530 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 1546.3947ms
+E-Commerce.ProductAPI | 2024-03-27 23:38:06.925 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:38:06.927 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:38:06.927 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:38:06.986 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:38:06.991 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:38:06.996 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 68.4715ms
+E-Commerce.ProductAPI | 2024-03-27 23:38:06.996 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:38:06.997 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 72.0474ms
+E-Commerce.ProductAPI | 2024-03-27 23:41:45.425 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-27 23:41:45.711 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-27 23:41:45.729 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-27 23:41:45.755 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-27 23:41:45.786 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-27 23:41:46.155 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-27 23:41:46.156 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-27 23:41:46.242 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-27 23:41:46.243 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-27 23:41:46.243 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-27 23:41:46.447 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:41:46.779 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:41:46.812 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:41:46.952 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:41:47.384 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 431.4859ms
+E-Commerce.ProductAPI | 2024-03-27 23:41:47.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:41:47.435 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 17.1511ms
+E-Commerce.ProductAPI | 2024-03-27 23:41:47.437 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:41:47.465 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:41:47.466 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:41:47.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.3006ms
+E-Commerce.ProductAPI | 2024-03-27 23:41:47.628 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:41:47.783 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 154.8506ms
+E-Commerce.ProductAPI | 2024-03-27 23:41:47.970 +03:00 [INF] Executed DbCommand (157ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:41:48.061 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:41:48.112 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 1289.8517ms
+E-Commerce.ProductAPI | 2024-03-27 23:41:48.113 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:41:48.125 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 1688.3912ms
+E-Commerce.ProductAPI | 2024-03-27 23:42:09.174 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:42:09.234 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:42:09.234 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:42:09.284 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:42:09.290 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:42:09.295 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 59.857ms
+E-Commerce.ProductAPI | 2024-03-27 23:42:09.295 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:42:09.295 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 120.9874ms
+E-Commerce.ProductAPI | 2024-03-27 23:43:09.983 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:43:09.985 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:43:09.985 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:43:09.993 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:43:09.998 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:43:10.007 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 21.2758ms
+E-Commerce.ProductAPI | 2024-03-27 23:43:10.008 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:43:10.008 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 25.7587ms
+E-Commerce.ProductAPI | 2024-03-27 23:43:19.136 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:43:19.137 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:43:19.137 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:43:19.142 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:43:19.145 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:43:19.148 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 10.7896ms
+E-Commerce.ProductAPI | 2024-03-27 23:43:19.149 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:43:19.149 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 13.0021ms
+E-Commerce.ProductAPI | 2024-03-27 23:44:01.362 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:44:01.362 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:44:01.362 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:44:01.366 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:44:01.370 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:44:01.380 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 17.2219ms
+E-Commerce.ProductAPI | 2024-03-27 23:44:01.381 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:44:01.381 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 19.4203ms
+E-Commerce.ProductAPI | 2024-03-27 23:49:01.489 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-27 23:49:01.772 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-27 23:49:01.789 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-27 23:49:01.816 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-27 23:49:01.856 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-27 23:49:02.255 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-27 23:49:02.255 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-27 23:49:02.318 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-27 23:49:02.318 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-27 23:49:02.318 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-27 23:49:02.652 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:49:02.941 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:49:02.977 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:49:03.178 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:49:03.637 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 459.1103ms
+E-Commerce.ProductAPI | 2024-03-27 23:49:03.669 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:49:03.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 7.9635ms
+E-Commerce.ProductAPI | 2024-03-27 23:49:03.686 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:49:03.712 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:49:03.713 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:49:03.757 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.7399ms
+E-Commerce.ProductAPI | 2024-03-27 23:49:03.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:49:03.969 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.755ms
+E-Commerce.ProductAPI | 2024-03-27 23:49:04.064 +03:00 [INF] Executed DbCommand (87ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:49:04.102 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:49:04.165 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 1179.2653ms
+E-Commerce.ProductAPI | 2024-03-27 23:49:04.166 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:49:04.176 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 1530.8368ms
+E-Commerce.ProductAPI | 2024-03-27 23:50:23.673 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.066 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.093 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.138 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.185 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.610 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.610 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.710 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.711 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.711 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.746 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:50:24.746 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:50:25.004 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:50:25.063 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:50:25.100 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:50:25.101 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:50:25.705 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:50:25.706 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:50:25.727 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.025 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.025 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.072 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.072 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.162 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 1092.8244ms
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.162 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 1055.1048ms
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.163 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.163 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.172 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 444.4227ms
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.187 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 1448.9705ms
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.187 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 1448.9715ms
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.213 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.233 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 25.6417ms
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.382 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 149.3721ms
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.507 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:50:26.763 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 255.6184ms
+E-Commerce.ProductAPI | 2024-03-27 23:50:54.147 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:50:54.150 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:50:54.150 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:50:54.203 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:50:54.208 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:50:54.212 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 62.3907ms
+E-Commerce.ProductAPI | 2024-03-27 23:50:54.212 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:50:54.213 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 66.3031ms
+E-Commerce.ProductAPI | 2024-03-27 23:52:06.450 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:52:06.451 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:52:06.452 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:52:06.456 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:52:06.461 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:52:06.468 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 16.2906ms
+E-Commerce.ProductAPI | 2024-03-27 23:52:06.469 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:52:06.501 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 50.8458ms
+E-Commerce.ProductAPI | 2024-03-27 23:52:13.664 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:52:13.665 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:52:13.665 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:52:13.671 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:52:13.673 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:52:13.677 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 11.424ms
+E-Commerce.ProductAPI | 2024-03-27 23:52:13.677 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:52:13.677 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 13.2292ms
+E-Commerce.ProductAPI | 2024-03-27 23:52:27.269 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:52:27.270 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:52:27.270 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:52:27.274 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:52:27.277 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:52:27.279 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 9.1001ms
+E-Commerce.ProductAPI | 2024-03-27 23:52:27.279 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:52:27.280 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 10.3053ms
+E-Commerce.ProductAPI | 2024-03-27 23:53:33.456 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:53:33.457 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:53:33.457 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:53:33.461 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:53:33.464 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:53:33.467 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 9.4603ms
+E-Commerce.ProductAPI | 2024-03-27 23:53:33.467 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:53:33.467 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 10.8117ms
+E-Commerce.ProductAPI | 2024-03-27 23:53:45.768 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:53:45.768 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:53:45.768 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:53:45.772 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:53:45.781 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:53:45.784 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 15.4487ms
+E-Commerce.ProductAPI | 2024-03-27 23:53:45.784 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:53:45.784 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 16.5852ms
+E-Commerce.ProductAPI | 2024-03-27 23:54:24.820 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:54:24.821 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:54:24.821 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:54:24.823 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:54:24.826 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:54:24.830 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 9.1457ms
+E-Commerce.ProductAPI | 2024-03-27 23:54:24.831 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:54:24.831 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 11.1609ms
+E-Commerce.ProductAPI | 2024-03-27 23:54:51.941 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:54:51.954 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 12.2395ms
+E-Commerce.ProductAPI | 2024-03-27 23:54:51.984 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:54:51.986 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 2.2973ms
+E-Commerce.ProductAPI | 2024-03-27 23:54:51.996 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.015 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.7246ms
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.070 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.079 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.8521ms
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.288 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.289 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.291 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.294 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.297 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.302 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 10.6343ms
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.302 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:54:52.302 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 14.2672ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:01.879 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:01.895 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 16.8607ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:01.924 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:01.926 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 2.3133ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:01.949 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:01.962 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.901ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:02.039 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:02.046 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.2447ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:02.231 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:02.232 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:55:02.233 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:55:02.235 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:55:02.238 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:55:02.243 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 9.7894ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:02.243 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:55:02.244 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 12.5873ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.323 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 12.537ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.366 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.367 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 1.3613ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.378 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.379 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.381 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.384 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.387 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.392 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 11.7828ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.393 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.393 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 15.0226ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.438 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.460 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.408ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.523 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:17.529 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.161ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:34.850 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-27 23:55:35.127 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-27 23:55:35.147 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-27 23:55:35.175 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-27 23:55:35.214 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-27 23:55:35.568 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-27 23:55:35.568 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-27 23:55:35.647 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-27 23:55:35.648 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-27 23:55:35.648 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-27 23:55:35.761 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.149 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.207 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.247 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.652 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 417.6665ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.675 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.684 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 8.5212ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.709 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.842 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 133.313ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.863 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.864 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-27 23:55:36.963 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:37.092 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.2173ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:37.192 +03:00 [INF] Executed DbCommand (67ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:55:37.219 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:55:37.290 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 1074.8636ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:37.291 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:55:37.302 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 1548.9835ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:48.704 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:55:48.707 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:55:48.707 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:55:48.761 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:55:48.766 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:55:48.770 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 62.9331ms
+E-Commerce.ProductAPI | 2024-03-27 23:55:48.770 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:55:48.771 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 67.0387ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.224 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/getById/ff0c24a7-3de5-44d3-3597-08dc474952c9 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.225 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetById (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.227 +03:00 [INF] Route matched with {action = "GetById", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(System.Guid) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.247 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__productId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[ProductName], [p].[CategoryId], [c].[CategoryName], [p].[UnitPrice], [p].[StockAmount], [p].[Author], [p].[Publisher], [p].[ISBN], [p].[ImageUrl]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+WHERE [p].[Id] = @__productId_0
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.248 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.249 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetById (E-Commerce.ProductAPI) in 21.2763ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.249 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetById (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.249 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/getById/ff0c24a7-3de5-44d3-3597-08dc474952c9 - 200 null application/json; charset=utf-8 25.1888ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.634 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/decrease-stock/ff0c24a7-3de5-44d3-3597-08dc474952c9 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.635 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.DecreaseProductStock (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.638 +03:00 [INF] Route matched with {action = "DecreaseProductStock", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DecreaseProductStock(System.Guid) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.667 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__productId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__productId_0
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.797 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [Author] = @p0, [CategoryId] = @p1, [ISBN] = @p2, [ImageUrl] = @p3, [ProductName] = @p4, [Publisher] = @p5, [StockAmount] = @p6, [UnitPrice] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.807 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.808 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.DecreaseProductStock (E-Commerce.ProductAPI) in 169.5361ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.808 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.DecreaseProductStock (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.808 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/decrease-stock/ff0c24a7-3de5-44d3-3597-08dc474952c9 - 200 null application/json; charset=utf-8 173.5757ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.888 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.889 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.889 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.891 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.896 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.898 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 9.2064ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.898 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:32.898 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 10.716ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.947 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/getById/bf6cd8f6-9a7d-4114-713c-08dc474a098c - null null
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.948 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetById (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.948 +03:00 [INF] Route matched with {action = "GetById", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(System.Guid) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.950 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__productId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[ProductName], [p].[CategoryId], [c].[CategoryName], [p].[UnitPrice], [p].[StockAmount], [p].[Author], [p].[Publisher], [p].[ISBN], [p].[ImageUrl]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+WHERE [p].[Id] = @__productId_0
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.950 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.950 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetById (E-Commerce.ProductAPI) in 2.4736ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.950 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetById (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.950 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/getById/bf6cd8f6-9a7d-4114-713c-08dc474a098c - 200 null application/json; charset=utf-8 3.3879ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.954 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/decrease-stock/bf6cd8f6-9a7d-4114-713c-08dc474a098c - null null
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.955 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.DecreaseProductStock (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.955 +03:00 [INF] Route matched with {action = "DecreaseProductStock", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DecreaseProductStock(System.Guid) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.956 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__productId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__productId_0
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.958 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [Author] = @p0, [CategoryId] = @p1, [ISBN] = @p2, [ImageUrl] = @p3, [ProductName] = @p4, [Publisher] = @p5, [StockAmount] = @p6, [UnitPrice] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.959 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.959 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.DecreaseProductStock (E-Commerce.ProductAPI) in 3.9691ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.959 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.DecreaseProductStock (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.959 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/decrease-stock/bf6cd8f6-9a7d-4114-713c-08dc474a098c - 200 null application/json; charset=utf-8 4.8125ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.986 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.986 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.986 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.989 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.990 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.994 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 7.5377ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.994 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:34.995 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 9.1962ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.994 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/getById/9502d7da-ed5d-4023-713d-08dc474a098c - null null
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.994 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetById (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.994 +03:00 [INF] Route matched with {action = "GetById", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(System.Guid) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.996 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__productId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[ProductName], [p].[CategoryId], [c].[CategoryName], [p].[UnitPrice], [p].[StockAmount], [p].[Author], [p].[Publisher], [p].[ISBN], [p].[ImageUrl]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+WHERE [p].[Id] = @__productId_0
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.996 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.996 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetById (E-Commerce.ProductAPI) in 1.9588ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.996 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetById (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.997 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/getById/9502d7da-ed5d-4023-713d-08dc474a098c - 200 null application/json; charset=utf-8 2.6845ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.999 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/decrease-stock/9502d7da-ed5d-4023-713d-08dc474a098c - null null
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.999 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.DecreaseProductStock (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:36.999 +03:00 [INF] Route matched with {action = "DecreaseProductStock", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DecreaseProductStock(System.Guid) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.001 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__productId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__productId_0
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.002 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [Author] = @p0, [CategoryId] = @p1, [ISBN] = @p2, [ImageUrl] = @p3, [ProductName] = @p4, [Publisher] = @p5, [StockAmount] = @p6, [UnitPrice] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.002 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.002 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.DecreaseProductStock (E-Commerce.ProductAPI) in 2.7887ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.002 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.DecreaseProductStock (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.002 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/decrease-stock/9502d7da-ed5d-4023-713d-08dc474a098c - 200 null application/json; charset=utf-8 3.3076ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.029 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.029 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.029 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.031 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.032 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.035 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 5.8776ms
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.035 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-27 23:56:37.036 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 6.781ms

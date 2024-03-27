@@ -164,7 +164,6 @@ namespace E_Commerce.OrderAPI.Services
 
         public async Task<ResponseDto> GetCart(Guid userId)
         {
-            // sorguya productta eklenecek.
             var cart = _appDbContext.Carts.Where(x => x.UserId == userId && x.IsCompleted == false).Include(x => x.CartLines).FirstOrDefault();
 
             if (cart == null)
