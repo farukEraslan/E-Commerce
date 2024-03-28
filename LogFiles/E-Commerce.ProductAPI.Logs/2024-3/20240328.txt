@@ -8863,3 +8863,622 @@ E-Commerce.ProductAPI | 2024-03-28 05:31:16.555 +03:00 [INF] Executing OkObjectR
 E-Commerce.ProductAPI | 2024-03-28 05:31:16.558 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 6.5646ms
 E-Commerce.ProductAPI | 2024-03-28 05:31:16.558 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
 E-Commerce.ProductAPI | 2024-03-28 05:31:16.558 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 7.2715ms
+E-Commerce.ProductAPI | 2024-03-28 12:06:43.352 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:06:44.245 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:06:44.276 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:06:44.317 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:06:44.382 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:06:45.704 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:06:45.704 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:06:45.954 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:06:45.954 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:06:45.954 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:06:47.050 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:06:48.299 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 1256.1095ms
+E-Commerce.ProductAPI | 2024-03-28 12:06:48.713 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:06:48.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 8.9524ms
+E-Commerce.ProductAPI | 2024-03-28 12:06:48.812 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:06:48.904 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.9074ms
+E-Commerce.ProductAPI | 2024-03-28 12:06:49.544 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:06:49.699 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 157.2988ms
+E-Commerce.ProductAPI | 2024-03-28 12:08:42.052 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:08:42.431 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:08:42.456 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:08:42.492 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:08:42.545 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:08:43.019 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:08:43.019 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:08:43.110 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:08:43.111 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:08:43.111 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:08:44.459 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:08:45.159 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 706.7725ms
+E-Commerce.ProductAPI | 2024-03-28 12:08:45.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:08:45.213 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 9.3447ms
+E-Commerce.ProductAPI | 2024-03-28 12:08:45.251 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:08:45.323 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.0057ms
+E-Commerce.ProductAPI | 2024-03-28 12:08:45.493 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:08:45.629 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.674ms
+E-Commerce.ProductAPI | 2024-03-28 12:11:09.147 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:11:09.448 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:11:09.469 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:11:09.493 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:11:09.530 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:11:09.890 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:11:09.891 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:11:09.997 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:11:09.998 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:11:09.999 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:11:10.672 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:11:11.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 630.1971ms
+E-Commerce.ProductAPI | 2024-03-28 12:11:11.402 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:11:11.410 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 8.2899ms
+E-Commerce.ProductAPI | 2024-03-28 12:11:11.441 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:11:11.519 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.9976ms
+E-Commerce.ProductAPI | 2024-03-28 12:11:11.687 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:11:11.811 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 124.4244ms
+E-Commerce.ProductAPI | 2024-03-28 12:11:37.793 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:11:38.133 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:11:38.174 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:11:38.210 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:11:38.256 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:11:38.653 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:11:38.653 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:11:38.726 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:11:38.727 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:11:38.727 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:11:39.757 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:11:40.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 538.0992ms
+E-Commerce.ProductAPI | 2024-03-28 12:11:40.307 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:11:40.318 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 11.0962ms
+E-Commerce.ProductAPI | 2024-03-28 12:11:40.324 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:11:40.369 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.1016ms
+E-Commerce.ProductAPI | 2024-03-28 12:11:40.740 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:11:40.868 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.2427ms
+E-Commerce.ProductAPI | 2024-03-28 12:15:10.659 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:15:11.079 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:15:11.100 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:15:11.130 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:15:11.177 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:15:11.537 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:15:11.537 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:15:11.607 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:15:11.608 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:15:11.608 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:15:12.616 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:15:13.160 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 549.8598ms
+E-Commerce.ProductAPI | 2024-03-28 12:15:13.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:15:13.212 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 8.2853ms
+E-Commerce.ProductAPI | 2024-03-28 12:15:13.237 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:15:13.294 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.3086ms
+E-Commerce.ProductAPI | 2024-03-28 12:15:13.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:15:13.664 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.4408ms
+E-Commerce.ProductAPI | 2024-03-28 12:16:46.854 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:16:47.356 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:16:47.382 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:16:47.413 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:16:47.473 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:16:47.941 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:16:47.941 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:16:48.028 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:16:48.029 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:16:48.029 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:16:48.907 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:16:49.542 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 645.2481ms
+E-Commerce.ProductAPI | 2024-03-28 12:16:49.579 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:16:49.586 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 6.4706ms
+E-Commerce.ProductAPI | 2024-03-28 12:16:49.594 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:16:49.656 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.0503ms
+E-Commerce.ProductAPI | 2024-03-28 12:16:49.747 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:16:49.878 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.6263ms
+E-Commerce.ProductAPI | 2024-03-28 12:17:11.283 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:17:11.632 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:17:11.652 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:17:11.677 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:17:11.712 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:17:12.191 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:17:12.191 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:17:12.279 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:17:12.280 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:17:12.280 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:17:13.291 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:17:13.976 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 694.3887ms
+E-Commerce.ProductAPI | 2024-03-28 12:17:13.995 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:17:14.002 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 6.7333ms
+E-Commerce.ProductAPI | 2024-03-28 12:17:14.009 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:17:14.074 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.8134ms
+E-Commerce.ProductAPI | 2024-03-28 12:17:14.160 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:17:14.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 135.7533ms
+E-Commerce.ProductAPI | 2024-03-28 12:25:02.249 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:25:02.681 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:25:02.704 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:25:02.734 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:25:02.772 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:25:03.226 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:25:03.227 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:25:03.315 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:25:03.316 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:25:03.317 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:25:04.139 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:25:04.762 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 628.3087ms
+E-Commerce.ProductAPI | 2024-03-28 12:25:04.800 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:25:04.808 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:25:04.809 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 9.7593ms
+E-Commerce.ProductAPI | 2024-03-28 12:25:04.859 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.3505ms
+E-Commerce.ProductAPI | 2024-03-28 12:25:04.981 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:25:05.110 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.4838ms
+E-Commerce.ProductAPI | 2024-03-28 12:27:55.654 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:27:56.004 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:27:56.025 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:27:56.053 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:27:56.092 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:27:56.467 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:27:56.468 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:27:56.571 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:27:56.572 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:27:56.572 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:27:57.044 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8&size=product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-28 12:27:57.321 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8&size=product/list/page=1&size=8 - 404 0 null 284.0943ms
+E-Commerce.ProductAPI | 2024-03-28 12:27:57.324 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/api/product/list/page=1&size=8&size=product/list/page=1&size=8, Response status code: 404
+E-Commerce.ProductAPI | 2024-03-28 12:27:57.793 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:27:58.133 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 341.3624ms
+E-Commerce.ProductAPI | 2024-03-28 12:27:58.157 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:27:58.164 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 6.8045ms
+E-Commerce.ProductAPI | 2024-03-28 12:27:58.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:27:58.222 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.225ms
+E-Commerce.ProductAPI | 2024-03-28 12:27:58.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:27:58.451 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 148.9541ms
+E-Commerce.ProductAPI | 2024-03-28 12:38:10.321 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:38:10.699 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:38:10.722 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:38:10.756 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:38:10.798 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:38:11.160 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:38:11.161 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:38:11.298 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:38:11.299 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:38:11.300 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:38:12.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:38:13.017 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 568.662ms
+E-Commerce.ProductAPI | 2024-03-28 12:38:13.038 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:38:13.049 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 11.7678ms
+E-Commerce.ProductAPI | 2024-03-28 12:38:13.060 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:38:13.110 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.728ms
+E-Commerce.ProductAPI | 2024-03-28 12:38:13.213 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:38:13.332 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.1136ms
+E-Commerce.ProductAPI | 2024-03-28 12:39:51.063 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:39:51.460 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:39:51.482 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:39:51.512 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:39:51.552 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:39:51.960 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:39:51.960 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:39:52.022 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:39:52.022 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:39:52.022 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:39:52.495 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8&size=product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-28 12:39:52.811 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8&size=product/list/page=1&size=8 - 404 0 null 323.6462ms
+E-Commerce.ProductAPI | 2024-03-28 12:39:52.814 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/api/product/list/page=1&size=8&size=product/list/page=1&size=8, Response status code: 404
+E-Commerce.ProductAPI | 2024-03-28 12:39:52.826 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:39:53.198 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 373.6099ms
+E-Commerce.ProductAPI | 2024-03-28 12:39:53.236 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:39:53.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 10.3367ms
+E-Commerce.ProductAPI | 2024-03-28 12:39:53.278 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:39:53.333 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.3211ms
+E-Commerce.ProductAPI | 2024-03-28 12:39:53.501 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:39:53.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.0343ms
+E-Commerce.ProductAPI | 2024-03-28 12:43:15.665 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:43:16.046 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:43:16.073 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:43:16.103 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:43:16.149 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:43:16.581 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:43:16.581 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:43:16.660 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:43:16.661 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:43:16.661 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:43:17.610 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:43:18.282 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 677.5714ms
+E-Commerce.ProductAPI | 2024-03-28 12:43:18.304 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:43:18.309 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.4969ms
+E-Commerce.ProductAPI | 2024-03-28 12:43:18.323 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:43:18.391 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.2611ms
+E-Commerce.ProductAPI | 2024-03-28 12:43:18.481 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:43:18.620 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.9151ms
+E-Commerce.ProductAPI | 2024-03-28 12:43:40.547 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:43:55.083 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:43:55.450 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:43:55.475 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:43:55.503 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:43:55.541 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:43:55.904 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:43:55.904 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:43:55.971 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:43:55.972 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:43:55.972 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:43:56.808 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:43:57.418 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 616.8893ms
+E-Commerce.ProductAPI | 2024-03-28 12:43:57.457 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:43:57.466 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 8.6788ms
+E-Commerce.ProductAPI | 2024-03-28 12:43:57.496 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:43:57.552 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.2366ms
+E-Commerce.ProductAPI | 2024-03-28 12:43:57.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:43:57.810 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.8908ms
+E-Commerce.ProductAPI | 2024-03-28 12:44:15.000 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:44:15.339 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:44:15.359 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:44:15.384 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:44:15.439 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:44:15.838 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:44:15.838 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:44:15.916 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:44:15.917 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:44:15.920 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:44:16.828 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:44:17.539 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 717.9539ms
+E-Commerce.ProductAPI | 2024-03-28 12:44:17.561 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:44:17.570 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 9.6829ms
+E-Commerce.ProductAPI | 2024-03-28 12:44:17.582 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:44:17.651 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.8849ms
+E-Commerce.ProductAPI | 2024-03-28 12:44:17.735 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:44:17.873 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 139.8803ms
+E-Commerce.ProductAPI | 2024-03-28 12:44:40.694 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:44:41.238 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:44:41.264 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:44:41.300 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:44:41.350 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:44:41.794 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:44:41.795 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:44:41.928 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:44:41.929 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:44:41.929 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:44:42.999 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:44:43.716 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 725.5141ms
+E-Commerce.ProductAPI | 2024-03-28 12:44:43.762 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:44:43.771 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 9.0223ms
+E-Commerce.ProductAPI | 2024-03-28 12:44:43.800 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:44:43.887 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.6691ms
+E-Commerce.ProductAPI | 2024-03-28 12:44:43.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:44:44.144 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 157.567ms
+E-Commerce.ProductAPI | 2024-03-28 12:47:36.292 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:47:36.715 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:47:36.736 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:47:36.768 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:47:36.835 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:47:37.254 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:47:37.255 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:47:37.349 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:47:37.350 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:47:37.351 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:47:38.101 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:47:38.823 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 727.6916ms
+E-Commerce.ProductAPI | 2024-03-28 12:47:38.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:47:38.861 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 9.9718ms
+E-Commerce.ProductAPI | 2024-03-28 12:47:38.863 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:47:38.960 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.312ms
+E-Commerce.ProductAPI | 2024-03-28 12:47:39.053 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:47:39.198 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 145.9754ms
+E-Commerce.ProductAPI | 2024-03-28 12:48:40.228 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:48:40.626 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:48:40.648 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:48:40.675 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:48:40.717 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:48:41.098 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:48:41.098 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:48:41.187 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:48:41.188 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:48:41.188 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:48:42.012 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:48:42.561 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 555.9033ms
+E-Commerce.ProductAPI | 2024-03-28 12:48:42.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:48:42.594 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.8577ms
+E-Commerce.ProductAPI | 2024-03-28 12:48:42.601 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:48:42.644 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.2385ms
+E-Commerce.ProductAPI | 2024-03-28 12:48:42.894 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:48:43.016 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 122.2017ms
+E-Commerce.ProductAPI | 2024-03-28 12:54:43.471 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 12:54:43.772 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 12:54:43.790 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 12:54:43.813 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 12:54:43.847 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 12:54:44.188 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 12:54:44.188 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 12:54:44.265 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 12:54:44.266 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 12:54:44.266 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 12:54:45.334 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 12:54:45.933 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 606.077ms
+E-Commerce.ProductAPI | 2024-03-28 12:54:45.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 12:54:45.997 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 12:54:46.019 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 21.5253ms
+E-Commerce.ProductAPI | 2024-03-28 12:54:46.055 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.0593ms
+E-Commerce.ProductAPI | 2024-03-28 12:54:46.196 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 12:54:46.360 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 163.4253ms
+E-Commerce.ProductAPI | 2024-03-28 16:52:48.333 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 16:52:48.688 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 16:52:48.706 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 16:52:48.735 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 16:52:48.779 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 16:52:49.216 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 16:52:49.216 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 16:52:49.277 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 16:52:49.278 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 16:52:49.278 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 16:52:50.297 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 16:52:51.084 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 792.3168ms
+E-Commerce.ProductAPI | 2024-03-28 16:52:51.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 16:52:51.110 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.598ms
+E-Commerce.ProductAPI | 2024-03-28 16:52:51.116 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 16:52:51.176 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.1673ms
+E-Commerce.ProductAPI | 2024-03-28 16:52:51.264 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 16:52:51.341 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.3699ms
+E-Commerce.ProductAPI | 2024-03-28 16:53:22.789 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 16:53:23.084 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 16:53:23.103 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 16:53:23.134 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 16:53:23.171 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 16:53:23.568 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 16:53:23.568 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 16:53:23.655 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 16:53:23.656 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 16:53:23.656 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 16:53:24.372 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 16:53:25.022 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 658.5815ms
+E-Commerce.ProductAPI | 2024-03-28 16:53:25.084 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 16:53:25.092 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 9.0186ms
+E-Commerce.ProductAPI | 2024-03-28 16:53:25.094 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 16:53:25.171 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.4675ms
+E-Commerce.ProductAPI | 2024-03-28 16:53:25.280 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 16:53:25.400 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.6927ms
+E-Commerce.ProductAPI | 2024-03-28 17:23:57.101 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 17:23:57.497 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 17:23:57.521 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 17:23:57.552 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 17:23:57.591 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 17:23:57.980 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 17:23:57.980 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 17:23:58.045 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 17:23:58.047 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 17:23:58.047 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 17:24:12.847 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 17:24:13.231 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 17:24:13.255 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 17:24:13.285 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 17:24:13.325 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 17:24:13.759 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 17:24:13.759 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 17:24:13.825 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 17:24:13.826 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 17:24:13.826 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 17:24:14.881 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 17:24:15.335 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 461.1235ms
+E-Commerce.ProductAPI | 2024-03-28 17:24:15.363 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 17:24:15.368 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 4.9399ms
+E-Commerce.ProductAPI | 2024-03-28 17:24:15.371 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 17:24:15.417 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.0273ms
+E-Commerce.ProductAPI | 2024-03-28 17:24:15.524 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 17:24:15.626 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.9693ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:12.421 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 17:25:12.801 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 17:25:12.821 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 17:25:12.850 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 17:25:12.894 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 17:25:13.267 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 17:25:13.267 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 17:25:13.341 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 17:25:13.342 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 17:25:13.342 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 17:25:13.400 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-28 17:25:13.602 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-28 17:25:13.631 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.010 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.186 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.189 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.377 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 366.41ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.389 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 7.6215ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.499 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.7878ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.509 +03:00 [INF] Executed DbCommand (61ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.545 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.601 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 955.4458ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.605 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.638 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 1245.3023ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.657 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 17:25:14.826 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 169.1948ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:23.789 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=2&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-28 17:25:23.792 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-28 17:25:23.792 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-28 17:25:23.850 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-28 17:25:23.850 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+E-Commerce.ProductAPI | 2024-03-28 17:25:23.856 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-28 17:25:23.857 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-28 17:25:23.857 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 64.7634ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:23.857 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-28 17:25:23.857 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=2&size=8 - 200 null application/json; charset=utf-8 68.1986ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:30.856 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=3&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-28 17:25:30.856 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-28 17:25:30.856 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-28 17:25:30.867 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-28 17:25:30.867 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-28 17:25:30.867 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 10.7853ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:30.868 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-28 17:25:30.868 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=3&size=8 - 200 null application/json; charset=utf-8 12.398ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:32.621 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - null null
+E-Commerce.ProductAPI | 2024-03-28 17:25:32.621 +03:00 [INF] Executing endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-28 17:25:32.621 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(Int32, Int32) on controller E_Commerce.ProductAPI.Controllers.ProductController (E-Commerce.ProductAPI).
+E-Commerce.ProductAPI | 2024-03-28 17:25:32.624 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ProductName], [c].[CategoryName], [t].[UnitPrice], [t].[StockAmount], [t].[Author], [t].[Publisher], [t].[ISBN], [t].[ImageUrl]
+FROM (
+    SELECT [p].[Id], [p].[Author], [p].[CategoryId], [p].[ISBN], [p].[ImageUrl], [p].[ProductName], [p].[Publisher], [p].[StockAmount], [p].[UnitPrice]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+E-Commerce.ProductAPI | 2024-03-28 17:25:32.627 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.ProductAPI.Models.Dto.ResponseDto'.
+E-Commerce.ProductAPI | 2024-03-28 17:25:32.631 +03:00 [INF] Executed action E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI) in 9.7486ms
+E-Commerce.ProductAPI | 2024-03-28 17:25:32.631 +03:00 [INF] Executed endpoint 'E_Commerce.ProductAPI.Controllers.ProductController.GetAll (E-Commerce.ProductAPI)'
+E-Commerce.ProductAPI | 2024-03-28 17:25:32.632 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/api/product/list/page=1&size=8 - 200 null application/json; charset=utf-8 10.9875ms
+E-Commerce.ProductAPI | 2024-03-28 17:26:32.621 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-03-28 17:26:32.924 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-03-28 17:26:32.948 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-03-28 17:26:32.985 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-03-28 17:26:33.036 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.ProductAPI | 2024-03-28 17:26:33.457 +03:00 [INF] Now listening on: https://localhost:7000
+E-Commerce.ProductAPI | 2024-03-28 17:26:33.457 +03:00 [INF] Now listening on: http://localhost:5020
+E-Commerce.ProductAPI | 2024-03-28 17:26:33.525 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-03-28 17:26:33.526 +03:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-03-28 17:26:33.526 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.ProductAPI
+E-Commerce.ProductAPI | 2024-03-28 17:26:34.281 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-03-28 17:26:34.924 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - 200 null text/html;charset=utf-8 649.7093ms
+E-Commerce.ProductAPI | 2024-03-28 17:26:34.935 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - null null
+E-Commerce.ProductAPI | 2024-03-28 17:26:34.945 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.ProductAPI | 2024-03-28 17:26:34.953 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 7.8287ms
+E-Commerce.ProductAPI | 2024-03-28 17:26:34.994 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.5835ms
+E-Commerce.ProductAPI | 2024-03-28 17:26:35.073 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-03-28 17:26:35.241 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 169.5277ms

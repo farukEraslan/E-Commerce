@@ -4444,3 +4444,532 @@ E-Commerce.AuthAPI | 2024-03-28 05:31:16.516 +03:00 [INF] Executing OkObjectResu
 E-Commerce.AuthAPI | 2024-03-28 05:31:16.516 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 72.8332ms
 E-Commerce.AuthAPI | 2024-03-28 05:31:16.517 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
 E-Commerce.AuthAPI | 2024-03-28 05:31:16.517 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 73.5089ms
+E-Commerce.AuthAPI | 2024-03-28 12:06:44.119 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:06:44.273 +03:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:06:44.304 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:06:44.385 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:06:45.848 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:06:45.848 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:06:45.989 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:06:45.990 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:06:45.990 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:06:47.538 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:06:48.228 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 697.5222ms
+E-Commerce.AuthAPI | 2024-03-28 12:06:48.273 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:06:48.293 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 19.673ms
+E-Commerce.AuthAPI | 2024-03-28 12:06:48.307 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:06:48.432 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 125.032ms
+E-Commerce.AuthAPI | 2024-03-28 12:06:48.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:06:48.749 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 208.864ms
+E-Commerce.AuthAPI | 2024-03-28 12:08:42.367 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:08:42.453 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:08:42.482 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:08:42.550 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:08:43.039 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:08:43.040 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:08:43.137 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:08:43.138 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:08:43.139 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:08:44.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:08:44.781 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 621.111ms
+E-Commerce.AuthAPI | 2024-03-28 12:08:44.882 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:08:44.892 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 9.7406ms
+E-Commerce.AuthAPI | 2024-03-28 12:08:44.929 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:08:45.029 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.8743ms
+E-Commerce.AuthAPI | 2024-03-28 12:08:45.274 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:08:45.408 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 134.7265ms
+E-Commerce.AuthAPI | 2024-03-28 12:11:09.567 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:11:09.638 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:11:09.664 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:11:09.711 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:11:10.140 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:11:10.140 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:11:10.226 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:11:10.226 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:11:10.227 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:11:11.407 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:11:11.819 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 417.2542ms
+E-Commerce.AuthAPI | 2024-03-28 12:11:11.837 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:11:11.843 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.0939ms
+E-Commerce.AuthAPI | 2024-03-28 12:11:11.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:11:11.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.6148ms
+E-Commerce.AuthAPI | 2024-03-28 12:11:12.018 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:11:12.124 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.2286ms
+E-Commerce.AuthAPI | 2024-03-28 12:11:37.760 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:11:37.831 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:11:37.853 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:11:37.906 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:11:38.387 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:11:38.387 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:11:38.465 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:11:38.466 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:11:38.466 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:11:39.043 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:11:39.506 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 470.3455ms
+E-Commerce.AuthAPI | 2024-03-28 12:11:39.519 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:11:39.525 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.0243ms
+E-Commerce.AuthAPI | 2024-03-28 12:11:39.530 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:11:39.592 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.9768ms
+E-Commerce.AuthAPI | 2024-03-28 12:11:39.758 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:11:39.889 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.9474ms
+E-Commerce.AuthAPI | 2024-03-28 12:15:10.644 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:15:10.728 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:15:10.757 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:15:10.808 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:15:11.240 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:15:11.240 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:15:11.321 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:15:11.322 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:15:11.322 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:15:12.258 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:15:12.774 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 524.6549ms
+E-Commerce.AuthAPI | 2024-03-28 12:15:12.815 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:15:12.826 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 10.97ms
+E-Commerce.AuthAPI | 2024-03-28 12:15:12.842 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:15:12.907 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.1978ms
+E-Commerce.AuthAPI | 2024-03-28 12:15:13.007 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:15:13.119 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.2543ms
+E-Commerce.AuthAPI | 2024-03-28 12:16:46.801 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:16:46.907 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:16:46.933 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:16:47.024 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:16:47.567 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:16:47.567 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:16:47.669 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:16:47.670 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:16:47.671 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:16:48.379 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:16:48.917 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 547.4272ms
+E-Commerce.AuthAPI | 2024-03-28 12:16:48.927 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:16:48.934 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:16:48.954 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 19.475ms
+E-Commerce.AuthAPI | 2024-03-28 12:16:49.012 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.6043ms
+E-Commerce.AuthAPI | 2024-03-28 12:16:49.098 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:16:49.250 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 151.3515ms
+E-Commerce.AuthAPI | 2024-03-28 12:17:11.225 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:17:11.286 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:17:11.307 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:17:11.360 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:17:11.870 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:17:11.871 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:17:11.964 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:17:11.965 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:17:11.965 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:17:12.583 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:17:13.077 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 500.1791ms
+E-Commerce.AuthAPI | 2024-03-28 12:17:13.172 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:17:13.178 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.5213ms
+E-Commerce.AuthAPI | 2024-03-28 12:17:13.228 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:17:13.312 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.5667ms
+E-Commerce.AuthAPI | 2024-03-28 12:17:13.429 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:17:13.607 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 178.1553ms
+E-Commerce.AuthAPI | 2024-03-28 12:25:02.769 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:25:02.854 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:25:02.879 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:25:02.931 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:25:03.396 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:25:03.396 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:25:03.471 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:25:03.473 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:25:03.473 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:25:04.481 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:25:04.882 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 408.4595ms
+E-Commerce.AuthAPI | 2024-03-28 12:25:04.899 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:25:04.906 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.8166ms
+E-Commerce.AuthAPI | 2024-03-28 12:25:04.916 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:25:05.002 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 86.0566ms
+E-Commerce.AuthAPI | 2024-03-28 12:25:05.077 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:25:05.189 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.0087ms
+E-Commerce.AuthAPI | 2024-03-28 12:27:55.404 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:27:55.476 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:27:55.498 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:27:55.540 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:27:55.934 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:27:55.934 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:27:56.002 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:27:56.003 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:27:56.003 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:27:56.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:27:56.985 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 344.3078ms
+E-Commerce.AuthAPI | 2024-03-28 12:27:57.009 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:27:57.020 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:27:57.021 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 12.2001ms
+E-Commerce.AuthAPI | 2024-03-28 12:27:57.102 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.951ms
+E-Commerce.AuthAPI | 2024-03-28 12:27:57.187 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:27:57.359 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 171.1152ms
+E-Commerce.AuthAPI | 2024-03-28 12:38:10.342 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:38:10.413 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:38:10.439 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:38:10.485 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:38:10.909 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:38:10.909 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:38:10.995 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:38:10.995 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:38:10.995 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:38:12.031 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:38:12.543 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 519.4854ms
+E-Commerce.AuthAPI | 2024-03-28 12:38:12.556 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:38:12.564 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.9131ms
+E-Commerce.AuthAPI | 2024-03-28 12:38:12.570 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:38:12.643 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.2028ms
+E-Commerce.AuthAPI | 2024-03-28 12:38:12.728 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:38:12.867 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 139.6043ms
+E-Commerce.AuthAPI | 2024-03-28 12:39:50.992 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:39:51.069 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:39:51.092 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:39:51.139 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:39:51.585 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:39:51.585 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:39:51.656 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:39:51.656 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:39:51.657 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:39:52.508 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:39:52.935 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 434.5132ms
+E-Commerce.AuthAPI | 2024-03-28 12:39:53.085 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:39:53.093 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.7884ms
+E-Commerce.AuthAPI | 2024-03-28 12:39:53.141 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:39:53.231 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 90.9058ms
+E-Commerce.AuthAPI | 2024-03-28 12:39:53.443 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:39:53.555 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 111.8157ms
+E-Commerce.AuthAPI | 2024-03-28 12:43:15.710 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:43:15.785 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:43:15.816 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:43:15.862 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:43:16.302 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:43:16.303 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:43:16.380 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:43:16.381 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:43:16.381 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:43:17.415 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:43:18.038 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 629.3421ms
+E-Commerce.AuthAPI | 2024-03-28 12:43:18.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:43:18.115 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 10.5841ms
+E-Commerce.AuthAPI | 2024-03-28 12:43:18.143 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:43:18.194 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.7286ms
+E-Commerce.AuthAPI | 2024-03-28 12:43:18.388 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:43:18.507 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.774ms
+E-Commerce.AuthAPI | 2024-03-28 12:43:40.483 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:43:40.576 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:43:40.597 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:43:40.676 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:43:55.039 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:43:55.108 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:43:55.131 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:43:55.187 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:43:55.638 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:43:55.638 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:43:55.706 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:43:55.707 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:43:55.707 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:43:56.651 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:43:57.202 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 558.8745ms
+E-Commerce.AuthAPI | 2024-03-28 12:43:57.273 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:43:57.288 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:43:57.299 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 13.4414ms
+E-Commerce.AuthAPI | 2024-03-28 12:43:57.345 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.5886ms
+E-Commerce.AuthAPI | 2024-03-28 12:43:57.477 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:43:57.605 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 127.8069ms
+E-Commerce.AuthAPI | 2024-03-28 12:44:15.039 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:44:15.128 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:44:15.161 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:44:15.210 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:44:15.594 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:44:15.594 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:44:15.662 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:44:15.662 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:44:15.663 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:44:16.550 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:44:17.149 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 606.7001ms
+E-Commerce.AuthAPI | 2024-03-28 12:44:17.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:44:17.234 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:44:17.235 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 13.5132ms
+E-Commerce.AuthAPI | 2024-03-28 12:44:17.420 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 185.699ms
+E-Commerce.AuthAPI | 2024-03-28 12:44:17.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:44:17.699 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 167.2611ms
+E-Commerce.AuthAPI | 2024-03-28 12:44:40.635 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:44:40.742 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:44:40.763 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:44:40.926 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:44:41.446 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:44:41.447 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:44:41.542 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:44:41.543 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:44:41.543 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:44:42.945 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:44:43.510 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 571.9416ms
+E-Commerce.AuthAPI | 2024-03-28 12:44:43.638 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:44:43.653 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 14.7853ms
+E-Commerce.AuthAPI | 2024-03-28 12:44:43.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:44:43.758 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.4353ms
+E-Commerce.AuthAPI | 2024-03-28 12:44:44.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:44:44.229 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 125.8804ms
+E-Commerce.AuthAPI | 2024-03-28 12:47:36.193 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:47:36.287 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:47:36.308 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:47:36.372 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:47:36.809 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:47:36.809 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:47:36.907 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:47:36.908 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:47:36.908 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:47:38.081 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:47:38.624 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 548.9029ms
+E-Commerce.AuthAPI | 2024-03-28 12:47:38.643 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:47:38.655 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 11.3493ms
+E-Commerce.AuthAPI | 2024-03-28 12:47:38.662 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:47:38.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.2453ms
+E-Commerce.AuthAPI | 2024-03-28 12:47:38.881 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:47:39.040 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 159.146ms
+E-Commerce.AuthAPI | 2024-03-28 12:48:40.690 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:48:40.767 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:48:40.793 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:48:40.856 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:48:41.248 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:48:41.249 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:48:41.346 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:48:41.347 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:48:41.347 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:48:42.558 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:48:42.975 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 425.4725ms
+E-Commerce.AuthAPI | 2024-03-28 12:48:43.019 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:48:43.026 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 6.177ms
+E-Commerce.AuthAPI | 2024-03-28 12:48:43.045 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:48:43.095 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.6744ms
+E-Commerce.AuthAPI | 2024-03-28 12:48:43.207 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:48:43.317 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.9701ms
+E-Commerce.AuthAPI | 2024-03-28 12:54:43.856 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 12:54:43.926 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 12:54:43.949 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 12:54:44.007 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 12:54:44.329 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 12:54:44.329 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 12:54:44.386 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 12:54:44.387 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 12:54:44.387 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 12:54:45.339 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 12:54:45.793 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 461.4753ms
+E-Commerce.AuthAPI | 2024-03-28 12:54:45.835 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 12:54:45.843 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.4526ms
+E-Commerce.AuthAPI | 2024-03-28 12:54:45.846 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 12:54:45.911 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.8835ms
+E-Commerce.AuthAPI | 2024-03-28 12:54:46.018 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 12:54:46.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.2198ms
+E-Commerce.AuthAPI | 2024-03-28 16:52:48.727 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 16:52:48.800 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 16:52:48.858 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 16:52:48.907 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 16:52:49.290 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 16:52:49.291 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 16:52:49.336 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 16:52:49.336 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 16:52:49.337 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 16:52:50.042 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 16:52:50.540 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 504.7449ms
+E-Commerce.AuthAPI | 2024-03-28 16:52:50.633 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 16:52:50.633 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 16:52:50.658 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 25.1953ms
+E-Commerce.AuthAPI | 2024-03-28 16:52:50.860 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 226.6059ms
+E-Commerce.AuthAPI | 2024-03-28 16:52:50.941 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 16:52:51.079 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.2711ms
+E-Commerce.AuthAPI | 2024-03-28 16:53:22.931 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 16:53:22.997 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 16:53:23.022 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 16:53:23.068 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 16:53:23.423 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 16:53:23.423 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 16:53:23.526 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 16:53:23.527 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 16:53:23.527 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 16:53:24.231 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 16:53:24.706 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 481.2258ms
+E-Commerce.AuthAPI | 2024-03-28 16:53:24.739 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 16:53:24.751 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 12.6405ms
+E-Commerce.AuthAPI | 2024-03-28 16:53:24.773 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 16:53:24.867 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.0105ms
+E-Commerce.AuthAPI | 2024-03-28 16:53:25.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 16:53:25.194 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.5965ms
+E-Commerce.AuthAPI | 2024-03-28 17:23:57.471 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 17:23:57.550 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 17:23:57.575 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 17:23:57.622 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 17:23:58.033 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 17:23:58.033 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 17:23:58.095 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 17:23:58.096 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 17:23:58.097 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 17:24:12.748 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 17:24:12.844 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 17:24:12.879 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 17:24:12.919 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 17:24:13.348 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 17:24:13.349 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 17:24:13.432 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 17:24:13.433 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 17:24:13.433 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 17:24:14.088 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 17:24:14.533 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 453.267ms
+E-Commerce.AuthAPI | 2024-03-28 17:24:14.778 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 17:24:14.792 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 13.7312ms
+E-Commerce.AuthAPI | 2024-03-28 17:24:14.823 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 17:24:14.886 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.8177ms
+E-Commerce.AuthAPI | 2024-03-28 17:24:15.048 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 17:24:15.160 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.1545ms
+E-Commerce.AuthAPI | 2024-03-28 17:25:12.422 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 17:25:12.498 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 17:25:12.521 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 17:25:12.576 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 17:25:13.100 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 17:25:13.100 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 17:25:13.164 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 17:25:13.165 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 17:25:13.166 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 17:25:14.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 17:25:14.638 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 553.3112ms
+E-Commerce.AuthAPI | 2024-03-28 17:25:14.675 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 17:25:14.689 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 17:25:14.703 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 28.1186ms
+E-Commerce.AuthAPI | 2024-03-28 17:25:14.784 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.155ms
+E-Commerce.AuthAPI | 2024-03-28 17:25:14.867 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 17:25:15.000 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 132.4748ms
+E-Commerce.AuthAPI | 2024-03-28 17:26:32.831 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-03-28 17:26:32.899 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-03-28 17:26:32.923 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-03-28 17:26:33.016 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-03-28 17:26:33.434 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-03-28 17:26:33.435 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-03-28 17:26:33.495 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-03-28 17:26:33.496 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-03-28 17:26:33.496 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-03-28 17:26:34.705 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-03-28 17:26:35.163 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 465.8094ms
+E-Commerce.AuthAPI | 2024-03-28 17:26:35.187 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-03-28 17:26:35.208 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-03-28 17:26:35.209 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 22.1937ms
+E-Commerce.AuthAPI | 2024-03-28 17:26:35.261 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.2445ms
+E-Commerce.AuthAPI | 2024-03-28 17:26:35.389 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-03-28 17:26:35.479 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.1786ms
