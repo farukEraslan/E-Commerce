@@ -9,7 +9,6 @@ namespace E_Commerce.OrderAPI.Models
 
         // Product FK
         public Guid ProductId { get; set; }
-        public ProductDto? Product { get; set; }
 
         // Cart FK
         public Guid CartId { get; set; }

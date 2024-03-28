@@ -8,7 +8,7 @@ namespace E_Commerce.OrderAPI.Helpers
 {
     public static class EmailSendHelper
     {
-        public static string SendEmailProducer(string toEmail, string subject, CartDto body)
+        public static string SendEmailProducer(string toEmail, object body)
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
             var connection = factory.CreateConnection();
