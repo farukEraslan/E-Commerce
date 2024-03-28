@@ -34,11 +34,13 @@ namespace E_Commerce.Web.Controllers
         }
 
         [Authorize(Roles = "customer")]
-        public async Task<IActionResult> AddToCart(Guid productId, Guid userId)
+        public async Task<IActionResult> AddToCart(Guid productId)
         {
+            var userId = HttpContext.User.Claims.ToList()[1].Value;
+
             CreateCartDto createCartDto = new CreateCartDto();
             createCartDto.ProductId = productId;
-            createCartDto.UserId = userId;
+            createCartDto.UserId = Guid.Parse(userId);
 
             var result = await _orderService.AddToCart(createCartDto);
             return RedirectToAction("Index", "Home");
@@ -46,11 +48,13 @@ namespace E_Commerce.Web.Controllers
         }
 
         [Authorize(Roles = "customer")]
-        public async Task<IActionResult> RemoveFromCart(Guid productId, Guid userId)
+        public async Task<IActionResult> RemoveFromCart(Guid productId)
         {
+            var userId = HttpContext.User.Claims.ToList()[1].Value;
+
             RemoveCartDto removeCartDto = new RemoveCartDto();
             removeCartDto.ProductId = productId;
-            removeCartDto.UserId = userId;
+            removeCartDto.UserId = Guid.Parse(userId);
 
             var result = await _orderService.RemoveFromCart(removeCartDto);
             return RedirectToAction("Index", "Home");
@@ -58,10 +62,12 @@ namespace E_Commerce.Web.Controllers
         }
 
         [Authorize(Roles = "customer")]
-        public async Task<IActionResult> Cart(Guid userId)
+        public async Task<IActionResult> Cart()
         {
+            var userId = HttpContext.User.Claims.ToList()[1].Value;
+
             CartDto cartDto = new();
-            ResponseDto? cartResponse = await _orderService.GetCart(userId);
+            ResponseDto? cartResponse = await _orderService.GetCart(Guid.Parse(userId));
 
             if (cartResponse != null && cartResponse.IsSuccess)
             {
@@ -84,13 +90,15 @@ namespace E_Commerce.Web.Controllers
         [Authorize(Roles = "customer")]
         public async Task<IActionResult> GiveOrder(CartDto cartDto)
         {
-            ResponseDto response = await _orderService.GetCart(cartDto.UserId);
+            var userId = HttpContext.User.Claims.ToList()[1].Value;
+
+            ResponseDto response = await _orderService.GetCart(Guid.Parse(userId));
             var cart = JsonConvert.DeserializeObject<CartDto>(response.Result.ToString());
             if (cart != null)
             {
                 cart.Address = cartDto.Address;
                 cart.IsCompleted = true;
-                _orderService.GiveOrder(cart);
+                await _orderService.GiveOrder(cart);
             }
             return RedirectToAction("Cart", "Order");
         }

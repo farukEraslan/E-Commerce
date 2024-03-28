@@ -53,6 +53,27 @@ namespace E_Commerce.Web.Controllers
             }
         }
 
+        /// <summary>
+        /// Kullanıcı aktifleştirildikten sonra yönlendirildiği sayfa
+        /// </summary>
+        /// <param name="userEmail"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> Activate([FromQuery] string userEmail)
+        {
+            ResponseDto response =  await _authService.ActivateUser(userEmail);
+
+            if (response.IsSuccess)
+            {
+                TempData["success"] = response?.Message;
+                return View();
+            }
+            else
+            {
+                TempData["error"] = response?.Message;
+                return View();
+            }
+        }
+
         // Login Sayfası
         public IActionResult Login()
         {

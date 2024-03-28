@@ -197,7 +197,8 @@ namespace E_Commerce.OrderAPI.Services
 
             if (existCart != null)
             {
-                _appDbContext.Carts.Update(_mapper.Map(cartDto, existCart));
+                var updatedCart = _mapper.Map(cartDto, existCart);
+                _appDbContext.Carts.Update(updatedCart);
                 _appDbContext.SaveChanges();
 
                 _response.Message = "Sipariş başarı şekilde verildi..";
@@ -214,11 +215,16 @@ namespace E_Commerce.OrderAPI.Services
 
         public async Task<ResponseDto> GetOrders()
         {
-            var orders = _mapper.Map<List<CartDto>>(_appDbContext.Carts.ToList());
+            var orders = _mapper.Map<List<CartDto>>(_appDbContext.Carts.Include(x=>x.CartLines).ToList());
             foreach (var order in orders)
             {
                 var user = await _userService.GetById(order.UserId);
                 order.User = user;
+
+                foreach (var cartLine in order.CartLines)
+                {
+                    cartLine.Product = await _productService.GetById(cartLine.ProductId);                    
+                }
             }
             _response.Result = orders;
             _response.Message = "Siparişler başarı ile listelendi.";
@@ -241,7 +247,7 @@ namespace E_Commerce.OrderAPI.Services
                 // burada müşteriye sipariş onay maili gidecek.
                 string title = "Sipariş Onayı";
                 string content = $"{cartId} numaralı siparişiniz onaylanmıştır.";
-                EmailSendHelper.SendEmailProducer(user.Email, title, content);    // burada hangfire implement edilebilir.
+                EmailSendHelper.SendEmailProducer(user.Email, title, _mapper.Map<CartDto>(cart));    // burada hangfire implement edilebilir.
                 return _response;
             }
             else
@@ -266,7 +272,7 @@ namespace E_Commerce.OrderAPI.Services
                 // burada müşteriye sipariş onay maili gidecek.
                 string title = "Sipariş Onayı";
                 string content = $"{cartId} numaralı siparişiniz <strong> onaylanmamıştır </ strong>";
-                EmailSendHelper.SendEmailProducer(user.Email, title, content);    // burada hangfire implement edilebilir.
+                EmailSendHelper.SendEmailProducer(user.Email, title, _mapper.Map<CartDto>(cart));    // burada hangfire implement edilebilir.
                 return _response;
             }
             else

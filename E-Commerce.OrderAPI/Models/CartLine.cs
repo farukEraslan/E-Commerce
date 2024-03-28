@@ -1,4 +1,6 @@
-﻿namespace E_Commerce.OrderAPI.Models
+﻿using E_Commerce.OrderAPI.Models.Dto.Product;
+
+namespace E_Commerce.OrderAPI.Models
 {
     public class CartLine
     {
@@ -7,6 +9,7 @@
 
         // Product FK
         public Guid ProductId { get; set; }
+        public ProductDto? Product { get; set; }
 
         // Cart FK
         public Guid CartId { get; set; }

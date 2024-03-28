@@ -19,27 +19,55 @@
         <table class="table table-hover ">
             <thead>
                 <tr>
-                    <th class="align-middle">User Id</th>
-                    <th class="align-middle">Address</th>
-                    <th class="align-middle">IsApproved</th>
+                    <th class="align-middle">Müşteri Ad-Soyad</th>
+                    <th class="align-middle">Adres Bilgisi</th>
+                    <th class="align-middle">Sipariş Adeti</th>
+                    <th class="align-middle">Sipariş Tutarı</th>
+                    <th class="align-middle">Sipariş Durumu</th>
                     <th class="align-middle">İşlemler</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var order in Model)
                 {
-                    if (!order.IsApproved)
+                    if (order.IsCompleted == true)
                     {
                         <tr>
-                            <td class="align-middle">@order.UserId</td>
+                            <td class="align-middle">@order.User.FirstName @order.User.LastName</td>
                             <td class="align-middle">@order.Address</td>
-                            <td class="align-middle">@order.IsApproved</td>
-                            <td class="align-middle">@order.IsApproved</td>
+                            <td class="align-middle">
+                                @{
+                                    int totalQuantity = 0;
+                                    foreach (var product in order.CartLines)
+                                    {
+                                        totalQuantity += product.Quantity;
+                                    }
+                                }
+                                @totalQuantity
+                            </td>
+                            <td class="align-middle">@order.CartTotalPrice</td>
+                            <td class="align-middle">
+                                @if (!@order.IsApproved)
+                                {
+                                    <span>Onaylanmadı</span>
+                                }
+                                else
+                                {
+                                    <span>Onaylandı</span>
+                                }
+                            </td>
                             <td class="align-middle">
                                 <div class="d-grid gap-2 d-md-block">
-
-                                    <a class="btn btn-success" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onayla</a>
-                                    <a class="btn btn-danger" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="DeleteOrder" asp-route-cartId="@order.Id">Sil</a>
+                                    @if (order.IsApproved)
+                                    {
+                                        <a class="btn btn-primary disabled" type="button" style="width:200px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onaylandı</a>
+                                    }
+                                    else
+                                    {
+                                        <a class="btn btn-success" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onayla</a>
+                                        <a class="btn btn-danger" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="DeleteOrder" asp-route-cartId="@order.Id">Sil</a>
+                                    }
+                                    
 
                                 </div>
                             </td>

@@ -7,7 +7,7 @@ namespace E_Commerce.AuthAPI.Helpers
 {
     public static class EmailSendHelper
     {
-        public static string SendEmailProducer(string toEmail, string subject, string body)
+        public static string SendEmailProducer(string toEmail)
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
             var connection = factory.CreateConnection();
@@ -19,9 +19,7 @@ namespace E_Commerce.AuthAPI.Helpers
             // json data yollanacak.
             EmailDto emailDto = new()
             {
-                ToEmail = toEmail,
-                Subject = subject,
-                Body = body,
+                ToEmail = toEmail
             };
             var message =  JsonConvert.SerializeObject(emailDto);
             var content = Encoding.UTF8.GetBytes(message);

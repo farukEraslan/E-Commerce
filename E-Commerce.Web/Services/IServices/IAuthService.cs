@@ -8,6 +8,7 @@ namespace E_Commerce.Web.Services.IServices
     {
         Task<ResponseDto> LoginAsync(LoginRequestDto loginRequestDto);
         Task<ResponseDto> RegisterAsync(RegisterRequestDto registerRequestDto);
+        Task<ResponseDto> ActivateUser(string userEmail);
         Task LogoutAsync();
     }
 }

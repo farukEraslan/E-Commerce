@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Aktifleştirildi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        @if (TempData["success"] != null)
+        {
+            <h1>Hesabınız Aktifleştirildi!</h1>
+            <p>Hesabınız başarıyla aktifleştirildi. Artık giriş yapabilir ve sitemizi kullanabilirsiniz.</p>
+            <a class="btn btn-primary" asp-controller="Auth" asp-action="Register">Giriş Yap</a>
+        }
+        else if (TempData["error"] != null)
+        {
+            <h1>@TempData["error"]</h1>
+            <a class="btn btn-primary" asp-controller="Auth" asp-action="Register">Giriş Yap</a>
+        }
+    </div>
+</body>
+</html>

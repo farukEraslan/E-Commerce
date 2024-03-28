@@ -36,6 +36,20 @@ namespace E_Commerce.Web.Services
         }
 
         /// <summary>
+        /// Kullanıcı aktifleştirmek için kullanılır.
+        /// </summary>
+        /// <param name="userEmail"></param>
+        /// <returns></returns>
+        public async Task<ResponseDto> ActivateUser(string userEmail)
+        {
+            return await _baseService.SendAsync(new Models.RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.GET,
+                Url = SD.AuthAPIBase + "/api/auth/activate-user?userEmail=" + userEmail
+            });
+        }
+
+        /// <summary>
         /// Kullanıcı girişi yapan metot.
         /// </summary>
         /// <param name="loginRequestDto"></param>
