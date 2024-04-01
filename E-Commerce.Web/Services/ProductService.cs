@@ -3,8 +3,6 @@ using E_Commerce.Web.Models.Dto;
 using E_Commerce.Web.Models.Dto.Product;
 using E_Commerce.Web.Services.IServices;
 using E_Commerce.Web.Utility;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Drawing;
 
 namespace E_Commerce.Web.Services
 {

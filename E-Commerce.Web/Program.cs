@@ -33,6 +33,9 @@ namespace E_Commerce.Web
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddHttpClient();
             builder.Services.AddHttpClient<IAuthService, AuthService>();
+            builder.Services.AddHttpClient<IProductService, ProductService>();
+            builder.Services.AddHttpClient<ICategoryService, CategoryService>();
+            builder.Services.AddHttpClient<IOrderService, OrderService>();
             SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
             SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
             SD.CategoryAPIBase = builder.Configuration["ServiceUrls:CategoryAPI"];

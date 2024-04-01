@@ -15,14 +15,23 @@ namespace E_Commerce.Web.Services
             _baseService = baseService;
         }
 
-        public Task<ResponseDto> CreateAsync(CategoryDto categoryDto)
+        public async Task<ResponseDto> CreateAsync(CategoryDto categoryDto)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.POST,
+                Data = categoryDto,
+                Url = SD.ProductAPIBase + "/api/category/create"
+            });
         }
 
-        public Task<ResponseDto> DeleteAsync(CategoryDto categoryDto)
+        public async Task<ResponseDto> DeleteAsync(Guid categoryId)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.DELETE,
+                Url = SD.ProductAPIBase + "/api/category/delete/" + categoryId
+            });
         }
 
         public async Task<ResponseDto> GetAllAsync()
@@ -30,18 +39,36 @@ namespace E_Commerce.Web.Services
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = Utility.SD.ApiType.GET,
-                Url = SD.CategoryAPIBase + "/api/category/list"
+                Url = SD.ProductAPIBase + $"/api/category/get-all"
             });
         }
 
-        public Task<ResponseDto> GetByIdAsync(CategoryDto categoryDto)
+        public async Task<ResponseDto> GetAllAsync(int page, int size)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.GET,
+                Url = SD.ProductAPIBase + $"/api/category/list/page={page}&size={size}"
+            });
         }
 
-        public Task<ResponseDto> UpdateAsync(CategoryDto categoryDto)
+        public async Task<ResponseDto> GetByIdAsync(Guid categoryId)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.GET,
+                Url = SD.ProductAPIBase + "/api/category/getById/" + categoryId
+            });
+        }
+
+        public async Task<ResponseDto> UpdateAsync(CategoryUpdateDto categoryDto)
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.PUT,
+                Data = categoryDto,
+                Url = SD.ProductAPIBase + "/api/category/update"
+            });
         }
     }
 }

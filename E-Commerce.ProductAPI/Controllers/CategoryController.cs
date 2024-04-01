@@ -16,15 +16,22 @@ namespace E_Commerce.ProductAPI.Controllers
             _categoryService = categoryService;
         }
 
-        [HttpGet("list")]
-        public IActionResult GetAll(int pageNumber, int pageSize)
+        [HttpGet("get-all")]
+        public IActionResult GetAll()
         {
-            var categories = _categoryService.GetAll(pageNumber, pageSize);
+            var categories = _categoryService.GetAll();
             return Ok(categories);
         }
 
-        [HttpGet("getById")]
-        public IActionResult GetById(Guid categoryId)
+        [HttpGet("list/page={page:int}&size={size:int}")]
+        public IActionResult GetAll([FromRoute] int page, int size)
+        {
+            var categories = _categoryService.GetAll(page, size);
+            return Ok(categories);
+        }
+
+        [HttpGet("getById/{categoryId:guid}")]
+        public IActionResult GetById([FromRoute] Guid categoryId)
         {
             var result = _categoryService.GetById(categoryId);
             if (!result.IsSuccess)
@@ -58,7 +65,7 @@ namespace E_Commerce.ProductAPI.Controllers
             return Ok(result);
         }
 
-        [HttpDelete("delete")]
+        [HttpDelete("delete/{categoryId:guid}")]
         [Authorize(Roles = "admin")]
         public IActionResult Delete(Guid categoryId)
         {

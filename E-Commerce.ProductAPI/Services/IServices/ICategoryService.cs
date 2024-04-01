@@ -8,6 +8,7 @@ namespace E_Commerce.ProductAPI.Services.IServices
         ResponseDto Create(CategoryCreateDto categoryCreateDto);
         ResponseDto Update(CategoryUpdateDto categoryUpdateDto);
         ResponseDto Delete(Guid categoryId);
+        ResponseDto GetAll();
         ResponseDto GetAll(int pageNumber, int pageSize);
         ResponseDto GetById(Guid categoryId);
     }

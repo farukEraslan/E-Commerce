@@ -65,11 +65,28 @@ namespace E_Commerce.ProductAPI.Services
             }
         }
 
-        public ResponseDto GetAll(int pageNumber, int pageSize)
+        public ResponseDto GetAll()
         {
             try
             {
                 var categories = _mapper.Map<List<CategoryDto>>(_appDbContext.Categories.ToList());
+                _response.Message = "Kategoriler başarı ile listelendi.";
+                _response.Result = categories;
+                return _response;
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+                return _response;
+            }
+        }
+
+        public ResponseDto GetAll(int page, int size)
+        {
+            try
+            {
+                var categories = _mapper.Map<List<CategoryDto>>(_appDbContext.Categories.Skip((page - 1) * size).Take(size).ToList());
                 _response.Message = "Kategoriler başarı ile listelendi.";
                 _response.Result = categories;
                 return _response;
