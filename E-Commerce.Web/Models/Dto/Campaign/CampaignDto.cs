@@ -1,13 +1,10 @@
-﻿namespace E_Commerce.OrderAPI.Models.Dto
+﻿namespace E_Commerce.Web.Models.Dto.Campaign
 {
-    public class EmailDto
+    public class CampaignDto
     {
-        public string ToEmail { get; set; }
-        public Guid OrderId { get; set; }
-        public string Subject
-        {
-            get { return "Sipariş Onayı - BookSeller Project"; }
-        }
+        public List<string> ToEmails { get; set; }
+        public string Subject { get; set; }
+        public string Content { get; set; }
         public object Body
         {
             get
@@ -17,8 +14,9 @@
                         <table role=""presentation"" align=""center"" border=""0"" cellpadding=""0"" cellspacing=""0"" width=""600"">
                             <tr>
                                 <td style=""background-color: #f8f8f8; padding: 40px 0; text-align: center;"">
-                                    <h2 style=""color: #333333;"">Sipariş Onayı</h2>
-                                    <p style=""color: #666666;""><strong>{OrderId}<strong/> numaralı siparişini onaylanmıştır.</p>
+                                    <h2 style=""color: #333333;"">Bu Fırsat Kaçmaz!</h2>
+                                    <p style=""color: #666666;"">{Content}</p>
+                                    <p style=""margin-top: 30px;""><a href=""https://localhost:7284"" style=""background-color: #4CAF50; border:none; color:white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;"">Hemen alışverişe başla</ a></p>
                                 </td>
                             </tr>
                             <tr>
@@ -31,6 +29,5 @@
                 ";
             }
         }
-
     }
 }

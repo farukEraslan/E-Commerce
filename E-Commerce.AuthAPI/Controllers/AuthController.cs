@@ -62,5 +62,16 @@ namespace E_Commerce.AuthAPI.Controllers
             var result = await _authService.GetById(userId);
             return Ok(result);
         }
+
+        /// <summary>
+        /// Müşterilerin email adreslerini getirir.
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("get-customer-emails")]
+        public async Task<IActionResult> GetCustomerEmails()
+        {
+            var result = await _authService.GetCustomerEmails();
+            return Ok(result);
+        }
     }
 }

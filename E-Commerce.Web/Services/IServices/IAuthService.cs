@@ -10,5 +10,6 @@ namespace E_Commerce.Web.Services.IServices
         Task<ResponseDto> RegisterAsync(RegisterRequestDto registerRequestDto);
         Task<ResponseDto> ActivateUser(string userEmail);
         Task LogoutAsync();
+        Task<ResponseDto> GetCustomerEmails();
     }
 }

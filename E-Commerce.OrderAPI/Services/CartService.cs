@@ -245,8 +245,7 @@ namespace E_Commerce.OrderAPI.Services
                 _response.Message = "Sipariş onaylandı.";
 
                 // burada müşteriye sipariş onay maili gidecek.
-                string content = $"{cartId} numaralı siparişiniz onaylanmıştır.";
-                EmailSendHelper.SendEmailProducer(user.Email, content);    // burada hangfire implement edilebilir.
+                EmailSendHelper.SendEmailProducer(user.Email, cartId);    // burada hangfire implement edilebilir.
                 return _response;
             }
             else
@@ -269,8 +268,7 @@ namespace E_Commerce.OrderAPI.Services
                 _response.Message = "Sipariş onaylanmadı.";
 
                 // burada müşteriye sipariş onay maili gidecek.
-                string content = $"{cartId} numaralı siparişiniz onaylanmamıştır.";
-                EmailSendHelper.SendEmailProducer(user.Email, content);    // burada hangfire implement edilebilir.
+                EmailSendHelper.SendEmailProducer(user.Email, cartId);    // burada hangfire implement edilebilir.
                 return _response;
             }
             else

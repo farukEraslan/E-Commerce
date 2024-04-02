@@ -8,6 +8,7 @@ using E_Commerce.AuthAPI.Models.Enum;
 using E_Commerce.AuthAPI.Services.IServices;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce.AuthAPI.Services
 {
@@ -231,6 +232,25 @@ namespace E_Commerce.AuthAPI.Services
                 _response.IsSuccess = false;
                 return _response;
             }
+        }
+
+        /// <summary>
+        /// Müşterilerin email adreslerini getirir.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ResponseDto> GetCustomerEmails()
+        {
+            var customers = await _userManager.GetUsersInRoleAsync("customer");
+
+            List<string> customerEmails = new();
+            foreach (var customer in customers)
+            {
+                customerEmails.Add(customer.Email);
+            }
+            _response.Result = customerEmails;
+            _response.IsSuccess = true;
+            _response.Message = "Müşteriler başarı ile listelendi.";
+            return _response;
         }
     }
 }

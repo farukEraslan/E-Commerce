@@ -73,5 +73,18 @@ namespace E_Commerce.Web.Services
             await _contextAccessor.HttpContext.SignOutAsync();
             _tokenProvider.ClearToken();
         }
+
+        /// <summary>
+        /// Müşterilerin emaillerini getirir.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ResponseDto> GetCustomerEmails()
+        {
+            return await _baseService.SendAsync(new Models.RequestDto()
+            {
+                ApiType = Utility.SD.ApiType.GET,
+                Url = SD.AuthAPIBase + "/api/auth/get-customer-emails"
+            });
+        }
     }
 }

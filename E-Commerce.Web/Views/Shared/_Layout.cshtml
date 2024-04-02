@@ -37,6 +37,9 @@
                         else if (User.IsInRole("admin"))
                         {
                             <li class="nav-item">
+                                <a class="nav-link text-dark btn btn-outline-warning m-1" asp-area="" asp-controller="Campaign" asp-action="Index">Kampanya Oluştur</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link text-dark btn btn-outline-warning m-1" asp-area="" asp-controller="Category" asp-action="Index">Kategori Yönetimi</a>
                             </li>
                             <li class="nav-item">

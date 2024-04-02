@@ -1,0 +1,579 @@
+E-Commerce.AuthAPI | 2024-04-02 12:20:53.790 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-04-02 12:20:53.940 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-04-02 12:20:53.998 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-04-02 12:20:54.089 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-04-02 12:20:54.791 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-04-02 12:20:54.792 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-04-02 12:20:54.944 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-04-02 12:20:54.944 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-04-02 12:20:54.944 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-04-02 12:20:56.459 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-04-02 12:20:57.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 684.6494ms
+E-Commerce.AuthAPI | 2024-04-02 12:20:57.147 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-04-02 12:20:57.165 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-04-02 12:20:57.167 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 21.345ms
+E-Commerce.AuthAPI | 2024-04-02 12:20:57.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 86.7687ms
+E-Commerce.AuthAPI | 2024-04-02 12:20:57.345 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-04-02 12:20:57.519 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 175.1895ms
+E-Commerce.AuthAPI | 2024-04-02 12:21:18.955 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 62
+E-Commerce.AuthAPI | 2024-04-02 12:21:18.970 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:21:19.009 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:21:20.212 +03:00 [INF] Executed DbCommand (92ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-04-02 12:21:20.805 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-04-02 12:21:21.278 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:21:21.306 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 2289.7164ms
+E-Commerce.AuthAPI | 2024-04-02 12:21:21.307 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:21:21.324 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 2369.0973ms
+E-Commerce.AuthAPI | 2024-04-02 12:21:35.754 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - null null
+E-Commerce.AuthAPI | 2024-04-02 12:21:35.757 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:21:35.764 +03:00 [INF] Route matched with {action = "GetCustomerEmails", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerEmails() on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:21:35.897 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+E-Commerce.AuthAPI | 2024-04-02 12:21:35.978 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[Discriminator], [t].[Email], [t].[EmailConfirmed], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t].[BirthDate], [t].[FirstName], [t].[LastName], [t].[Status]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[Discriminator], [a0].[Email], [a0].[EmailConfirmed], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName], [a0].[BirthDate], [a0].[FirstName], [a0].[LastName], [a0].[Status]
+    FROM [AspNetUsers] AS [a0]
+    WHERE [a0].[Discriminator] = N'AppUser'
+) AS [t] ON [a].[UserId] = [t].[Id]
+WHERE [a].[RoleId] = @__role_Id_0
+E-Commerce.AuthAPI | 2024-04-02 12:21:35.982 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:21:35.986 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI) in 221.054ms
+E-Commerce.AuthAPI | 2024-04-02 12:21:35.986 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:21:35.986 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - 200 null application/json; charset=utf-8 232.3868ms
+E-Commerce.AuthAPI | 2024-04-02 12:23:15.921 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - null null
+E-Commerce.AuthAPI | 2024-04-02 12:23:15.926 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:23:15.927 +03:00 [INF] Route matched with {action = "GetCustomerEmails", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerEmails() on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:23:15.944 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+E-Commerce.AuthAPI | 2024-04-02 12:23:15.950 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[Discriminator], [t].[Email], [t].[EmailConfirmed], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t].[BirthDate], [t].[FirstName], [t].[LastName], [t].[Status]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[Discriminator], [a0].[Email], [a0].[EmailConfirmed], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName], [a0].[BirthDate], [a0].[FirstName], [a0].[LastName], [a0].[Status]
+    FROM [AspNetUsers] AS [a0]
+    WHERE [a0].[Discriminator] = N'AppUser'
+) AS [t] ON [a].[UserId] = [t].[Id]
+WHERE [a].[RoleId] = @__role_Id_0
+E-Commerce.AuthAPI | 2024-04-02 12:23:15.951 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:23:15.951 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI) in 24.4041ms
+E-Commerce.AuthAPI | 2024-04-02 12:23:15.951 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:23:15.951 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - 200 null application/json; charset=utf-8 33.1207ms
+E-Commerce.AuthAPI | 2024-04-02 12:24:02.678 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - null null
+E-Commerce.AuthAPI | 2024-04-02 12:24:02.679 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:24:02.679 +03:00 [INF] Route matched with {action = "GetCustomerEmails", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerEmails() on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:24:02.682 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+E-Commerce.AuthAPI | 2024-04-02 12:24:02.686 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[Discriminator], [t].[Email], [t].[EmailConfirmed], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t].[BirthDate], [t].[FirstName], [t].[LastName], [t].[Status]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[Discriminator], [a0].[Email], [a0].[EmailConfirmed], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName], [a0].[BirthDate], [a0].[FirstName], [a0].[LastName], [a0].[Status]
+    FROM [AspNetUsers] AS [a0]
+    WHERE [a0].[Discriminator] = N'AppUser'
+) AS [t] ON [a].[UserId] = [t].[Id]
+WHERE [a].[RoleId] = @__role_Id_0
+E-Commerce.AuthAPI | 2024-04-02 12:24:02.686 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:24:02.686 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI) in 7.2996ms
+E-Commerce.AuthAPI | 2024-04-02 12:24:02.686 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:24:02.686 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - 200 null application/json; charset=utf-8 8.2877ms
+E-Commerce.AuthAPI | 2024-04-02 12:27:54.110 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-04-02 12:27:54.197 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-04-02 12:27:54.225 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-04-02 12:27:54.284 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-04-02 12:27:54.727 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-04-02 12:27:54.727 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-04-02 12:27:54.803 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-04-02 12:27:54.803 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-04-02 12:27:54.804 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-04-02 12:27:55.333 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-04-02 12:27:55.809 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 484.1571ms
+E-Commerce.AuthAPI | 2024-04-02 12:27:55.889 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-04-02 12:27:55.899 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 8.8673ms
+E-Commerce.AuthAPI | 2024-04-02 12:27:55.906 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-04-02 12:27:55.981 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.4331ms
+E-Commerce.AuthAPI | 2024-04-02 12:27:56.139 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-04-02 12:27:56.273 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 134.1367ms
+E-Commerce.AuthAPI | 2024-04-02 12:28:31.095 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - null null
+E-Commerce.AuthAPI | 2024-04-02 12:28:31.103 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:28:31.118 +03:00 [INF] Route matched with {action = "GetCustomerEmails", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerEmails() on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:28:31.449 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+E-Commerce.AuthAPI | 2024-04-02 12:28:31.540 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[Discriminator], [t].[Email], [t].[EmailConfirmed], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t].[BirthDate], [t].[FirstName], [t].[LastName], [t].[Status]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[Discriminator], [a0].[Email], [a0].[EmailConfirmed], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName], [a0].[BirthDate], [a0].[FirstName], [a0].[LastName], [a0].[Status]
+    FROM [AspNetUsers] AS [a0]
+    WHERE [a0].[Discriminator] = N'AppUser'
+) AS [t] ON [a].[UserId] = [t].[Id]
+WHERE [a].[RoleId] = @__role_Id_0
+E-Commerce.AuthAPI | 2024-04-02 12:28:31.585 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:28:31.603 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI) in 482.8036ms
+E-Commerce.AuthAPI | 2024-04-02 12:28:31.604 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:28:31.610 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - 200 null application/json; charset=utf-8 514.9555ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:35.364 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-04-02 12:48:35.504 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-04-02 12:48:35.576 +03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-04-02 12:48:35.623 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-04-02 12:48:36.363 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-04-02 12:48:36.364 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-04-02 12:48:36.474 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-04-02 12:48:36.475 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-04-02 12:48:36.476 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-04-02 12:48:37.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-04-02 12:48:38.530 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 1008.1612ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:38.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-04-02 12:48:38.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-04-02 12:48:38.704 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 76.3048ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:38.846 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 218.953ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:38.982 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-04-02 12:48:39.149 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 167.1508ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:54.042 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 62
+E-Commerce.AuthAPI | 2024-04-02 12:48:54.050 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:48:54.072 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:48:54.491 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-04-02 12:48:54.784 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-04-02 12:48:54.986 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:48:55.000 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 923.7757ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:55.000 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:48:55.011 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 969.4135ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.460 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.462 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.466 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.524 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.526 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.526 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 60.3698ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.526 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.526 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 66.0697ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.689 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.689 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.689 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.702 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.702 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.702 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 12.8192ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.702 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.702 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 13.635ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.708 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.708 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.708 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.709 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.710 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.710 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 1.8982ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.710 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.710 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 2.4405ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.733 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.733 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.733 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.735 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.735 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.736 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 2.2753ms
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.736 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:48:58.736 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 2.8274ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:20.841 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 64
+E-Commerce.AuthAPI | 2024-04-02 12:49:20.842 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:20.842 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:20.845 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:20.932 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:20.934 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:20.934 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 91.9642ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:20.934 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:20.935 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 93.3952ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.684 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.684 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.690 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.696 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.697 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.697 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 6.302ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.697 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.697 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 13.4311ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.707 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/b6556ff2-2160-4099-9908-f55c17eac19b - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.708 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.708 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.710 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.710 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.710 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 2.6975ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.711 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.711 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/b6556ff2-2160-4099-9908-f55c17eac19b - 200 null application/json; charset=utf-8 3.5296ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.720 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.721 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.721 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.723 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.723 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.723 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 2.3092ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.723 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.724 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 3.1739ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.729 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.729 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.729 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.731 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.731 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.732 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 2.5064ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.732 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.732 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 3.1929ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.750 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.752 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.752 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.758 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.759 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.759 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 7.0572ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.759 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:49.759 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 8.7508ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.292 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/b6556ff2-2160-4099-9908-f55c17eac19b - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.292 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.292 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.295 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.296 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.296 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 3.5679ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.296 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.296 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/b6556ff2-2160-4099-9908-f55c17eac19b - 200 null application/json; charset=utf-8 4.8153ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.659 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.659 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.659 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.661 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.662 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.662 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 2.96ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.662 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.662 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 3.7059ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.678 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/b6556ff2-2160-4099-9908-f55c17eac19b - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.679 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.679 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.681 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.681 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.681 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 2.3062ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.681 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.681 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/b6556ff2-2160-4099-9908-f55c17eac19b - 200 null application/json; charset=utf-8 3.0996ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.692 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.692 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.692 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.694 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.695 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.695 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 2.3222ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.695 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.695 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 2.9651ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.701 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.702 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.702 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.704 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.705 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.705 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 2.8911ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.705 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.705 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 4.022ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.740 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - null null
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.741 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.741 +03:00 [INF] Route matched with {action = "GetById", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.743 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ToString_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND [a].[Id] = @__ToString_0
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.744 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.744 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI) in 3.3257ms
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.744 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetById (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:49:55.745 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/getById/21645c9d-576b-485b-b761-ceddabfce519 - 200 null application/json; charset=utf-8 4.1624ms
+E-Commerce.AuthAPI | 2024-04-02 12:57:35.375 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-04-02 12:57:35.502 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-04-02 12:57:35.551 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-04-02 12:57:35.661 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-04-02 12:57:36.433 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-04-02 12:57:36.433 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-04-02 12:57:36.536 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-04-02 12:57:36.537 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-04-02 12:57:36.537 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-04-02 12:57:37.659 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-04-02 12:57:38.419 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 767.3967ms
+E-Commerce.AuthAPI | 2024-04-02 12:57:38.506 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-04-02 12:57:38.523 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 17.4397ms
+E-Commerce.AuthAPI | 2024-04-02 12:57:38.597 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-04-02 12:57:38.743 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 146.4775ms
+E-Commerce.AuthAPI | 2024-04-02 12:57:38.883 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-04-02 12:57:39.091 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 208.1571ms
+E-Commerce.AuthAPI | 2024-04-02 12:57:52.168 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 62
+E-Commerce.AuthAPI | 2024-04-02 12:57:52.174 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:57:52.193 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:57:52.578 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-04-02 12:57:52.805 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-04-02 12:57:53.005 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:57:53.019 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 822.2011ms
+E-Commerce.AuthAPI | 2024-04-02 12:57:53.019 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:57:53.026 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 858.3438ms
+E-Commerce.AuthAPI | 2024-04-02 12:59:17.757 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - null null
+E-Commerce.AuthAPI | 2024-04-02 12:59:17.759 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:59:17.764 +03:00 [INF] Route matched with {action = "GetCustomerEmails", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerEmails() on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 12:59:17.841 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+E-Commerce.AuthAPI | 2024-04-02 12:59:17.879 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[Discriminator], [t].[Email], [t].[EmailConfirmed], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t].[BirthDate], [t].[FirstName], [t].[LastName], [t].[Status]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[Discriminator], [a0].[Email], [a0].[EmailConfirmed], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName], [a0].[BirthDate], [a0].[FirstName], [a0].[LastName], [a0].[Status]
+    FROM [AspNetUsers] AS [a0]
+    WHERE [a0].[Discriminator] = N'AppUser'
+) AS [t] ON [a].[UserId] = [t].[Id]
+WHERE [a].[RoleId] = @__role_Id_0
+E-Commerce.AuthAPI | 2024-04-02 12:59:17.881 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 12:59:17.885 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI) in 120.8849ms
+E-Commerce.AuthAPI | 2024-04-02 12:59:17.886 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 12:59:17.886 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - 200 null application/json; charset=utf-8 128.8379ms
+E-Commerce.AuthAPI | 2024-04-02 13:00:42.110 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-04-02 13:00:42.262 +03:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-04-02 13:00:42.347 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-04-02 13:00:42.399 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-04-02 13:00:42.936 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-04-02 13:00:42.936 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-04-02 13:00:43.022 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-04-02 13:00:43.023 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-04-02 13:00:43.023 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-04-02 13:00:43.839 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-04-02 13:00:44.590 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 759.9865ms
+E-Commerce.AuthAPI | 2024-04-02 13:00:44.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-04-02 13:00:44.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 7.1623ms
+E-Commerce.AuthAPI | 2024-04-02 13:00:44.628 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-04-02 13:00:44.795 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 167.0815ms
+E-Commerce.AuthAPI | 2024-04-02 13:00:44.954 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-04-02 13:00:45.166 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 220.3021ms
+E-Commerce.AuthAPI | 2024-04-02 13:01:01.066 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 62
+E-Commerce.AuthAPI | 2024-04-02 13:01:01.077 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 13:01:01.109 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 13:01:01.783 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-04-02 13:01:02.158 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-04-02 13:01:02.447 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 13:01:02.468 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 1351.2144ms
+E-Commerce.AuthAPI | 2024-04-02 13:01:02.469 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 13:01:02.487 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 1421.6479ms
+E-Commerce.AuthAPI | 2024-04-02 13:03:47.994 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-04-02 13:03:48.240 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-04-02 13:03:48.312 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-04-02 13:03:48.398 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-04-02 13:03:49.434 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-04-02 13:03:49.435 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-04-02 13:03:49.565 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-04-02 13:03:49.566 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-04-02 13:03:49.566 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-04-02 13:03:51.198 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-04-02 13:03:51.947 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 755.7031ms
+E-Commerce.AuthAPI | 2024-04-02 13:03:55.556 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-04-02 13:03:55.575 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 19.0173ms
+E-Commerce.AuthAPI | 2024-04-02 13:03:55.660 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-04-02 13:03:55.735 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.7341ms
+E-Commerce.AuthAPI | 2024-04-02 13:03:56.572 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-04-02 13:03:56.738 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.6919ms
+E-Commerce.AuthAPI | 2024-04-02 13:04:09.924 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 62
+E-Commerce.AuthAPI | 2024-04-02 13:04:09.932 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 13:04:09.955 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 13:04:10.414 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-04-02 13:04:10.663 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-04-02 13:04:10.873 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 13:04:10.887 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 927.2168ms
+E-Commerce.AuthAPI | 2024-04-02 13:04:10.888 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 13:04:10.897 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 974.0977ms
+E-Commerce.AuthAPI | 2024-04-02 13:04:54.102 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - null null
+E-Commerce.AuthAPI | 2024-04-02 13:04:54.104 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 13:04:54.108 +03:00 [INF] Route matched with {action = "GetCustomerEmails", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerEmails() on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 13:04:54.195 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+E-Commerce.AuthAPI | 2024-04-02 13:04:54.230 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[Discriminator], [t].[Email], [t].[EmailConfirmed], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t].[BirthDate], [t].[FirstName], [t].[LastName], [t].[Status]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[Discriminator], [a0].[Email], [a0].[EmailConfirmed], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName], [a0].[BirthDate], [a0].[FirstName], [a0].[LastName], [a0].[Status]
+    FROM [AspNetUsers] AS [a0]
+    WHERE [a0].[Discriminator] = N'AppUser'
+) AS [t] ON [a].[UserId] = [t].[Id]
+WHERE [a].[RoleId] = @__role_Id_0
+E-Commerce.AuthAPI | 2024-04-02 13:04:54.231 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 13:04:54.234 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI) in 125.0717ms
+E-Commerce.AuthAPI | 2024-04-02 13:04:54.234 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 13:04:54.234 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - 200 null application/json; charset=utf-8 133.328ms
+E-Commerce.AuthAPI | 2024-04-02 13:05:36.044 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-04-02 13:05:36.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 28.6604ms
+E-Commerce.AuthAPI | 2024-04-02 13:05:36.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-04-02 13:05:36.128 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 1.39ms
+E-Commerce.AuthAPI | 2024-04-02 13:05:36.151 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-04-02 13:05:36.186 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.0225ms
+E-Commerce.AuthAPI | 2024-04-02 13:05:36.326 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-04-02 13:05:36.331 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.3755ms
+E-Commerce.AuthAPI | 2024-04-02 13:06:12.469 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-04-02 13:06:13.764 +03:00 [INF] Executed DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-04-02 13:06:13.824 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-04-02 13:06:13.924 +03:00 [INF] User profile is available. Using 'C:\Users\10132884\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-04-02 13:06:14.731 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-04-02 13:06:14.731 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-04-02 13:06:14.830 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-04-02 13:06:14.831 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-04-02 13:06:14.831 +03:00 [INF] Content root path: C:\Users\10132884\OneDrive - NTT DATA Business Solutions AG\Desktop\GitHub\E-CommerceMicroservice\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-04-02 13:06:15.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-04-02 13:06:16.500 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 658.3367ms
+E-Commerce.AuthAPI | 2024-04-02 13:06:16.529 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-04-02 13:06:16.543 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 13.1463ms
+E-Commerce.AuthAPI | 2024-04-02 13:06:16.566 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-04-02 13:06:16.654 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 92.0398ms
+E-Commerce.AuthAPI | 2024-04-02 13:06:16.843 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-04-02 13:06:16.999 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 155.9089ms
+E-Commerce.AuthAPI | 2024-04-02 13:06:40.183 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7002/api/auth/login - application/json; charset=utf-8 62
+E-Commerce.AuthAPI | 2024-04-02 13:06:40.191 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 13:06:40.209 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(E_Commerce.AuthAPI.Models.Dto.Request.LoginRequestDto) on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 13:06:40.632 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__ToLower_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Discriminator], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a].[BirthDate], [a].[FirstName], [a].[LastName], [a].[Status]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'AppUser' AND LOWER([a].[UserName]) = @__ToLower_0
+E-Commerce.AuthAPI | 2024-04-02 13:06:40.849 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+E-Commerce.AuthAPI | 2024-04-02 13:06:41.027 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 13:06:41.037 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI) in 824.6253ms
+E-Commerce.AuthAPI | 2024-04-02 13:06:41.038 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.Login (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 13:06:41.044 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7002/api/auth/login - 200 null application/json; charset=utf-8 861.2876ms
+E-Commerce.AuthAPI | 2024-04-02 13:07:48.762 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - null null
+E-Commerce.AuthAPI | 2024-04-02 13:07:48.764 +03:00 [INF] Executing endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 13:07:48.767 +03:00 [INF] Route matched with {action = "GetCustomerEmails", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerEmails() on controller E_Commerce.AuthAPI.Controllers.AuthController (E-Commerce.AuthAPI).
+E-Commerce.AuthAPI | 2024-04-02 13:07:48.835 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+E-Commerce.AuthAPI | 2024-04-02 13:07:48.868 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[Discriminator], [t].[Email], [t].[EmailConfirmed], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t].[BirthDate], [t].[FirstName], [t].[LastName], [t].[Status]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[Discriminator], [a0].[Email], [a0].[EmailConfirmed], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName], [a0].[BirthDate], [a0].[FirstName], [a0].[LastName], [a0].[Status]
+    FROM [AspNetUsers] AS [a0]
+    WHERE [a0].[Discriminator] = N'AppUser'
+) AS [t] ON [a].[UserId] = [t].[Id]
+WHERE [a].[RoleId] = @__role_Id_0
+E-Commerce.AuthAPI | 2024-04-02 13:07:48.870 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.AuthAPI.Models.Dto.ResponseDto'.
+E-Commerce.AuthAPI | 2024-04-02 13:07:48.872 +03:00 [INF] Executed action E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI) in 104.5404ms
+E-Commerce.AuthAPI | 2024-04-02 13:07:48.872 +03:00 [INF] Executed endpoint 'E_Commerce.AuthAPI.Controllers.AuthController.GetCustomerEmails (E-Commerce.AuthAPI)'
+E-Commerce.AuthAPI | 2024-04-02 13:07:48.872 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/api/auth/get-customer-emails - 200 null application/json; charset=utf-8 109.9035ms
