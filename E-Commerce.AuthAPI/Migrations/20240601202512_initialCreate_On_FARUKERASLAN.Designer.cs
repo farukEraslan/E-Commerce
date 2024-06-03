@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.AuthAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240219165251_initialCreate.AuthAPI")]
-    partial class initialCreateAuthAPI
+    [Migration("20240601202512_initialCreate_On_FARUKERASLAN")]
+    partial class initialCreate_On_FARUKERASLAN
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -247,8 +247,8 @@ namespace E_Commerce.AuthAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.HasDiscriminator().HasValue("AppUser");
                 });

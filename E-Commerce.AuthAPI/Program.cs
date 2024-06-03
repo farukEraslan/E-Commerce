@@ -42,19 +42,33 @@ namespace E_Commerce.AuthAPI
             // Serilog Logger
             
             // dosya isimlendirmesi için özel bir metot yazýlabilir.
-            string logFilePath = $"C:/Users/10132884/OneDrive - NTT DATA Business Solutions AG/Desktop/GitHub/E-CommerceMicroservice/LogFiles/E-Commerce.AuthAPI.Logs/{DateTime.Now.Year}-{DateTime.Now.Month}/.txt";
+            //string logFilePath = $"C:/Users/10132884/OneDrive - NTT DATA Business Solutions AG/Desktop/GitHub/E-CommerceMicroservice/LogFiles/E-Commerce.AuthAPI.Logs/{DateTime.Now.Year}-{DateTime.Now.Month}/.txt";
+            string logFilePath = $"D:/GitHub Projects/E-Commerce/LogFiles/LogFiles/E-Commerce.AuthAPI.Logs/{DateTime.Now.Year}-{DateTime.Now.Month}/.txt";
+            string connectionString = "Server = FARUKERASLAN; Database = E-Commerce.Logs; uid = sa; pwd = 123; Trusted_Connection = True; TrustServerCertificate = True;";
 
-            Log.Logger = new LoggerConfiguration().MinimumLevel.Information().WriteTo.File(logFilePath,
+            #region Database Loglama
+            /*         
+            Log.Logger = new LoggerConfiguration().MinimumLevel.Information()
+                .WriteTo.File(logFilePath,
                     outputTemplate: "E-Commerce.AuthAPI | {Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
                     rollingInterval: RollingInterval.Day,
                     retainedFileCountLimit: null)
-                .WriteTo.MSSqlServer("Server = ISTN36002\\SQLEXPRESS; Database = E-Commerce.Logs; uid = sa; pwd = 123; Trusted_Connection = True; TrustServerCertificate = True;",
+                .WriteTo.MSSqlServer(connectionString,
                     sinkOptions: new MSSqlServerSinkOptions
                     {
                         TableName = "E-Commerce.AuthAPI.Logs",
                         AutoCreateSqlTable = true
                     },
                     restrictedToMinimumLevel: LogEventLevel.Information).CreateLogger();
+            */
+            #endregion
+            
+            Log.Logger = new LoggerConfiguration().MinimumLevel.Information()
+                .WriteTo.File(logFilePath,
+                    outputTemplate: "E-Commerce.AuthAPI | {Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
+                    rollingInterval: RollingInterval.Day,
+                    retainedFileCountLimit: null)
+                .CreateLogger();
 
             builder.Host.UseSerilog();
 

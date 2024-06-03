@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.ProductAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240304152812_initialCreate_ProductAPI")]
-    partial class initialCreate_ProductAPI
+    [Migration("20240601211952_initialCreate_On_FARUKERASLAN")]
+    partial class initialCreate_On_FARUKERASLAN
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,7 +47,6 @@ namespace E_Commerce.ProductAPI.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Author")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("CategoryId")
@@ -58,11 +57,13 @@ namespace E_Commerce.ProductAPI.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Publisher")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("StockAmount")
@@ -70,10 +71,6 @@ namespace E_Commerce.ProductAPI.Migrations
 
                     b.Property<decimal>("UnitPrice")
                         .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("Yayınevi")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

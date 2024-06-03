@@ -41,19 +41,30 @@ namespace E_Commerce.ProductAPI
             // Serilog Logger
 
             // dosya isimlendirmesi için özel bir metot yazýlabilir.
-            string logFilePath = $"C:/Users/10132884/OneDrive - NTT DATA Business Solutions AG/Desktop/GitHub/E-CommerceMicroservice/LogFiles/E-Commerce.ProductAPI.Logs/{DateTime.Now.Year}-{DateTime.Now.Month}/.txt";
+            string logFilePath = $"D:/GitHub Projects/E-Commerce/LogFiles/E-Commerce.ProductAPI.Logs/{DateTime.Now.Year}-{DateTime.Now.Month}/.txt";
 
+            #region Database Loglama
+            /*
             Log.Logger = new LoggerConfiguration().MinimumLevel.Information().WriteTo.File(logFilePath,
                     outputTemplate: "E-Commerce.ProductAPI | {Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
                     rollingInterval: RollingInterval.Day,
                     retainedFileCountLimit: null)
-                .WriteTo.MSSqlServer("Server = ISTN36002\\SQLEXPRESS; Database = E-Commerce.Logs; uid = sa; pwd = 123; Trusted_Connection = True; TrustServerCertificate = True;",
+                .WriteTo.MSSqlServer("Server = FARUKERASLAN; Database = E-Commerce.Logs; uid = sa; pwd = 123; Trusted_Connection = True; TrustServerCertificate = True;",
                     sinkOptions: new MSSqlServerSinkOptions
                     {
                         TableName = "E-Commerce.ProductAPI.Logs",
                         AutoCreateSqlTable = true
                     },
                     restrictedToMinimumLevel: LogEventLevel.Information).CreateLogger();
+            */
+            #endregion
+
+            Log.Logger = new LoggerConfiguration().MinimumLevel.Information()
+                .WriteTo.File(logFilePath,
+                    outputTemplate: "E-Commerce.ProductAPI | {Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
+                    rollingInterval: RollingInterval.Day,
+                    retainedFileCountLimit: null)
+                .CreateLogger();
 
             builder.Host.UseSerilog();
 

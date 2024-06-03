@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.OrderAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240321103643_addOrderAPITables")]
-    partial class addOrderAPITables
+    [Migration("20240601213131_initialCreate_On_FARUKERASLAN")]
+    partial class initialCreate_On_FARUKERASLAN
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
