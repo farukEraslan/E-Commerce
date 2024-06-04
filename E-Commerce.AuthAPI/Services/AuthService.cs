@@ -54,10 +54,11 @@ namespace E_Commerce.AuthAPI.Services
                 var result = await _userManager.CreateAsync(newUser, registerRequestDto.Password);
                 if (result.Succeeded)
                 {
-                    var createdUser = _authAPIDatabase.AppUsers.First(user => user.NormalizedEmail == registerRequestDto.Email.Trim().ToUpper());
-                    var user = _mapper.Map<UserDto>(createdUser);
+                    var userList = _authAPIDatabase.AppUsers.ToList();
+                    var createdUser = _authAPIDatabase.AppUsers.FirstOrDefault(newUser => newUser.Email == registerRequestDto.Email.Trim());
+                    var userDto = _mapper.Map<UserDto>(createdUser);
 
-                    _response.Result = user;
+                    _response.Result = userDto;
                     _response.Message = "Kullanıcı oluşturma başarılı.";
                     // onay emaili burada yollanacak.
                     EmailSendHelper.SendEmailProducer(registerRequestDto.Email);    // burada hangfire implement edilebilir.

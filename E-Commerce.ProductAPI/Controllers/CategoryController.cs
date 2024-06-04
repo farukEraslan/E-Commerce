@@ -42,7 +42,7 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpPost("create")]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin")]
         public IActionResult Create(CategoryCreateDto categoryCreateDto)
         {
             var result = _categoryService.Create(categoryCreateDto);
