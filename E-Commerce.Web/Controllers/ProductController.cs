@@ -44,6 +44,7 @@ namespace E_Commerce.Web.Controllers
             else
                 TempData["error"] = response?.Message;
 
+            productCreateVM.ProductCreateDto = new();
             return View(productCreateVM);
         }
         [HttpPost]

@@ -54,7 +54,6 @@ namespace E_Commerce.AuthAPI.Services
                 var result = await _userManager.CreateAsync(newUser, registerRequestDto.Password);
                 if (result.Succeeded)
                 {
-                    var userList = _authAPIDatabase.AppUsers.ToList();
                     var createdUser = _authAPIDatabase.AppUsers.FirstOrDefault(newUser => newUser.Email == registerRequestDto.Email.Trim());
                     var userDto = _mapper.Map<UserDto>(createdUser);
 

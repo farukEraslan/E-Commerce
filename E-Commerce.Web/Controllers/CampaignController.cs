@@ -19,7 +19,7 @@ namespace E_Commerce.Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(new CampaignDto());
         }
 
         /// <summary>
@@ -29,6 +29,11 @@ namespace E_Commerce.Web.Controllers
         /// <returns></returns>
         public async Task<IActionResult> Send(CampaignDto campaignDto)
         {
+            if (campaignDto is null)
+            {
+                return View();
+            }
+
             var customerEmails = await _authService.GetCustomerEmails();
             campaignDto.ToEmails = JsonConvert.DeserializeObject<List<string>>(customerEmails.Result.ToString());
 

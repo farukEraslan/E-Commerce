@@ -36,7 +36,7 @@ namespace E_Commerce.Web.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            return View(new CategoryDto());
         }
 
         [HttpPost]

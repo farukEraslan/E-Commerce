@@ -1,0 +1,1498 @@
+E-Commerce.OrderAPI | 2024-06-07 10:08:28.446 +03:00 [WRN] No store type was specified for the decimal property 'CartTotalPrice' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-06-07 10:08:28.485 +03:00 [WRN] No store type was specified for the decimal property 'CartLinePrice' on entity type 'CartLine'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-06-07 10:08:31.950 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.OrderAPI | 2024-06-07 10:08:31.986 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.OrderAPI | 2024-06-07 10:08:32.031 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.OrderAPI | 2024-06-07 10:08:32.077 +03:00 [INF] User profile is available. Using 'C:\Users\frker\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.OrderAPI | 2024-06-07 10:08:32.486 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.OrderAPI | 2024-06-07 10:08:32.486 +03:00 [INF] Now listening on: http://localhost:5073
+E-Commerce.OrderAPI | 2024-06-07 10:08:32.489 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.OrderAPI | 2024-06-07 10:08:32.489 +03:00 [INF] Hosting environment: Development
+E-Commerce.OrderAPI | 2024-06-07 10:08:32.489 +03:00 [INF] Content root path: D:\GitHub Projects\E-Commerce\E-Commerce.OrderAPI
+E-Commerce.OrderAPI | 2024-06-07 10:08:33.370 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-06-07 10:08:35.702 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 2338.6222ms
+E-Commerce.OrderAPI | 2024-06-07 10:08:35.767 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-06-07 10:08:35.779 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 11.758ms
+E-Commerce.OrderAPI | 2024-06-07 10:08:35.797 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-06-07 10:08:35.852 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.27ms
+E-Commerce.OrderAPI | 2024-06-07 10:08:36.247 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-06-07 10:08:36.399 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.3016ms
+E-Commerce.OrderAPI | 2024-06-07 10:09:01.476 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-06-07 10:09:01.586 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:09:01.603 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.099 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM [Carts] AS [c]
+LEFT JOIN [CartLines] AS [c0] ON [c].[Id] = [c0].[CartId]
+ORDER BY [c].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.341 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.342 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.455 +03:00 [INF] Received HTTP response headers after 110.75ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.455 +03:00 [INF] End processing HTTP request after 115.9283ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.579 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.580 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.630 +03:00 [INF] Received HTTP response headers after 50.6055ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.630 +03:00 [INF] End processing HTTP request after 51.0863ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.653 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.708 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 1099.814ms
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.708 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:09:02.720 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 1243.7242ms
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.646 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.651 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.651 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.713 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM [Carts] AS [c]
+LEFT JOIN [CartLines] AS [c0] ON [c].[Id] = [c0].[CartId]
+ORDER BY [c].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.714 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.715 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.740 +03:00 [INF] Received HTTP response headers after 25.1968ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.740 +03:00 [INF] End processing HTTP request after 25.6953ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.741 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.741 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.748 +03:00 [INF] Received HTTP response headers after 6.5222ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.748 +03:00 [INF] End processing HTTP request after 7.2155ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.750 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.750 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 98.7268ms
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.750 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:09:31.751 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 104.6316ms
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.335 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.337 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.347 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.499 +03:00 [INF] Executed DbCommand (79ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.501 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.501 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.526 +03:00 [INF] Received HTTP response headers after 25.1048ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.526 +03:00 [INF] End processing HTTP request after 25.6444ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.666 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([Id], [Address], [CartTotalPrice], [IsApproved], [IsCompleted], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.689 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.693 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.694 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.848 +03:00 [INF] Received HTTP response headers after 154.0447ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.848 +03:00 [INF] End processing HTTP request after 154.9945ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.884 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Guid), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLines] ([Id], [CartId], [CartLinePrice], [ProductId], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.893 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.899 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.899 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 551.7912ms
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.899 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:11:49.900 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 564.5735ms
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.803 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/049cfc7c-3764-4c41-8659-4e6252cb3c7e - null null
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.804 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.809 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.832 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.836 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.836 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.843 +03:00 [INF] Received HTTP response headers after 7.2636ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.843 +03:00 [INF] End processing HTTP request after 7.8206ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.848 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.848 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 38.3902ms
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.848 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:11:51.848 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/049cfc7c-3764-4c41-8659-4e6252cb3c7e - 200 null application/json; charset=utf-8 46.1072ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.033 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/049cfc7c-3764-4c41-8659-4e6252cb3c7e - null null
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.034 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.034 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.039 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.040 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.040 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.052 +03:00 [INF] Received HTTP response headers after 11.2406ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.052 +03:00 [INF] End processing HTTP request after 11.9131ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.052 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.053 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 18.5408ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.053 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.054 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/049cfc7c-3764-4c41-8659-4e6252cb3c7e - 200 null application/json; charset=utf-8 20.9907ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.078 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/order/give-order - application/json; charset=utf-8 700
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.079 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GiveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.084 +03:00 [INF] Route matched with {action = "GiveOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GiveOrder(E_Commerce.OrderAPI.Models.Dto.Cart.CartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.109 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cartDto_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[Id] = @__cartDto_Id_0
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.136 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32), @p10='?' (DbType = Guid), @p5='?' (Size = 4000), @p6='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CartLines] SET [CartId] = @p0, [CartLinePrice] = @p1, [ProductId] = @p2, [Quantity] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+UPDATE [Carts] SET [Address] = @p5, [CartTotalPrice] = @p6, [IsApproved] = @p7, [IsCompleted] = @p8, [UserId] = @p9
+OUTPUT 1
+WHERE [Id] = @p10;
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.148 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.723 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GiveOrder (E-Commerce.OrderAPI) in 639.1975ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.813 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GiveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:10.979 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Result.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.Id.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+E-Commerce.OrderAPI | 2024-06-07 10:12:11.076 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/order/give-order - 500 null text/plain; charset=utf-8 997.8888ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:11.096 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/049cfc7c-3764-4c41-8659-4e6252cb3c7e - null null
+E-Commerce.OrderAPI | 2024-06-07 10:12:11.097 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:11.097 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:12:11.100 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:12:11.100 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:12:11.100 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 2.7133ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:11.100 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:11.100 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/049cfc7c-3764-4c41-8659-4e6252cb3c7e - 400 null application/json; charset=utf-8 3.8619ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.833 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.834 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.834 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.838 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM [Carts] AS [c]
+LEFT JOIN [CartLines] AS [c0] ON [c].[Id] = [c0].[CartId]
+ORDER BY [c].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.841 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.841 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.861 +03:00 [INF] Received HTTP response headers after 19.8194ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.862 +03:00 [INF] End processing HTTP request after 20.1683ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.862 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.863 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.868 +03:00 [INF] Received HTTP response headers after 5.6228ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.869 +03:00 [INF] End processing HTTP request after 6.4486ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.870 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.870 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.874 +03:00 [INF] Received HTTP response headers after 4.1266ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.874 +03:00 [INF] End processing HTTP request after 4.4942ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.875 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.875 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.879 +03:00 [INF] Received HTTP response headers after 4.1728ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.879 +03:00 [INF] End processing HTTP request after 4.4765ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.880 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.880 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 45.898ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.881 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:19.881 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 47.9379ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.075 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/order/approve-order/23dbcec4-f389-4758-8cf6-05ba0c1e29a9 - null 0
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.076 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.079 +03:00 [INF] Route matched with {action = "ApproveOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveOrder(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.088 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cartId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[Id] = @__cartId_0
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.088 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.088 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.094 +03:00 [INF] Received HTTP response headers after 5.1219ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.094 +03:00 [INF] End processing HTTP request after 5.6676ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.097 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.327 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.327 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI) in 247.938ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.328 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.328 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/order/approve-order/23dbcec4-f389-4758-8cf6-05ba0c1e29a9 - 200 null application/json; charset=utf-8 252.8048ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.582 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.583 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.583 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.586 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM [Carts] AS [c]
+LEFT JOIN [CartLines] AS [c0] ON [c].[Id] = [c0].[CartId]
+ORDER BY [c].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.586 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.586 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.590 +03:00 [INF] Received HTTP response headers after 4.2449ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.590 +03:00 [INF] End processing HTTP request after 4.4833ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.591 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.591 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.596 +03:00 [INF] Received HTTP response headers after 5.0867ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.596 +03:00 [INF] End processing HTTP request after 5.4099ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.597 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.597 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.605 +03:00 [INF] Received HTTP response headers after 7.7041ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.606 +03:00 [INF] End processing HTTP request after 8.4053ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.606 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.606 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.611 +03:00 [INF] Received HTTP response headers after 4.3724ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.611 +03:00 [INF] End processing HTTP request after 4.7573ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.612 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.612 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 29.1354ms
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.612 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:12:23.613 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 30.9497ms
+E-Commerce.OrderAPI | 2024-06-07 10:24:26.213 +03:00 [WRN] No store type was specified for the decimal property 'CartTotalPrice' on entity type 'Cart'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-06-07 10:24:26.250 +03:00 [WRN] No store type was specified for the decimal property 'CartLinePrice' on entity type 'CartLine'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.OrderAPI | 2024-06-07 10:24:27.211 +03:00 [INF] Executed DbCommand (95ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.OrderAPI | 2024-06-07 10:24:27.323 +03:00 [INF] Executed DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.OrderAPI | 2024-06-07 10:24:27.644 +03:00 [INF] Executed DbCommand (282ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.OrderAPI | 2024-06-07 10:24:27.881 +03:00 [INF] User profile is available. Using 'C:\Users\frker\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.OrderAPI | 2024-06-07 10:24:28.330 +03:00 [INF] Now listening on: https://localhost:7001
+E-Commerce.OrderAPI | 2024-06-07 10:24:28.330 +03:00 [INF] Now listening on: http://localhost:5073
+E-Commerce.OrderAPI | 2024-06-07 10:24:28.333 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.OrderAPI | 2024-06-07 10:24:28.333 +03:00 [INF] Hosting environment: Development
+E-Commerce.OrderAPI | 2024-06-07 10:24:28.334 +03:00 [INF] Content root path: D:\GitHub Projects\E-Commerce\E-Commerce.OrderAPI
+E-Commerce.OrderAPI | 2024-06-07 10:24:29.935 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - null null
+E-Commerce.OrderAPI | 2024-06-07 10:24:30.536 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - 200 null text/html;charset=utf-8 609.0046ms
+E-Commerce.OrderAPI | 2024-06-07 10:24:30.664 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.OrderAPI | 2024-06-07 10:24:30.676 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 11.2162ms
+E-Commerce.OrderAPI | 2024-06-07 10:24:30.748 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - null null
+E-Commerce.OrderAPI | 2024-06-07 10:24:30.844 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.7788ms
+E-Commerce.OrderAPI | 2024-06-07 10:24:31.620 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - null null
+E-Commerce.OrderAPI | 2024-06-07 10:24:31.794 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 174.2876ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:33.918 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.008 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.040 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.043 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.053 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.053 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.189 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.192 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.192 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.577 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.577 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.577 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.598 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.598 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.597 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.599 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.599 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.599 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.688 +03:00 [INF] Received HTTP response headers after 84.1702ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.688 +03:00 [INF] Received HTTP response headers after 84.1673ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.688 +03:00 [INF] Received HTTP response headers after 84.2036ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.689 +03:00 [INF] End processing HTTP request after 93.2975ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.689 +03:00 [INF] End processing HTTP request after 92.9717ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.689 +03:00 [INF] End processing HTTP request after 93.3315ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.706 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.707 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.707 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.790 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.790 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.790 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.796 +03:00 [INF] Received HTTP response headers after 5.6041ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.797 +03:00 [INF] End processing HTTP request after 6.9095ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.954 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.955 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.955 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.958 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.959 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.959 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.964 +03:00 [INF] Received HTTP response headers after 5.2298ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:34.964 +03:00 [INF] End processing HTTP request after 5.7327ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.111 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([Id], [Address], [CartTotalPrice], [IsApproved], [IsCompleted], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.111 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([Id], [Address], [CartTotalPrice], [IsApproved], [IsCompleted], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.111 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([Id], [Address], [CartTotalPrice], [IsApproved], [IsCompleted], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.111 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([Id], [Address], [CartTotalPrice], [IsApproved], [IsCompleted], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.111 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([Id], [Address], [CartTotalPrice], [IsApproved], [IsCompleted], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.140 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.141 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.141 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.142 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.142 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.142 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.142 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.143 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.143 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.143 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.142 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.143 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.143 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.143 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.143 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.173 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.174 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.174 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.177 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.186 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.186 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.205 +03:00 [INF] Received HTTP response headers after 18.8588ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.206 +03:00 [INF] End processing HTTP request after 19.5991ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.207 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.208 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.208 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.344 +03:00 [INF] Received HTTP response headers after 201.1678ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.344 +03:00 [INF] Received HTTP response headers after 200.7345ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.344 +03:00 [INF] Received HTTP response headers after 201.1233ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.344 +03:00 [INF] Received HTTP response headers after 136.121ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.344 +03:00 [INF] Received HTTP response headers after 200.9605ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.344 +03:00 [INF] Received HTTP response headers after 201.5074ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.344 +03:00 [INF] End processing HTTP request after 201.732ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.344 +03:00 [INF] End processing HTTP request after 201.9728ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.345 +03:00 [INF] End processing HTTP request after 202.0238ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.345 +03:00 [INF] End processing HTTP request after 136.9233ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.345 +03:00 [INF] End processing HTTP request after 202.435ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.345 +03:00 [INF] End processing HTTP request after 202.372ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.409 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Guid), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLines] ([Id], [CartId], [CartLinePrice], [ProductId], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.409 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Guid), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLines] ([Id], [CartId], [CartLinePrice], [ProductId], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.409 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Guid), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLines] ([Id], [CartId], [CartLinePrice], [ProductId], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.409 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Guid), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLines] ([Id], [CartId], [CartLinePrice], [ProductId], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.409 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Guid), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLines] ([Id], [CartId], [CartLinePrice], [ProductId], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.415 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Guid), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartLines] ([Id], [CartId], [CartLinePrice], [ProductId], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.426 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.426 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.426 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.426 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.426 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.426 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.440 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.440 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.440 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.440 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.440 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.440 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.450 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 1391.8451ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.450 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 1253.5052ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.450 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 490.6535ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.450 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 1391.7975ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.450 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 271.8627ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.450 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 738.6349ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.451 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.451 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.451 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.451 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.451 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.451 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.463 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 1545.8145ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.463 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 1273.904ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.463 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 508.6145ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.463 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 756.309ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.463 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 1423.3336ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:35.463 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 289.6619ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.807 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.810 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.810 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.813 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.814 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.814 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.822 +03:00 [INF] Received HTTP response headers after 8.2414ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.823 +03:00 [INF] End processing HTTP request after 8.739ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.825 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.839 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [CartLines] SET [CartId] = @p0, [CartLinePrice] = @p1, [ProductId] = @p2, [Quantity] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.840 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.840 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.846 +03:00 [INF] Received HTTP response headers after 6.1329ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.846 +03:00 [INF] End processing HTTP request after 6.5847ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.850 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.851 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.865 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 41.0978ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.865 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:36.869 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 62.5052ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.634 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.635 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.635 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.642 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.643 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.643 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.666 +03:00 [INF] Received HTTP response headers after 22.7942ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.666 +03:00 [INF] End processing HTTP request after 23.1837ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.671 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.676 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [CartLines] SET [CartId] = @p0, [CartLinePrice] = @p1, [ProductId] = @p2, [Quantity] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.676 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.676 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.732 +03:00 [INF] Received HTTP response headers after 55.3879ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.732 +03:00 [INF] End processing HTTP request after 55.8157ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.738 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.739 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.739 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 103.5222ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.739 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:38.740 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 106.0028ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.761 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.762 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.769 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.910 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.923 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.923 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.965 +03:00 [INF] Received HTTP response headers after 42.1223ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.965 +03:00 [INF] End processing HTTP request after 42.4763ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.967 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.967 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.973 +03:00 [INF] Received HTTP response headers after 5.4656ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.973 +03:00 [INF] End processing HTTP request after 5.9323ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.981 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.997 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 227.6357ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.997 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:39.998 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 237.0343ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.581 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.582 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.582 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.590 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.590 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.591 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.600 +03:00 [INF] Received HTTP response headers after 9.7219ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.601 +03:00 [INF] End processing HTTP request after 10.211ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.607 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.614 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [CartLines] SET [CartId] = @p0, [CartLinePrice] = @p1, [ProductId] = @p2, [Quantity] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.614 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.614 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.625 +03:00 [INF] Received HTTP response headers after 11.0648ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.625 +03:00 [INF] End processing HTTP request after 11.3954ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.631 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.631 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.631 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 49.2867ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.631 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:44.632 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 51.7803ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.843 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.844 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.845 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.853 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.854 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.854 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.860 +03:00 [INF] Received HTTP response headers after 5.9018ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.860 +03:00 [INF] End processing HTTP request after 6.2609ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.861 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.861 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.864 +03:00 [INF] Received HTTP response headers after 3.5489ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.864 +03:00 [INF] End processing HTTP request after 3.775ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.865 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.865 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 20.5697ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.866 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:45.866 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 22.6744ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.867 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/remove-from-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.868 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.RemoveFromCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.872 +03:00 [INF] Route matched with {action = "RemoveFromCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveFromCart(E_Commerce.OrderAPI.Models.Dto.Cart.RemoveCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.897 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.898 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.898 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.904 +03:00 [INF] Received HTTP response headers after 5.6802ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.904 +03:00 [INF] End processing HTTP request after 5.9652ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.906 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.909 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [CartLines] SET [CartId] = @p0, [CartLinePrice] = @p1, [ProductId] = @p2, [Quantity] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.911 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/increase-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.911 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/increase-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.920 +03:00 [INF] Received HTTP response headers after 9.3381ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.921 +03:00 [INF] End processing HTTP request after 9.8277ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.923 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.924 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.924 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.RemoveFromCart (E-Commerce.OrderAPI) in 51.7022ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.924 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.RemoveFromCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:46.925 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/remove-from-cart - 200 null application/json; charset=utf-8 57.3506ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.813 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.815 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.815 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.820 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.821 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.821 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.825 +03:00 [INF] Received HTTP response headers after 4.594ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.825 +03:00 [INF] End processing HTTP request after 4.9168ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.826 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.826 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.829 +03:00 [INF] Received HTTP response headers after 3.1577ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.829 +03:00 [INF] End processing HTTP request after 3.3734ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.830 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.830 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 14.9673ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.830 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:47.830 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 17.5776ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.555 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.556 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.556 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.558 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.558 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.558 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.562 +03:00 [INF] Received HTTP response headers after 3.3819ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.562 +03:00 [INF] End processing HTTP request after 3.6248ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.562 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.562 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.566 +03:00 [INF] Received HTTP response headers after 3.4522ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.566 +03:00 [INF] End processing HTTP request after 3.8278ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.567 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.567 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 11.336ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.568 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:49.568 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 13.1962ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.405 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.406 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.406 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.408 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.409 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.409 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.412 +03:00 [INF] Received HTTP response headers after 3.6214ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.413 +03:00 [INF] End processing HTTP request after 3.9227ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.413 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.413 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.417 +03:00 [INF] Received HTTP response headers after 3.5033ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.417 +03:00 [INF] End processing HTTP request after 3.7633ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.417 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.418 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 11.5759ms
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.418 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:33:50.418 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 12.9758ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.308 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.309 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.309 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.311 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.312 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.312 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.331 +03:00 [INF] Received HTTP response headers after 18.5354ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.331 +03:00 [INF] End processing HTTP request after 19.1614ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.332 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.332 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.337 +03:00 [INF] Received HTTP response headers after 4.7815ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.337 +03:00 [INF] End processing HTTP request after 5.1754ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.338 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.338 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 28.9013ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.338 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.338 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 30.9033ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.364 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/order/give-order - application/json; charset=utf-8 1170
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.364 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GiveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.368 +03:00 [INF] Route matched with {action = "GiveOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GiveOrder(E_Commerce.OrderAPI.Models.Dto.Cart.CartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.391 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cartDto_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[Id] = @__cartDto_Id_0
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.422 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32), @p9='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p7='?' (DbType = Guid), @p8='?' (DbType = Int32), @p15='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p12='?' (DbType = Boolean), @p13='?' (DbType = Boolean), @p14='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [CartLines] SET [CartId] = @p0, [CartLinePrice] = @p1, [ProductId] = @p2, [Quantity] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+UPDATE [CartLines] SET [CartId] = @p5, [CartLinePrice] = @p6, [ProductId] = @p7, [Quantity] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+UPDATE [Carts] SET [Address] = @p10, [CartTotalPrice] = @p11, [IsApproved] = @p12, [IsCompleted] = @p13, [UserId] = @p14
+OUTPUT 1
+WHERE [Id] = @p15;
+E-Commerce.OrderAPI | 2024-06-07 10:34:12.434 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.020 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GiveOrder (E-Commerce.OrderAPI) in 652.1204ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.103 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GiveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.273 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Result.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.CartLines.Cart.Id.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.319 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/order/give-order - 500 null text/plain; charset=utf-8 955.0216ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.340 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.340 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.340 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.342 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.343 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.343 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.348 +03:00 [INF] Received HTTP response headers after 4.919ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.348 +03:00 [INF] End processing HTTP request after 5.1143ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.348 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.348 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 7.8714ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.348 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:13.349 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 9.1207ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.965 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.966 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.966 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.968 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.969 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.969 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.973 +03:00 [INF] Received HTTP response headers after 3.9849ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.973 +03:00 [INF] End processing HTTP request after 4.2474ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.973 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.974 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 7.3932ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.974 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:15.974 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 8.9479ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.500 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/remove-from-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.501 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.RemoveFromCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.501 +03:00 [INF] Route matched with {action = "RemoveFromCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveFromCart(E_Commerce.OrderAPI.Models.Dto.Cart.RemoveCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.505 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.506 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.506 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.511 +03:00 [INF] Received HTTP response headers after 4.4834ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.511 +03:00 [INF] End processing HTTP request after 4.9077ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.518 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.532 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [CartLines]
+OUTPUT 1
+WHERE [Id] = @p0;
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.537 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/increase-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.537 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/increase-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.542 +03:00 [INF] Received HTTP response headers after 4.7365ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.542 +03:00 [INF] End processing HTTP request after 5.0344ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.550 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Carts]
+OUTPUT 1
+WHERE [Id] = @p0;
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.552 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.552 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.RemoveFromCart (E-Commerce.OrderAPI) in 50.5876ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.552 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.RemoveFromCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:17.552 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/remove-from-cart - 200 null application/json; charset=utf-8 52.363ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.806 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.807 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.807 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.809 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.810 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.810 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.815 +03:00 [INF] Received HTTP response headers after 4.9614ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.815 +03:00 [INF] End processing HTTP request after 5.3781ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.816 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.816 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 9.3241ms
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.816 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:34:18.817 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 11.0136ms
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.836 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.838 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.841 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.857 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM [Carts] AS [c]
+LEFT JOIN [CartLines] AS [c0] ON [c].[Id] = [c0].[CartId]
+ORDER BY [c].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.872 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.872 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.927 +03:00 [INF] Received HTTP response headers after 55.5101ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.928 +03:00 [INF] End processing HTTP request after 55.9748ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.935 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.935 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.950 +03:00 [INF] Received HTTP response headers after 15.3487ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.950 +03:00 [INF] End processing HTTP request after 15.6504ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.951 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.951 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.955 +03:00 [INF] Received HTTP response headers after 3.9117ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.955 +03:00 [INF] End processing HTTP request after 4.219ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.955 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.956 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.961 +03:00 [INF] Received HTTP response headers after 5.1344ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.961 +03:00 [INF] End processing HTTP request after 5.3217ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.961 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.961 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.965 +03:00 [INF] Received HTTP response headers after 3.1959ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.965 +03:00 [INF] End processing HTTP request after 3.502ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.965 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.965 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.971 +03:00 [INF] Received HTTP response headers after 5.7985ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.971 +03:00 [INF] End processing HTTP request after 6.0156ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.972 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.972 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.975 +03:00 [INF] Received HTTP response headers after 3.3366ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.976 +03:00 [INF] End processing HTTP request after 3.7477ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.976 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.976 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.980 +03:00 [INF] Received HTTP response headers after 4.141ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.980 +03:00 [INF] End processing HTTP request after 4.4114ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.981 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.981 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.992 +03:00 [INF] Received HTTP response headers after 11.0256ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.992 +03:00 [INF] End processing HTTP request after 11.2889ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.992 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.992 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.997 +03:00 [INF] Received HTTP response headers after 4.3681ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.997 +03:00 [INF] End processing HTTP request after 4.5902ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.997 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:10.998 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.001 +03:00 [INF] Received HTTP response headers after 3.1899ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.001 +03:00 [INF] End processing HTTP request after 3.6145ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.001 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.001 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.007 +03:00 [INF] Received HTTP response headers after 5.2726ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.007 +03:00 [INF] End processing HTTP request after 5.4631ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.007 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.007 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.011 +03:00 [INF] Received HTTP response headers after 3.2674ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.011 +03:00 [INF] End processing HTTP request after 3.6154ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.011 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.016 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 174.0545ms
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.016 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:35:11.016 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 179.8555ms
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.357 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.366 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.367 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.380 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.381 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.381 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.455 +03:00 [INF] Received HTTP response headers after 74.1022ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.456 +03:00 [INF] End processing HTTP request after 74.5706ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.456 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.457 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 89.9975ms
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.457 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:37:44.458 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 100.384ms
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.846 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/remove-from-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.848 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.RemoveFromCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.848 +03:00 [INF] Route matched with {action = "RemoveFromCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveFromCart(E_Commerce.OrderAPI.Models.Dto.Cart.RemoveCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.853 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.854 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.854 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.862 +03:00 [INF] Received HTTP response headers after 8.5727ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.863 +03:00 [INF] End processing HTTP request after 9.0882ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.868 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.880 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [CartLines]
+OUTPUT 1
+WHERE [Id] = @p0;
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.881 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/increase-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.881 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/increase-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.897 +03:00 [INF] Received HTTP response headers after 16.1357ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.897 +03:00 [INF] End processing HTTP request after 16.622ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.904 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Carts]
+OUTPUT 1
+WHERE [Id] = @p0;
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.905 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.905 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.RemoveFromCart (E-Commerce.OrderAPI) in 56.6099ms
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.905 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.RemoveFromCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:37:45.906 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/remove-from-cart - 200 null application/json; charset=utf-8 59.5316ms
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.470 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.470 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.471 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.474 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.475 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.475 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.482 +03:00 [INF] Received HTTP response headers after 6.3572ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.482 +03:00 [INF] End processing HTTP request after 7.0138ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.483 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.483 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 12.6872ms
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.483 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:37:47.484 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 14.4496ms
+E-Commerce.OrderAPI | 2024-06-07 10:40:38.846 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7001/api/order/delete-order/d354f7a7-055f-478a-a4ef-56934c1a1cd5 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:40:38.849 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.DeleteOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:40:38.858 +03:00 [INF] Route matched with {action = "DeleteOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteOrder(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:40:38.875 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__cartId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[Id] = @__cartId_0
+E-Commerce.OrderAPI | 2024-06-07 10:40:38.876 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:38.876 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:38.935 +03:00 [INF] Received HTTP response headers after 58.9832ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:38.935 +03:00 [INF] End processing HTTP request after 59.3956ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:38.946 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Carts]
+OUTPUT 1
+WHERE [Id] = @p0;
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.161 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.162 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.DeleteOrder (E-Commerce.OrderAPI) in 303.3563ms
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.162 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.DeleteOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.162 +03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7001/api/order/delete-order/d354f7a7-055f-478a-a4ef-56934c1a1cd5 - 200 null application/json; charset=utf-8 316.7282ms
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.599 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.600 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.600 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.606 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM [Carts] AS [c]
+LEFT JOIN [CartLines] AS [c0] ON [c].[Id] = [c0].[CartId]
+ORDER BY [c].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.607 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.607 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.614 +03:00 [INF] Received HTTP response headers after 7.0466ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.615 +03:00 [INF] End processing HTTP request after 7.4597ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.615 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.616 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.672 +03:00 [INF] Received HTTP response headers after 55.9173ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.672 +03:00 [INF] End processing HTTP request after 56.5033ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.672 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.672 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.677 +03:00 [INF] Received HTTP response headers after 4.559ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.677 +03:00 [INF] End processing HTTP request after 4.9831ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.678 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.678 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.685 +03:00 [INF] Received HTTP response headers after 6.6174ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.685 +03:00 [INF] End processing HTTP request after 7.1536ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.686 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.686 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.690 +03:00 [INF] Received HTTP response headers after 4.2583ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.690 +03:00 [INF] End processing HTTP request after 4.7017ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.691 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.691 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.697 +03:00 [INF] Received HTTP response headers after 5.4963ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.697 +03:00 [INF] End processing HTTP request after 5.9608ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.697 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.697 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.702 +03:00 [INF] Received HTTP response headers after 4.1946ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.702 +03:00 [INF] End processing HTTP request after 4.6714ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.703 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.703 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.708 +03:00 [INF] Received HTTP response headers after 5.7125ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.709 +03:00 [INF] End processing HTTP request after 6.0902ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.709 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.709 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.715 +03:00 [INF] Received HTTP response headers after 5.1285ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.715 +03:00 [INF] End processing HTTP request after 5.5653ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.715 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.716 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 115.6419ms
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.716 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:40:39.717 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 117.6555ms
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.382 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7001/api/order/approve-order/e9a1ecc7-91f9-4545-b46a-0310190e6533 - null 0
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.383 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.389 +03:00 [INF] Route matched with {action = "ApproveOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveOrder(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.395 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cartId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[Id] = @__cartId_0
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.395 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.395 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.404 +03:00 [INF] Received HTTP response headers after 8.1305ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.404 +03:00 [INF] End processing HTTP request after 8.5841ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.414 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.438 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.439 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI) in 49.5573ms
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.439 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.ApproveOrder (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.439 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7001/api/order/approve-order/e9a1ecc7-91f9-4545-b46a-0310190e6533 - 200 null application/json; charset=utf-8 57.6695ms
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.765 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-orders - null null
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.767 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.767 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.773 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM [Carts] AS [c]
+LEFT JOIN [CartLines] AS [c0] ON [c].[Id] = [c0].[CartId]
+ORDER BY [c].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.774 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.774 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.785 +03:00 [INF] Received HTTP response headers after 11.0477ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.786 +03:00 [INF] End processing HTTP request after 11.6508ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.786 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.786 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.792 +03:00 [INF] Received HTTP response headers after 5.734ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.792 +03:00 [INF] End processing HTTP request after 6.2314ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.793 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.793 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.801 +03:00 [INF] Received HTTP response headers after 7.3335ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.801 +03:00 [INF] End processing HTTP request after 8.0221ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.802 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.802 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/049cfc7c-3764-4c41-8659-4e6252cb3c7e
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.809 +03:00 [INF] Received HTTP response headers after 6.6109ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.809 +03:00 [INF] End processing HTTP request after 7.1871ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.810 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.810 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.816 +03:00 [INF] Received HTTP response headers after 6.1739ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.817 +03:00 [INF] End processing HTTP request after 6.7904ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.817 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.817 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.823 +03:00 [INF] Received HTTP response headers after 6.0342ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.824 +03:00 [INF] End processing HTTP request after 6.5297ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.826 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.826 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.831 +03:00 [INF] Received HTTP response headers after 5.2804ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.831 +03:00 [INF] End processing HTTP request after 5.7849ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.832 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.832 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/auth/getById/f8f8f786-23eb-471d-b41f-cbe09b0ab208
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.838 +03:00 [INF] Received HTTP response headers after 5.5253ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.838 +03:00 [INF] End processing HTTP request after 5.9451ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.838 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.839 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.843 +03:00 [INF] Received HTTP response headers after 4.7812ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.844 +03:00 [INF] End processing HTTP request after 5.1091ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.844 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.846 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI) in 78.1588ms
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.846 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetOrders (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:40:43.847 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-orders - 200 null application/json; charset=utf-8 82.2626ms
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.565 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - application/json; charset=utf-8 100
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.572 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.575 +03:00 [INF] Route matched with {action = "AddToCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(E_Commerce.OrderAPI.Models.Dto.Cart.CreateCartDto) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.583 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+FROM [Carts] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.583 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.583 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.625 +03:00 [INF] Received HTTP response headers after 41.904ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.625 +03:00 [INF] End processing HTTP request after 42.2593ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.631 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__cart_Id_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CartId], [c].[CartLinePrice], [c].[ProductId], [c].[Quantity]
+FROM [CartLines] AS [c]
+WHERE [c].[ProductId] = @__productId_0 AND [c].[CartId] = @__cart_Id_1
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.641 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [CartLines] SET [CartId] = @p0, [CartLinePrice] = @p1, [ProductId] = @p2, [Quantity] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.641 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.641 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/decrease-stock/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.669 +03:00 [INF] Received HTTP response headers after 27.8046ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.670 +03:00 [INF] End processing HTTP request after 28.2316ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.676 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Carts] SET [Address] = @p0, [CartTotalPrice] = @p1, [IsApproved] = @p2, [IsCompleted] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.676 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.677 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI) in 101.3149ms
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.677 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.AddToCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:44:08.677 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7001/api/order/add-to-cart - 200 null application/json; charset=utf-8 112.7146ms
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.981 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - null null
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.983 +03:00 [INF] Executing endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.983 +03:00 [INF] Route matched with {action = "GetCart", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart(System.Guid) on controller E_Commerce.OrderAPI.Controllers.OrderController (E-Commerce.OrderAPI).
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.987 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Address], [t].[CartTotalPrice], [t].[IsApproved], [t].[IsCompleted], [t].[UserId], [c0].[Id], [c0].[CartId], [c0].[CartLinePrice], [c0].[ProductId], [c0].[Quantity]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Address], [c].[CartTotalPrice], [c].[IsApproved], [c].[IsCompleted], [c].[UserId]
+    FROM [Carts] AS [c]
+    WHERE [c].[UserId] = @__userId_0 AND [c].[IsCompleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [CartLines] AS [c0] ON [t].[Id] = [c0].[CartId]
+ORDER BY [t].[Id]
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.988 +03:00 [INF] Start processing HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.988 +03:00 [INF] Sending HTTP request GET https://localhost:7000/api/product/getById/12459b2f-a0ab-4056-4049-08dc848a02f4
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.995 +03:00 [INF] Received HTTP response headers after 6.3077ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.995 +03:00 [INF] End processing HTTP request after 6.9801ms - 200
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.996 +03:00 [INF] Executing OkObjectResult, writing value of type 'E_Commerce.OrderAPI.Models.Dto.ResponseDto'.
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.996 +03:00 [INF] Executed action E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI) in 13.0235ms
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.996 +03:00 [INF] Executed endpoint 'E_Commerce.OrderAPI.Controllers.OrderController.GetCart (E-Commerce.OrderAPI)'
+E-Commerce.OrderAPI | 2024-06-07 10:44:11.997 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7001/api/order/get-cart/f8f8f786-23eb-471d-b41f-cbe09b0ab208 - 200 null application/json; charset=utf-8 15.9184ms

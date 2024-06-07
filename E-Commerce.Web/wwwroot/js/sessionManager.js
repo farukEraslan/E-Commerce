@@ -13,6 +13,7 @@ connection.start()
 
         // hangi tarayýcýdan girildiðini veren property
         var browser = navigator.userAgentData.brands[0].brand;
+        console.log(browser);
 
         connection.invoke("ConnectionCheck", jwtToken, browser).catch((error) => {
             return console.log(error.toString());
