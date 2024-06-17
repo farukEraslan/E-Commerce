@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.AuthAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240601202512_initialCreate_On_FARUKERASLAN")]
-    partial class initialCreate_On_FARUKERASLAN
+    [Migration("20240617182018_initialCreate")]
+    partial class initialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

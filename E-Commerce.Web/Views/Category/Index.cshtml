@@ -9,8 +9,11 @@
     <hr />
     @if (Model.Count == 0)
     {
+        <div class="row justify-content-end">
+            <a class="btn btn-success" type="button" style="width:100px;;" href="category/create">Oluştur</a>
+        </div>
         <div class="d-flex justify-content-center">
-            <strong class="align-middle">Listelenecek kategori bulunamadı.</strong>
+            <h4 class="align-middle">Listelenecek kategori bulunamadı.</h4>
         </div>
     }
     else

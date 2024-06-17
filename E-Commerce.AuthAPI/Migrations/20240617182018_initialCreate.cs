@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace E_Commerce.AuthAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class initialCreate_On_FARUKERASLAN : Migration
+    public partial class initialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
