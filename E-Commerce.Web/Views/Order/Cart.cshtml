@@ -49,10 +49,10 @@
                                         }
                                         else
                                         {
-                                            <a class="btn fa fa-plus align-middle" asp-controller="Order" asp-action="AddToCart" asp-route-productId="@product.ProductId"></a>
+                                            <a class="btn fa fa-plus align-middle" asp-controller="Order" asp-action="AddToCartOnCart" asp-route-productId="@product.ProductId"></a>
                                         }
                                         <span class="btn disabled align-middle" style="width:35px; height:35px; padding:4px;">@product.Quantity</span>
-                                        <a class="btn fa fa-minus align-middle" asp-controller="Order" asp-action="RemoveFromCart" asp-route-productId="@product.ProductId"></a>
+                                        <a class="btn fa fa-minus align-middle" asp-controller="Order" asp-action="RemoveFromCartOnCart" asp-route-productId="@product.ProductId"></a>
                                     </span>
                                 </td>
                             </tr>

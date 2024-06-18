@@ -24,11 +24,11 @@
                     <span class="align-middle mt-2">Stok : @product.StockAmount Adet</span>
                     @if (product.StockAmount > 0)
                     {
-                        <a class="btn btn-primary" id="AddtoCart" asp-Controller="Order" asp-action="AddToCart" asp-route-productId="@product.Id">Sepete Ekle</a>
+                        <a class="btn btn-primary" id="AddtoCart" asp-Controller="Order" asp-action="AddToCartOnHomePage" asp-route-productId="@product.Id">Sepete Ekle</a>
                     }
                     else
                     {
-                        <a class="btn btn-primary disabled" id="AddtoCart" asp-Controller="Order" asp-action="AddToCart" asp-route-productId="@product.Id">Sepete Ekle</a>
+                        <a class="btn btn-primary disabled" id="AddtoCart" asp-Controller="Order" asp-action="AddToCartOnHomePage" asp-route-productId="@product.Id">Sepete Ekle</a>
                     }
                 </div>
             </div>

@@ -34,7 +34,7 @@ namespace E_Commerce.Web.Controllers
         }
 
         [Authorize(Roles = "customer")]
-        public async Task<IActionResult> AddToCart(Guid productId)
+        public async Task<IActionResult> AddToCartOnHomePage(Guid productId)
         {
             var userId = HttpContext.User.Claims.ToList()[1].Value;
 
@@ -48,7 +48,21 @@ namespace E_Commerce.Web.Controllers
         }
 
         [Authorize(Roles = "customer")]
-        public async Task<IActionResult> RemoveFromCart(Guid productId)
+        public async Task<IActionResult> AddToCartOnCart(Guid productId)
+        {
+            var userId = HttpContext.User.Claims.ToList()[1].Value;
+
+            CreateCartDto createCartDto = new CreateCartDto();
+            createCartDto.ProductId = productId;
+            createCartDto.UserId = Guid.Parse(userId);
+
+            var result = await _orderService.AddToCart(createCartDto);
+            //return RedirectToAction("Index", "Home");
+            return RedirectToAction("Cart", "Order", $"{userId}");
+        }
+
+        [Authorize(Roles = "customer")]
+        public async Task<IActionResult> RemoveFromCartOnHomePage(Guid productId)
         {
             var userId = HttpContext.User.Claims.ToList()[1].Value;
 
@@ -59,6 +73,20 @@ namespace E_Commerce.Web.Controllers
             var result = await _orderService.RemoveFromCart(removeCartDto);
             return RedirectToAction("Index", "Home");
             //return RedirectToAction("Cart", "Order", $"{userId}");
+        }
+
+        [Authorize(Roles = "customer")]
+        public async Task<IActionResult> RemoveFromCartOnCart(Guid productId)
+        {
+            var userId = HttpContext.User.Claims.ToList()[1].Value;
+
+            RemoveCartDto removeCartDto = new RemoveCartDto();
+            removeCartDto.ProductId = productId;
+            removeCartDto.UserId = Guid.Parse(userId);
+
+            var result = await _orderService.RemoveFromCart(removeCartDto);
+            //return RedirectToAction("Index", "Home");
+            return RedirectToAction("Cart", "Order", $"{userId}");
         }
 
         [Authorize(Roles = "customer")]
