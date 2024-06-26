@@ -1,6 +1,6 @@
 ﻿namespace E_Commerce.OrderAPI.Models.Dto
 {
-    public class EmailDto
+    public class RejectedEmailDto
     {
         public string ToEmail { get; set; }
         public Guid OrderId { get; set; }
@@ -18,7 +18,7 @@
                             <tr>
                                 <td style=""background-color: #f8f8f8; padding: 40px 0; text-align: center;"">
                                     <h2 style=""color: #333333;"">Sipariş Onayı</h2>
-                                    <p style=""color: #666666;""><strong>{OrderId}<strong/> numaralı siparişini onaylanmıştır.</p>
+                                    <p style=""color: #666666;""><strong>{OrderId}<strong/> numaralı siparişini <strong>onaylanmamıştır.</strong></p>
                                 </td>
                             </tr>
                             <tr>
