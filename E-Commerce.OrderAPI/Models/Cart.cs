@@ -17,6 +17,7 @@
         public decimal? CartTotalPrice { get; set; }
         public bool IsApproved { get; set; } = false;
         public bool IsCompleted { get; set; } = false;
+        public bool Status { get; set; }
 
         public List<CartLine> CartLines { get; set; }
     }

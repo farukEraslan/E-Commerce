@@ -122,7 +122,7 @@ namespace E_Commerce.OrderAPI.Services
                 _appDbContext.Update(cartLine);
                 await _appDbContext.SaveChangesAsync();
 
-                // sepete eklenen ürün miktarı 1 arttırılacak.
+                // sepetten çıkarılan ürün miktarı 1 arttırılacak.
                 await _productService.IncreaseProductStock(productId);
 
                 cart.CartTotalPrice -= product.UnitPrice;
@@ -138,7 +138,7 @@ namespace E_Commerce.OrderAPI.Services
                 {
                     _appDbContext.CartLines.Remove(cartLine);
 
-                    // sepete eklenen ürün miktarı 1 arttırılacak.
+                    // sepetten çıkarılan ürün miktarı 1 arttırılacak.
                     await _productService.IncreaseProductStock(productId);
 
                     cart.CartTotalPrice -= product.UnitPrice;
@@ -150,7 +150,7 @@ namespace E_Commerce.OrderAPI.Services
                     _appDbContext.CartLines.Remove(cartLine);
                     await _appDbContext.SaveChangesAsync();
 
-                    // sepete eklenen ürün miktarı 1 arttırılacak.
+                    // sepetten çıkarılan ürün miktarı 1 arttırılacak.
                     await _productService.IncreaseProductStock(productId);
 
                     _appDbContext.Carts.Remove(cart);
@@ -238,6 +238,7 @@ namespace E_Commerce.OrderAPI.Services
             if (cart != null)
             {
                 cart.IsApproved = true;
+                cart.Status = true;
                 _appDbContext.Carts.Update(cart);
                 _appDbContext.SaveChanges();
 
@@ -245,7 +246,7 @@ namespace E_Commerce.OrderAPI.Services
                 _response.Message = "Sipariş onaylandı.";
 
                 // burada müşteriye sipariş onay maili gidecek.
-                //EmailSendHelper.SendEmailProducer(user.Email, cartId);    // burada hangfire implement edilebilir.
+                EmailSendHelper.SendEmailProducer(user.Email, cartId);    // burada hangfire implement edilebilir.
                 return _response;
             }
             else
@@ -261,7 +262,7 @@ namespace E_Commerce.OrderAPI.Services
             var user = await _userService.GetById(cart.UserId);
             if (cart != null)
             {
-                cart.IsApproved = false;
+                cart.Status = true;
                 _appDbContext.Carts.Update(cart);
                 _appDbContext.SaveChanges();
 

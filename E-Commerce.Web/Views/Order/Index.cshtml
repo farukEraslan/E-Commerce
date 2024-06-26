@@ -64,7 +64,15 @@
                                     }
                                     else if (!order.IsApproved)
                                     {
-                                        <a class="btn btn-danger disabled" type="button" style="width:200px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onaylanmadı</a>    
+                                        if (order.Status)
+                                        {
+                                            <a class="btn btn-danger disabled" type="button" style="width:200px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onaylanmadı</a>
+                                        }
+                                        else if (!order.Status)
+                                        {
+                                            <a class="btn btn-success" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onayla</a>
+                                            <a class="btn btn-danger" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="DeleteOrder" asp-route-cartId="@order.Id">Sil</a>
+                                        }
                                     }
                                     else
                                     {
