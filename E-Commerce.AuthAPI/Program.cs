@@ -44,7 +44,7 @@ namespace E_Commerce.AuthAPI
             // dosya isimlendirmesi için özel bir metot yazýlabilir.
             //string logFilePath = $"C:/Users/10132884/OneDrive - NTT DATA Business Solutions AG/Desktop/GitHub/E-CommerceMicroservice/LogFiles/E-Commerce.AuthAPI.Logs/{DateTime.Now.Year}-{DateTime.Now.Month}/.txt";
             string logFilePath = $"D:/GitHub Projects/E-Commerce/LogFiles/LogFiles/E-Commerce.AuthAPI.Logs/{DateTime.Now.Year}-{DateTime.Now.Month}/.txt";
-            string connectionString = "Server = FARUKERASLAN; Database = E-Commerce.Logs; uid = sa; pwd = 123; Trusted_Connection = True; TrustServerCertificate = True;";
+            string connectionString = "Server = FARUKERASLAN\\FARUKERASLAN; Database = E-Commerce.Logs; uid = sa; pwd = 123; Trusted_Connection = True; TrustServerCertificate = True;";
 
             #region Database Loglama
             /*         

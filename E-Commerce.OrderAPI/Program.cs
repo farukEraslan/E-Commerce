@@ -56,7 +56,7 @@ namespace E_Commerce.OrderAPI
                     outputTemplate: "E-Commerce.OrderAPI | {Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
                     rollingInterval: RollingInterval.Day,
                     retainedFileCountLimit: null)
-                .WriteTo.MSSqlServer("Server = FARUKERASLAN; Database = E-Commerce.Logs; uid = sa; pwd = 123; Trusted_Connection = True; TrustServerCertificate = True;",
+                .WriteTo.MSSqlServer("Server = FARUKERASLAN\\FARUKERASLAN; Database = E-Commerce.Logs; uid = sa; pwd = 123; Trusted_Connection = True; TrustServerCertificate = True;",
                     sinkOptions: new MSSqlServerSinkOptions
                     {
                         TableName = "E-Commerce.OrderAPI.Logs",

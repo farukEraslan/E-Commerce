@@ -245,7 +245,7 @@ namespace E_Commerce.OrderAPI.Services
                 _response.Message = "Sipariş onaylandı.";
 
                 // burada müşteriye sipariş onay maili gidecek.
-                EmailSendHelper.SendEmailProducer(user.Email, cartId);    // burada hangfire implement edilebilir.
+                //EmailSendHelper.SendEmailProducer(user.Email, cartId);    // burada hangfire implement edilebilir.
                 return _response;
             }
             else
@@ -261,7 +261,8 @@ namespace E_Commerce.OrderAPI.Services
             var user = await _userService.GetById(cart.UserId);
             if (cart != null)
             {
-                _appDbContext.Carts.Remove(cart);
+                cart.IsApproved = false;
+                _appDbContext.Carts.Update(cart);
                 _appDbContext.SaveChanges();
 
                 _response.IsSuccess = true;

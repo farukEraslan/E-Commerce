@@ -62,6 +62,10 @@
                                     {
                                         <a class="btn btn-primary disabled" type="button" style="width:200px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onaylandı</a>
                                     }
+                                    else if (!order.IsApproved)
+                                    {
+                                        <a class="btn btn-danger disabled" type="button" style="width:200px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onaylanmadı</a>    
+                                    }
                                     else
                                     {
                                         <a class="btn btn-success" type="button" style="width:100px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onayla</a>

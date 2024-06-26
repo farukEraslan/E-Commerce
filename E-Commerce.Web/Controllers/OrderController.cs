@@ -153,12 +153,12 @@ namespace E_Commerce.Web.Controllers
             ResponseDto result = await _orderService.DeleteOrder(cartId);
             if (result != null && result.IsSuccess)
             {
-                TempData["success"] = result.Message;
+                //TempData["success"] = result.Message;
                 return RedirectToAction("Index", "Order");
             }
             else
             {
-                TempData["error"] = result.Message;
+                //TempData["error"] = result.Message;
                 return RedirectToAction("Index", "Order");
             }
         }

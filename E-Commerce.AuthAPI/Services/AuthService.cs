@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+﻿    using AutoMapper;
 using E_Commerce.AuthAPI.Data;
 using E_Commerce.AuthAPI.Helpers;
 using E_Commerce.AuthAPI.Models;
@@ -60,7 +60,7 @@ namespace E_Commerce.AuthAPI.Services
                     _response.Result = userDto;
                     _response.Message = "Kullanıcı oluşturma başarılı.";
                     // onay emaili burada yollanacak.
-                    EmailSendHelper.SendEmailProducer(registerRequestDto.Email);    // burada hangfire implement edilebilir.
+                    //EmailSendHelper.SendEmailProducer(registerRequestDto.Email);    // burada hangfire implement edilebilir.
                 }
                 else
                 {
