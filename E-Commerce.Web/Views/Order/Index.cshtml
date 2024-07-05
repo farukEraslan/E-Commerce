@@ -19,6 +19,7 @@
         <table class="table table-hover ">
             <thead>
                 <tr>
+                    <th class="align-middle">Sipariş Tarihi</th>
                     <th class="align-middle">Müşteri Ad-Soyad</th>
                     <th class="align-middle">Adres Bilgisi</th>
                     <th class="align-middle">Sipariş Adeti</th>
@@ -33,6 +34,7 @@
                     if (order.IsCompleted == true)
                     {
                         <tr>
+                            <td class="align-middle">@order.CreatedDate</td>
                             <td class="align-middle">@order.User.FirstName @order.User.LastName</td>
                             <td class="align-middle">@order.Address</td>
                             <td class="align-middle">
@@ -60,13 +62,13 @@
                                 <div class="d-grid gap-2 d-md-block">
                                     @if (order.IsApproved)
                                     {
-                                        <a class="btn btn-primary disabled" type="button" style="width:200px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onaylandı</a>
+                                        <a class="btn btn-primary disabled" type="button" style="width:200px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">@order.ApprovedDate / Onaylandı</a>
                                     }
                                     else if (!order.IsApproved)
                                     {
                                         if (order.Status)
                                         {
-                                            <a class="btn btn-danger disabled" type="button" style="width:200px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">Onaylanmadı</a>
+                                            <a class="btn btn-danger disabled" type="button" style="width:200px;" asp-area="" asp-controller="Order" asp-action="ApproveOrder" asp-route-cartId="@order.Id">@order.RejectedDate / Onaylanmadı</a>
                                         }
                                         else if (!order.Status)
                                         {

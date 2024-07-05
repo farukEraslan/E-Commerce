@@ -40,6 +40,7 @@ namespace E_Commerce.OrderAPI.Services
                         Id = Guid.NewGuid(),
                         UserId = userId,
                         CartTotalPrice = 0,
+                        CreatedDate = DateTime.Now
                     };
                     _appDbContext.Carts.Add(cart);
                     await _appDbContext.SaveChangesAsync();
@@ -239,6 +240,7 @@ namespace E_Commerce.OrderAPI.Services
             {
                 cart.IsApproved = true;
                 cart.Status = true;
+                cart.ApprovedDate = DateTime.Now;
                 _appDbContext.Carts.Update(cart);
                 _appDbContext.SaveChanges();
 
@@ -263,6 +265,7 @@ namespace E_Commerce.OrderAPI.Services
             if (cart != null)
             {
                 cart.Status = true;
+                cart.RejectedDate = DateTime.Now;
                 _appDbContext.Carts.Update(cart);
                 _appDbContext.SaveChanges();
 

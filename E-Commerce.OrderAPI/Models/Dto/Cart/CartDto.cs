@@ -13,6 +13,9 @@
         public bool IsApproved { get; set; }
         public bool IsCompleted { get; set; }
         public bool Status { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public DateTime? ApprovedDate { get; set; }
+        public DateTime? RejectedDate { get; set; }
 
         public List<CartLineDto> CartLines { get; set; }
     }
