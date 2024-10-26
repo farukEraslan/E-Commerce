@@ -45,7 +45,7 @@ namespace E_Commerce.ProductAPI.Controllers
         }
 
         [HttpPost("create")]
-        //[Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult Create([FromBody] ProductCreateDto productCreateDto)
         {
             var result = _productService.Create(productCreateDto);

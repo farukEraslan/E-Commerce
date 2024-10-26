@@ -1,0 +1,36 @@
+E-Commerce.AuthAPI | 2024-10-27 00:02:17.290 +03:00 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.AuthAPI | 2024-10-27 00:02:17.417 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.AuthAPI | 2024-10-27 00:02:17.451 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.AuthAPI | 2024-10-27 00:02:17.520 +03:00 [INF] User profile is available. Using 'C:\Users\frker\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+E-Commerce.AuthAPI | 2024-10-27 00:02:18.021 +03:00 [INF] Now listening on: https://localhost:7002
+E-Commerce.AuthAPI | 2024-10-27 00:02:18.021 +03:00 [INF] Now listening on: http://localhost:5163
+E-Commerce.AuthAPI | 2024-10-27 00:02:18.124 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.AuthAPI | 2024-10-27 00:02:18.125 +03:00 [INF] Hosting environment: Development
+E-Commerce.AuthAPI | 2024-10-27 00:02:18.125 +03:00 [INF] Content root path: D:\GitHub Projects\E-Commerce\E-Commerce.AuthAPI
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.050 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger - null null
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.202 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger - 301 0 null 156.8056ms
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.212 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/index.html - null null
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.290 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/index.html - 200 null text/html;charset=utf-8 78.6121ms
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.306 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui.css - null null
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.308 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui-standalone-preset.js - null null
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.308 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/swagger-ui-bundle.js - null null
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.351 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_vs/browserLink - null null
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.351 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - null null
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.365 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 14.2014ms
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.372 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.372 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.376 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui.css - 200 144929 text/css 69.8767ms
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.376 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 68.3851ms
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.418 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.420 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 111.1193ms
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.428 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.7957ms
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.640 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - null null
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7002/swagger/favicon-32x32.png - null null
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.672 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.673 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/favicon-32x32.png - 200 628 image/png 2.1131ms
+E-Commerce.AuthAPI | 2024-10-27 00:02:35.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7002/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 115.821ms
