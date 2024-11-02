@@ -25,7 +25,8 @@ namespace E_Commerce.AuthAPI
             // DATABASE CONNECTION
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+                //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DockerSqlConnection"));
             });
 
             // IDENTITY

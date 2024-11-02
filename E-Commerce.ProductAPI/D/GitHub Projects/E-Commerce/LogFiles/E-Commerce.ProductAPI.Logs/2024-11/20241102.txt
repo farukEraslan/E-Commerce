@@ -1,0 +1,106 @@
+E-Commerce.ProductAPI | 2024-11-02 20:43:02.262 +00:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-11-02 20:43:06.513 +00:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-11-02 20:43:06.619 +00:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-11-02 20:43:06.744 +00:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-11-02 20:43:06.829 +00:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+E-Commerce.ProductAPI | 2024-11-02 20:43:06.830 +00:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+E-Commerce.ProductAPI | 2024-11-02 20:43:06.885 +00:00 [INF] Creating key {b8d7894f-b8df-4338-8ff8-29f9e3448e9d} with creation date 2024-11-02 20:43:06Z, activation date 2024-11-02 20:43:06Z, and expiration date 2025-01-31 20:43:06Z.
+E-Commerce.ProductAPI | 2024-11-02 20:43:06.919 +00:00 [WRN] No XML encryptor configured. Key {b8d7894f-b8df-4338-8ff8-29f9e3448e9d} may be persisted to storage in unencrypted form.
+E-Commerce.ProductAPI | 2024-11-02 20:43:07.226 +00:00 [INF] Now listening on: http://[::]:8080
+E-Commerce.ProductAPI | 2024-11-02 20:43:07.226 +00:00 [INF] Now listening on: https://[::]:8081
+E-Commerce.ProductAPI | 2024-11-02 20:43:07.229 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-11-02 20:43:07.230 +00:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-11-02 20:43:07.230 +00:00 [INF] Content root path: /app
+E-Commerce.ProductAPI | 2024-11-02 20:43:22.012 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32775/swagger - null null
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.138 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32775/swagger - 301 0 null 2127.637ms
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.149 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32775/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.363 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32775/swagger/index.html - 200 null text/html;charset=utf-8 214.5546ms
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.398 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32775/swagger/swagger-ui.css - null null
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.401 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32775/swagger/swagger-ui-bundle.js - null null
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.401 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32775/swagger/index.css - null null
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.401 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32775/swagger/swagger-ui-standalone-preset.js - null null
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.403 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32775/swagger/index.js - null null
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.418 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32775/swagger/index.js - 200 null application/javascript;charset=utf-8 16.4757ms
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.423 +00:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.424 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32775/swagger/index.css - 200 202 text/css 23.65ms
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.509 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.512 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32775/swagger/swagger-ui.css - 200 152034 text/css 114.9417ms
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.538 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.539 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32775/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 138.0998ms
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.774 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-11-02 20:43:24.775 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32775/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 374.2093ms
+E-Commerce.ProductAPI | 2024-11-02 20:43:25.034 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32775/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-11-02 20:43:25.099 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32775/swagger/favicon-32x32.png - null null
+E-Commerce.ProductAPI | 2024-11-02 20:43:25.100 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-11-02 20:43:25.103 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32775/swagger/favicon-32x32.png - 200 628 image/png 4.5731ms
+E-Commerce.ProductAPI | 2024-11-02 20:43:25.399 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32775/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 365.9351ms
+E-Commerce.ProductAPI | 2024-11-02 20:51:55.349 +00:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.060 +00:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.118 +00:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.194 +00:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.289 +00:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.291 +00:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.342 +00:00 [INF] Creating key {11c2650e-501d-4190-a94d-aad784a3a40d} with creation date 2024-11-02 20:51:58Z, activation date 2024-11-02 20:51:58Z, and expiration date 2025-01-31 20:51:58Z.
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.374 +00:00 [WRN] No XML encryptor configured. Key {11c2650e-501d-4190-a94d-aad784a3a40d} may be persisted to storage in unencrypted form.
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.925 +00:00 [INF] Now listening on: http://[::]:8080
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.927 +00:00 [INF] Now listening on: https://[::]:8081
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.939 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.941 +00:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-11-02 20:51:58.942 +00:00 [INF] Content root path: /app
+E-Commerce.ProductAPI | 2024-11-02 20:52:13.956 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger - null null
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.339 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger - 301 0 null 377.0503ms
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.349 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.485 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/index.html - 200 null text/html;charset=utf-8 135.7834ms
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.538 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/swagger-ui.css - null null
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.538 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/index.css - null null
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.541 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/swagger-ui-bundle.js - null null
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.572 +00:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.572 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/index.css - 200 202 text/css 34.1044ms
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.681 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/swagger-ui-standalone-preset.js - null null
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.789 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.795 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/swagger-ui.css - 200 152034 text/css 256.4134ms
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.813 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/index.js - null null
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.823 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/index.js - 200 null application/javascript;charset=utf-8 10.3298ms
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.968 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-11-02 20:52:14.971 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 289.9621ms
+E-Commerce.ProductAPI | 2024-11-02 20:52:15.172 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-11-02 20:52:15.173 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 633.0426ms
+E-Commerce.ProductAPI | 2024-11-02 20:52:15.622 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-11-02 20:52:15.662 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/favicon-32x32.png - null null
+E-Commerce.ProductAPI | 2024-11-02 20:52:15.687 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+E-Commerce.ProductAPI | 2024-11-02 20:52:15.687 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/favicon-32x32.png - 200 628 image/png 25.1365ms
+E-Commerce.ProductAPI | 2024-11-02 20:52:15.863 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 241.9442ms
+E-Commerce.ProductAPI | 2024-11-02 20:56:45.171 +00:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.110 +00:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.193 +00:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.272 +00:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.334 +00:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.335 +00:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.368 +00:00 [INF] Creating key {e1964dfd-aa67-4eaf-83e2-d9a684bdc5f6} with creation date 2024-11-02 20:56:49Z, activation date 2024-11-02 20:56:49Z, and expiration date 2025-01-31 20:56:49Z.
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.385 +00:00 [WRN] No XML encryptor configured. Key {e1964dfd-aa67-4eaf-83e2-d9a684bdc5f6} may be persisted to storage in unencrypted form.
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.670 +00:00 [INF] Now listening on: http://[::]:8080
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.670 +00:00 [INF] Now listening on: https://[::]:8081
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.673 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.675 +00:00 [INF] Hosting environment: Development
+E-Commerce.ProductAPI | 2024-11-02 20:56:49.675 +00:00 [INF] Content root path: /app
+E-Commerce.ProductAPI | 2024-11-02 20:57:09.042 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/index.html - null null
+E-Commerce.ProductAPI | 2024-11-02 20:57:09.581 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/index.html - 200 null text/html;charset=utf-8 540.0139ms
+E-Commerce.ProductAPI | 2024-11-02 20:57:09.854 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/index.js - null null
+E-Commerce.ProductAPI | 2024-11-02 20:57:09.877 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/index.js - 200 null application/javascript;charset=utf-8 22.3395ms
+E-Commerce.ProductAPI | 2024-11-02 20:57:10.677 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32784/swagger/v1/swagger.json - null null
+E-Commerce.ProductAPI | 2024-11-02 20:57:10.939 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32784/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 262.0096ms
