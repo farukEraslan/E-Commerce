@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace E_Commerce.ProductAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class init_docker_sql : Migration
+    public partial class initdockerSql : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
