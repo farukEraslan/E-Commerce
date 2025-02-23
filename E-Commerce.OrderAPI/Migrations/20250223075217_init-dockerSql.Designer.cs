@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.OrderAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241102201650_init_docker_sql")]
-    partial class init_docker_sql
+    [Migration("20250223075217_init-dockerSql")]
+    partial class initdockerSql
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

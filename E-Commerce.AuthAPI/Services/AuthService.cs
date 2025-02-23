@@ -176,7 +176,7 @@ namespace E_Commerce.AuthAPI.Services
                     _authAPIDatabase.SaveChanges();
 
                     // kullanıcıya rol ataması burada yapılacak.
-                    var result = await AssignRole(userEmail, "admin");       // default olarak customer atanmıştır, ihtiyaca göre değiştirilecek.
+                    var result = await AssignRole(userEmail, "customer");       // default olarak customer atanmıştır, ihtiyaca göre değiştirilecek.
 
                     _response.IsSuccess = true;
                     _response.Message = "Kullanıcı başarıyla aktifleştirildi.";
